@@ -1,0 +1,174 @@
+.contenedor { 
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Cambia 3fr a 1fr para permitir que ocupen toda la fila */
+}
+
+.notas {
+  display: flex;              /* flex */
+  flex-wrap: wrap;           /* flex-wrap */
+  justify-content: center;    /* justify-center */
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.imagen-estilizada {
+  position: absolute;       /* absolute */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;                  /* inset-0 */
+  height: 100%;             /* h-full */
+  width: 100%;              /* w-full */
+  object-fit: cover;        /* object-cover */
+  opacity: 0.75;            /* opacity-75 */
+  transition: opacity 0.3s; /* transition-opacity */
+}
+
+.group:hover .imagen-estilizada {
+  opacity: 0.3;             /* group-hover:opacity-50 */
+}
+
+.caja {
+  position: relative; /* relative */
+  padding: 1rem;      /* p-4 */
+}
+
+.texto-rosa {
+  margin-top: 10px;
+  font-size: 1.25rem;         /* text-xl */
+  text-transform: uppercase;   /* uppercase */
+  letter-spacing: 0.1em;      /* tracking-widest */
+  color: #e54b9a;              /* text-pink-500 (hex code for pink) */
+  position: relative;     /* relative */
+  display: block;         /* block */
+}
+
+.texto-blanco {
+  font-size: 1.5rem;  /* text-xl */
+  font-weight: bold;   /* font-bold */
+  color: white;        /* text-white */
+  text-align: justify; 
+  animation: slide-in-left 1.5s ease-in-out; /* Cambié la duración a 1.5s */
+}
+
+.margen-vertical {
+  margin-top: 8rem; /* mt-32 (128px) */
+}
+
+#texto-negro {
+  font-weight: bold;
+  margin-top: -45px;
+  margin-left: 10px;
+}
+
+#texto-amarillo {
+  color: yellow;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+}
+
+.lista-estilo {
+  font-size: 1rem;  
+  font-weight: bold; 
+  list-style-type: circle; 
+  margin-left: 10px;
+}
+
+.circle-bullets {
+  list-style-type: circle;
+}
+
+.group {
+  height: 590px;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%; 
+  height: auto;
+}
+
+.titulo_mapa {
+  background-color: black;
+  color: white;
+  text-shadow:
+    0 0 20px #ff00ff,  /* Fucsia */
+    0 0 30px #cc00cc,  /* Violeta oscuro */
+    0 0 40px #990099,  /* Violeta más oscuro */
+    0 0 50px #ff00ff;  /* Fucsia brillante */
+}
+
+#mapa {
+  width: 100%; 
+  height: 300px;
+}
+
+#direccion {
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-blanco {
+    font-size: 1.5rem; /* sm:text-2xl */
+  }
+
+  .caja {
+    padding: 2rem;  
+  }
+
+ #gestiones, #auditorias, #servicios {
+    width: 100%; 
+  }
+
+  .contenedor img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 850px) {
+  .contenedor {
+    grid-template-columns: 1fr; /* Cambia a 1 columna para pantallas más pequeñas */
+  }
+
+  .group {
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    overflow: hidden;
+  }
+
+  .caja {
+    padding: 2rem;    
+  }
+}
+
+@media (min-width: 640px) {
+  .margen-vertical {
+    margin-top: 12rem; /* sm:mt-48 (192px) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .margen-vertical {
+    margin-top: 16rem; /* lg:mt-64 (256px) */
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/head.css" />
+    <link rel="stylesheet" href="./assets/css/fuentes.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
+    <title>Crisal</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- imagen logo -->
+      <img alt="logo" src="./assets/images/logo.png" class="logo"/>
+      <!-- título en rojo -->
+      <h1 class="chicle-regular">Crisal</h1>
+      <!-- Menú responsive -->
+      <div class="menu-desplegable" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <!-- Navbar -->
+    <nav>
+        <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="gestiones.html">Gestiones</a></li>
+        <li><a href="auditorias.html">Auditorías</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Main content -->
+    <div class="contenedor notas">
+      <div id="gestiones" class="aparecer w-1/3 p-3">
+        <a href="gestiones.html" class="group relative block bg-black m-3 rounded-md">
+        <img 
+        alt="img6"
+        src="./assets/images/img6.png"
+        id="img6"
+        class="imagen-estilizada"
+      />
+          <div class="caja">
+            <p
+              class="texto-rosa"
+            >
+              Gestiones
+          </p>
+          <p class="texto-blanco">
+              Brindamos servicios de consultoría (implementación y mantenimiento) y 
+              auditoría de sistemas de gestión de calidad, medio ambiente, seguridad y salud en 
+              el trabajo. 
+            </p>
+            <div class="margen-vertical">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+              <ul class="text-2x1" id="texto-negro">
+                <li>NUESTRAS GESTIONES:</li>
+              </ul>
+              <ul class="lista-estilo" id="texto-amarillo">
+                    <li>MIN. AMBIENTE  (Ex O.P.D.S.)</li>
+                    <li>RESIDUOS</li>
+                    <li>RIESGOS EN LOS PUESTOS DE TRABAJO (ERGONOMÍA)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="auditorias" class="aparecer w-1/3 p-3">
+        <a  href="auditorias.html"
+        class="group aparecer relative block bg-black m-3 rounded-md">
+          <img
+            alt="img2"
+            src="./assets/images/img2.png"
+            class="imagen-estilizada"
+            />
+          <div class="caja">
+            <p
+              class="texto-rosa"
+            >
+              Auditorías
+            </p>
+            <p class="texto-blanco">
+              Auditamos su empresa para que obtenga el Sello Nacional de Sustentabilidad Ambiental 
+              avalado por la Sociedad Argentina de Profesionales Ambientales.
+              <div class="margen-vertical">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-xl" id="texto-amarillo">
+                  El SAA es un sello ambiental nacional de validez en toda Argentina que avala con
+                  extrema confiabilidad el compromiso ambiental que realiza su empresa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="servicios" class="aparecer w-1/3 p-3">
+        <a href="servicios.html"
+        class="group aparecer relative block bg-black m-3 rounded-md">
+          <img
+            alt="img3"
+            src="./assets/images/img3.jpg"
+            class="imagen-estilizada"
+            />
+          <div class="caja">
+            <p
+              class="texto-rosa"
+            >
+              Servicios
+            </p>
+            <p class="texto-blanco">
+              Realizamos Medición de Ruido, Iluminación, Ventilación, Puesta a Tierra, Calculo de Carga 
+              de Fuego, Plan de Evacuación y Contingencia.
+            </p>
+            <div class="margen-vertical">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+              <p class="text-xl" id="texto-amarillo">
+                Estos servicios son esenciales para garantizar condiciones adecuadas de trabajo, 
+                garantizar la seguridad eléctrica y la prevención de incendios. Todo acorde a la Ley 19.587 y su Decreto 351/79.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Video -->
+    <video autoplay controls id="video">
+      <source src="./assets/video/vid4.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="titulo_mapa"> 
+    <br>
+    <h2 id="direccion">Encuéntranos en esta dirección</h2>
+    <br>
+    </div>
+    <!-- Mapa -->
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.606056156567!2d-58.396815925145965!3d-34.61412185804621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadd8615fb0f%3A0x28a44c74fe00f4c3!2sAv.%20Belgrano%201974%2C%20C1094AAO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728521694601!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Footer -->
+    <footer>
+      <div class="footlist">
+      <a 
+          id="footer_brillo"
+          class="footlink fab fa-facebook-square fa-2x"
+          href="https://www.facebook.com"
+          title="Facebook"
+          target="_blank"
+        ></a>
+        <a
+          id="footer_brillo"
+          class="footlink fa-brands fa-instagram fa-2x"
+          href="https://www.instagram.com/"
+          title="Instagram"
+          target="_blank"
+        ></a>
+        <a
+          id="footer_brillo"
+          class="footlink fa-brands fa-x-twitter fa-2x"
+          href="https://twitter.com/"
+          title="Twitter"
+          target="_blank"
+        ></a>
+        <a
+          id="footer_brillo"
+          class="footlink fa-brands fa-linkedin fa-2x"
+          href="https://ar.linkedin.com/"
+          title="LinkedIn"
+          target="_blank"
+        ></a>
+      </div>
+      <p>
+        <small
+          >&copy; 2024 Todos los derechos reservados</small
+        >
+      </p>
+    </footer>
+    <script>
+      function toggleMenu() {
+          const menu = document.querySelector('.menu');
+          menu.classList.toggle('active');
+      }
+      </script>
+  </body>
+</html>

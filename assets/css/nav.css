@@ -1,0 +1,158 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/********************* Header ***********************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff; /* Ajusta el color según tu diseño */
+    position: relative;
+}
+  
+.logo {
+    position: absolute;
+    left: 10px; /* Ajusta según tu necesidad */
+    max-width: 100px;
+    height: auto;
+}
+  
+h1.chicle-regular {
+    font-size: 4rem;
+    color: red;
+    margin: 0;
+}
+
+/********************* Fin Header *******************************/
+
+nav {
+    width: 100%;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Ajusta este valor para reducir la separación */
+    height: 70px;
+    cursor: pointer;
+    list-style: none; /* Eliminar viñetas */
+}
+
+.menu li {
+    text-align: center; /* Centrar el texto dentro de cada <li> */
+}
+
+.menu .selected a {
+    background: #ddd;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li:hover {
+    height: 85px;
+}
+
+.menu>li:hover>a {
+    color: #3e95ff;
+    border-bottom: #3e95ff solid 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu>li a {
+    color: #393333;
+    position: relative;
+    height: 100%;
+}
+
+.menu>li>a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
+.menu>li:hover>a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 650px) {
+    nav {
+        width: 100%;
+        font-size: small;
+    }
+
+    /* Icono hamburguesa */
+    .menu-desplegable {
+        display: block; /* Mostrar hamburguesa solo en celulares */
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .menu {
+        display: none; /* Esconde el menú inicialmente */
+        flex-direction: column; /* Apilar verticalmente */
+        position: absolute;
+        top:95px; /* Ajusta la posición del menú */
+        left: 0;
+        width: 100%;
+        height: 50vh; /* Ocupa toda la altura de la pantalla */
+        background-color: white; /* Asegura que tenga un fondo visible */
+        gap: 0; /* Elimina el gap para mejor distribución */
+        z-index: 999; /* Para asegurarse que esté por encima de otros elementos */
+        overflow-y: auto; /* Si el menú es muy largo, permite hacer scroll */
+    }
+
+    .menu li {
+        width: 100%; /* Asegura que cada elemento ocupe todo el ancho */
+        padding: 10px 0;
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: #f4f4f4; /* Fondo de cada enlace */
+        border-bottom: 1px solid #ccc; /* Separación entre enlaces */
+    }
+
+    .menu.active {
+        display: flex; /* Muestra el menú cuando se hace clic */
+    }
+}
+
+/* Ocultar el ícono del menú hamburguesa en tablets y notebooks */
+@media (min-width: 651px) {
+    .menu-desplegable {
+        display: none !important; /* Ocultar hamburguesa en pantallas más grandes */
+    }
+
+    .menu {
+        display: flex; /* Mostrar el menú normal en pantallas más grandes */
+        justify-content: center;
+        align-items: center;
+    }
+}
