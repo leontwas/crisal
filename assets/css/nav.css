@@ -10,7 +10,7 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #fff; /* Ajusta el color según tu diseño */
+    background-color: white; /* Ajusta el color según tu diseño */
     position: relative;
 }
   
@@ -52,7 +52,7 @@ nav {
 }
 
 .menu .selected a {
-    background: #ddd;
+    background-color: white;
     padding: 8px 10px;
     border-radius: 5px;
 }
@@ -73,6 +73,7 @@ nav {
 
 .menu>li a {
     color: #393333;
+    background-color: rgb(249, 249, 248);
     position: relative;
     height: 100%;
 }

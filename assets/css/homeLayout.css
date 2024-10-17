@@ -40,6 +40,7 @@
   margin-top: 10px;
   font-size: 1.25rem;         /* text-xl */
   text-transform: uppercase;   /* uppercase */
+  font-weight: bold;
   letter-spacing: 0.1em;      /* tracking-widest */
   color: #e54b9a;              /* text-pink-500 (hex code for pink) */
   position: relative;     /* relative */

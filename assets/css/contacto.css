@@ -16,6 +16,11 @@ main {
   transition-duration: .4s;
 }
 
+#texto-negro1 {
+  margin-left: 45px;
+  padding-top: 20px;
+}
+
 /* Estilos del footer */
 footer {
 background-color: black;
