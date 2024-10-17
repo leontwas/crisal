@@ -28,7 +28,7 @@ footer p {
   display: flex; /* Los enlaces están centrados en fila */
   justify-content: center;
   padding-top: 1rem;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   transition-duration: .4s;
 }
 

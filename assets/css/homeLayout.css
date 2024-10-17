@@ -93,13 +93,18 @@
 }
 
 .titulo_mapa {
+  padding-left: 30px;
   background-color: black;
   color: white;
   text-shadow:
-    0 0 20px #ff00ff,  /* Fucsia */
-    0 0 30px #cc00cc,  /* Violeta oscuro */
-    0 0 40px #990099,  /* Violeta más oscuro */
-    0 0 50px #ff00ff;  /* Fucsia brillante */
+    0 0 20px #00ffff,  /* Azul claro */
+    0 0 30px #0099cc,  /* Azul medio */
+    0 0 40px #006699,  /* Azul más oscuro */
+    0 0 50px #00ffff;  /* Azul brillante */
+}
+
+#manito {
+  padding-left: 10px;
 }
 
 #mapa {
