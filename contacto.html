@@ -61,28 +61,46 @@
                       <div class="form-floating mb-3">
                           <select name="cantPers" class="form-control" id="cantPers" required>
                               <option value="" disabled selected hidden>Seleccione un servicio</option>
-                              <option value="Auditoría">Auditoría</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                              <option value="13">13</option>
-                              <option value="14">14</option>
-                              <option value="15">15</option>
-                              <option value="16">16</option>
-                              <option value="17">17</option>
-                              <option value="18">18</option>
-                              <option value="19">19</option>
-                              <option value="20">20</option>
-                          </select>
-                      </div>
+                              <option value="1">Medición de Ruido, Iluminación y Ventilación</option>
+                              <option value="2">Medición de la Puesta a Tierra (PAT)</option>
+                              <option value="3">Estudio de Carga de Fuego</option>
+                              <option value="4">Análisis de Riesgo en el Trabajo</option>
+                              <option value="5">Estudio del Puesto de Trabajo</option>
+                              <option value="6">Estudio de Ergonomía</option>
+                              <option value="7">Informe de Seguridad y Prevención de Accidentes</option>
+                              <option value="8">Plan de Evacuación y Contingencia</option>
+                              <option value="9">Auditorías Internas y Externas</option>
+                              <option value="10">Curso de Seguridad y Manejo de Autoelevadores</option>
+                            </select>
+                      </div><select name="cantPers" class="form-control" id="cantPers" required>
+                        <option value="" disabled selected hidden>Seleccione un servicio</option>
+                    
+                        <optgroup label="Medición de condiciones ambientales y seguridad:">
+                            <option value="1">Medición de Ruido, Iluminación y Ventilación</option>
+                            <option value="2">Medición de la Puesta a Tierra (PAT)</option>
+                            <option value="3">Estudio de Carga de Fuego</option>
+                        </optgroup>
+                    
+                        <optgroup label="Evaluación de seguridad, prevención y análisis de riesgos:">
+                            <option value="4">Análisis de Riesgo en el Trabajo</option>
+                            <option value="5">Estudio del Puesto de Trabajo</option>
+                            <option value="6">Estudio de Ergonomía</option>
+                            <option value="7">Informe de Seguridad y Prevención de Accidentes</option>
+                        </optgroup>
+                    
+                        <optgroup label="Planificación y contingencia:">
+                            <option value="8">Plan de Evacuación y Contingencia</option>
+                        </optgroup>
+                    
+                        <optgroup label="Auditorías y controles:">
+                            <option value="9">Auditorías Internas y Externas</option>
+                        </optgroup>
+                    
+                        <optgroup label="Formación y capacitación:">
+                            <option value="10">Curso de Seguridad y Manejo de Autoelevadores</option>
+                        </optgroup>
+                    </select>
+                    
                          <div class="form-check mb-3">
                           <input type="checkbox" class="form-check-input" id="menores">
                           <label class="form-check-label" for="menores">Desea que lo contactemos?</label>
