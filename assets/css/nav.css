@@ -17,15 +17,26 @@ ul {
 .logo {
     position: absolute;
     left: 10px; /* Ajusta según tu necesidad */
-    max-width: 100px;
+    max-width: 300px;
     height: auto;
 }
-  
+/* 
 h1.chicle-regular {
-    font-size: 4rem;
+    font-size: 8rem;
     color: red;
     margin: 0;
 }
+*/
+h1.chicle-regular {
+    font-size: 8rem;
+    color: red;
+    margin: 0;
+    -webkit-text-stroke: 2px black; /* Delineado negro */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombreado */
+}
+
+
+
 
 /********************* Fin Header *******************************/
 
