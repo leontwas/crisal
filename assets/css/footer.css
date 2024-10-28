@@ -1,9 +1,9 @@
 footer {
+  padding-top:5cap;
   background-color: black;
   color: #fff;
-  padding: 10px 0;
+  padding: 30px 0;
   position: relative; /* Posiciona el footer relativo al contenido */
-  align-content: center;
   width: 100%;
   text-align: center;
   z-index: 1; /* Asegura que el footer esté sobre otros elementos */
@@ -12,7 +12,6 @@ footer {
 footer a,
 footer p {
   padding-bottom: 1rem;
-  padding-left: 60px;
 }
 
 #footer_brillo {
@@ -24,11 +23,14 @@ footer p {
     0 0 50px #ff0000;
 }
 
+.footlist {
+   display: flex; /* Cambiar a flex para alinear los enlaces en fila */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas si es necesario */
+  gap: 15px; /* Espacio entre los enlaces */
+}
+
 .footlink {
-  display: flex; /* Los enlaces están centrados en fila */
-  justify-content: center;
-  padding-top: 1rem;
-  margin-left: 0.5rem;
   transition-duration: .4s;
 }
 
@@ -39,11 +41,8 @@ footer p {
 
 /* Ajustes para pantallas de tablets y móviles */
 @media (max-width: 900px) {
-  .footlink {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    padding-top: 1rem;
-    flex-direction: column; /* Coloca los enlaces en columna */
-    gap: 10px; /* Espacio entre enlaces */
+  .footlist {
+    justify-content: center; /* Mantiene la alineación centrada */
   }
 }
 
@@ -54,11 +53,8 @@ footer p {
     width: 100%;
   }
 
-  .footlink {
-    margin-left: 0; /* Elimina el margen izquierdo */
-    padding-top: 1rem;
-    flex-direction: column; /* Coloca los enlaces en columna */
-    gap: 10px; /* Espacio entre enlaces */
+  .footlist {
+    flex-direction: row; /* Asegura que los enlaces estén en fila en pantallas pequeñas */
+    justify-content: center; /* Centra los enlaces */
   }
 }
-

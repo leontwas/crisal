@@ -17,7 +17,7 @@ ul {
 .logo {
     position: absolute;
     left: 10px; /* Ajusta según tu necesidad */
-    max-width: 300px;
+    max-width:250px;
     height: auto;
 }
 /* 
