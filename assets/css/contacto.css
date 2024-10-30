@@ -1,9 +1,8 @@
 nav {
   background-color: #fbf7f7;
 }
-
 main {
-  background: linear-gradient(to bottom, #c0c0c0, #707070); /* Degradado de gris claro a gris oscuro */
+  background: linear-gradient(to bottom, #a0a0a0, #292727) ; /* Degradado de gris claro a gris oscuro */
 }
 
 .menu>li a {
