@@ -17,7 +17,7 @@ ul {
 .logo {
     position: absolute;
     left: 10px; /* Ajusta según tu necesidad */
-    max-width:250px;
+    max-width:150px;
     height: auto;
 }
 /* 
@@ -28,7 +28,7 @@ h1.chicle-regular {
 }
 */
 h1.chicle-regular {
-    font-size: 8rem;
+    font-size: 4rem;
     color: red;
     margin: 0;
     -webkit-text-stroke: 2px black; /* Delineado negro */
