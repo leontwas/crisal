@@ -23,7 +23,7 @@ main {
 /* Estilos del footer */
 footer {
 background-color: black;
-color: #fff;
+color: #fff !important;
 padding: 10px 0;
 position: relative; /* Posiciona el footer relativo al contenido */
 align-content: center;
