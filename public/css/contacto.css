@@ -6,6 +6,12 @@ main {
   background: linear-gradient(to bottom, #a0a0a0, #292727); /* Degradado de gris claro a gris oscuro */
 }
 
+.form-check-label {
+  color: white;
+  position: relative;
+  top: 5px;
+}
+
 .footlink:hover {
   transform: scale(1.4);
   transition-duration: 0.4s;
