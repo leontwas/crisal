@@ -3,11 +3,11 @@ nav {
 }
 
 main {
-  background: linear-gradient(to bottom, #a0a0a0, #292727); /* Degradado de gris claro a gris oscuro */
+  background: linear-gradient(to bottom, #292727, #a0a0a0); /* Degradado de gris claro a gris oscuro */
 }
 
-.form-check-label {
-  color: white !important;
+.contacto {
+  color: white;
   position: relative;
   top: 15px;
 }
