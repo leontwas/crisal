@@ -38,7 +38,7 @@
 
 .texto-rosa {
   margin-top: 10px;
-  font-size: 1.25rem;         /* text-xl */
+  font-size: 1rem;         /* text-xl */
   text-transform: uppercase;   /* uppercase */
   font-weight: bold;
   letter-spacing: 0.1em;      /* tracking-widest */
@@ -48,7 +48,7 @@
 }
 
 .texto-blanco {
-  font-size: 1.5rem;  /* text-xl */
+  font-size: 1.25rem;  /* text-xl */
   font-weight: bold;   /* font-bold */
   color: white;        /* text-white */
   text-align: justify; 
@@ -61,7 +61,7 @@
 
 #texto-negro {
   font-weight: bold;
-  margin-top: -45px;
+  margin-top: -60px;
   margin-left: 10px;
 }
 
