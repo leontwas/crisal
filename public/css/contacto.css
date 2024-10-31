@@ -4,12 +4,12 @@ nav {
 main {
   background: linear-gradient(to bottom, #a0a0a0, #292727) ; /* Degradado de gris claro a gris oscuro */
 }
-
+/*
 .menu>li a {
-  color: white;
+  color: #858484;
   font-size: larger;
 }
-
+*/
 .footlink:hover {
   transform: scale(1.4);
   transition-duration: .4s;
