@@ -7,8 +7,7 @@ main {
 }
 
 .contacto {
-  color: white;
-  position: relative;
+  color: white !important;
   top: 15px;
 }
 
