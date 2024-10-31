@@ -1,7 +1,7 @@
 .contenedor { 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Cambia 3fr a 1fr para permitir que ocupen toda la fila */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cambia 3fr a 1fr para permitir que ocupen toda la fila */
 }
 
 .notas {
