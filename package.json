@@ -12,6 +12,7 @@
   "license": "MIT",
   "description": "Web de servicios en Seguridad e Higiene",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.21.1"
   },
   "devDependencies": {
