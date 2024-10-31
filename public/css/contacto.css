@@ -7,9 +7,9 @@ main {
 }
 
 .form-check-label {
-  color: white;
+  color: white !important;
   position: relative;
-  top: 5px;
+  top: 15px;
 }
 
 .footlink:hover {
