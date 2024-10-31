@@ -110,10 +110,9 @@
 }
 
 #mapa {
-  width: 100%; 
-  height: 300px;
-  border-radius: 2px;
-  border-color: chocolate;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 #direccion {
