@@ -1,6 +1,6 @@
 footer {
   padding-top:5cap;
-  background-color: black;
+  background: linear-gradient(180deg, #272321, #312E29, #111110, #000000);;
   color: #fff;
   padding: 30px 0;
   position: relative; /* Posiciona el footer relativo al contenido */

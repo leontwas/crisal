@@ -17,18 +17,12 @@ ul {
 .logo {
     position: absolute;
     left: 10px; /* Ajusta según tu necesidad */
-    max-width:150px;
+    max-width:120px;
     height: auto;
 }
-/* 
+
 h1.chicle-regular {
-    font-size: 8rem;
-    color: red;
-    margin: 0;
-}
-*/
-h1.chicle-regular {
-    font-size: 3rem;
+    font-size: 4rem;
     color: red;
     margin: 0;
     -webkit-text-stroke: 2px black; /* Delineado negro */
@@ -42,13 +36,14 @@ h1.chicle-regular {
 
 nav {
     width: 100%;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #cd7e35;
     font-size: x-large;
 }
 
 .menu {
     margin: 0;
     padding: 0;
+    background-color: #50633C;
     display: flex;
     justify-content: center; /* Centrar los elementos */
     align-items: center; /* Centrar verticalmente */
@@ -77,14 +72,14 @@ nav {
 }
 
 .menu>li:hover>a {
-    color: #3e95ff;
-    border-bottom: #3e95ff solid 4px;
+    color: black;
+    border-bottom: #cd7e35 solid 4px;
     transition: all 0.1s ease-in-out;
 }
 
 .menu>li a {
-    color: #393333;
-    background-color: rgb(249, 249, 248);
+    color: white;
+    background-color: #50633C;
     position: relative;
     height: 100%;
 }
