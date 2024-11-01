@@ -125,12 +125,13 @@
   }
 
   .texto-blanco {
-    font-size: small;
+    font-size: x-small;
     text-align: left;
   }
 
   #texto-negro {
     font-weight: bold;
+    text-align: left;
     margin-top: -150px;
   }
   .caja {
