@@ -117,8 +117,8 @@
   font-weight: bold;
 }
 
-/* Media query para celulares (pantallas de hasta 600px) */
-@media (max-width: 600px) {
+/******************************************** Para teléfonos móviles ****************************************/
+@media (max-width: 650px) {
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
@@ -142,8 +142,8 @@
   }
 }
 
-/* Media query para tablets (pantallas entre 601px y 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
+/************************************************** Para tablets ********************************************/
+@media (min-width: 651px) and (max-width: 850px) {
   .contenedor {
     grid-template-columns: 1fr;
   }
@@ -162,8 +162,8 @@
   }
 }
 
-/* Media query para notebooks y pantallas más grandes (desde 1025px en adelante) */
-@media (min-width: 1025px) {
+/************************************************* Para Notebooks *******************************************/
+@media (min-width: 851px) {
   .margen-vertical {
     margin-top: 16rem; 
   }
