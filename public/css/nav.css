@@ -162,4 +162,8 @@ nav {
         justify-content: center;
         align-items: center;
     }
+    nav {
+        width: 100%;
+        font-size: small;
+    }
 }
