@@ -1,7 +1,7 @@
 .contenedor { 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .notas {
@@ -61,7 +61,7 @@
 
 #texto-negro {
   font-weight: bold;
-  margin-top: -250px;
+  margin-top: -150px;
   margin-left: 10px;
 }
 
