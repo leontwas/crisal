@@ -47,7 +47,6 @@
 }
 
 .texto-blanco {
-  font-size: 1rem;
   font-weight: bold;
   color: white;
   text-align: justify;
@@ -58,11 +57,11 @@
   margin-top: 16rem; 
 }
 
-#texto-negro {
+/*#texto-negro {
   font-weight: bold;
   margin-top: -150px;
   margin-left: 10px;
-}
+}*/
 
 #texto-amarillo {
   color: yellow;
@@ -165,12 +164,19 @@
   .margen-vertical {
     margin-top: 12rem; 
   }
+  .texto-blanco {
+    font-size: small;
+  }
 }
 
 /************************************************* Para Notebooks *******************************************/
 @media (min-width: 851px) {
   .margen-vertical {
     margin-top: 16rem; 
+  }
+
+  .texto-blanco {
+    font-size: large;
   }
 }
 
