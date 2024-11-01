@@ -48,7 +48,7 @@
 }
 
 .texto-blanco {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
   text-align: justify;
@@ -61,7 +61,7 @@
 
 #texto-negro {
   font-weight: bold;
-  margin-top: -150px;
+  margin-top: -250px;
   margin-left: 10px;
 }
 
