@@ -1,1 +1,2 @@
 Este proyecto se trata de una página web que ofrece servicios de gestion, consultoría, y capacitación orientadas a la Seguridad e Higiene Laboral.  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57e1db62-653b-479e-baf9-d17e47636be7/deploy-status)](https://app.netlify.com/sites/crisal-seguridad/deploys)
