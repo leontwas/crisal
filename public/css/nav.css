@@ -55,7 +55,7 @@ nav {
 }
 
 .menu .selected a {
-    background-color: white;
+    background-color: #50633C;
     padding: 8px 10px;
     border-radius: 5px;
 }
@@ -75,7 +75,7 @@ nav {
 }
 
 .menu > li a {
-    color: white;
+    color: black;
     background-color: #50633C;
     position: relative;
     height: 100%;
