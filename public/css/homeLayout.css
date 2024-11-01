@@ -1,13 +1,12 @@
 .contenedor { 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Cambia 3fr a 1fr para permitir que ocupen toda la fila */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .notas {
-  display: flex;              /* flex */
-  flex-wrap: wrap;           /* flex-wrap */
-  justify-content: center;    /* justify-center */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .justify-text {
@@ -15,53 +14,53 @@
 }
 
 .imagen-estilizada {
-  position: absolute;       /* absolute */
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;                  /* inset-0 */
-  height: 100%;             /* h-full */
-  width: 100%;              /* w-full */
-  object-fit: cover;        /* object-cover */
-  opacity: 0.75;            /* opacity-75 */
-  transition: opacity 0.3s; /* transition-opacity */
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  transition: opacity 0.3s;
 }
 
 .group:hover .imagen-estilizada {
-  opacity: 0.3;             /* group-hover:opacity-50 */
+  opacity: 0.3;
 }
 
 .caja {
-  position: relative; /* relative */
-  padding: 1rem;      /* p-4 */
+  position: relative;
+  padding: 1rem;
 }
 
 .texto-rosa {
   margin-top: 10px;
-  font-size: 1.25rem;         /* text-xl */
-  text-transform: uppercase;   /* uppercase */
+  font-size: 1rem;
+  text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.1em;      /* tracking-widest */
-  color: #e54b9a;              /* text-pink-500 (hex code for pink) */
-  position: relative;     /* relative */
-  display: block;         /* block */
+  letter-spacing: 0.1em;
+  color: #e54b9a;
+  position: relative;
+  display: block;
 }
 
 .texto-blanco {
-  font-size: 1.5rem;  /* text-xl */
-  font-weight: bold;   /* font-bold */
-  color: white;        /* text-white */
-  text-align: justify; 
-  animation: slide-in-left 1.5s ease-in-out; /* Cambié la duración a 1.5s */
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: justify;
+  animation: slide-in-left 1.5s ease-in-out;
 }
 
 .margen-vertical {
-  margin-top: 8rem; /* mt-32 (128px) */
+  margin-top: 16rem; 
 }
 
 #texto-negro {
   font-weight: bold;
-  margin-top: -45px;
+  margin-top: -150px;
   margin-left: 10px;
 }
 
@@ -96,13 +95,12 @@
 .titulo_mapa {
   padding-left: 30px;
   background: linear-gradient(180deg, #272321, #312E29, #111110, #000000);
-
   color: white;
   text-shadow:
-    0 0 20px #00ffff,  /* Azul claro */
-    0 0 30px #0099cc,  /* Azul medio */
-    0 0 40px #006699,  /* Azul más oscuro */
-    0 0 50px #00ffff;  /* Azul brillante */
+    0 0 20px #00ffff,
+    0 0 30px #0099cc,
+    0 0 40px #006699,
+    0 0 50px #00ffff;
 }
 
 #manito {
@@ -110,31 +108,33 @@
 }
 
 #mapa {
-  width: 100%; 
-  height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 #direccion {
   font-weight: bold;
 }
 
-@media (max-width: 650px) {
+/* Media query para celulares (pantallas de hasta 600px) */
+@media (max-width: 600px) {
   .contenedor {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: 1fr;
+    text-align: left;
   }
 
   .texto-blanco {
-    font-size: 1.5rem; /* sm:text-2xl */
+    font-size: small;
+    text-align: left;
   }
 
   .caja {
-    padding: 2rem;  
+    padding: 2rem;
   }
 
- #gestiones, #auditorias, #servicios {
-    width: 100%; 
+  #gestiones, #auditorias, #servicios {
+    width: 100%;
   }
 
   .contenedor img {
@@ -142,30 +142,30 @@
   }
 }
 
-@media (min-width: 651px) and (max-width: 850px) {
+/* Media query para tablets (pantallas entre 601px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
   .contenedor {
-    grid-template-columns: 1fr; /* Cambia a 1 columna para pantallas más pequeñas */
+    grid-template-columns: 1fr;
   }
 
   .group {
-    height: auto; /* Permite que la altura se ajuste automáticamente */
+    height: auto;
     overflow: hidden;
   }
 
   .caja {
-    padding: 2rem;    
+    padding: 2rem;
+  }
+
+  .margen-vertical {
+    margin-top: 12rem; 
   }
 }
 
-@media (min-width: 640px) {
+/* Media query para notebooks y pantallas más grandes (desde 1025px en adelante) */
+@media (min-width: 1025px) {
   .margen-vertical {
-    margin-top: 12rem; /* sm:mt-48 (192px) */
-  }
-}
-
-@media (min-width: 1024px) {
-  .margen-vertical {
-    margin-top: 16rem; /* lg:mt-64 (256px) */
+    margin-top: 16rem; 
   }
 }
 
