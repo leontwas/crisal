@@ -10,13 +10,13 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: white; /* Ajusta el color según tu diseño */
+    background-color: white;
     position: relative;
 }
   
 .logo {
     position: absolute;
-    left: 10px; /* Ajusta según tu necesidad */
+    left: 10px;
     max-width: 120px;
     height: auto;
 }
@@ -25,8 +25,8 @@ h1.chicle-regular {
     font-size: 4rem;
     color: red;
     margin: 0;
-    -webkit-text-stroke: 2px black; /* Delineado negro */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombreado */
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 /********************* Fin Header *******************************/
@@ -42,16 +42,16 @@ nav {
     padding: 0;
     background-color: #50633C;
     display: flex;
-    justify-content: center; /* Centrar los elementos */
-    align-items: center; /* Centrar verticalmente */
-    gap: 20px; /* Ajusta este valor para reducir la separación */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 70px;
     cursor: pointer;
-    list-style: none; /* Eliminar viñetas */
+    list-style: none;
 }
 
 .menu li {
-    text-align: center; /* Centrar el texto dentro de cada <li> */
+    text-align: center;
 }
 
 .menu .selected a {
@@ -107,7 +107,7 @@ nav {
 
     /* Icono hamburguesa */
     .menu-desplegable {
-        display: block; /* Mostrar hamburguesa solo en celulares */
+        display: block;
         font-size: 30px;
         cursor: pointer;
         position: absolute;
@@ -118,21 +118,21 @@ nav {
     }
 
     .menu {
-        display: none; /* Esconde el menú inicialmente */
-        flex-direction: column; /* Apilar verticalmente */
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 95px; /* Ajusta la posición del menú */
+        top: 95px;
         left: 0;
         width: 100%;
-        height: 50vh; /* Ocupa toda la altura de la pantalla */
-        background-color: #50633C; /* Fondo del menú desplegable */
-        gap: 0; /* Elimina el gap para mejor distribución */
-        z-index: 999; /* Para asegurarse que esté por encima de otros elementos */
-        overflow-y: auto; /* Si el menú es muy largo, permite hacer scroll */
+        height: 50vh;
+        background-color: #50633C; /* Fondo verde del menú desplegable */
+        gap: 0;
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .menu li {
-        width: 100%; /* Asegura que cada elemento ocupe todo el ancho */
+        width: 100%;
         padding: 10px 0;
     }
 
@@ -141,24 +141,24 @@ nav {
         width: 100%;
         padding: 15px;
         text-align: center;
-        background-color: #f4f4f4; /* Fondo de cada enlace */
-        border-bottom: 1px solid #ccc; /* Separación entre enlaces */
+        background-color: #50633C; /* Fondo verde para enlaces en menú desplegable */
+        color: black; /* Texto negro */
+        border-bottom: 1px solid #ccc;
     }
 
     .menu.active {
-        display: flex; /* Muestra el menú cuando se hace clic */
-        background-color: #50633C; /* Fondo del menú desplegable activo */
+        display: flex;
     }
 }
 
 /* Ocultar el ícono del menú hamburguesa en tablets y notebooks */
 @media (min-width: 651px) {
     .menu-desplegable {
-        display: none !important; /* Ocultar hamburguesa en pantallas más grandes */
+        display: none !important;
     }
 
     .menu {
-        display: flex; /* Mostrar el menú normal en pantallas más grandes */
+        display: flex;
         justify-content: center;
         align-items: center;
     }
