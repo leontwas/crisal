@@ -2,9 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Redirigir a la URL externa de Netlify
+// Servir archivos estáticos desde la carpeta "public"
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Ruta principal que sirve index.html desde el servidor
 app.get('/', (req, res) => {
-  res.redirect('https://crisal-seguridad.netlify.app/');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
