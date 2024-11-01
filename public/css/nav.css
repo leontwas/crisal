@@ -1,4 +1,4 @@
-ul {
+ul { 
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,7 +17,7 @@ ul {
 .logo {
     position: absolute;
     left: 10px; /* Ajusta según tu necesidad */
-    max-width:120px;
+    max-width: 120px;
     height: auto;
 }
 
@@ -28,9 +28,6 @@ h1.chicle-regular {
     -webkit-text-stroke: 2px black; /* Delineado negro */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombreado */
 }
-
-
-
 
 /********************* Fin Header *******************************/
 
@@ -71,20 +68,20 @@ nav {
     height: 85px;
 }
 
-.menu>li:hover>a {
+.menu > li:hover > a {
     color: black;
     border-bottom: #cd7e35 solid 4px;
     transition: all 0.1s ease-in-out;
 }
 
-.menu>li a {
+.menu > li a {
     color: white;
     background-color: #50633C;
     position: relative;
     height: 100%;
 }
 
-.menu>li>a::before {
+.menu > li > a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -96,7 +93,7 @@ nav {
     visibility: hidden;
 }
 
-.menu>li:hover>a::before {
+.menu > li:hover > a::before {
     visibility: visible;
     scale: 1 1;
 }
@@ -124,11 +121,11 @@ nav {
         display: none; /* Esconde el menú inicialmente */
         flex-direction: column; /* Apilar verticalmente */
         position: absolute;
-        top:95px; /* Ajusta la posición del menú */
+        top: 95px; /* Ajusta la posición del menú */
         left: 0;
         width: 100%;
         height: 50vh; /* Ocupa toda la altura de la pantalla */
-        background-color: white; /* Asegura que tenga un fondo visible */
+        background-color: #50633C; /* Fondo del menú desplegable */
         gap: 0; /* Elimina el gap para mejor distribución */
         z-index: 999; /* Para asegurarse que esté por encima de otros elementos */
         overflow-y: auto; /* Si el menú es muy largo, permite hacer scroll */
@@ -150,6 +147,7 @@ nav {
 
     .menu.active {
         display: flex; /* Muestra el menú cuando se hace clic */
+        background-color: #50633C; /* Fondo del menú desplegable activo */
     }
 }
 
@@ -164,6 +162,7 @@ nav {
         justify-content: center;
         align-items: center;
     }
+
     nav {
         width: 100%;
         font-size: x-small;
