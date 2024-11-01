@@ -129,6 +129,10 @@
     text-align: left;
   }
 
+  #texto-negro {
+    font-weight: bold;
+    margin-top: -150px;
+  }
   .caja {
     padding: 2rem;
   }
