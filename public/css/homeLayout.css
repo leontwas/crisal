@@ -7,7 +7,6 @@
 .notas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .justify-text {
