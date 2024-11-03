@@ -159,13 +159,13 @@
   }
 
 #gestiones {
-  margin-top: -20px;
+  margin-top: -15px;
   left: 0;
   padding-left: 0;
   width: 100%;
   height: 700px;
   margin-bottom: -100px;
-  margin-left: -18px;
+  margin-left: -17px;
   }
 
  #auditorias {
@@ -174,7 +174,7 @@
   width: 100%;
   height: 700px;
   margin-bottom: -100px;
-  margin-left: -18px;
+  margin-left: -17px;
  } 
 
 #servicios {
@@ -183,7 +183,7 @@
   width: 100%;
   height: 700px;
   margin-bottom: -80px;
-  margin-left: -18px;
+  margin-left: -17px;
 }
 
   .group {
