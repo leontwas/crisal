@@ -59,7 +59,7 @@
 
 *#texto-negro {
   font-weight: bold;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: 10px;
 }
 
@@ -110,6 +110,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 #direccion {
