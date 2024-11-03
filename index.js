@@ -1,5 +1,8 @@
-const express = require('express'); 
+const express = require('express');
 const app = express();
+
+// Sirve archivos estáticos desde el directorio 'public'
+app.use(express.static('public'));
 
 // Redirigir a la URL de Netlify
 app.get('/', (req, res) => {
