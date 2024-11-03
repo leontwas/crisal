@@ -148,11 +148,12 @@
 }
 
 /************************************************** Para tablets ********************************************/
-@media (min-width: 651px) and (max-width: 850px) {
+@media (min-width: 651px) and (max-width: 850px) { 
   .contenedor { 
     width: 100%;
     display: flex;
-  align-items: stretch;
+    flex-direction: column; /* Alinea en una sola columna */
+    align-items: center; /* Centra las imágenes en el contenedor */
   }
 
   .group {
@@ -167,6 +168,7 @@
   .margen-vertical {
     margin-top: 12rem; 
   }
+
   .texto-blanco {
     font-size: medium;
   }
