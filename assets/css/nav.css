@@ -102,7 +102,7 @@ nav {
 @media (max-width: 650px) {
     nav {
         width: 100%;
-        font-size: small;
+        font-size: large;
     }
 
     /* Icono hamburguesa */
@@ -113,7 +113,6 @@ nav {
         position: absolute;
         right: 10px;
         top: 15px;
-        font-size: 4rem;
     }
 
     .menu {
