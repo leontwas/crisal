@@ -167,13 +167,12 @@
   }
 
   .group img {
-    width: 100vw; /* Hace que la imagen ocupe todo el ancho de la pantalla */
     max-width: 100%; /* Limita el tamaño para evitar que la imagen se expanda más allá del ancho de la pantalla */
     height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .margen-vertical {
-    margin-top: 12rem; 
+    margin-top: 1rem; 
   }
 
   .texto-blanco {
