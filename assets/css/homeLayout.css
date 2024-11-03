@@ -162,6 +162,11 @@
     overflow: hidden;
   }
 
+  .group img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
   .caja {
     padding: 2rem;
   }
