@@ -175,7 +175,6 @@ height: 700px;
 
   .group {
     width: 100%;
-    height: auto;
     overflow: hidden;
     padding: 0; /* Asegura que no haya padding adicional */
     margin: 0; /* Asegura que no haya margen adicional */
