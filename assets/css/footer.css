@@ -1,6 +1,7 @@
 footer {
   background-color: #333;
   color: #fff;
+  top: 30px;
   padding: 10px 0;
   bottom: 0;
   position: static;
