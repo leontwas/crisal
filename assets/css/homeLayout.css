@@ -158,6 +158,21 @@
     margin: 0;  /* Elimina cualquier margen extra */
   }
 
+#gestiones {
+width: 100%;
+height: 300px;
+  }
+
+ #auditorias {
+width: 100%;
+height: 300px;
+ } 
+
+#servicios {
+width: 100%;
+height: 300px;
+}
+
   .group {
     width: 100%;
     height: auto;
