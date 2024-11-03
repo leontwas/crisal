@@ -157,9 +157,9 @@ nav {
     }
 
     .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
+        flex-direction: column;
+        position: absolute;
     }
 
     nav {
