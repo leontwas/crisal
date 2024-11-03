@@ -6,7 +6,7 @@ app.use(express.static('public'));
 
 // Redirigir a la URL de Netlify
 app.get('/', (req, res) => {
-  res.redirect('https://crisal-seguridad.netlify.app/');
+  res.redirect('http://crisal-seguridad.netlify.app/');
 });
 
 const PORT = process.env.PORT || 3000;
