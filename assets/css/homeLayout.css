@@ -132,7 +132,7 @@
   #texto-negro {
     font-weight: bold;
     text-align: left;
-    margin-top: -30px;
+    align-items: end;
   }
   .caja {
     padding: 2rem;
@@ -166,7 +166,7 @@
     margin-top: 12rem; 
   }
   .texto-blanco {
-    font-size: small;
+    font-size: medium;
   }
 }
 
@@ -182,7 +182,7 @@
   }
 
   .texto-blanco {
-    font-size:x-large;
+    font-size:large;
   }
 }
 
