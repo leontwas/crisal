@@ -164,7 +164,7 @@
   margin-left: 0;
   width: 100%;
   height: 700px;
-  margin-bottom: -50px;
+  margin-bottom: -70px;
   }
 
  #auditorias {
@@ -173,7 +173,7 @@
   margin-left: 0;
   width: 100%;
   height: 700px;
-  margin-bottom: -50px;
+  margin-bottom: -70px;
  } 
 
 #servicios {
@@ -198,15 +198,15 @@
 
   .margen-vertical {
     margin-top: 2rem; 
-    font-size: small;
+    font-size: large;
   }
 
   .texto-blanco {
-    font-size: medium;
+    font-size: large;
   }
 
   #texto-amarillo {
-    font-size: small;
+    font-size: large;
   }
 }
 
