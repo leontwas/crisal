@@ -125,14 +125,14 @@
   }
 
   .texto-blanco {
-    font-size: x-small;
+    font-size: medium;
     text-align: left;
   }
 
   #texto-negro {
     font-weight: bold;
     text-align: left;
-    margin-top: -150px;
+    margin-top: -30px;
   }
   .caja {
     padding: 2rem;
@@ -172,12 +172,17 @@
 
 /************************************************* Para Notebooks *******************************************/
 @media (min-width: 851px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+  
   .margen-vertical {
     margin-top: 16rem; 
+
   }
 
   .texto-blanco {
-    font-size: large;
+    font-size:x-large;
   }
 }
 
