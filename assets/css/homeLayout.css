@@ -149,8 +149,10 @@
 
 /************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
-  .contenedor {
-    grid-template-columns: 1fr;
+  .contenedor { 
+    width: 100%;
+    display: flex;
+  align-items: stretch;
   }
 
   .group {
