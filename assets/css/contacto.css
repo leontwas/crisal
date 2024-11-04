@@ -32,11 +32,6 @@ footer {
   z-index: 1;
 }
 
-footer a,
-footer p {
-  padding-bottom: 1rem;
-}
-
 .footlist {
   display: flex;
   justify-content: center;
@@ -55,6 +50,6 @@ footer p {
     gap: 10px;
   }
   .botonera {
-    padding: 20px;
+   gap: 20px;
   }
 }
