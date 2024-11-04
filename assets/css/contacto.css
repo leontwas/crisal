@@ -32,10 +32,15 @@ footer {
   z-index: 1;
 }
 
+footer a,
+footer p {
+  padding-bottom: 1rem;
+}
+
 .footlist {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+
   margin-left: 2rem;
   color: #fff;
 }
