@@ -50,8 +50,15 @@
                         <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico" required />
                     </div>
                     <div class="form-floating mb-4">
-                        <input name="fecha" type="date" class="form-control" id="fecha" placeholder="Elija una fecha" required />
-                    </div>
+                        <input 
+                          name="fecha" 
+                          type="date" 
+                          class="form-control" 
+                          id="fecha" 
+                          required 
+                        />
+                        <label for="fecha">Elija una fecha</label> <!-- Esto funcionará como el placeholder -->
+                      </div>
                     <select name="Servicio" class="form-control" id="servicios" required>
                         <option value="" disabled selected hidden>Seleccione un servicio</option>
                         <optgroup label="Medición de condiciones ambientales y seguridad:">
