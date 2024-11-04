@@ -2,9 +2,10 @@ nav {
   background-color: #fbf7f7;
 }
 
-main {
-  background: linear-gradient(to bottom, #292727, #a0a0a0); /* Degradado de gris claro a gris oscuro */
+main { 
+  background: linear-gradient(to bottom, #a0a0a0, #292727); /* Degradado de gris oscuro a gris claro */
 }
+
 
 .contacto {
   color: white !important;
