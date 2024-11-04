@@ -1,11 +1,12 @@
+/* Estilos generales */
+
 nav {
   background-color: #fbf7f7;
 }
 
 main { 
-  background: linear-gradient(to bottom, #a0a0a0, #292727); /* Degradado de gris oscuro a gris claro */
+  background: linear-gradient(to bottom, #a0a0a0, #292727);
 }
-
 
 .contacto {
   color: white !important;
@@ -22,14 +23,23 @@ main {
   padding-top: 20px;
 }
 
+/* Botonera */
+.botonera {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Agrega espacio entre los botones */
+}
+
 /* Estilos del footer */
 footer {
-  background-color: black;  padding: 10px 0;
+  background-color: black;
+  padding: 10px 0;
   position: relative;
   align-content: center;
   width: 100%;
   text-align: center;
   z-index: 1;
+  margin-top: auto; /* Asegura que el footer esté al final */
 }
 
 footer a,
@@ -40,7 +50,6 @@ footer p {
 .footlist {
   display: flex;
   justify-content: center;
-
   margin-left: 2rem;
   color: #fff;
 }
@@ -55,6 +64,6 @@ footer p {
     gap: 10px;
   }
   .botonera {
-   gap: 20px;
+    gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 }
