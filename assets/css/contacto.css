@@ -24,9 +24,7 @@ main {
 
 /* Estilos del footer */
 footer {
-  background-color: black;
-  color: #fff !important;
-  padding: 10px 0;
+  background-color: black;  padding: 10px 0;
   position: relative;
   align-content: center;
   width: 100%;
@@ -44,6 +42,7 @@ footer p {
   justify-content: center;
   padding-top: 1rem;
   margin-left: 2rem;
+  color: #fff;
 }
 
 /* Ajustes para pantallas pequeñas (celulares) */
@@ -54,5 +53,8 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+  }
+  .botonera {
+    padding-left: 20px;
   }
 }
