@@ -67,3 +67,35 @@ footer p {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 }
+
+/************************************************** Para tablets ********************************************/
+@media (min-width: 651px) and (max-width: 850px) { 
+  .footlink {
+    margin-left: 0;
+    padding-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .botonera {
+    gap: 20px; /* Espacio entre botones en dispositivos móviles */
+  }
+
+  /* Estilo del select para que se vea como en el celular */
+  select {
+    width: 100%; /* Ocupa todo el ancho */
+    font-size: 1rem; /* Tamaño de fuente adecuado */
+    padding: 0.75rem; /* Espaciado interno para mejor visibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Color del borde */
+    background-color: #fbf7f7; /* Fondo igual al resto del diseño */
+  }
+
+  /* Opcional: ajusta los estilos en el contenedor para una mejor alineación */
+  .form-select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem; /* Margen interno adicional */
+  }
+}
