@@ -77,25 +77,29 @@ footer p {
     flex-wrap: wrap;
     gap: 10px;
   }
+  
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 
-  /* Estilo del select para que se vea como en el celular */
+  /* Ajusta el select para mejor alineación y tamaño */
   select {
-    width: 100%; /* Ocupa todo el ancho */
+    width: auto; /* Ajuste de ancho automático */
+    max-width: 100%; /* Limita el ancho al contenedor */
     font-size: 1rem; /* Tamaño de fuente adecuado */
-    padding: 0.75rem; /* Espaciado interno para mejor visibilidad */
+    padding: 0.5rem; /* Ajuste de espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     border: 1px solid #ccc; /* Color del borde */
     background-color: #fbf7f7; /* Fondo igual al resto del diseño */
   }
 
-  /* Opcional: ajusta los estilos en el contenedor para una mejor alineación */
+  /* Ajuste del contenedor para alineación y centrado */
   .form-select-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem; /* Margen interno adicional */
+    text-align: left; /* Alineación del contenido */
   }
 }
+
