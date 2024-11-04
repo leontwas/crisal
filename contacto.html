@@ -52,12 +52,15 @@
                     <div class="form-floating mb-4">
                         <input 
                           name="fecha" 
-                          type="date" 
+                          type="text" 
                           class="form-control" 
                           id="fecha" 
+                          placeholder="Elija una fecha" 
                           required 
+                          onfocus="(this.type='date')" 
+                          onblur="if(!this.value) this.type='text'" 
                         />
-                        <label for="fecha">Elija una fecha</label> <!-- Esto funcionará como el placeholder -->
+                        <label for="fecha">Elija una fecha</label>
                       </div>
                     <select name="Servicio" class="form-control" id="servicios" required>
                         <option value="" disabled selected hidden>Seleccione un servicio</option>
@@ -83,10 +86,6 @@
                             <option value="Me interesa el Curso de Seguridad y Manejo de Autoelevadores">Curso de Seguridad y Manejo de Autoelevadores</option>
                         </optgroup>
                     </select>
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="contacto" name="contacto">
-                        <label class="form-check-label" for="contacto">Desea que lo contactemos?</label>
-                    </div>
                     <div class="botonera">
                         <button type="reset" class="btn btn-primary">Borrar</button>
                         <button type="submit" class="btn btn-success">Solicitar entrevista</button>
