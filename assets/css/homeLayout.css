@@ -120,7 +120,7 @@
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
   #img3 {
-    content: url('./assets/images/img3_celu.png');
+    content: url('./assets/images/img3_celu.jpg');
   } /* agregado */
 
   .contenedor {
