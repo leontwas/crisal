@@ -119,10 +119,6 @@
 
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
-  #img3 {
-    content: url('./assets/images/img3_celu.jpg');
-  } /* agregado */
-
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
