@@ -133,6 +133,7 @@ article:hover img:last-child {
 @media (max-width: 600px) {
     .descripcion {
         font-size: 20px; /* Reducido el tamaño de fuente en pantallas pequeñas */
+        width:320px;
     }
 
     .container {
