@@ -93,7 +93,7 @@
 
 .titulo_mapa {
   padding-left: 30px;
-  background: linear-gradient(180deg, #272321, #312E29, #111110, #000000);
+  background: black;
   color: white;
   text-shadow:
     0 0 20px #00ffff,
