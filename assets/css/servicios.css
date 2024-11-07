@@ -134,9 +134,7 @@ article:hover img:last-child {
     .descripcion {
         font-size: 20px; /* Reducido el tamaño de fuente en pantallas pequeñas */
     }
-    header, footer {
-        padding: 15px;
-    }
+
     .container {
         max-width: 100%;
         margin: 5px;
