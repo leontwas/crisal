@@ -1,15 +1,32 @@
 /* Contenedor principal para centrar las tarjetas */
-body { 
-    background: linear-gradient(to bottom, #a0a0a0, #292727);
-  }
+/* Asegura que el body ocupe toda la pantalla en ancho y altura */
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Asegura el 100% del ancho de la pantalla */
+    height: 100vh; /* Asegura el 100% de la altura de la pantalla */
+    box-sizing: border-box;
+}
 
+/* Estilos para el header para que ocupe todo el ancho */
+header {
+    width: 100vw; /* 100% del ancho de la pantalla */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilos del contenedor principal */
 .main-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
-    width: 100%;
-    height: 100vh; /* Ocupa la altura completa de la pantalla */
+    width: 100vw; /* Asegura el ancho completo */
+    height: calc(100vh - 160px); /* Altura de pantalla menos header y footer */
     box-sizing: border-box;
     align-items: center; /* Centra verticalmente */
 }
@@ -19,8 +36,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Permite que cada tarjeta ocupe el mismo espacio horizontal */
-    max-width: 400px; /* Define un ancho máximo para evitar que crezcan demasiado */
+    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio horizontal */
+    max-width: 400px; /* Define un ancho máximo */
     margin: 10px;
 }
 
@@ -28,14 +45,14 @@ body {
 article {
     top: -80px;
     position: relative;
-    width:490px;
+    width: 100%; /* Ancho completo de la tarjeta */
     transition: all 0.3s ease;
 }
 
 /* Para la imagen de fondo */
 article img:first-child { 
-    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
-    border-radius: 4px;
+    box-shadow: 30px 30px 30px -30px black;
+    border-radius: 10px;
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -54,7 +71,7 @@ article img:last-child {
     opacity: 0;
 }
 
-/* Efecto de inclinación de la card */
+/* Efecto de inclinación de la tarjeta */
 article:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
 }
@@ -88,13 +105,24 @@ article:hover img:last-child {
 
 /* Estilos para la sección de descripción */
 .descripcion {
-    width: 500px;
+    width: 100%; /* Ancho completo dentro de la tarjeta */
+    max-width: 500px;
     text-align: center;
     font-size: 25px;
     color: #333;
     background-color: #cd7e35;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
     margin-top: -70px;
+}
+
+/* Estilos para el footer para que ocupe todo el ancho */
+footer {
+    width: 100vw; /* 100% del ancho de la pantalla */
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-sizing: border-box;
 }

@@ -1,4 +1,4 @@
-footer {
+footer { 
   background-color: #333;
   color: #fff;
   top: 30px;
@@ -12,26 +12,28 @@ footer {
 
 footer a,
 footer p {
-  padding-bottom: 1rem
+  padding-bottom: 1rem;
 }
 
 .footlist {
   display: flex; /* Cambiar a flex para alinear los enlaces en fila */
- justify-content: center; /* Centrar los elementos horizontalmente */
- flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas si es necesario */
- gap: 15px; /* Espacio entre los enlaces */
-  transition-duration: .4s
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas si es necesario */
+  gap: 15px; /* Espacio entre los enlaces */
+  transition-duration: .4s;
 }
 
 .footlink {
+  color: white !important;
+  text-decoration: none; /* Elimina el subrayado */
   transition-duration: .4s;
 }
 
 .footlink:hover {
   transform: scale(1.4);
-  transition-duration: .4s
+  transition-duration: .4s;
+  text-decoration: none; 
 }
-
 
 /* Ajustes para pantallas de tablets y móviles */
 @media (max-width: 900px) {
