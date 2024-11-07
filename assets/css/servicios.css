@@ -107,7 +107,6 @@ article:hover img:last-child {
 .descripcion {
     width: 100%;
     max-width: 450px;
-    margin-top:10px !important;
     text-align: center;
     font-size: 25px;
     color: #333;
@@ -119,7 +118,7 @@ article:hover img:last-child {
 }
 
 /* Media queries para tabletas */
-@media (max-width: 900px) {
+@media (min-width: 651px) and (max-width: 850px) { 
     .main-container {
         flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
         align-items: center;
@@ -132,7 +131,7 @@ article:hover img:last-child {
 }
 
 /* Media queries para celulares */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .main-container {
         padding-top: 80px;
         gap: 5px;
