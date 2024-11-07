@@ -1,17 +1,16 @@
-/* Contenedor principal para centrar las tarjetas */
 /* Asegura que el body ocupe toda la pantalla en ancho y altura */
 body {
     background: white;
     margin: 0;
     padding: 0;
-    width: 100vw; /* Asegura el 100% del ancho de la pantalla */
-    height: 100vh; /* Asegura el 100% de la altura de la pantalla */
+    width: 100vw; /* 100% del ancho de la pantalla */
+    height: 100vh; /* 100% de la altura de la pantalla */
     box-sizing: border-box;
 }
 
 /* Estilos para el header para que ocupe todo el ancho */
 header {
-    width: 100vw; /* 100% del ancho de la pantalla */
+    width: 100vw;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -19,16 +18,16 @@ header {
     box-sizing: border-box;
 }
 
-/* Estilos del contenedor principal */
+/* Contenedor principal */
 .main-container {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px; /* Reducido el espacio entre las tarjetas */
     padding: 20px;
-    width: 100vw; /* Asegura el ancho completo */
-    height: calc(100vh - 160px); /* Altura de pantalla menos header y footer */
+    width: 100vw;
+    height: calc(100vh - 160px);
     box-sizing: border-box;
-    align-items: center; /* Centra verticalmente */
+    align-items: center;
 }
 
 /* Estilos para cada tarjeta */
@@ -36,22 +35,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio horizontal */
-    max-width: 400px; /* Define un ancho máximo */
-    margin: 10px;
+    flex: 1;
+    max-width: 500px; /* Agrandado el ancho máximo de las tarjetas */
+    margin: 5px;
 }
 
 /* Estilo para el artículo de la tarjeta */
 article {
-    top: -80px;
     position: relative;
-    width: 100%; /* Ancho completo de la tarjeta */
+    width: 90%; /* Ancho completo con margen lateral */
     transition: all 0.3s ease;
 }
 
 /* Para la imagen de fondo */
 article img:first-child { 
-    box-shadow: 30px 30px 30px -30px black;
+    box-shadow: 20px 20px 30px -20px black;
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
@@ -105,8 +103,9 @@ article:hover img:last-child {
 
 /* Estilos para la sección de descripción */
 .descripcion {
-    width: 100%; /* Ancho completo dentro de la tarjeta */
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
+    margin-top:10px !important;
     text-align: center;
     font-size: 25px;
     color: #333;
@@ -117,12 +116,43 @@ article:hover img:last-child {
     margin-top: -70px;
 }
 
-/* Estilos para el footer para que ocupe todo el ancho */
+/* Estilos para el footer */
 footer {
-    width: 100vw; /* 100% del ancho de la pantalla */
+    width: 100vw;
     background-color: #333;
     color: #fff;
     padding: 30px 0;
     text-align: center;
     box-sizing: border-box;
+}
+
+/* Media queries para tabletas */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
+        align-items: center;
+        padding: 10px;
+    }
+    .container {
+        max-width: 90%;
+        margin: 10px;
+    }
+}
+
+/* Media queries para celulares */
+@media (max-width: 600px) {
+    .descripcion {
+        font-size: 20px; /* Reducido el tamaño de fuente en pantallas pequeñas */
+    }
+    header, footer {
+        padding: 15px;
+    }
+    .container {
+        max-width: 100%;
+        margin: 5px;
+    }
+    .main-container {
+        padding: 5px;
+        gap: 5px; /* Espacio reducido entre tarjetas */
+    }
 }
