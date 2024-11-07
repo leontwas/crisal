@@ -62,7 +62,7 @@ body, html {
 /* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 650px) {
   footer {
-    margin-top: 300px; /* Empuja el footer al final del contenedor principal */
+    margin-top: 350px; /* Empuja el footer al final del contenedor principal */
   }
 
   .footlist {
