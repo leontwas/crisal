@@ -1,56 +1,68 @@
-footer { 
+/* Estilos para el footer, se asegura que esté al final de la página */
+footer {
   background-color: #333;
   color: #fff;
-  top: 30px;
   padding: 30px 0;
-  bottom: 0;
-  position: static;
-  align-content: center;
   width: 100%;
   text-align: center;
+  position: relative; /* Mantiene su posición relativa en pantallas grandes */
+  margin-top: auto; /* Empuja el footer al final del contenedor principal */
+  box-sizing: border-box;
 }
 
+/* Para enlaces y texto en el footer */
 footer a,
 footer p {
   padding-bottom: 1rem;
 }
 
 .footlist {
-  display: flex; /* Cambiar a flex para alinear los enlaces en fila */
-  justify-content: center; /* Centrar los elementos horizontalmente */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas si es necesario */
-  gap: 15px; /* Espacio entre los enlaces */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   transition-duration: .4s;
 }
 
 .footlink {
   color: white !important;
-  text-decoration: none; /* Elimina el subrayado */
+  text-decoration: none;
   transition-duration: .4s;
 }
 
 .footlink:hover {
   transform: scale(1.4);
   transition-duration: .4s;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-/* Ajustes para pantallas de tablets y móviles */
+/* Estructura general para mantener el footer al final */
+body, html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  flex: 1; /* Asegura que el contenedor principal ocupe el espacio necesario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajustes para pantallas de tablets */
 @media (max-width: 900px) {
   .footlist {
-    justify-content: center; /* Mantiene la alineación centrada */
+    justify-content: center;
   }
 }
 
 /* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 650px) {
-  footer {
-    bottom: 0;
-    width: 100%;
-  }
-
   .footlist {
-    flex-direction: row; /* Asegura que los enlaces estén en fila en pantallas pequeñas */
-    justify-content: center; /* Centra los enlaces */
+    flex-direction: row;
+    justify-content: center;
   }
 }
