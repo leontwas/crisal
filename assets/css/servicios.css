@@ -20,9 +20,7 @@ header {
 
 /* Contenedor principal */
 .main-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px; /* Reducido el espacio entre las tarjetas */
+    gap: 10px;
     padding: 20px;
     width: 100vw;
     height: calc(100vh - 160px);
@@ -35,15 +33,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-    max-width: 500px; /* Agrandado el ancho máximo de las tarjetas */
-    margin: 5px;
+    flex: 1; /* Hace que cada tarjeta ocupe el mismo espacio horizontal */
+    max-width: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #50633C;
 }
 
 /* Estilo para el artículo de la tarjeta */
 article {
     position: relative;
-    width: 90%; /* Ancho completo con margen lateral */
+    width: 90%;
     transition: all 0.3s ease;
 }
 
@@ -132,20 +134,17 @@ article:hover img:last-child {
 /* Media queries para celulares */
 @media (max-width: 600px) {
     .main-container {
-        padding-top: 80px; /* Espacio adicional debajo del header */
-        gap: 5px; /* Espacio reducido entre tarjetas */
+        padding-top: 80px;
+        gap: 5px;
     }
     
     .descripcion {
-        font-size: 20px; /* Reducido el tamaño de fuente en pantallas pequeñas */
+        font-size: 20px;
         width: 85vw;
     }
 
     .container {
         max-width: 100%;
         margin: 5px;
-    }
-    #mediciones {
-        margin-top: 700px;
     }
 }
