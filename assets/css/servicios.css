@@ -125,6 +125,7 @@ article:hover img:last-child {
         padding: 10px;
     }
     .container {
+        margin-top: 50px;
         max-width: 90%;
         margin: 10px;
     }
