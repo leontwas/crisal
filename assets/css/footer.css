@@ -2,7 +2,7 @@
 footer {
   background-color: #333;
   color: #fff;
-  padding: 30px 0;
+  padding-top:30px;
   width: 100%;
   text-align: center;
   position: relative; /* Mantiene su posición relativa en pantallas grandes */
@@ -70,7 +70,7 @@ body, html {
     align-items: center;
   }
   footer {
-    margin-top:480px; /* Empuja el footer al final del contenedor principal */
+    margin-top:50; /* Empuja el footer al final del contenedor principal */
   }
 
   .footlist {
