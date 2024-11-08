@@ -148,7 +148,7 @@ article:hover img:last-child {
     
     .descripcion {
         font-size: 20px;
-        width: 74vw;
+        width: 100%;
     }
 
     .container {
