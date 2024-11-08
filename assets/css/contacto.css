@@ -62,12 +62,12 @@ main {
     max-width: 100%;
   }
 }
-
 /************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
-  .titulo{
-    text-align:center;
+  .titulo {
+    text-align: center;
   }
+
   .footlink {
     margin-left: 0;
     padding-top: 1rem;
@@ -75,20 +75,25 @@ main {
     flex-wrap: wrap;
     gap: 10px;
   }
-  
+
   .image-section {
     flex: 1;
     max-width: 100%;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
   }
-.contenedor{
-  align-items: center;
-  margin-left: 110px;
-}
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Elimina el margen izquierdo para ocupar el ancho completo */
+    width: 100%; /* Asegura que ocupe el ancho completo de la pantalla */
+  }
+
   /* Alineación del select */
   .form-section select {
     width: 100%; /* Ajusta el ancho del select */
     margin: 10px 0; /* Alinea el select con otros campos de formulario */
-
   }
 
   /* Posicionamiento de la botonera */
@@ -97,4 +102,5 @@ main {
     margin-top: 20px; /* Espacio adicional para separarla del formulario */
   }
 }
+
 
