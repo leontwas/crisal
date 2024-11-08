@@ -80,6 +80,7 @@ main {
     flex: 1;
     max-width: 100%;
     width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    align-items: center;
   }
 
   .contenedor {
