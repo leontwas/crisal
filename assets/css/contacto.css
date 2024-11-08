@@ -78,11 +78,13 @@ main {
     flex: 1;
     max-width: 100%;
   }
-
+.contenedor{
+  margin-left: 200px;
+}
   /* Alineación del select */
   .form-section select {
     width: 100%; /* Ajusta el ancho del select */
-    margin: 150px 0; /* Alinea el select con otros campos de formulario */
+    margin: 10px 0; /* Alinea el select con otros campos de formulario */
 
   }
 
