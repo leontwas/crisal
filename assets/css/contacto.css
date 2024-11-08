@@ -83,6 +83,7 @@ main {
   .form-section select {
     width: 100%; /* Ajusta el ancho del select */
     margin: 10px 0; /* Alinea el select con otros campos de formulario */
+
   }
 
   /* Posicionamiento de la botonera */
