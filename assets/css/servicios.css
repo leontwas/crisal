@@ -136,7 +136,7 @@ article:hover img:last-child {
 /* Media queries para celulares */
 @media (max-width: 650px) {
     .main-container {
-        padding-top: 80px;
+        padding-top: 150px;
         gap: 5px;
     }
     
