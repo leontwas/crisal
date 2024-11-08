@@ -122,9 +122,7 @@ article:hover img:last-child {
     nav{
         margin-bottom: 50px
     }
-    footer{
-        margin-top: 20px;
-    }
+  
     .main-container {
         flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
         align-items: center;
@@ -133,6 +131,9 @@ article:hover img:last-child {
     .container {
         max-width: 90%;
         margin: 10px;
+    }
+    footer{
+        margin-top: 20px;
     }
 }
 
