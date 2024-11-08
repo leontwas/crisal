@@ -73,28 +73,21 @@ main {
     gap: 10px;
   }
   
+  .image-section {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  /* Alineación del select */
+  .form-section select {
+    width: 100%; /* Ajusta el ancho del select */
+    margin: 10px 0; /* Alinea el select con otros campos de formulario */
+  }
+
+  /* Posicionamiento de la botonera */
   .botonera {
-    gap: 20px; /* Espacio entre botones en dispositivos móviles */
-  }
-
-  /* Ajusta el select para mejor alineación y tamaño */
-  select {
-    width: auto; /* Ajuste de ancho automático */
-    max-width: 100%; /* Limita el ancho al contenedor */
-    font-size: 1rem; /* Tamaño de fuente adecuado */
-    padding: 0.5rem; /* Ajuste de espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Color del borde */
-    background-color: #fbf7f7; /* Fondo igual al resto del diseño */
-  }
-
-  /* Ajuste del contenedor para alineación y centrado */
-  .form-select-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem; /* Margen interno adicional */
-    text-align: left; /* Alineación del contenido */
+    gap: 20px;
+    margin-top: 80px; /* Espacio adicional para separarla del formulario */
   }
 }
 
