@@ -57,6 +57,10 @@ main {
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
+  .image-section {
+    flex: 1; /* La imagen ocupa el 50% del ancho */
+    max-width: 100%;
+  }
 }
 
 /************************************************** Para tablets ********************************************/
