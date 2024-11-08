@@ -46,7 +46,7 @@ header {
 /* Estilo para el artículo de la tarjeta */
 article {
     position: relative;
-    width: 90%;
+    width: 100%;
     transition: all 0.3s ease;
 }
 
