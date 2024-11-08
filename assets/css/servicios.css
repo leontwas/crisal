@@ -106,7 +106,7 @@ article:hover img:last-child {
 /* Estilos para la sección de descripción */
 .descripcion {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     text-align: center;
     font-size: 25px;
     color: #333;
