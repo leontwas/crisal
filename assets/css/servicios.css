@@ -133,7 +133,8 @@ article:hover img:last-child {
         margin: 10px;
     }
     .descripcion {
-        margin-top: 50px;
+        margin-top: 20px;
+        font-size: large;
     }
     footer{
         margin-top: 20px;
