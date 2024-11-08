@@ -94,6 +94,7 @@ main {
   /* Posicionamiento de la botonera */
   .botonera {
     gap: 20px;
+    margin-left: 20px;
     margin-top: 20px; /* Espacio adicional para separarla del formulario */
   }
 }
