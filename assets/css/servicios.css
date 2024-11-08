@@ -119,9 +119,6 @@ article:hover img:last-child {
 
 /* Media queries para tabletas */
 @media (min-width: 651px) and (max-width: 850px) { 
-    body {
-        margin-top: 50px !important;
-    }
     .main-container {
         flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
         align-items: center;
@@ -136,7 +133,7 @@ article:hover img:last-child {
 /* Media queries para celulares */
 @media (max-width: 650px) {
     .main-container {
-        padding-top: 150px;
+        padding-top: 80px;
         gap: 5px;
     }
     
