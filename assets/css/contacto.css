@@ -77,10 +77,16 @@ main {
   }
 
   .image-section {
-    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra la imagen en la sección */
     max-width: 100%;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    align-items: center;
+    width: 100%; /* Asegura que la sección de imagen ocupe todo el ancho */
+  }
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Centra la imagen dentro de la sección */
   }
 
   .contenedor {
