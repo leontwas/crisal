@@ -119,6 +119,12 @@ article:hover img:last-child {
 
 /* Media queries para tabletas */
 @media (min-width: 651px) and (max-width: 850px) { 
+    nav{
+        margin-bottom: 50px
+    }
+    footer{
+        margin-top: 20px;
+    }
     .main-container {
         flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
         align-items: center;
