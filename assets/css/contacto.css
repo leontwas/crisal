@@ -74,6 +74,7 @@ main {
   }
   
   .image-section {
+    margin-left: 100px;
     flex: 1;
     max-width: 100%;
   }
