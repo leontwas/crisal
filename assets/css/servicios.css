@@ -96,7 +96,7 @@ article:hover img:last-child {
 
 .descripcion {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 15px;
     font-type: bold;
     color: #333;
