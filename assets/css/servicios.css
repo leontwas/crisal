@@ -1,14 +1,12 @@
-/* Asegura que el body ocupe toda la pantalla en ancho y altura */
 body {
     background: white;
     margin: 0;
     padding: 0;
-    width: 100vw; /* 100% del ancho de la pantalla */
-    height: 100vh; /* 100% de la altura de la pantalla */
+    width: 100vw; 
+    height: 100vh; 
     box-sizing: border-box;
 }
 
-/* Estilos para el header para que ocupe todo el ancho */
 header {
     width: 100vw;
     background-color: #333;
@@ -18,7 +16,6 @@ header {
     box-sizing: border-box;
 }
 
-/* Contenedor principal */
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +27,6 @@ header {
     justify-content: center;
 }
 
-/* Estilos para cada tarjeta */
 .container {
     display: flex;
     flex-direction: column;
@@ -43,14 +39,12 @@ header {
     background-color: #50633C;
 }
 
-/* Estilo para el artículo de la tarjeta */
 article {
     position: relative;
     width: 100%;
     transition: all 0.3s ease;
 }
 
-/* Para la imagen de fondo */
 article img:first-child { 
     box-shadow: 20px 20px 30px -20px black;
     border-radius: 10px;
@@ -59,7 +53,6 @@ article img:first-child {
     height: auto;
 }
 
-/* Para la segunda imagen */
 article img:last-child {
     position: absolute;
     bottom: 40px;
@@ -72,7 +65,6 @@ article img:last-child {
     opacity: 0;
 }
 
-/* Efecto de inclinación de la tarjeta */
 article:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
 }
@@ -93,18 +85,15 @@ article::before {
     transition: all 0.3s ease;
 }
 
-/* Muestra el degradado oscuro al hacer hover */
 article:hover::before {
     opacity: 1;
 }
 
-/* Muestra la segunda imagen al hacer hover */
 article:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
 }
 
-/* Estilos para la sección de descripción */
 .descripcion {
     width: 100%;
     text-align: center;
@@ -114,14 +103,21 @@ article:hover img:last-child {
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 5px; /* Espacio de 5px debajo de la imagen */
+    margin-top: 5px; 
 }
 
-/* Media queries para tabletas */
-@media (min-width: 651px) and (max-width: 850px) { 
+/******************************** Media queries para notebooks **********************************/
+@media (min-width: 851px) and (max-width: 1200px) { 
+    .container {
+        flex: 1 1 calc(33.33% - 20px); /* tres columnas */
+        max-width: 300px;
+    }
+}
 
+/******************************** Media queries para tabletas *******************************/
+@media (min-width: 651px) and (max-width: 850px) { 
     .main-container {
-        flex-direction: column; /* Las tarjetas en columna en pantallas más pequeñas */
+        flex-direction: column; 
         align-items: center;
         padding: 10px;
     }
@@ -137,7 +133,7 @@ article:hover img:last-child {
     }
 }
 
-/* Media queries para celulares */
+/******************************** Media queries para celulares **********************************/
 @media (max-width: 650px) {
     .main-container {
         padding-top: 80px;
