@@ -98,6 +98,7 @@ article:hover img:last-child {
     width: 100%;
     text-align: center;
     font-size: 15px;
+    font-type: bold;
     color: #333;
     background-color: #cd7e35;
     padding: 10px;
