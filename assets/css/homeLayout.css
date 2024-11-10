@@ -148,6 +148,7 @@
 
   #texto-amarillo {
     margin-top: -60px;
+    align-items: end;
   }
 
   #gestiones, #auditorias, #servicios {
