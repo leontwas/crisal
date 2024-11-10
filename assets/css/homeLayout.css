@@ -132,7 +132,7 @@
     border-radius: 8px; /* Redondea las esquinas (opcional) */
 }
 .texto-rosa {
-  background: black;
+  /*background: black;*/
   color: rgb(253, 5, 142);
   text-shadow:
     0 0 20px #c300ff,
