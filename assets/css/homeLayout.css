@@ -57,7 +57,8 @@
   margin-top: 10rem; 
 }
 
-*#texto-negro {
+#texto-celeste {
+  color:#0099cc;
   font-weight: bold;
   margin-top: -30px;
   margin-left: 10px;
@@ -126,7 +127,7 @@
 
   .caja {
     background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad del 60% */
-    padding: 1rem; /* Agrega espacio alrededor del texto */
+    padding: 2rem; /* Agrega espacio alrededor del texto */
     border-radius: 8px; /* Redondea las esquinas (opcional) */
 }
 
@@ -135,14 +136,15 @@
     text-align: left;
   }
 
-  #texto-negro {
+  #texto-celeste {
     margin-top: 60px;
     font-weight: bold;
     text-align: left;
     align-items: end;
   }
-  .caja {
-    padding: 2rem;
+
+  #texto-amarillo {
+    margin-top: -60px;
   }
 
   #gestiones, #auditorias, #servicios {
