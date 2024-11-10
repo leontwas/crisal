@@ -124,13 +124,6 @@
     text-align: left;
   }
 
-  .caja{
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad del 60% */
-    padding: 1rem; /* Agrega espacio alrededor del texto */
-    border-radius: 8px; /* Redondea las esquinas (opcional) */
-}
-
-
   .texto-blanco {
     font-size: 1.3rem;
     text-align: left;
