@@ -146,6 +146,10 @@
     align-items: end;
   }
 
+  .text-xl {
+    margin-top: 40px;
+  }
+
   #texto-amarillo {
     margin-top: -60px;
     align-items: end;
