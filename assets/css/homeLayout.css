@@ -131,6 +131,9 @@
     padding: 2rem; /* Agrega espacio alrededor del texto */
     border-radius: 8px; /* Redondea las esquinas (opcional) */
 }
+.texto-rosa {
+  color: #fc0484;
+}
 
   .texto-blanco {
     font-size: 1.3rem;
