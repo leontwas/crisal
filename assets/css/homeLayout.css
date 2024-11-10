@@ -132,7 +132,14 @@
     border-radius: 8px; /* Redondea las esquinas (opcional) */
 }
 .texto-rosa {
-  color: #fc0484;
+  background: black;
+  color: rgb(253, 5, 142);
+  text-shadow:
+    0 0 20px #c300ff,
+    0 0 30px #e751e0,
+    0 0 40px #a90464,
+    0 0 50px #8d1a5f;
+}
 }
 
   .texto-blanco {
