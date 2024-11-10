@@ -131,6 +131,7 @@
     padding: 2rem; /* Agrega espacio alrededor del texto */
     border-radius: 8px; /* Redondea las esquinas (opcional) */
 }
+
 .texto-rosa {
   /*background: black;*/
   color: rgb(253, 5, 142);
@@ -139,7 +140,6 @@
     0 0 30px #e751e0,
     0 0 40px #a90464,
     0 0 50px #8d1a5f;
-}
 }
 
   .texto-blanco {
