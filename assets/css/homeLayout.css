@@ -94,7 +94,7 @@
 }
 
 .titulo_mapa {
-  padding-left: 30px;
+  padding-left: 190px;
   background: black;
   color: white;
   text-shadow:
@@ -104,16 +104,24 @@
     0 0 50px #00ffff;
 }
 
-#manito {
-  padding-left: 10px;
+.mapa {
+  background-color: #50633C;
+  border-top: 4px solid #cd7e35; /* Borde superior */
+  border-bottom: 4px solid #cd7e35; /* Borde inferior */
 }
 
 #mapa {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 100%;
+  border-radius: 2%;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 180px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
 }
+
 
 #direccion {
   font-weight: bold;
