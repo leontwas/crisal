@@ -1,12 +1,11 @@
-/* Asegura que el body cubra toda la pantalla */
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+nav {
+  background-color: #fbf7f7;
 }
 
+main { 
+  background: linear-gradient(to bottom, #a0a0a0, #292727);
+  border-bottom: 4px solid #cd7e35; /* Borde inferior */
+}
 .contenedor {
   display: flex;
   justify-content: space-between;
@@ -15,6 +14,12 @@ body, html {
   gap: 20px;
   margin: 0 20px; /* Ajusta márgenes laterales para más simetría */
   width: calc(100% - 40px); /* Considera el margen */
+}
+
+/* Estilo para el formulario */
+.form-section {
+  flex: 1; /* El formulario ocupa el 50% del ancho */
+  max-width: 50%;
 }
 
 /* Ajuste para sección de la imagen */
@@ -29,4 +34,87 @@ body, html {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   margin: 0 auto; /* Centra en lugar de margen negativo */
 }
+
+.contacto {
+  color: white !important;
+  top: 15px;
+}
+
+#texto-negro1 {
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+/* Botonera */
+.botonera {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Agrega espacio entre los botones */
+}
+
+/******************** Ajustes para pantallas pequeñas (celulares) ****************/
+@media (max-width: 650px) {
+  .footlink {
+    margin-left: 0;
+    padding-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .botonera {
+    gap: 20px; /* Espacio entre botones en dispositivos móviles */
+  }
+  .image-section {
+    flex: 1; /* La imagen ocupa el 50% del ancho */
+    max-width: 100%;
+  }
+}
+/**************************************** Para tablets ********************************************/
+@media (min-width: 651px) and (max-width: 850px) { 
+  .titulo {
+    text-align: center;
+  }
+
+  .footlink {
+    margin-left: 0;
+    padding-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: center; /* Centra la imagen en la sección */
+    max-width: 100%;
+    width: 100%; /* Asegura que la sección de imagen ocupe todo el ancho */
+  }
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Centra la imagen dentro de la sección */
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Elimina el margen izquierdo para ocupar el ancho completo */
+    width: 100%; /* Asegura que ocupe el ancho completo de la pantalla */
+  }
+
+  /* Alineación del select */
+  .form-section select {
+    width: 100%; /* Ajusta el ancho del select */
+    margin: 10px 0; /* Alinea el select con otros campos de formulario */
+  }
+
+  /* Posicionamiento de la botonera */
+  .botonera {
+    gap: 20px;
+    margin-top: 20px; /* Espacio adicional para separarla del formulario */
+  }
+}
+
 
