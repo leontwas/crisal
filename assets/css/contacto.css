@@ -4,6 +4,7 @@ nav {
 
 main { 
   background: linear-gradient(to bottom, #a0a0a0, #292727);
+  border-bottom: 4px solid #cd7e35; /* Borde inferior */
 }
 .contenedor {
   display: flex;
@@ -11,6 +12,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-left: 200px;
 }
 
 /* Estilo para el formulario */
@@ -24,9 +26,13 @@ main {
   flex: 1; /* La imagen ocupa el 50% del ancho */
   max-width: 40%;
 }
-.entrevista {
-  border-radius:20px;
+.entrevista { 
+  border-radius: 20px;
+  border: 6px solid darkolivegreen; /* Borde de 2px en color darkolivegreen */
+  margin-left: -300px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
 }
+
 
 .contacto {
   color: white !important;
@@ -34,7 +40,7 @@ main {
 }
 
 #texto-negro1 {
-  margin-left: 45px;
+  margin-left: 230px;
   padding-top: 20px;
 }
 
@@ -45,7 +51,7 @@ main {
   gap: 20px; /* Agrega espacio entre los botones */
 }
 
-/* Ajustes para pantallas pequeñas (celulares) */
+/******************** Ajustes para pantallas pequeñas (celulares) ****************/
 @media (max-width: 650px) {
   .footlink {
     margin-left: 0;
@@ -62,7 +68,7 @@ main {
     max-width: 100%;
   }
 }
-/************************************************** Para tablets ********************************************/
+/**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
   .titulo {
     text-align: center;
