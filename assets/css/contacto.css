@@ -31,7 +31,7 @@ main {
   border-radius: 20px;
   border: 6px solid darkolivegreen; /* Borde de 2px en color darkolivegreen */
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
-  margin-left: -100px;
+  margin-left: -150px;
 }
 
 
