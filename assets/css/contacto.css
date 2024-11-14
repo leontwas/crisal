@@ -108,7 +108,11 @@ main {
   .form-control {
     width: 100%; /* Ajusta el ancho del select */
     margin: 30px 0; /* Alinea el select con otros campos de formulario */
-    height: 20px;
+  }
+
+  .menu-seleccion {
+    height: 40px;
+    margin-left: 30px;
   }
 
   /* Posicionamiento de la botonera */
