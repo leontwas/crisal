@@ -107,7 +107,7 @@ main {
   /* Alineación del select */
   .form-section select {
     width: 100%; /* Ajusta el ancho del select */
-    margin: 20px 0; /* Alinea el select con otros campos de formulario */
+    margin: 30px 0; /* Alinea el select con otros campos de formulario */
     height: auto;
   }
 
