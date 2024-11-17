@@ -74,11 +74,9 @@ main {
   .titulo {
     text-align: center;
   }
-
-  .form-control {
-    align-items: center;
-    margin-left: 20px;
-  }
+#servicios {
+  margin-left: 20px;
+}
 }
 
 
