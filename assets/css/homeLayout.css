@@ -182,8 +182,20 @@
   .contenedor img {
     max-width: 100%;
   }
-}
 
+  #mapa {
+    display: flex;
+    align-items: center;
+    text-align: center;
+     }
+  
+  
+  #direccion {
+    font-weight: bold;
+  
+
+}
+}
 /************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
   .contenedor { 
