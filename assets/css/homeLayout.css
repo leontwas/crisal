@@ -122,7 +122,6 @@
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
 }
 
-
 #direccion {
   font-weight: bold;
 }
@@ -278,8 +277,7 @@
     margin-left: -165px;
      }
   
-  
-  #direccion {
+    #direccion {
     font-weight: bold;
     margin-left: -160px;
 }
@@ -296,7 +294,6 @@
   
   .margen-vertical {
     margin-top: 16rem; 
-
   }
 
   .texto-blanco {

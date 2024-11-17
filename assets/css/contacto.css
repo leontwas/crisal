@@ -83,6 +83,7 @@ main {
   }
   #servicios {
     margin-left: 0; /* Asegura un margen coherente */
+    width: min-content;
   }
 }
 
