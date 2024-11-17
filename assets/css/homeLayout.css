@@ -190,10 +190,13 @@
     margin-left: -180px;
      }
   
-  
   #direccion {
     font-weight: bold;
     margin-left: -150px;
+}
+
+#manito {
+  margin-left: -150px;
 }
 }
 /************************************************** Para tablets ********************************************/
@@ -272,13 +275,17 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: -180px;
+    margin-left: -170px;
      }
   
   
   #direccion {
     font-weight: bold;
-    margin-left: -150px;
+    margin-left: -160px;
+}
+
+#manito {
+  margin-left: -160px;
 }
 
 /************************************************* Para Notebooks *******************************************/
