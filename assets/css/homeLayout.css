@@ -194,8 +194,6 @@
   #direccion {
     font-weight: bold;
     margin-left: -150px;
-  
-
 }
 }
 /************************************************** Para tablets ********************************************/
@@ -270,6 +268,17 @@
   #texto-amarillo {
     font-size: large;
   }
+  .mapa {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: -180px;
+     }
+  
+  
+  #direccion {
+    font-weight: bold;
+    margin-left: -150px;
 }
 
 /************************************************* Para Notebooks *******************************************/
