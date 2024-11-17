@@ -74,6 +74,10 @@ main {
   .titulo {
     text-align: center;
   }
+
+  .form-control {
+    align-items: center;
+  }
 }
 
 
