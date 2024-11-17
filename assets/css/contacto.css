@@ -75,7 +75,7 @@ main {
     text-align: center;
   }
   .contenedor {
-    align-items: center;
+    flex-direction: center;
   }
 #servicios {
   margin-left: -2px;
