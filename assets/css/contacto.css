@@ -74,6 +74,9 @@ main {
   .titulo {
     text-align: center;
   }
+  .contenedor {
+    align-items: center;
+  }
 #servicios {
   margin-left: -2px;
 }
