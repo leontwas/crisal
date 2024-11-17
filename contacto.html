@@ -39,67 +39,72 @@
                 <form action="https://formspree.io/f/meoqebwy" method="POST">
                     <div class="form-floating mb-3">
                         <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required />
+                        <label for="nombre">Nombre</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Apellido" required />
+                        <label for="apellido">Apellido</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input name="telefono" type="tel" class="form-control" id="telefono" placeholder="Teléfono" required />
+                        <label for="telefono">Teléfono</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico" required />
+                        <label for="email">Correo electrónico</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input 
-                          name="fecha" 
-                          type="text" 
-                          class="form-control" 
-                          id="fecha" 
-                          placeholder="Elija una fecha" 
-                          required 
-                          onfocus="(this.type='date')" 
-                          onblur="if(!this.value) this.type='text'" 
+                        <input
+                            name="fecha"
+                            type="text"
+                            class="form-control"
+                            id="fecha"
+                            placeholder="Elija una fecha"
+                            required
+                            onfocus="(this.type='date')"
+                            onblur="if(!this.value) this.type='text'"
                         />
-                        <div/>
-                <div class="menu-seleccion">
-                    <select name="Servicio" class="form-control" id="servicios" required>
-                        <option value="" disabled selected hidden>Seleccione un servicio</option>
-                        <optgroup label="Medición de condiciones ambientales y seguridad:">
-                            <option value="Quiero realizar Medición de Ruido, Iluminación y Ventilación">Medición de Ruido, Iluminación y Ventilación</option>
-                            <option value="Quiero realizar Medición de la Puesta a Tierra y Continuidad (PAT)">Medición de la Puesta a Tierra y Continuidad (PAT)</option>
-                            <option value="Necesito un Estudio de Carga de Fuego">Estudio de Carga de Fuego</option>
-                            <option value="Necesito la Prueba de Disyuntores Diferenciales">Prueba de Disyuntores Diferenciales</option>
-                        </optgroup>
-                        <optgroup label="Evaluación de seguridad, prevención y análisis de riesgos:">
-                            <option value="Me interesa un Análisis de Riesgo en el Trabajo">Análisis de Riesgo en el Trabajo</option>
-                            <option value="Necesito hacer un Estudio del Puesto de Trabajo">Estudio del Puesto de Trabajo</option>
-                            <option value="Necesito hacer un Estudio de Ergonomía">Estudio de Ergonomía</option>
-                            <option value="Quiero un Informe de Seguridad y Prevención de Accidentes">Informe de Seguridad y Prevención de Accidentes</option>
-                        </optgroup>
-                        <optgroup label="Planificación y contingencia:">
-                            <option value="Necesito un plan de Evacuación y Contingencia">Plan de Evacuación y Contingencia</option>
-                        </optgroup>
-                        <optgroup label="Auditorías y controles:">
-                            <option value="Deseo una Auditorías Internas y/o Externas">Auditorías Internas y Externas</option>
-                        </optgroup>
-                        <optgroup label="Formación y capacitación:">
-                            <option value="Me interesa el Curso de Seguridad y Manejo de Autoelevadores">Curso de Seguridad y Manejo de Autoelevadores</option>
-                        </optgroup>
-                    </select>
-                </div>
+                        <label for="fecha">Elija una fecha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select name="Servicio" class="form-control" id="servicios" required>
+                            <option value="" disabled selected hidden>Seleccione un servicio</option>
+                            <optgroup label="Medición de condiciones ambientales y seguridad:">
+                                <option value="Quiero realizar Medición de Ruido, Iluminación y Ventilación">Medición de Ruido, Iluminación y Ventilación</option>
+                                <option value="Quiero realizar Medición de la Puesta a Tierra y Continuidad (PAT)">Medición de la Puesta a Tierra y Continuidad (PAT)</option>
+                                <option value="Necesito un Estudio de Carga de Fuego">Estudio de Carga de Fuego</option>
+                                <option value="Necesito la Prueba de Disyuntores Diferenciales">Prueba de Disyuntores Diferenciales</option>
+                            </optgroup>
+                            <optgroup label="Evaluación de seguridad, prevención y análisis de riesgos:">
+                                <option value="Me interesa un Análisis de Riesgo en el Trabajo">Análisis de Riesgo en el Trabajo</option>
+                                <option value="Necesito hacer un Estudio del Puesto de Trabajo">Estudio del Puesto de Trabajo</option>
+                                <option value="Necesito hacer un Estudio de Ergonomía">Estudio de Ergonomía</option>
+                                <option value="Quiero un Informe de Seguridad y Prevención de Accidentes">Informe de Seguridad y Prevención de Accidentes</option>
+                            </optgroup>
+                            <optgroup label="Planificación y contingencia:">
+                                <option value="Necesito un plan de Evacuación y Contingencia">Plan de Evacuación y Contingencia</option>
+                            </optgroup>
+                            <optgroup label="Auditorías y controles:">
+                                <option value="Deseo una Auditorías Internas y/o Externas">Auditorías Internas y Externas</option>
+                            </optgroup>
+                            <optgroup label="Formación y capacitación:">
+                                <option value="Me interesa el Curso de Seguridad y Manejo de Autoelevadores">Curso de Seguridad y Manejo de Autoelevadores</option>
+                            </optgroup>
+                        </select>
+                        <label for="servicios">Seleccione un servicio</label>
+                    </div>
                     <br>
                     <div class="botonera">
                         <button type="reset" class="btn btn-primary">Borrar</button>
                         <button type="submit" class="btn btn-success">Solicitar entrevista</button>
-                    </div>                 
+                    </div>
                 </form>
             </section>
-                              <!-- Imagen a la derecha del formulario -->
-                              <section class="image-section">
-                                <img src="./assets/images/entrevista.png"S alt="entrevista.png" class="entrevista" />
-                            </section>
-</div>
-</main>
+            <!-- Imagen a la derecha del formulario -->
+            <section class="image-section">
+                <img src="./assets/images/entrevista.png" alt="entrevista.png" class="entrevista" />
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footlist">
@@ -118,7 +123,5 @@
             menu.classList.toggle('active');
         }
     </script>
-    <!-- <script src="./src/js/crud.js"></script>
-    <script src="./assets/js/validaciones.js"></script>   -->
 </body>
 </html>
