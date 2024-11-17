@@ -183,17 +183,17 @@
     max-width: 100%;
   }
 
-  #mapa {
+  .mapa {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: -50px;
+    margin-left: -150px;
      }
   
   
   #direccion {
     font-weight: bold;
-    margin-left: -50px;
+    margin-left: -150px;
   
 
 }
