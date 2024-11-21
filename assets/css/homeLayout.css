@@ -113,12 +113,13 @@
 #mapa {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido dentro del mapa */
   text-align: center;
   border-radius: 2%;
   width: 80%;
-  height: 60%; /* Ajusta la altura del mapa */
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
 }
 
 #direccion {
