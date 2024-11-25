@@ -186,7 +186,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%; /* Reduce el ancho para ajustarse al móvil */
+    width: cover; /* Reduce el ancho para ajustarse al móvil */
     margin-left: -100px; /* Elimina el margen para centrar el mapa */
      }
   
