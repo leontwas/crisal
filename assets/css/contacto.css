@@ -81,9 +81,14 @@ main {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
   .image-section {
-    flex: 1; /* La imagen ocupa el 50% del ancho */
+    width: cover;
     max-width: 100%;
   }
+  #texto-negro1 {
+    margin-left: 70px;
+    padding-top: 20px;
+  }
+
 }
 /**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
