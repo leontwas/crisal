@@ -3,7 +3,7 @@ nav {
 }
 
 main { 
-  background: linear-gradient(to bottom, #a0a0a0, #292727);
+  background: rgb(248, 217, 105);
   border-bottom: 4px solid #cd7e35; /* Borde inferior */
 }
 .contenedor {
@@ -12,14 +12,23 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 0 20px; /* Ajusta márgenes laterales para más simetría */
-  width: calc(100% - 40px); /* Considera el margen */
+  margin-left: 200px;
+  width: calc(80% - 80px); /* Considera el margen */
 }
 
 /* Estilo para el formulario */
 .form-section {
   flex: 1; /* El formulario ocupa el 50% del ancho */
   max-width: 50%;
+}
+
+.form-control {
+  background-color: darkolivegreen;
+  color: white;
+}
+.form-control::placeholder {
+  color: white; /* Cambia el color del texto del placeholder a blanco */
+  opacity: 1; /* Asegúrate de que el color sea completamente opaco */
 }
 
 /* Ajuste para sección de la imagen */
@@ -41,7 +50,7 @@ main {
 }
 
 #texto-negro1 {
-  margin-left: 50px;
+  margin-left: 200px;
   padding-top: 20px;
 }
 
@@ -50,6 +59,13 @@ main {
   display: flex;
   justify-content: center;
   gap: 20px; /* Agrega espacio entre los botones */
+}
+#borrar {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+#enviar {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 /******************** Ajustes para pantallas pequeñas (celulares) ****************/
