@@ -186,7 +186,8 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: -180px;
+    width: 90%; /* Reduce el ancho para ajustarse al móvil */
+    margin-left: 0; /* Elimina el margen para centrar el mapa */
      }
   
   #direccion {
