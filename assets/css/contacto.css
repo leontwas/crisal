@@ -80,12 +80,19 @@ main {
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
+/* Estilo para el formulario */
+.form-section {
+  flex: 1; /* El formulario ocupa el 50% del ancho */
+  max-width: 100%;
+}
+
   .image-section {
     width: cover;
     max-width: 100%;
   }
+
   #texto-negro1 {
-    margin-left: 70px;
+    margin-left: 20px;
     padding-top: 20px;
   }
 
