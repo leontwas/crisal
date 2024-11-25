@@ -311,3 +311,12 @@
     opacity: 1;
   }
 }
+
+#direccion {
+  font-weight: bold;
+  margin-left: -50px;
+}
+
+#manito {
+margin-left: -50px;
+}
