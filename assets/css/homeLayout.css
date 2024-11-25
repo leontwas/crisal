@@ -274,16 +274,16 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: -90px;
+    margin-left: -70px;
      }
   
     #direccion {
     font-weight: bold;
-    margin-left: -160px;
+    margin-left: -140px;
 }
 
 #manito {
-  margin-left: -160px;
+  margin-left: -140px;
 }
 }
 /************************************************* Para Notebooks *******************************************/
