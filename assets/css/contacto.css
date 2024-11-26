@@ -1,3 +1,4 @@
+/* Estilos generales */
 nav {
   background-color: #fbf7f7;
 }
@@ -13,19 +14,20 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-left: 90px;
-  width: calc(80% - 80px); /* Considera el margen */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 #texto-negro1 {
-  margin-left: 140px;
+  margin-left: 20px;
   padding-top: 20px;
 }
 
 .botonera {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espacio entre botones */
+  gap: 20px;
 }
 
 .image-section {
@@ -37,18 +39,23 @@ main {
   border-radius: 20px;
   border: 6px solid darkolivegreen;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-  margin: 0 auto; /* Centra en lugar de margen negativo */
+  margin: 0 auto;
 }
 
-/* Estilos generales para los campos de formulario */
-.form-control {
+/* Estilos generales para los campos del formulario */
+.form-control, 
+.form-floating {
   background-color: darkolivegreen;
   color: white;
-  border: none; /* Opcional: elimina bordes */
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.form-floating {
-  width: 300px;
+#borrar, #enviar {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 /******************** Para celulares (max-width: 650px) ********************/
@@ -57,85 +64,76 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-left: -10px;
+    padding: 10px;
   }
+
   #texto-negro1 {
-    margin-left: 40px;
-    margin-left: 70px;
-    padding-top: 20px;
+    margin-left: 10px;
   }
 
-  #servicio {
-    width: 270px;
-  }
-
-  .form-control {
-    width: 300px;
-    margin-left: 0;
-    color: white;
+  .form-control, 
+  .form-floating {
+    width: 90%;
+    max-width: 300px;
   }
 
   .botonera {
-    width: 300px;
-    gap: 20px; /* Espaciado coherente en móviles */
+    flex-direction: column;
+    width: 100%;
   }
-
-#borrar, #enviar {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
-}
 
   .image-section {
     width: 100%;
+    max-width: 100%;
   }
 }
 
-/**************************************** Para tablets (min-width: 651px) and (max-width: 850px) ********************************************/
+/******************** Para tablets (min-width: 651px) and (max-width: 850px) ********************/
 @media (min-width: 651px) and (max-width: 850px) {
   .contenedor {
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos */
-    justify-content: center; /* Centra verticalmente los elementos */
-    gap: 20px; /* Espaciado entre el formulario y la imagen */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
   }
 
   #texto-negro1 {
-    margin-left: -20px; /* Ajusta el margen izquierdo */
+    margin-left: 0;
   }
 
-  .form-control {
-    width: 80%; /* Ajusta el ancho relativo */
+  .form-control, 
+  .form-floating {
+    width: 80%;
+    max-width: 300px;
   }
 
   .image-section {
     max-width: 60%;
-    margin-top: -30px;
   }
 
   .botonera {
-    margin-top: 40px;
-  }
-
-  #borrar, #enviar {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
+    margin-top: 20px;
+    flex-direction: row;
   }
 }
 
-/**************************************** Para notebooks (min-width: 851px) ********************************************/
+/******************** Para notebooks (min-width: 851px) ********************/
 @media (min-width: 851px) {
   .contenedor {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
   }
 
   #texto-negro1 {
     margin-left: 140px;
-    padding-top: 20px;
   }
 
-  .form-control {
-    width: auto;
+  .form-control, 
+  .form-floating {
+    width: 300px;
   }
 
   .image-section {
@@ -144,10 +142,6 @@ main {
 
   .botonera {
     margin-top: 0;
-    gap: 20px; /* Espaciado entre los botones */
-  }
-
-  #borrar, #enviar {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
+    flex-direction: row;
   }
 }
