@@ -96,6 +96,12 @@ main {
     margin: 0 auto; /* Centra horizontalmente el formulario */
   }
 
+  .image-section{
+    width: cover;
+    height: auto;
+  }
+
+
   #servicios {
     width: 300px;
   }
