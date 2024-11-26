@@ -44,6 +44,7 @@ main {
 .form-control {
   background-color: darkolivegreen;
   color: white;
+  width: 300px;
   border: none; /* Opcional: elimina bordes */
 }
 
