@@ -80,6 +80,7 @@ main {
 
   .form-control {
 width: 300px;
+margin-left: -140px;
 }
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
