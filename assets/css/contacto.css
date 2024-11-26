@@ -93,7 +93,7 @@ main {
 /**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .titulo {
-    margin-left: -110px;
+    margin-left: -100px;
   }
   .contenedor {
     display: flex;
