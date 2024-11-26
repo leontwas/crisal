@@ -126,6 +126,7 @@ main {
 @media (min-width: 651px) and (max-width: 850px) {
   .titulo {
     text-align: center;
+    margin-left: -70px;
   }
   .contenedor {
     display: flex;
@@ -145,7 +146,7 @@ main {
     margin-top: 60px;
   }
   .image-section{
-    margin-left: -165px;
+    margin-left: -185px;
     margin-top: -30px;
   }
 }
