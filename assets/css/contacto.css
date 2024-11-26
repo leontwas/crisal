@@ -74,7 +74,7 @@ main {
   .form-control, 
   .form-floating {
     width: 90%;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .botonera {
