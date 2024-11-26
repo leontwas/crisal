@@ -68,6 +68,7 @@ main {
   .form-control {
     width: 300px;
     margin-left: 0;
+    color: white;
   }
 
   .botonera {
