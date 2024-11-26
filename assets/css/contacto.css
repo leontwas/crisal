@@ -55,9 +55,9 @@ main {
     padding-top: 20px;
   }
 
-  #nombre, #apellido, #telefono, #e-mail, #fecha {
+  #nombre, #apellido, #telefono, #email, #fecha {
     color: white;
-  }
+}
 
   .form-control {
     width: 300px;
@@ -96,9 +96,9 @@ main {
     color: white;
   }
 
-  #nombre, #apellido, #telefono, #e-mail, #fecha {
+  #nombre, #apellido, #telefono, #email, #fecha {
     color: white;
-  }
+}
 
   .image-section {
     max-width: 60%;
@@ -130,9 +130,9 @@ main {
     color: white;
   }
 
-  #nombre, #apellido, #telefono, #e-mail, #fecha {
+  #nombre, #apellido, #telefono, #email, #fecha {
     color: white;
-  }
+}
 
   .image-section {
     max-width: 40%;
