@@ -74,8 +74,11 @@ main {
   .botonera {
     width: 300px;
     gap: 20px; /* Espaciado coherente en móviles */
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
   }
+
+#borrar, #enviar {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
+}
 
   .image-section {
     width: 100%;
@@ -107,6 +110,10 @@ main {
   .botonera {
     margin-top: 40px;
   }
+
+  #borrar, #enviar {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
+  }
 }
 
 /**************************************** Para notebooks (min-width: 851px) ********************************************/
@@ -134,5 +141,9 @@ main {
   .botonera {
     margin-top: 0;
     gap: 20px; /* Espaciado entre los botones */
+  }
+
+  #borrar, #enviar {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Sombra difusa de 10px con un degradado */
   }
 }
