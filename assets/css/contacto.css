@@ -96,9 +96,10 @@ main {
     margin: 0 auto; /* Centra horizontalmente el formulario */
   }
 
-  .image-section{
-    width: cover;
-    height: auto;
+  .image-section {
+    flex: 1;
+    max-width: 100%;
+    width: 100vw;
   }
 
 
