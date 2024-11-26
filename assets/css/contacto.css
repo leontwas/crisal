@@ -84,8 +84,8 @@ main {
   }
 
   .botonera {
-    width: 90%; /* Ocupa el mismo ancho que el formulario */
-    margin: 0 auto; /* Centra la botonera horizontalmente */
+    width: 300px; /* Ocupa el mismo ancho que el formulario */
+    margin-left: -100px; /* Centra la botonera horizontalmente */
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 
