@@ -40,10 +40,23 @@ main {
   margin: 0 auto; /* Centra en lugar de margen negativo */
 }
 
+/* Estilos generales para los placeholders */
+input::placeholder, 
+textarea::placeholder {
+  color: white;
+  opacity: 1; /* Asegura que el color sea completamente visible */
+}
+
+/* Estilos generales para los campos de formulario */
+.form-control {
+  background-color: darkolivegreen;
+  color: white;
+  border: none; /* Opcional: elimina bordes */
+}
+
 /******************** Para celulares (max-width: 650px) ********************/
 @media (max-width: 650px) {
   .contenedor {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -55,20 +68,13 @@ main {
     padding-top: 20px;
   }
 
-  *::placeholder {
-    color: white;
-    opacity: 1; /* Asegura que el color sea completamente visible */
-}
-
-#servicio {
-  width: 300px;
-}
+  #servicio {
+    width: 290px;
+  }
 
   .form-control {
     width: 300px;
     margin-left: 0;
-    background-color: darkolivegreen;
-    color: white;
   }
 
   .botonera {
@@ -85,7 +91,6 @@ main {
 /**************************************** Para tablets (min-width: 651px) and (max-width: 850px) ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .contenedor {
-    display: flex;
     flex-direction: column;
     align-items: center; /* Centra horizontalmente los elementos */
     justify-content: center; /* Centra verticalmente los elementos */
@@ -97,14 +102,8 @@ main {
   }
 
   .form-control {
-    background-color: darkolivegreen;
-    color: white;
+    width: 80%; /* Ajusta el ancho relativo */
   }
-
-  *::placeholder {
-    color: white;
-    opacity: 1; /* Asegura que el color sea completamente visible */
-}
 
   .image-section {
     max-width: 60%;
@@ -119,7 +118,6 @@ main {
 /**************************************** Para notebooks (min-width: 851px) ********************************************/
 @media (min-width: 851px) {
   .contenedor {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -132,14 +130,8 @@ main {
   }
 
   .form-control {
-    background-color: darkolivegreen;
-    color: white;
+    width: auto;
   }
-
-  *::placeholder {
-    color: white;
-    opacity: 1; /* Asegura que el color sea completamente visible */
-}
 
   .image-section {
     max-width: 40%;
@@ -150,7 +142,3 @@ main {
     gap: 20px; /* Espaciado entre los botones */
   }
 }
-
-
-
-
