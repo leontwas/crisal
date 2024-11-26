@@ -98,7 +98,7 @@ main {
 
   img {
     max-width: 100%; /* La imagen no excederá el ancho disponible */
-    width: 400px; /* Fija el ancho a 400px */
+    width: 700px; /* Fija el ancho a 400px */
     height: 400px; /* Fija la altura a 400px para mantenerla cuadrada */
     object-fit: cover; /* Ajusta el contenido dentro de las dimensiones */
     display: block; /* Asegura que no haya espacios extra alrededor */
