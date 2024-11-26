@@ -40,8 +40,6 @@ main {
   margin: 0 auto; /* Centra en lugar de margen negativo */
 }
 
-/* ********** Media queries ********** */
-
 /******************** Para celulares (max-width: 650px) ********************/
 @media (max-width: 650px) {
   .contenedor {
@@ -49,6 +47,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-left: -150px;
   }
 
   #texto-negro1 {
@@ -63,12 +62,12 @@ main {
 
   .botonera {
     width: 300px;
-    margin-left: 0;
+    margin-left: -150px;
     gap: 20px; /* Espaciado coherente en móviles */
   }
 
   .image-section {
-    width: 300px;
+    width: 100%;
   }
 }
 
