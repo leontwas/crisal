@@ -79,10 +79,12 @@ main {
   }
 
   .form-control {
-width: 300px;
-margin-left: -100px;
+    width: 300px;
+    margin-left: -100px;
 }
+
   .botonera {
+    width: 50px;
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 
@@ -94,12 +96,16 @@ margin-left: -100px;
   }
 
   .image-section {
-    width: 50vw; /* Asegura que las imágenes ocupen todo el ancho */
+    width: 100vw; /* Asegura que las imágenes ocupen todo el ancho */
     max-width: 100%;
   }
 
+  #servicios {
+    width: 300px;
+  }
+
   #texto-negro1 {
-    margin-left: 10px; /* Ajusta el margen izquierdo */
+    margin-left: 40px; /* Ajusta el margen izquierdo */
     padding-top: 20px;
   }
 }
