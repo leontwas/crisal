@@ -40,13 +40,6 @@ main {
   margin: 0 auto; /* Centra en lugar de margen negativo */
 }
 
-/* Estilos generales para los placeholders */
-input::placeholder, 
-textarea::placeholder {
-  color: white;
-  opacity: 1; /* Asegura que el color sea completamente visible */
-}
-
 /* Estilos generales para los campos de formulario */
 .form-control {
   background-color: darkolivegreen;
@@ -69,7 +62,7 @@ textarea::placeholder {
   }
 
   #servicio {
-    width: 290px;
+    width: 270px;
   }
 
   .form-control {
