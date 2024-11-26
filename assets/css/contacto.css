@@ -77,26 +77,29 @@ main {
     flex-wrap: wrap;
     gap: 10px;
   }
+
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
-/* Estilo para el formulario */
-.form-section {
-  flex: 1; /* El formulario ocupa el 50% del ancho */
-  max-width: 100%;
-}
+
+  /* Estilo para el formulario */
+  .form-section {
+    flex: 1; /* Asegura que tome todo el espacio disponible */
+    max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+  }
 
   .image-section {
-    width: cover;
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
     max-width: 100%;
   }
 
   #texto-negro1 {
-    margin-left: 20px;
+    margin-left: 10px; /* Ajusta el margen izquierdo */
     padding-top: 20px;
   }
-
 }
+
 /**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .titulo {
