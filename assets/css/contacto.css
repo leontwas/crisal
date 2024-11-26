@@ -93,7 +93,6 @@ main {
 /**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .titulo {
-    text-align: center;
     margin-left: -90px;
   }
   .contenedor {
