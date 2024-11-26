@@ -44,8 +44,11 @@ main {
 .form-control {
   background-color: darkolivegreen;
   color: white;
-  width: 300px;
   border: none; /* Opcional: elimina bordes */
+}
+
+.form-floating {
+  width: 300px;
 }
 
 /******************** Para celulares (max-width: 650px) ********************/
