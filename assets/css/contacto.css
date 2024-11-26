@@ -97,8 +97,19 @@ main {
   }
 
   .image-section {
-    width: 100vw; /* Asegura que las imágenes ocupen todo el ancho */
-    max-width: 100%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción */
+    display: flex; /* Habilita la alineación */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    padding: 1rem; /* Añade un margen interno opcional */
+  }
+
+  img {
+    max-width: 100%; /* Escala la imagen dentro del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que no haya márgenes extra */
+    margin: 0 auto; /* Centra la imagen */
   }
 
   #servicios {
