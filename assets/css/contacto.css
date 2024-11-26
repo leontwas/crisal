@@ -96,11 +96,6 @@ main {
     margin: 0 auto; /* Centra horizontalmente el formulario */
   }
 
-  img {
-    width: 500%; 
-    height: auto; 
-  }
-  
   #servicios {
     width: 300px;
   }
