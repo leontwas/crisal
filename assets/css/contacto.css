@@ -81,7 +81,7 @@ main {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
   .image-section {
-    flex: 2; 
+    flex: 1; 
     width: cover;
     max-width: 100%;
   }
