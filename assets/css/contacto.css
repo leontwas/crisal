@@ -93,7 +93,7 @@ width: 150px;
   }
 
   .image-section {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+    width: 50vw; /* Asegura que las imágenes ocupen todo el ancho */
     max-width: 100%;
   }
 
