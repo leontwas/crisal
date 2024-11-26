@@ -81,10 +81,11 @@ main {
   .form-control {
     width: 300px;
     margin-left: -100px;
-}
+  }
 
   .botonera {
-    width: 50px;
+    width: 90%; /* Ocupa el mismo ancho que el formulario */
+    margin: 0 auto; /* Centra la botonera horizontalmente */
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
 
