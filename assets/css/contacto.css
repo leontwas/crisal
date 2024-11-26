@@ -55,8 +55,9 @@ main {
     padding-top: 20px;
   }
 
-  #nombre, #apellido, #telefono, #email, #fecha, #servicio {
+  *::placeholder {
     color: white;
+    opacity: 1; /* Asegura que el color sea completamente visible */
 }
 
 #servicio {
@@ -100,8 +101,9 @@ main {
     color: white;
   }
 
-  #nombre, #apellido, #telefono, #email, #fecha, #servicio {
+  *::placeholder {
     color: white;
+    opacity: 1; /* Asegura que el color sea completamente visible */
 }
 
   .image-section {
@@ -134,8 +136,9 @@ main {
     color: white;
   }
 
-  #nombre, #apellido, #telefono, #email, #fecha, #servicio {
+  *::placeholder {
     color: white;
+    opacity: 1; /* Asegura que el color sea completamente visible */
 }
 
   .image-section {
