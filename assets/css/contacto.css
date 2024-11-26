@@ -78,6 +78,9 @@ main {
     gap: 10px;
   }
 
+.contenedor {
+width: 5vw;
+}
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
