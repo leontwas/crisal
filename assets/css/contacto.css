@@ -97,9 +97,7 @@ main {
   }
 
   .image-section {
-    flex: 1;
-    max-width: 200%;
-    width: 150vw;
+    width: 300px;
   }
 
 
