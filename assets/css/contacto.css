@@ -97,8 +97,8 @@ main {
   }
 
   img {
-    width: 700px; /* Fija el ancho a 400px */
-    height: 400px; /* Fija la altura a 400px para mantenerla cuadrada */
+    width: 100%; 
+    height: auto; 
   }
   
   #servicios {
