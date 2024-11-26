@@ -115,8 +115,7 @@ main {
 /**************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .titulo {
-    text-align: center;
-    margin-left: -70px;
+    margin-left: -110px;
   }
   .contenedor {
     display: flex;
@@ -136,7 +135,7 @@ main {
     margin-top: 60px;
   }
   .image-section{
-    margin-left: -185px;
+    margin-left: -200px;
     margin-top: -30px;
   }
 }
