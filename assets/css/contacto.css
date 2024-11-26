@@ -74,10 +74,15 @@ main {
     margin-left: 0;
     padding-top: 1rem;
     justify-content: center;
-    margin-left: -60px;
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  .contenedor {
+    margin-left: -50px;
+    width: 300px;
+  }
+
   .botonera {
     gap: 20px; /* Espacio entre botones en dispositivos móviles */
   }
