@@ -104,7 +104,7 @@ main {
     align-items: center; /* Centra horizontalmente los elementos */
     justify-content: center; /* Centra verticalmente los elementos */
     gap: 20px; /* Espaciado entre el formulario y la imagen */
-    margin-left: 80px;
+    margin-left: 100px;
   }
   #servicios {
     margin-left: 0; /* Asegura un margen coherente */
