@@ -25,6 +25,7 @@ main {
 .form-control {
   background-color: darkolivegreen;
   color: white;
+  box-shadow: 10px 10px 5px #161616;
 }
 .form-control::placeholder {
   color: white; /* Cambia el color del texto del placeholder a blanco */
@@ -40,7 +41,7 @@ main {
 .entrevista { 
   border-radius: 20px;
   border: 6px solid darkolivegreen;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 5px #161616;
   margin: 0 auto; /* Centra en lugar de margen negativo */
 }
 
@@ -61,11 +62,11 @@ main {
   gap: 20px; /* Agrega espacio entre los botones */
 }
 #borrar {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 5px #161616;
 }
 
 #enviar {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 5px #161616;
 }
 
 /******************** Ajustes para pantallas pequeñas (celulares) ****************/
