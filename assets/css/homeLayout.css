@@ -1,7 +1,7 @@
 .contenedor { 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .notas {
@@ -22,7 +22,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  opacity: 0.75;
+  opacity: 0.75; 
 }
 
 .group:hover .imagen-estilizada {
@@ -86,6 +86,8 @@
 .group {
   height: 590px;
   overflow: hidden;
+  box-shadow: 10px 10px 5px #161616;
+
 }
 
 #video {
