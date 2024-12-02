@@ -94,6 +94,9 @@ article:hover img:last-child {
     transform: translateY(10%);
 }
 
+.container {
+    box-shadow: 10px 10px 5px #161616;
+}
 .descripcion {
     width: 100%;
     text-align: justify;
