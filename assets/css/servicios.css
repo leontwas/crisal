@@ -113,8 +113,22 @@ article:hover img:last-child {
 /******************************** Media queries para notebooks **********************************/
 @media (min-width: 851px) and (max-width: 1200px) { 
     .container {
-        flex: 1 1 calc(33.33% - 20px); /* tres columnas */
+        flex: 0 0 calc(33.33% - 20px); /* Tres columnas */
         max-width: 300px;
+        height: 450px; /* Altura fija para todas las tarjetas */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Asegura que el contenido esté distribuido */
+    }
+
+    article img:first-child {
+        height: 200px; /* Asegura que las imágenes tengan el mismo tamaño */
+        object-fit: cover; /* Ajusta las imágenes */
+    }
+
+    .descripcion {
+        font-size: 14px;
+        overflow-y: auto; /* Agrega scroll si el contenido excede la altura */
     }
 }
 
