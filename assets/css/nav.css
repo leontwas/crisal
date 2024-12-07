@@ -197,12 +197,4 @@ nav {
     h1.chicle-regular {
         font-size: 2rem;
        }
-      
-      /* Estilo del h3 */
-      h3 {
-        font-size: 1.8rem;
-       }
-}
-@media (min-width: 851px){
-
 }

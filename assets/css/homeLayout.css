@@ -4,6 +4,10 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 .notas {
   display: flex;
   flex-wrap: wrap;
