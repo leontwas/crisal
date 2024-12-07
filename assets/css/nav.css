@@ -32,7 +32,7 @@ ul {
   
   /* Estilo del h1 */
   h1.chicle-regular {
-    font-size: 1.6rem;
+    font-size: 3rem;
     color: red;
     -webkit-text-stroke: 2px black;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
