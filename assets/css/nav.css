@@ -190,6 +190,6 @@ nav {
 /************************************* Estilos para dispositivos tablets **********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
     h1.chicle-regular {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
        }
 }
