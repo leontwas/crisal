@@ -193,3 +193,13 @@ nav {
         color:white;
     }
 }
+@media (min-width: 651px) and (max-width: 850px) {
+    h1.chicle-regular {
+        font-size: 1rem;
+       }
+      
+      /* Estilo del h3 */
+      h3 {
+        font-size: 1.8rem;
+       }
+}
