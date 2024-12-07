@@ -1,7 +1,9 @@
 nav {
   background-color: #fbf7f7;
 }
-
+h3 {
+  font-size: 1.5rem;
+}
 main { 
   background: rgb(248, 217, 105);
   border-bottom: 4px solid #cd7e35; /* Borde inferior */
