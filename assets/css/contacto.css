@@ -75,6 +75,10 @@ main {
   box-shadow: 10px 10px 5px #161616;
 }
 
+h3 {
+  font-size: 1.8rem;
+ }
+
 /******************** Ajustes para pantallas pequeñas (celulares) ****************/
 @media (max-width: 650px) {
   .footlink {
@@ -127,7 +131,4 @@ main {
     margin-left: -230px;
     margin-top: -30px;
   }
-   h3 {
-    font-size: 1.8rem;
-   }
 }
