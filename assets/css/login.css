@@ -5,12 +5,17 @@
     font-family: 'Arial', sans-serif;
 }
 body {
-    background-image: url('../images/nature.jpg') ;
+    background-image: url('../images/nature.jpg');
+    background-size: cover; /* Asegura que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    margin: 0; /* Elimina márgenes por defecto */
+    height: 100vh; /* Hace que el cuerpo ocupe toda la altura de la ventana */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
+
 .form-container {
     backdrop-filter: blur(15px);
     background: rgba(24, 24, 24, 0.2);
