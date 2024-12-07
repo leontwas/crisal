@@ -192,4 +192,7 @@ nav {
     h1.chicle-regular {
         font-size: 2.3rem;
        }
+       .logo {
+        margin-right: 20px;
+       }
 }
