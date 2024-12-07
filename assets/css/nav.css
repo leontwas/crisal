@@ -41,7 +41,6 @@ ul {
   
   /* Estilo del h3 */
   h3 {
-    font-size: 1.5rem;
     color: #333;
     margin-top: 0px; /* Espaciado entre h1 y h3 */
   }
@@ -186,12 +185,6 @@ nav {
         justify-content: center;
         align-items: center;
     }
-/*
-    nav {
-        width: 100%;
-        font-size: 1.3rem;
-        color:white;
-    }*/
 }
 @media (min-width: 651px) and (max-width: 850px) {
     h1.chicle-regular {
