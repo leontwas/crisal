@@ -129,6 +129,10 @@
 
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
+  .chicle-regular {
+    font-size: 1.6rem;
+  }
+
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
