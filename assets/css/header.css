@@ -141,7 +141,7 @@ nav {
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
     h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: bold;
       }
 
@@ -157,7 +157,7 @@ nav {
         cursor: pointer;
         position: absolute;
         right: 10px;
-        top: 50px;
+        top: 53px;
     }
 
     .menu {
