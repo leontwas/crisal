@@ -99,7 +99,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-left: -40px;
+    margin-left: -20px;
   }
   .form-section, .image-section {
     max-width: 80%;
