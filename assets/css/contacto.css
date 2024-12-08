@@ -1,14 +1,3 @@
-.chicle-regular {
-  margin-top: 10px;
-  font-size: 1.8rem;
-  font-family: 'Bungee Spice', cursive;
-}
-h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
 /* Estilo principal */
 main {
   background: rgb(248, 217, 105);

@@ -58,8 +58,9 @@ ul {
   
   /* Estilo del h3 */
   h3 {
-    color: #333;
-    margin-top: 0px; /* Espaciado entre h1 y h3 */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
   }
   
   /* Estilo del menú desplegable */
