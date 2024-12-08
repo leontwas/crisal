@@ -217,6 +217,11 @@ ul {
     h3 {
         margin-left: 20px;
      }
+
+     .categoria {
+        font-size: 1.2rem;
+     }
+
     .chicle-regular {
         font-size: 2.3rem;
         margin-left: 20px;
