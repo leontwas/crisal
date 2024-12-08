@@ -1,173 +1,70 @@
-body {
-    background: rgb(248, 217, 105);
-    margin: 0;
-    padding: 0;
-    width: 100vw; 
-    height: 100vh; 
-    box-sizing: border-box;
-}
-
-header {
-    width: 100vw;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
+/* General: Contenedor principal */
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
-    width: 100vw;
-    box-sizing: border-box;
-    align-items: center;
     justify-content: center;
+    align-items: stretch; /* Asegura que las tarjetas tengan la misma altura */
 }
 
+/* General: Tarjetas */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width:380px;
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
+    width: 300px; /* Ancho fijo */
+    height: 450px; /* Alto fijo */
     margin: 10px;
     border: 2px solid black;
-    border-radius: 4px;
-    padding: 10px;
+    border-radius: 8px;
     background-color: #50633C;
+    box-shadow: 10px 10px 5px #161616;
 }
 
-article {
-    position: relative;
+/* Imágenes dentro de las tarjetas */
+article img:first-child {
     width: 100%;
-    transition: all 0.3s ease;
-}
-
-article img:first-child { 
-    box-shadow: 20px 20px 30px -20px black;
-    border-radius: 10px;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+    height: 200px; /* Ajusta la altura fija */
+    object-fit: cover; /* Mantiene proporción sin deformar */
+    border-radius: 8px 8px 0 0;
 }
 
 article img:last-child {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
     width: 80%;
-    margin: auto;
-    transform: translateY(25%);
-    transition: 0.3s ease;
+    height: 50px; /* Tamaño fijo */
+    margin-top: 10px;
     opacity: 0;
+    transform: translateY(20%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-article:hover {
-    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
-}
-
-article::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 100%;
+/* Descripción */
+.descripcion {
     width: 100%;
-    background: linear-gradient(
-        to bottom,
-        transparent 10%,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0) 95%
-    );
-    opacity: 0;
-    transition: all 0.3s ease;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    background-color: #cd7e35;
+    border-radius: 0 0 8px 8px;
+    overflow-y: auto; /* Scroll si el contenido excede la altura */
+    text-align: justify;
 }
 
-article:hover::before {
-    opacity: 1;
-}
-
+/* Hover effect */
 article:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
 }
 
-.container {
-    box-shadow: 10px 10px 5px #161616;
-}
-.descripcion {
-    width: 100%;
-    text-align: justify;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: #cd7e35;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 5px; 
-}
-
-/******************************** Media queries para notebooks **********************************/
-@media (min-width: 851px) and (max-width: 1200px) { 
+/* Media queries */
+@media (max-width: 850px) {
     .container {
-        flex: 0 0 calc(33.33% - 20px); /* Tres columnas */
-        max-width: 300px;
-        height: 450px; /* Altura fija para todas las tarjetas */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Asegura que el contenido esté distribuido */
-    }
-
-    article img:first-child {
-        height: 200px; /* Asegura que las imágenes tengan el mismo tamaño */
-        object-fit: cover; /* Ajusta las imágenes */
-    }
-
-    .descripcion {
-        font-size: 14px;
-        overflow-y: auto; /* Agrega scroll si el contenido excede la altura */
-    }
-}
-
-/******************************** Media queries para tabletas *******************************/
-@media (min-width: 651px) and (max-width: 850px) { 
-    .main-container {
-        flex-direction: column; 
-        align-items: center;
-        padding: 10px;
-    }
-    .container {
-        width: 100%;
-        margin: 10px;
+        width: 90%; /* Ajusta el tamaño para pantallas más pequeñas */
+        height: auto; /* Deja que la altura sea dinámica */
     }
     .descripcion {
-        font-size: large;
-    }
-    footer {
-        margin-top: 150px;
-    }
-    .chicle-regular {
-        font-size: 2rem;
-    }
-}
-
-/******************************** Media queries para celulares **********************************/
-@media (max-width: 650px) {
-    .main-container {
-        padding-top: 80px;
-        gap: 5px;
-    }
-    
-    .descripcion {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    .container {
-        max-width: 100%;
-        margin: 5px;
+        font-size: 16px;
     }
 }
