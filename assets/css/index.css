@@ -135,6 +135,7 @@ a:hover {
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
   .chicle-regular {
+    margin-top: 50px;
     font-size: 1.6rem;
   }
 
