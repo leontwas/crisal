@@ -150,11 +150,6 @@ nav {
         font-weight: bold;
       }
 
-    nav {
-        width: 100%;
-        font-size: large;
-    }
-
     /* Icono hamburguesa */
     .menu-desplegable {
         display: block;
