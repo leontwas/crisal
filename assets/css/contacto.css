@@ -85,11 +85,11 @@ main {
   #texto-negro1 {
     font-size: 1.5rem;
     padding: 10px;
-    margin-left: -70px;
+    margin-left: 0px;
   }
   .entrevista {
     max-width: 100%;
-    margin-left: 50px;
+    margin-left: 0px;
   }
 }
 
