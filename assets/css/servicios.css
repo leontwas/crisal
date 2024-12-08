@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+h3 {
+    font-size: 1.2rem;
+  }
+
 header {
     width: 100vw;
     background-color: #333;
@@ -23,24 +27,20 @@ header {
     padding: 20px;
     width: 100vw;
     box-sizing: border-box;
+    align-items: center;
     justify-content: center;
-    align-items: stretch; /* Asegura que las tarjetas tengan la misma altura */
-
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;  /* Distribuye el contenido uniformemente */
-    width:380px;
-    height: 450px; /* Alto fijo */
+    max-width:380px;
     margin: 10px;
     border: 2px solid black;
-    border-radius: 8px;
-    background-color: #50633C;
-    box-shadow: 10px 10px 5px #161616;
+    border-radius: 4px;
     padding: 10px;
+    background-color: #50633C;
 }
 
 article {
@@ -51,10 +51,10 @@ article {
 
 article img:first-child { 
     box-shadow: 20px 20px 30px -20px black;
-    border-radius:  8px 8px 0 0;
+    border-radius: 10px;
     object-fit: cover;
     width: 100%;
-    height: 450px; /* Ajusta la altura fija */
+    height: auto;
 }
 
 article img:last-child {
@@ -63,7 +63,6 @@ article img:last-child {
     left: 0;
     right: 0;
     width: 80%;
-    height: auto;
     margin: auto;
     transform: translateY(25%);
     transition: 0.3s ease;
