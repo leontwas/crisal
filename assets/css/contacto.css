@@ -88,6 +88,7 @@ main {
   }
   .entrevista {
     max-width: 100%;
+    align-items: center;
   }
 }
 
