@@ -7,10 +7,6 @@ body {
     box-sizing: border-box;
 }
 
-h3 {
-    font-size: 1.2rem;
-  }
-
 header {
     width: 100vw;
     background-color: #333;
