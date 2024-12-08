@@ -64,6 +64,13 @@ ul {
     margin-top: 5px;
   }
 
+  .categoria {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
   /* Estilo del menú desplegable */
   .menu-desplegable {
     position: absolute;
