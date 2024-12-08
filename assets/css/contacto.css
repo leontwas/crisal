@@ -53,7 +53,7 @@ main {
   color: #000;
   text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
-  text-align: center;
+  margin-left: 150px;
   padding: 20px;
 }
 
@@ -81,6 +81,7 @@ main {
     flex: none;
   }
   #texto-negro1 {
+    text-align: center;
     font-size: 1.5rem;
     padding: 10px;
   }
