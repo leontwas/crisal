@@ -69,6 +69,7 @@ ul {
     color: black;
     font-weight: bold;
     margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   /* Estilo del menú desplegable */
@@ -223,7 +224,7 @@ ul {
      }
 
      .categoria {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
      }
 
     .chicle-regular {
