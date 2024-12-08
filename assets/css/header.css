@@ -140,6 +140,11 @@ nav {
 
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
     nav {
         width: 100%;
         font-size: large;

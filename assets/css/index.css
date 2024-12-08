@@ -140,11 +140,6 @@ a:hover {
     font-size: 2rem;
   }
 
-  h3 {
-    font-size:1.2rem;
-    margin-top: 10px;
-  }
-
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
