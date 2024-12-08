@@ -22,6 +22,7 @@ main {
   flex: 1;
   max-width: 50%;
   min-width: 300px;
+  margin-left: 50px;
 }
 .form-control {
   background-color: darkolivegreen;
@@ -45,6 +46,7 @@ main {
   box-shadow: 10px 10px 5px #161616;
   width: 100%;
   height: auto;
+  margin-left: -50px;
 }
 
 /* Estilo del texto principal */
@@ -81,7 +83,6 @@ main {
     flex: none;
   }
   #texto-negro1 {
-    text-align: center;
     font-size: 1.5rem;
     padding: 10px;
   }
