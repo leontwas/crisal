@@ -71,12 +71,6 @@ ul {
     cursor: pointer;
   }
 /********************* Fin Header *******************************/
-
-nav {
-    width: 100%;
-    border-bottom: 5px solid #cd7e35;
-}
-
 .menu {
     margin: 0;
     padding: 0;
