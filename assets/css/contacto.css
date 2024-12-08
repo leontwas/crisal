@@ -46,7 +46,7 @@ main {
   box-shadow: 10px 10px 5px #161616;
   width: 100%;
   height: auto;
-  margin-left: -80px;
+  margin-left: -120px;
 }
 
 /* Estilo del texto principal */
@@ -88,7 +88,7 @@ main {
   }
   .entrevista {
     max-width: 100%;
-    align-items: center;
+    margin-left: 120px;
   }
 }
 
@@ -105,5 +105,6 @@ main {
   .entrevista {
     margin: 0 auto;
     width: 90%;
+    margin-left: -120px;
   }
 }
