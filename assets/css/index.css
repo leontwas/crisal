@@ -27,6 +27,7 @@
 
 .group:hover .imagen-estilizada {
   opacity: 0.3;
+  text-decoration: none;
 }
 
 .caja {
