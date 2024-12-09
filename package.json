@@ -12,8 +12,10 @@
   "license": "MIT",
   "description": "Web de servicios en Seguridad e Higiene",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
-    "express": "^4.21.1"
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
