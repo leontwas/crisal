@@ -343,9 +343,9 @@
   }
 
   .carrusel-control-prev{
-    margin-top: -50px;
+    margin-top: -50px !important;
   }
-  
+
   .custom-img {
     object-position: center center; /* Centra las imágenes */
   }
