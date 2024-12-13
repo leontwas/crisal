@@ -1,11 +1,294 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/css/fuentes.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/auditorias.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Auditorias</title>
-</head>
-<body>
-    En proceso de desarrollo
-</body>
+  </head>
+  <body>
+    
+    <div class="header-container d-flex flex-column align-items-center p-3">
+        <div class="d-flex align-items-center">
+          <img id="imagen-logo" src="./assets/images/logo_crisal.png" alt="logo_crisal" class="img-fluid me-3" style="width: 10%;">
+          <a class="navbar-brand chicle-regular fs-3 text-center" href="#">Consultora de Seguridad e Higiene en el Trabajo</a>
+        </div>
+        <h3 class="categoria fs-5 mt-2">Comercio - Industria - Construcción - Medio Ambiente</h3>
+      </div>
+      
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gestiones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">C.A.B.A 🚚</a></li>
+                  <li><a class="dropdown-item" href="#">Provincia 🛴</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Auditorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">C.A.B.A 🚚</a></li>
+                  <li><a class="dropdown-item" href="#">Provincia 🛴</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">C.A.B.A 🚚</a></li>
+                  <li><a class="dropdown-item" href="#">Provincia 🛴</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Capacitaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">C.A.B.A 🚚</a></li>
+                  <li><a class="dropdown-item" href="#">Provincia 🛴</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Insumos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">C.A.B.A 🚚</a></li>
+                  <li><a class="dropdown-item" href="#">Provincia 🛴</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="contacto.html">
+                  Contacto
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="./login.html" id="admin">Admin</a>
+              </li>
+  
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="./assets/images/cliente1.png" data-slide-to="0" class="active"></li>
+            <li data-target="./assets/images/cliente2.png" data-slide-to="1"></li>
+            <li data-target="./assets/images/cliente3.jpg" data-slide-to="2"></li>
+            <li data-target="./assets/images/cliente4.png" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/cliente1.png" alt="cliente1" class="carrusel-imagen"> 
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/cliente3.jpg" alt="cliente3" class="carrusel-imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/cliente4.png" alt="cliente4"class="carrusel-imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/cliente5.jpg" alt="cliente5"class="carrusel-imagen">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/cliente6.png" alt="cliente6"class="carrusel-imagen">
+      </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+        <div class="card-group">
+        <div class="card">
+          <img src="./assets/images/Auditor.gif" class="card-img-top" alt="Auditor">
+
+
+         <div class="card-body">
+            <h5 class="card-title text-primary">¿Qué son los etiquetados ambientales o sellos verdes?</h5>
+            <p class="card-text">Los sellos verdes son conocidos en todo el mundo como etiquetados de productos que se destacan
+              por su compromiso ambiental. Actualmente demostrar ese compromiso es una exigencia creciente del
+              mercado, una necesidad actual de marketing y por la propia convicción empresarial ya que una buena
+              gestión ambiental es estratégica para mejorar la calidad e innovación en la producción.</p>
+              <br>
+              <h5 class="card-title text-primary"> ¿Es suficiente para mi firma realizar publicidad del
+                compromiso ambiental de la empresa?</h5>
+                <p class="card-text">No. Los consumidores
+                  no creen atribuciones que una empresa se hace así misma y mucho menos
+                  en términos de cuidado ambiental. Siempre es necesario que se avale
+                  sólidamente que existe este real compromiso ambiental y por ello existen los
+                  sellos ambientales.</p>
+                  <br>
+                  <h5 class="card-title text-primary"> ¿Qué beneficio le trae a mi empresa tener un sello verde?</h5>
+                  <p class="card-text">Tener una certificación ambiental confiable destaca tu producto de la competencia. Tener un etiquetado
+                  ambiental mejora considerablemente la imagen empresarial frente a consumidores, mercado y las propias
+                  autoridades de aplicación ambiental. Accederá a nuevos clientes, nuevos mercados y nuevos horizontes
+                  comerciales optimizando el crecimiento de su empresa. Podrá gestionar o alcanzar mayor éxito en acuerdos
+                  comerciales, procesos licitatorios o pedidos de financiamientos donde se exige en forma creciente demostrar
+                  una eficiente gestión ambiental. Además, su producto podrá venderse a un mayor valor de mercado, porque
+                  al demostrar que su empresa es amigable con el ambiente le otorga calidad extra al producto y sus
+                  consumidores estarán dispuestos a pagar por ello. Es un hecho que el 70% de los consumidores están
+                  actualmente preocupados por la huella ambiental del producto o bien que utilizan.</p>
+                </div>
+       </div>
+        <div class="card">
+          <img src="./assets/images/crisal.gif" class="card-img-top" alt="crisal">
+          <div class="card-body">
+            <h5 class="card-title text-primary"> ¿Qué sellos verdes existen en Argentina?</h5>
+            <p class="card-text">Existen sellos internacionales que se utilizan dentro del país y sellos verdes locales promovidos por rubros
+            específicos a través de algunas cámaras empresariales o algunos sellos verdes regionales promovidos por el
+            Estado local.</p>
+            <br>
+            <h5 class="card-title text-primary">¿Qué es el SELLO ARGENTINO DE
+              SUSTENTABILIDAD AMBIENTAL - SAA?</h5>
+              <p class="card-text">Es un sello ambiental nacional de validez en toda Argentina que avala con
+                extrema confiabilidad el compromiso ambiental que realiza su empresa. Ahora
+                se encuentra disponible un sello ambiental argentino (SAA) con muchas
+                características distintivas al resto de los sellos que le pasaremos a detallar</p>
+                <br>
+                <h5 class="card-title text-primary">¿Es compatible el SELLO ARGENTINO DE SUSTENTABILIDAD AMBIENTAL- SAA
+con otros sellos?</h5>
+<p>Sí. Su empresa puede tener todas las certificaciones ambientales que desee. Pero tenga en cuenta que los
+  sellos que a título gratuito que puede obtener de un programa de gobierno son una certificación ambiental que
+  sólo tiene el alcance local y no en todo el país. También tenga en cuenta que los sellos verdes que otorgan
+  algunas cámaras empresariales si bien son meritorios obtenerlos (al igual que los que otorgan los gobiernos
+  provinciales/municipales) pero son sellos otorgados por entidades no exclusivamente ambientales, de un rubro
+  específico y entre pares empresariales. Tome en consideración además que otras certificaciones ambientales
+  pueden solicitarles datos privados financieros (algo que nosotros no le solicitaremos). Y debe saber también que
+  los sellos internacionales, si bien tienen un fuerte peso en el comercio exterior, en el mercado local se sabe que
+  se puede obtenerlos sectorizados (por ejemplo: sólo la logística o un sector del servicio) dejando a sus clientes
+  y autoridades de aplicación ambiental a veces con sabor a poco.</p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="./assets/images/Lampara.gif" class="card-img-top" alt="Lampara">
+          <div class="card-body">
+            <h5 class="card-title text-primary">¿Quién avala este etiquetado ambiental nacional?</h5>
+            <p class="card-text">El SELLO ARGENTINO DE SUSTENTABILIDAD AMBIENTAL- SAA es avalado por
+              la Sociedad Argentina de Profesionales Ambientales una institución a nivel nacional
+              que nuclea a los profesionales y expertos ambientales de todo el país. La entidad
+              no persigue fines políticos ni económicos lo cual le otorga neutralidad al proceso y
+              permite un doble aval obteniendo un sello con mayor exclusividad y credibilidad. Es
+              el único sello avalado por una Sociedad Profesional exclusiva de la temática
+              ambiental cuyo único objetivo es el desarrollo sustentable de Argentina lo cual le
+              otorga a esta certificación un mayor grado de confiablidad ante terceros.</p>
+              <br>
+              <h5 class="card-title text-primary">¿En qué se diferencia el SAA con el resto de los
+                sellos?</h5>
+                <p class="card-text">Las diferencias con el resto de las certificaciones son muchas, a modo de resumen se pueden destacar:</p>
+                <ul class="card-text">
+                  <li>• Tiene alcance nacional.</li>
+                  <li>• Usted no tendrá que pasar por procesos largos y costosos de preparación previa para certificar.</li>
+                  <li>• La postulación de su empresa es gratuita e inmediata.</li>
+                  <li>• Todo el proceso es confidencial.</li>
+                  <li>• Las etapas de visita y certificación tienen un costo sumamente accesible.</li>
+                  <li>• Ofrece un horizonte de certificación concreto con procedimientos a bajo costo para las empresas, pues la inversión monetaria y de tiempo están claras desde el principio sin gastos extras adicionales ni procesos que se alarguen en el tiempo.</li>
+                  <li>• Precisamente por lo anterior pueden acceder a certificar todo tipo de empresas desde grandes firmas a pequeños emprendimientos.</li>
+                  <li>• Somos el único sello que le brindará un documento confidencial (elaborado por expertos) con estrategias de mejora para optimizar ahorros y ganancias, así como reducir riesgos mejorando su gestión interna.</li>
+                </ul>
+          </div>
+          </div>
+      </div>
+      </div>
+
+                <footer>
+                    <div class="footlist">
+                    <a
+                        id="footer_brillo"
+                        class="footlink fab fa-brands fa-youtube fa-2x"
+                        href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H"
+                        title="Facebook"
+                        target="_blank"
+                      ></a>
+                      <a
+                        id="footer_brillo"
+                        class="footlink fa-brands fa-instagram fa-2x"
+                        href="https://www.instagram.com/crisal.consultora/"
+                        title="Instagram"
+                        target="_blank"
+                      ></a>
+                      <a
+                        id="footer_brillo"
+                        class="footlink fa-brands fa-whatsapp fa-2x"
+                        href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
+                        title="Whatsapp"
+                        target="_blank"
+                      ></a>
+                      <a
+                        id="footer_brillo"
+                        class="footlink fa-brands fa-linkedin fa-2x"
+                        href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
+                        title="LinkedIn"
+                        target="_blank"
+                      ></a>
+                    </div>
+                    <p>
+                      <small
+                        >&copy; 2024 Todos los derechos reservados</small>
+                    </p>
+                  </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
 </html>

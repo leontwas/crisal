@@ -93,6 +93,7 @@ ul {
     height: 70px;
     cursor: pointer;
     list-style: none;
+    border-bottom: #cd7e35 solid 4px;
 }
 
 .menu li {

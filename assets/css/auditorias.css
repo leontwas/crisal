@@ -1,0 +1,455 @@
+.custom-img {
+  width: 100%; /* Asegura que las imágenes llenen el ancho del carrusel */
+  height: 100%; /* Ajusta las imágenes al alto del carrusel */
+  object-fit:contain; /* Evita deformaciones */
+}
+
+ .header-container {
+   margin-top: -20px;
+   display: flex;
+   align-items: center;
+   justify-content: start; /* Alinea los elementos al principio */
+   padding: 10px;
+   background-color: white;
+ }
+ 
+   .navbar {
+   margin-top: -10px !important;
+   background-color: #50633C !important;
+   color: white !important;
+ }
+
+ .navbar-nav {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+ }
+
+ .navbar-nav .nav-link {
+   color: black; /* Color inicial del texto */
+   border-bottom: 4px solid transparent; /* Sin borde por defecto */
+   transition: all 0.1s ease-in-out; /* Transición suave */
+   line-height: 1.2; /* Ajusta la altura de línea para acercar el texto al subrayado */
+   padding-bottom: 2px; /* Reduce el espacio debajo del texto */
+ }
+ 
+ .navbar-nav .nav-link:hover {
+   color: black; /* Color del texto al hacer hover */
+   border-bottom: 4px solid #cd7e35; /* Borde inferior al hacer hover */
+ }
+ .nav-link.dropdown-toggle::after {
+   content: none;
+ }
+
+ .chicle-regular {
+   font-size: 3rem !important;
+   margin-left: 100px;
+ }
+
+ #imagen-logo {
+   width: 80px; /* Ajusta el tamaño del logo */
+ }
+ 
+ .categoria {
+   color: black; /* Ajusta el color del subtítulo si lo deseas */
+   margin-top: -20px !important;
+ }
+
+ .navbar-light .navbar-nav .nav-link {
+   color: white; /* Cambia el color del texto del menú */
+ }
+ 
+ .navbar-light .navbar-brand {
+   color: white; /* Cambia el color del texto del logo */
+ }
+ 
+ .navbar-light .navbar-toggler {
+   border-color: white; /* Cambia el color del borde del botón toggle */
+ }
+ 
+ .navbar-light .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el color de las barras del icono toggle */
+ }
+ 
+ .navbar-light .dropdown-menu {
+   background-color: #333; /* Cambia el fondo del menú desplegable */
+ }
+ 
+ .navbar-light .dropdown-item {
+   color: white; /* Cambia el color del texto de los items en el dropdown */
+ }
+ 
+ .navbar-light .dropdown-item:hover {
+   background-color: #555; /* Cambia el fondo al pasar el cursor */
+ }
+
+ .nav-link.active {
+   color: white !important;
+ }
+
+ .nav-link.active:hover{
+   color:black !important;
+ }
+
+
+ .navbar-light {
+   color: black;
+   border-bottom: #cd7e35 solid 4px;
+ }
+
+ .btn-outline-success {
+   color: white; /* Texto en blanco */
+   border-color: white; /* Borde blanco */
+ }
+ 
+ .btn-outline-success:hover {
+   color: black; /* Texto en negro al hacer hover */
+   background-color: white; /* Fondo blanco al hacer hover */
+   border-color: black; /* Borde negro al hacer hover */
+ }
+
+ body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.carrusel-imagen {
+  display: block; /* Centra la imagen horizontalmente */
+  margin: 0 auto; /* Centrado horizontal */
+  max-width: 100%; /* Ajusta el tamaño máximo al contenedor */
+  max-height: 100%; /* Ajusta la altura máxima al contenedor */
+  width: 100%; /* Mantiene las proporciones del ancho */
+  height: auto; /* Mantiene las proporciones del alto */
+  object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: pan-Y;
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style:preserve-3d;
+}
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .owl-carousel {
+  display: block;
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+}
+
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
+  -webkit-transition: scale 100ms ease;
+  -moz-transition: scale 100ms ease;
+  -ms-transition: scale 100ms ease;
+  -o-transition: scale 100ms ease;
+  transition: scale 100ms ease;
+}
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  -moz-transition: scale(1.3, 1.3);
+  -ms-transition: scale(1.3, 1.3);
+  -o-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+} 
+
+
+
+/* Media Queries */
+
+/*********************************************** Celulares *******************************************/
+@media (max-width: 650px) {
+  .carousel-inner {
+    height: 400px; /* Reduce la altura del carrusel */
+  }
+
+  .custom-img {
+    object-position: center center; /* Centra las imágenes */
+  }
+
+  .header-container {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    display: inline-block;
+    max-width: 90%;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+  }
+  
+.chicle-regular {
+  font-size:large !important;
+  margin-top: 20px;
+  margin-left: -90px;
+}
+
+  .categoria {
+    font-size: small !important;
+  }
+  
+     .header-container {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #imagen-logo {
+      width: 100px; /* Tamaño más pequeño para móviles */
+    }
+  
+    .navbar-brand {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    .categoria {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Coloca los enlaces verticalmente */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px; /* Espacio adecuado para enlaces más grandes */
+  }
+
+.footer {
+  margin: 0;
+  padding: 0;
+  left:0;
+  right:0;
+  width: 100%;
+}
+
+/******************************************* Tablets ************************************************/
+@media (min-width: 651px) and (max-width: 850px) {
+  .carousel-inner {
+    height: 600px; /* Ajusta la altura del carrusel */
+  }
+
+  .custom-img {
+    object-position: center top; /* Foco en la parte superior */
+  }
+
+  .chicle-regular {
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    margin-left: 50px;
+  }
+
+  #imagen-logo {
+    width: 60px; /* Ajusta el tamaño del logo */
+  }
+
+  .navbar-nav {
+    gap: 20px; /* Añade espacio entre los enlaces */
+  }
+}
+
+/***************************************** Notebooks **********************************************/
+@media (min-width: 851px) and (max-width: 1200px) {
+  .carousel-inner {
+    height: 500px !important; /* Altura intermedia para el carrusel */
+  }
+
+  .custom-img {
+    object-position: center; /* Centra las imágenes completamente */
+  }
+
+  .chicle-regular {
+    font-size: 2.5rem;
+    margin-left: 80px;
+  }
+
+  #imagen-logo {
+    width: 70px;
+  }
+
+  .navbar-nav {
+    gap: 30px; /* Más espacio entre enlaces */
+  }
+}
