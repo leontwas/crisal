@@ -332,7 +332,9 @@
   z-index: 1;
 } 
 
-
+.chicle-regular {
+  margin-left: 50px;
+}
 
 /* Media Queries */
 
