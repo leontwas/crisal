@@ -349,6 +349,11 @@
   .carousel-control-next-icon {
     margin-top: -200px;
   }
+
+  .card-img-top {
+    margin-top: -300px;
+  }
+
   .custom-img {
     object-position: center center; /* Centra las imágenes */
   }
