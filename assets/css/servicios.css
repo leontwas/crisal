@@ -170,4 +170,8 @@ article:hover img:last-child {
         max-width: 100%;
         margin: 5px;
     }
+
+    #link {
+        color: gold;
+    }
 }
