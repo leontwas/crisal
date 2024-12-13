@@ -342,6 +342,10 @@
     height: 400px; /* Reduce la altura del carrusel */
   }
 
+  .carrusel-control-prev{
+    margin-top: -50px;
+  }
+  
   .custom-img {
     object-position: center center; /* Centra las imágenes */
   }
