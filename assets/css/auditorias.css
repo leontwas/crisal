@@ -343,9 +343,12 @@
   }
 
   .carousel-control-prev-icon {
-    margin-top: -50px;
+    margin-top: -150px;
   }
-
+  
+  .carousel-control-next-icon {
+    margin-top: -150px;
+  }
   .custom-img {
     object-position: center center; /* Centra las imágenes */
   }
