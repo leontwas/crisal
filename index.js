@@ -26,8 +26,8 @@ const users = [
 // Middleware para parsear JSON
 app.use(bodyParser.json());
 
-// Sirve archivos estáticos desde el directorio 'public'
-app.use(express.static(path.join(__dirname, 'public')));
+// Sirve archivos estáticos desde el directorio '/'
+app.use(express.static(path.join(__dirname, '/')));
 
 // Ruta para autenticación
 app.post('/api/login', (req, res) => {
