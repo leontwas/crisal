@@ -452,8 +452,8 @@
   }
 
   .chicle-regular {
-    font-size: 1.3rem;
-    margin-left: 30px;
+    font-size: 1.3rem !important; 
+    margin-left: 30px !important;
   }
 
   #imagen-logo {
