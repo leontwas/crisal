@@ -429,9 +429,9 @@
   }
 
   .chicle-regular {
-    font-size: 1.3rem; /* Ajusta el tamaño del texto */
-    margin-left: 20px;
-    margin-bottom: 20px;
+    font-size: 1rem !important; /* Ajusta el tamaño del texto */
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
   }
 
   #imagen-logo {
