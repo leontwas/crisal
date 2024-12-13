@@ -343,11 +343,11 @@
   }
 
   .carousel-control-prev-icon {
-    margin-top: -150px;
+    margin-top: -200px;
   }
-  
+
   .carousel-control-next-icon {
-    margin-top: -150px;
+    margin-top: -200px;
   }
   .custom-img {
     object-position: center center; /* Centra las imágenes */
