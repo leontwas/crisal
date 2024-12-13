@@ -14,8 +14,8 @@ const app = express();
 // Simulación de base de datos
 const users = [
     {
-        username: "admin",
-        password: bcrypt.hashSync("admin123", 10), // Contraseña hasheada
+        username: "yo",
+        password: bcrypt.hashSync("yo", 10), // Contraseña hasheada
     },
     {
         username: "superadmin", // Usuario para administrador
