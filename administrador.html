@@ -1,5 +1,4 @@
 <!-- administrador.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +12,17 @@
     <p>Acceso autorizado. Solo los usuarios con el token adecuado pueden ver esta página.</p>
 
     <script>
-        // Verificar si hay un token válido en el localStorage
-        const token = localStorage.getItem('token');
-        if (!token) {
-            // Si no hay token, redirigir a la página de login
-            window.location.href = 'login.html';
-        }
+        window.onload = () => {
+            // Verificar si hay un token válido en el localStorage
+            const token = localStorage.getItem('authToken'); // Usar 'authToken' ya que es el nombre con el que se guardó el token
+            if (!token) {
+                // Si no hay token, redirigir a la página de login
+                window.location.href = 'login.html';
+            }
 
-        // Aquí puedes agregar más lógica para verificar si el token es válido (por ejemplo, decodificarlo y comprobar su expiración)
+            // Aquí puedes agregar más lógica para verificar si el token es válido
+            // Por ejemplo, decodificar el token y verificar su expiración
+        };
     </script>
 </body>
 </html>

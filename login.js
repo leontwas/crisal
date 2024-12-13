@@ -18,8 +18,10 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         const result = await response.json();
 
         if (response.ok) {
-            // Redirigir a la página administrador.html si la autenticación es exitosa
-            window.location.href = 'administrador.html';  // Cambié la URL a 'administrador.html'
+            // Almacenar el token en el almacenamiento local
+            localStorage.setItem('authToken', result.token);
+            // Redirigir a la página administrador.html
+            window.location.href = 'administrador.html';
         } else {
             console.error('Error al intentar iniciar sesión:', result.message);
             alert('Error: ' + result.message);
