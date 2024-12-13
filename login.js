@@ -1,30 +1,32 @@
-document.getElementById("loginForm").addEventListener("submit", async (event) => {
-    event.preventDefault(); // Evita que el formulario recargue la página
+// login.js
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+const loginForm = document.getElementById('loginForm');
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    try {
-        const response = await fetch("/api/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ username, password }),
-        });
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
 
-        if (response.ok) {
-            const data = await response.json();
-            alert("Login exitoso");
-            console.log("Token recibido:", data.token);
-            // Puedes guardar el token en localStorage para futuras solicitudes
-            localStorage.setItem("authToken", data.token);
-        } else {
-            const error = await response.json();
-            alert("Error: " + error.message);
-        }
-    } catch (err) {
-        console.error("Error al intentar iniciar sesión:", err);
-        alert("Error de conexión al servidor.");
-    }
+  fetch('http://localhost:3000/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username, password }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.token) {
+        // Almacenar el token en el localStorage o sessionStorage
+        localStorage.setItem('token', data.token);
+
+        // Redirigir a la página administrador.html
+        window.location.href = 'administrador.html';
+      } else {
+        alert('Usuario o contraseña incorrectos');
+      }
+    })
+    .catch((error) => {
+      console.error('Error al intentar iniciar sesión:', error);
+    });
 });
