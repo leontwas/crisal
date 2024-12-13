@@ -429,13 +429,13 @@
   }
 
   .chicle-regular {
-    font-size: 1.8rem !important; /* Ajusta el tamaño del texto */
-    margin-left: 20px !important;
+    font-size: 2rem !important; /* Ajusta el tamaño del texto */
+    margin-left: 50px !important;
     margin-bottom: 20px !important;
   }
 
 .card-group{
-margin-top: -200px;
+margin-top: -220px;
 }
 
   #imagen-logo {
