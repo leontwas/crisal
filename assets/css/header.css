@@ -330,4 +330,8 @@ ul {
         font-size: 2.3rem;
         margin-left: 20px;
        }
+       #imagen-logo {
+        width: 60px; /* Ajusta el tamaño del logo */
+        margin-top: -30px;
+      }
 }
