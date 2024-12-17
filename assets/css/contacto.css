@@ -117,3 +117,19 @@ main {
     margin-left: 190px;
   }
 }
+
+@media (max-width: 991px) { /* Tablets y celulares en modo desplegable */
+  .navbar-collapse {
+    text-align: center; /* Centra todos los elementos dentro del navbar desplegable */
+  }
+
+  .navbar-collapse .d-flex {
+    justify-content: center; /* Centra el formulario de búsqueda */
+    margin-top: 10px; /* Espacio superior */
+  }
+
+  .navbar-collapse .d-flex input {
+    max-width: 80%; /* Limita el ancho del input para mejor visualización */
+    margin: 0 auto; /* Centra el input horizontalmente */
+  }
+}
