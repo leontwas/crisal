@@ -323,6 +323,7 @@ margin-top: -215px;
 
   #imagen-logo {
     width: 60px; /* Ajusta el tamaño del logo */
+    margin-top: -30px;
   }
 
   .navbar-nav {
