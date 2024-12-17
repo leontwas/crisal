@@ -32,6 +32,12 @@ header {
     background-color: white;
 }
 
+nav .form-control-2 {
+    background-color: initial;
+    border: initial;
+    padding: initial;
+}
+
 .header-container {
     margin-top: -20px;
     display: flex;
