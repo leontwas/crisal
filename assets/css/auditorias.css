@@ -25,90 +25,93 @@
    justify-content: center;
  }
 
- .navbar-nav .nav-link {
-   color: black; /* Color inicial del texto */
-   border-bottom: 4px solid transparent; /* Sin borde por defecto */
-   transition: all 0.1s ease-in-out; /* Transición suave */
-   line-height: 1.2; /* Ajusta la altura de línea para acercar el texto al subrayado */
-   padding-bottom: 2px; /* Reduce el espacio debajo del texto */
- }
- 
- .navbar-nav .nav-link:hover {
-   color: black; /* Color del texto al hacer hover */
-   border-bottom: 4px solid #cd7e35; /* Borde inferior al hacer hover */
- }
- .nav-link.dropdown-toggle::after {
-   content: none;
- }
+ .navbar.navbar-expand-lg.navbar-light.bg-light {
+  margin-top: 10px !important;
+  width: 100%;
+}
 
- .chicle-regular {
-   font-size: 3rem !important;
-   margin-left: 100px;
- }
+.navbar {
+  margin-top: -10px !important;
+  background-color: #50633C !important;
+  color: white !important;
+}
 
- #imagen-logo {
-   width: 80px; /* Ajusta el tamaño del logo */
- }
- 
- .categoria {
-   color: black; /* Ajusta el color del subtítulo si lo deseas */
-   margin-top: -20px !important;
- }
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
- .navbar-light .navbar-nav .nav-link {
-   color: white; /* Cambia el color del texto del menú */
- }
- 
- .navbar-light .navbar-brand {
-   color: white; /* Cambia el color del texto del logo */
- }
- 
- .navbar-light .navbar-toggler {
-   border-color: white; /* Cambia el color del borde del botón toggle */
- }
- 
- .navbar-light .navbar-toggler-icon {
-   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el color de las barras del icono toggle */
- }
- 
- .navbar-light .dropdown-menu {
-   background-color: #333; /* Cambia el fondo del menú desplegable */
- }
- 
- .navbar-light .dropdown-item {
-   color: white; /* Cambia el color del texto de los items en el dropdown */
- }
- 
- .navbar-light .dropdown-item:hover {
-   background-color: #555; /* Cambia el fondo al pasar el cursor */
- }
+.navbar-nav .nav-link {
+  color: black; /* Color inicial del texto */
+  border-bottom: 4px solid transparent; /* Sin borde por defecto */
+  transition: all 0.1s ease-in-out; /* Transición suave */
+  line-height: 1.2; /* Ajusta la altura de línea para acercar el texto al subrayado */
+  padding-bottom: 2px; /* Reduce el espacio debajo del texto */
+}
 
- .nav-link.active {
-   color: white !important;
- }
+.navbar-nav .nav-link:hover {
+  color: black; /* Color del texto al hacer hover */
+  border-bottom: 4px solid #cd7e35; /* Borde inferior al hacer hover */
+}
+.nav-link.dropdown-toggle::after {
+  content: none;
+}
 
- .nav-link.active:hover{
-   color:black !important;
- }
+.navbar-light .navbar-nav .nav-link {
+  color: white; /* Cambia el color del texto del menú */
+}
+
+.navbar-light .navbar-brand {
+  color: white; /* Cambia el color del texto del logo */
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white; /* Cambia el color del borde del botón toggle */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el color de las barras del icono toggle */
+}
+
+.navbar-light .dropdown-menu {
+  background-color: #333; /* Cambia el fondo del menú desplegable */
+}
+
+.navbar-light .dropdown-item {
+  color: white; /* Cambia el color del texto de los items en el dropdown */
+}
+
+.navbar-light .dropdown-item:hover {
+  background-color: #555; /* Cambia el fondo al pasar el cursor */
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
+.nav-link.active:hover{
+  color:black !important;
+}
 
 
- .navbar-light {
-   color: black;
-   border-bottom: #cd7e35 solid 4px;
- }
+.navbar-light {
+  color: black;
+  border-bottom: #cd7e35 solid 4px;
+}
 
- .btn-outline-success {
-   color: white; /* Texto en blanco */
-   border-color: white; /* Borde blanco */
- }
+.btn-outline-success {
+  color: white; /* Texto en blanco */
+  border-color: white; /* Borde blanco */
+}
+
+.btn-outline-success:hover {
+  color: black; /* Texto en negro al hacer hover */
+  background-color: white; /* Fondo blanco al hacer hover */
+  border-color: black; /* Borde negro al hacer hover */
+}
  
- .btn-outline-success:hover {
-   color: black; /* Texto en negro al hacer hover */
-   background-color: white; /* Fondo blanco al hacer hover */
-   border-color: black; /* Borde negro al hacer hover */
- }
-
- body, h1, h2, p, ul, li {
+  body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -332,10 +335,6 @@
   z-index: 1;
 } 
 
-.chicle-regular {
-  margin-left: 150px;
-}
-
 /* Media Queries */
 
 /*********************************************** Celulares *******************************************/
@@ -454,21 +453,7 @@ margin-top: -215px;
   .carousel-inner {
     height: 500px !important; /* Altura intermedia para el carrusel */
   }
-
   .custom-img {
     object-position: center; /* Centra las imágenes completamente */
-  }
-
-  .chicle-regular {
-    font-size: 2.5rem;
-    margin-left: 80px;
-  }
-
-  #imagen-logo {
-    width: 70px;
-  }
-
-  .navbar-nav {
-    gap: 30px; /* Más espacio entre enlaces */
   }
 }
