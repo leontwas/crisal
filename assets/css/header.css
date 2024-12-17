@@ -132,6 +132,7 @@ header {
  .navbar-light {
    color: black;
    border-bottom: #cd7e35 solid 4px;
+   border-top: #cd7e35 solid 4px;
  }
  
  .btn-outline-success {
