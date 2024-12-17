@@ -253,50 +253,14 @@
     object-position: center center; /* Centra las imágenes */
   }
 
-  .header-container {
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .navbar-brand {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    display: inline-block;
-    max-width: 90%;
-    word-wrap: break-word;
-    margin-bottom: 1rem;
-  }
-  
-  .categoria {
+    .categoria {
     font-size: small !important;
   }
-  
-     .header-container {
-      align-items: center;
-      justify-content: center;
-    }
-  
-    #imagen-logo {
-      width: 100px; /* Tamaño más pequeño para móviles */
-    }
-  
-    .navbar-brand {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-  
+
     .categoria {
       font-size: 0.9rem;
       margin-top: 0.5rem;
     }
-  }
-
-  .navbar-nav {
-    flex-direction: column; /* Coloca los enlaces verticalmente */
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px; /* Espacio adecuado para enlaces más grandes */
   }
 
 .footer {
@@ -321,11 +285,6 @@
 margin-top: -215px;
 }
 
-
-
-  .navbar-nav {
-    gap: 20px; /* Añade espacio entre los enlaces */
-  }
 }
 
 /***************************************** Notebooks **********************************************/
