@@ -24,11 +24,9 @@ ul {
 }
 /********************* Header ***********************/
 header {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color:white;
-    color: white;
-    padding: 20px;
-    text-align: center;
     box-sizing: border-box;
 }
 
@@ -41,11 +39,17 @@ header {
     background-color: white;
   }
   
-    .navbar {
-    margin-top: -10px !important;
+/* Ajustar la barra de navegación para ocupar todo el ancho */
+.navbar {
+    margin-top: -10px !important; /* Mantiene tu margen */
     background-color: #50633C !important;
     color: white !important;
-  }
+    width: 100vw; /* Hace que ocupe todo el ancho de la pantalla */
+    padding: 0; /* Elimina cualquier padding adicional */
+    margin-left: 0; /* Asegura que no haya márgenes laterales */
+    margin-right: 0;
+    box-sizing: border-box; /* Incluye bordes y padding dentro del ancho total */
+}
  
   .navbar-nav {
     margin: 0 auto;
