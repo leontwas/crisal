@@ -253,6 +253,11 @@ ul {
         font-weight: bold;
       }
 
+      .logo {
+        margin-top: -20px;
+        margin-left: -10px;
+      }
+
       .categoria {
         font-size: 0.8rem;
      }
