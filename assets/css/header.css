@@ -336,6 +336,10 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
         margin-top: 30px;
         height: auto;
     }
+
+    nav .form-control-2 { 
+      width: 100px;
+    }
 }
 
 /* Ocultar el ícono del menú hamburguesa en tablets y notebooks */
