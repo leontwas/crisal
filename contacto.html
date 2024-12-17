@@ -17,27 +17,70 @@
 <body>
     <header class="header">
         <!-- imagen logo -->
-        <img alt="logo" src="./assets/images/logo_crisal.png" class="logo" />
+        <img alt="logo" src="./assets/images/logo_crisal.png" class="logo" />  
         <!-- Títulos centrados -->
         <div class="titulos">
           <h1 class="chicle-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
-          <h3>Comercio - Industria - Construcción - Medio Ambiente</h3>
+          <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
         </div>
-        <!-- Menú responsive -->
-        <div class="menu-desplegable" onclick="toggleMenu()">&#9776;</div>
-    </header>
-      <nav>
-        <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="gestiones.html">Gestiones</a></li>
-        <li><a href="auditorias.html">Auditorías</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="capacitaciones.html">Capacitaciones</a></li>
-        <li><a href="insumos.html">Insumos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="login.html">Admin</a></li>
-      </ul>
-    </nav>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./gestiones.html">
+                  Gestiones
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./auditorias.html" id="auditorias">
+                  Auditorías
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./servicios.html">
+                  Servicios
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./capacitaciones.html" id="capacitaciones">
+                  Capacitaciones
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./insumos.html" id="insumos">
+                  Insumos
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="contacto.html">
+                  Contacto
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="./login.html" id="admin">Admin</a>
+              </li>
+  
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <main>
         <div class="titulo">
             <h1 class="kalam-bold" id="texto-negro1">Solicitá tu entrevista aquí...</h1>
