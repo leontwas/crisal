@@ -36,6 +36,9 @@ nav .form-control-2 {
     background-color: initial;
     border: initial;
     padding: initial;
+    background-color: white;
+    color: #555;
+    margin-left: 5px;
 }
 
 .header-container {
