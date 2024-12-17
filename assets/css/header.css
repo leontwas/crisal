@@ -256,8 +256,8 @@ header {
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
     .chicle-regular {
-        margin-top: -10px;
-        padding-left: 90px;
+        margin-top: 10px;
+        padding-left: 95px;
         padding-right: 30px;
         font-size: 2rem;
       }
