@@ -42,6 +42,7 @@ nav .form-control-2 {
     margin-left: 10px; /* Añadir separación del borde izquierdo */
     border-radius: 5px;
     align-items: center;
+    text-align: center;
     padding-right: 5px;
 }
 
