@@ -111,10 +111,10 @@
   border-color: black; /* Borde negro al hacer hover */
 }
  
-  body, h1, h2, p, ul, li {
+ /* body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
-}
+}*/
 
 .carrusel-imagen {
   display: block; /* Centra la imagen horizontalmente */
