@@ -341,6 +341,9 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
       width: 300px;
       margin-right: -10px;
     }
+    #buscar {
+      margin-left: -10px;
+    }
 }
 
 /* Ocultar el ícono del menú hamburguesa en tablets y notebooks */
@@ -379,9 +382,13 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
       }
 
       nav .form-control-2 { 
-        width: 800px;
+        width: 750px;
         margin-right: -10px;
       }
+      #buscar {
+        margin-left: -10px;
+      }
+
 }
 
 @media (min-width: 851px){
