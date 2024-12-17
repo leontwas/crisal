@@ -135,7 +135,7 @@ header {
  
  .btn-outline-success {
    color: white; /* Texto en blanco */
-   border-color: white; /* Borde blanco */
+   border-color: white !important; /* Borde blanco */
  }
  
  .btn-outline-success:hover {
