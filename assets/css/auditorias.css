@@ -1,120 +1,14 @@
+
+ body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 .custom-img {
   width: 100%; /* Asegura que las imágenes llenen el ancho del carrusel */
   height: 100%; /* Ajusta las imágenes al alto del carrusel */
   object-fit:contain; /* Evita deformaciones */
 }
-
- .header-container {
-   margin-top: -20px;
-   display: flex;
-   align-items: center;
-   justify-content: start; /* Alinea los elementos al principio */
-   padding: 10px;
-   background-color: white;
- }
- 
-   .navbar {
-   margin-top: -10px !important;
-   background-color: #50633C !important;
-   color: white !important;
- }
-
- .navbar-nav {
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
- }
-
- .navbar.navbar-expand-lg.navbar-light.bg-light {
-  margin-top: 10px !important;
-  width: 100%;
-}
-
-.navbar {
-  margin-top: -10px !important;
-  background-color: #50633C !important;
-  color: white !important;
-}
-
-.navbar-nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-nav .nav-link {
-  color: black; /* Color inicial del texto */
-  border-bottom: 4px solid transparent; /* Sin borde por defecto */
-  transition: all 0.1s ease-in-out; /* Transición suave */
-  line-height: 1.2; /* Ajusta la altura de línea para acercar el texto al subrayado */
-  padding-bottom: 2px; /* Reduce el espacio debajo del texto */
-}
-
-.navbar-nav .nav-link:hover {
-  color: black; /* Color del texto al hacer hover */
-  border-bottom: 4px solid #cd7e35; /* Borde inferior al hacer hover */
-}
-.nav-link.dropdown-toggle::after {
-  content: none;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: white; /* Cambia el color del texto del menú */
-}
-
-.navbar-light .navbar-brand {
-  color: white; /* Cambia el color del texto del logo */
-}
-
-.navbar-light .navbar-toggler {
-  border-color: white; /* Cambia el color del borde del botón toggle */
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el color de las barras del icono toggle */
-}
-
-.navbar-light .dropdown-menu {
-  background-color: #333; /* Cambia el fondo del menú desplegable */
-}
-
-.navbar-light .dropdown-item {
-  color: white; /* Cambia el color del texto de los items en el dropdown */
-}
-
-.navbar-light .dropdown-item:hover {
-  background-color: #555; /* Cambia el fondo al pasar el cursor */
-}
-
-.nav-link.active {
-  color: white !important;
-}
-
-.nav-link.active:hover{
-  color:black !important;
-}
-
-
-.navbar-light {
-  color: black;
-  border-bottom: #cd7e35 solid 4px;
-}
-
-.btn-outline-success {
-  color: white; /* Texto en blanco */
-  border-color: white; /* Borde blanco */
-}
-
-.btn-outline-success:hover {
-  color: black; /* Texto en negro al hacer hover */
-  background-color: white; /* Fondo blanco al hacer hover */
-  border-color: black; /* Borde negro al hacer hover */
-}
- 
- /* body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}*/
 
 .carrusel-imagen {
   display: block; /* Centra la imagen horizontalmente */
