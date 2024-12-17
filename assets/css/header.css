@@ -351,11 +351,17 @@ nav .form-control-2 {
         align-items: center;
     }
 
+    nav .collapse .d-flex {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;     /* Centra verticalmente */
+        width: 100%;             /* Asegura que ocupe todo el ancho */
+        margin-top: 10px;        /* Añade un espacio superior opcional */
+    }
     nav .form-control-2 {
         width: 80%;              /* Ajusta el tamaño del input */
         margin: 0 auto;          /* Centra el input dentro del formulario */
     }
-
 }
 
 /************************************* Estilos para dispositivos tablets **********************************************/
