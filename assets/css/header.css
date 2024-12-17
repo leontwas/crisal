@@ -23,6 +23,15 @@ ul {
     list-style: none;
 }
 /********************* Header ***********************/
+header {
+    width: 100%;
+    background-color:white;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .header-container {
     margin-top: -20px;
     display: flex;
