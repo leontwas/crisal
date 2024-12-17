@@ -347,10 +347,11 @@ header {
     .chicle-regular {
         font-size: 2.3rem;
         margin-left: 20px;
+        margin-top: 10px;
        }
 
     .logo {
         width: 110px; /* Ajusta el tamaño del logo */
-        margin-top: -20px;
+        margin-top: -10px;
       }
 }
