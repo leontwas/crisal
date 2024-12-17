@@ -377,6 +377,11 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
         width: 110px; /* Ajusta el tamaño del logo */
         margin-top: -10px;
       }
+
+      nav .form-control-2 { 
+        width: 800px;
+        margin-right: -10px;
+      }
 }
 
 @media (min-width: 851px){
