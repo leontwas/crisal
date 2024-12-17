@@ -32,7 +32,7 @@ header {
     background-color: white;
 }
 
-nav .form-control-2 {
+nav .form-control-2 {  /* Buscador en la página de contacto.html*/
     background-color: initial;
     border: initial;
     padding: initial;
@@ -42,8 +42,8 @@ nav .form-control-2 {
     margin-left: 10px; /* Añadir separación del borde izquierdo */
     border-radius: 5px;
     align-items: center;
-    text-align: center;
-    padding-right: 5px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 .header-container {
@@ -142,7 +142,6 @@ nav .form-control-2 {
  .nav-link.active:hover{
    color:black !important;
  }
- 
  
  .navbar-light {
    color: black;
@@ -351,17 +350,6 @@ nav .form-control-2 {
         align-items: center;
     }
 
-    nav .collapse .d-flex {
-        display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center;     /* Centra verticalmente */
-        width: 100%;             /* Asegura que ocupe todo el ancho */
-        margin-top: 10px;        /* Añade un espacio superior opcional */
-    }
-    nav .form-control-2 {
-        width: 80%;              /* Ajusta el tamaño del input */
-        margin: 0 auto;          /* Centra el input dentro del formulario */
-    }
 }
 
 /************************************* Estilos para dispositivos tablets **********************************************/
