@@ -129,7 +129,7 @@ main {
   }
 
   .navbar-collapse .d-flex input {
-    max-width: 80%; /* Limita el ancho del input para mejor visualización */
+    max-width: 100%; /* Limita el ancho del input para mejor visualización */
     margin: 0 auto; /* Centra el input horizontalmente */
   }
 }
