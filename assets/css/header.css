@@ -355,3 +355,12 @@ header {
         margin-top: -10px;
       }
 }
+
+@media (min-width: 851px){
+    .chicle-regular {
+        margin-top: 10px;
+       }
+       .logo{
+        margin-top: -10px;
+       }
+}
