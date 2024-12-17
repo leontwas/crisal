@@ -244,6 +244,7 @@ ul {
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
     .chicle-regular {
+        margin-top: 10px;
         padding-left: 90px;
         padding-right: 30px;
         font-size: 2rem;
@@ -255,7 +256,7 @@ ul {
 
       .logo {
         margin-top: -20px;
-        margin-left: -10px;
+        margin-left: -15px;
       }
 
       .categoria {
