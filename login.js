@@ -1,13 +1,18 @@
 document.getElementById('loginForm').addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
+    const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value;
+
+    if (!username || !password) {
+        alert('Por favor, completa todos los campos.');
+        return;
+    }
 
     const loginData = { username, password };
 
     try {
-        const response = await fetch('http://localhost:3000/api/login', {
+        const response = await fetch('http://192.168.1.100:3000/api/login', { // Cambia por tu IP local
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -15,19 +20,17 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
             body: JSON.stringify(loginData),
         });
 
-        const result = await response.json();
-
         if (response.ok) {
-            // Almacenar el token en el almacenamiento local
+            const result = await response.json();
             localStorage.setItem('authToken', result.token);
-            // Redirigir a la página administrador.html
+            alert('Inicio de sesión exitoso');
             window.location.href = 'administrador.html';
         } else {
-            console.error('Error al intentar iniciar sesión:', result.message);
-            alert('Error: ' + result.message);
+            const error = await response.json();
+            alert(`Error: ${error.message}`);
         }
     } catch (error) {
         console.error('Error al intentar iniciar sesión:', error);
-        alert('Error de conexión');
+        alert('No se pudo conectar al servidor. Por favor, inténtalo más tarde.');
     }
 });

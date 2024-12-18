@@ -1,39 +1,36 @@
+// Importar módulos necesarios
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import bodyParser from 'body-parser';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import cors from 'cors';
 
 // Obtener el directorio actual en un módulo ES
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express();  // Asegúrate de que esto esté aquí
+const app = express(); // Inicializar la aplicación de Express
 
-// Simulación de base de datos
+// Simulación de base de datos de usuarios
 const users = [
     {
         username: "yo",
         password: bcrypt.hashSync("yo", 10), // Contraseña hasheada
     },
     {
-        username: "superadmin", // Usuario para administrador
-        password: bcrypt.hashSync("miContrasenaSegura123", 10), // Contraseña hasheada para administrador
+        username: "superadmin",
+        password: bcrypt.hashSync("miContrasenaSegura123", 10), // Contraseña hasheada para superadmin
     },
 ];
 
-// Middleware para parsear JSON
-app.use(bodyParser.json());
+// Middlewares
+app.use(cors()); // Habilitar CORS para permitir peticiones desde cualquier origen
+app.use(bodyParser.json()); // Parsear JSON en las solicitudes
+app.use(express.static(path.join(__dirname, './'))); // Servir archivos estáticos
 
-// Middleware para habilitar CORS (para permitir las peticiones desde otro dominio)
-import cors from 'cors';
-app.use(cors());
-
-// Sirve archivos estáticos desde el directorio './'
-app.use(express.static(path.join(__dirname, './')));
-
-// Ruta para autenticación
+// Ruta para autenticación (login)
 app.post('/api/login', (req, res) => {
     const { username, password } = req.body;
 
@@ -54,7 +51,7 @@ app.post('/api/login', (req, res) => {
         expiresIn: "1h", // Token válido por 1 hora
     });
 
-    res.json({ token });
+    res.json({ token }); // Devolver el token al cliente
 });
 
 // Redirigir a la URL de Netlify
