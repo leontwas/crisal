@@ -7,7 +7,8 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const loginData = { username, password };
 
     try {
-        const response = await fetch('https://crisal-seguridad.netlify.app/login', {
+        // Cambia esta URL por la de tu servidor backend
+        const response = await fetch('http://localhost:3000/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -16,12 +17,20 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         });
 
         if (!response.ok) {
-            const error = await response.json();
-            console.error('Error en la autenticación:', error.message);
-            alert('Error: ' + error.message);
+            // Intenta obtener el mensaje de error del servidor
+            let errorMessage = 'Error desconocido';
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.message || errorMessage;
+            } catch (e) {
+                console.error('No se pudo parsear el error:', e);
+            }
+            console.error('Error en la autenticación:', errorMessage);
+            alert('Error: ' + errorMessage);
             return;
         }
 
+        // Procesa la respuesta exitosa
         const result = await response.json();
         localStorage.setItem('authToken', result.token);
         window.location.href = 'administrador.html';
@@ -30,4 +39,3 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         alert('Error de conexión al servidor.');
     }
 });
-
