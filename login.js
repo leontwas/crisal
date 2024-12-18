@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const loginData = { username, password };
 
     try {
-        const response = await fetch('http://192.168.x.x:3000/api/login', {
+        const response = await fetch('https://crisal-seguridad.netlify.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
