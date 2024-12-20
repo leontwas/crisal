@@ -189,6 +189,10 @@ a:hover {
     max-width: 100%;
   }
 
+#crisal {
+  font-size: x-large;
+}
+
   .mapa {
     display: flex;
     align-items: center;
@@ -278,6 +282,11 @@ a:hover {
   #texto-amarillo {
     font-size: large;
   }
+
+  #crisal {
+    font-size: x-large;
+  }
+  
   .mapa {
     display: flex;
     align-items: center;
