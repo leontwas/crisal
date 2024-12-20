@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Obtener referencias a los elementos del formulario
     var formulario = document.getElementById("formulario");
     var nombreInput = document.getElementById("nombre");
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var email = emailInput.value.trim();
         var fecha = fechaInput.value.trim();
 
+        // Validar nombre
         if (nombre === "") {
             alert("Por favor, introduce tu nombre");
             event.preventDefault();
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
+        // Validar apellido
         if (apellido === "") {
             alert("Por favor, introduce tu apellido");
             event.preventDefault();
@@ -35,100 +37,36 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
+        // Validar teléfono
         if (telefono === "") {
             alert("Por favor, introduce tu teléfono");
             event.preventDefault();
             return;
-        } else if (!/^\d+$/.test(telefono)) {
-            alert("Solo se permiten números en el teléfono.");
+        } else if (!/^\d{10}$/.test(telefono)) {
+            alert("El teléfono debe contener 10 dígitos numéricos.");
             event.preventDefault();
             return;
         }
 
-        if (email === "" || !/^[^\s@]+@[^\s@]+\.(com|us|ar|museum|uk|de|jp|fr|cn|br|es|au|org|net|edu|gov|mil)$/i.test(email)) {
-            alert("Por favor, introduce un email válido");
+        // Validar correo electrónico
+        if (email === "") {
+            alert("Por favor, introduce tu correo electrónico");
+            event.preventDefault();
+            return;
+        } else if (!/^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            alert("Por favor, introduce un correo electrónico válido.");
             event.preventDefault();
             return;
         }
 
-        var fechaSeleccionada = new Date(fecha);
-        var fechaActual = new Date();
-        fechaActual.setHours(0, 0, 0, 0); // Establecer horas, minutos, segundos y milisegundos a cero para comparación
-        if (fecha === "" || fechaSeleccionada < fechaActual) {
-            alert("La fecha no puede ser anterior a la fecha actual.");
+        // Validar fecha
+        if (fecha === "") {
+            alert("Por favor, selecciona una fecha.");
             event.preventDefault();
             return;
-        } else {
-            var fechaMaxima = new Date();
-            fechaMaxima.setMonth(fechaMaxima.getMonth() + 2);
-            if (fechaSeleccionada > fechaMaxima) {
-                alert("La reserva solo puede realizarse con un máximo de dos meses de anticipación.");
-                event.preventDefault();
-                return;
-            }
         }
     }
 
-    // Añadir el evento submit al formulario
+    // Asociar la función de validación al evento submit
     formulario.addEventListener("submit", validarFormulario);
-
-    // Validaciones en tiempo real
-    nombreInput.addEventListener("blur", function() {
-        if (!/^[a-zA-Z\s]+$/.test(nombreInput.value)) {
-            nombreInput.setCustomValidity("Solo se permiten letras y espacios en el nombre.");
-        } else {
-            nombreInput.setCustomValidity("");
-        }
-    });
-
-    apellidoInput.addEventListener("blur", function() {
-        if (!/^[a-zA-Z\s]+$/.test(apellidoInput.value)) {
-            apellidoInput.setCustomValidity("Solo se permiten letras y espacios en el apellido.");
-        } else {
-            apellidoInput.setCustomValidity("");
-        }
-    });
-
-    telefonoInput.addEventListener("keyup", function() {
-        if (!/^\d+$/.test(telefonoInput.value)) {
-            telefonoInput.setCustomValidity("Solo se permiten números en el teléfono.");
-        } else {
-            telefonoInput.setCustomValidity("");
-        }
-    });
-
-    emailInput.addEventListener("blur", function() {
-        var email = emailInput.value;
-        var pattern = /^[^\s@]+@[^\s@]+\.(com|us|ar|museum|uk|de|jp|fr|cn|br|es|au|org|net|edu|gov|mil)$/i;
-        if (!pattern.test(email)) {
-            emailInput.setCustomValidity("Por favor, ingresa una dirección de correo electrónico válida");
-        } else {
-            emailInput.setCustomValidity("");
-        }
-    });
-
-    fechaInput.addEventListener("blur", function() {
-        var fechaSeleccionada = new Date(fechaInput.value);
-        var fechaActual = new Date();
-        fechaActual.setHours(0, 0, 0, 0); // Establecer horas, minutos, segundos y milisegundos a cero para comparación
-        if (fechaSeleccionada < fechaActual) {
-            fechaInput.setCustomValidity("La fecha no puede ser anterior a la fecha actual.");
-        } else {
-            var fechaMaxima = new Date();
-            fechaMaxima.setMonth(fechaMaxima.getMonth() + 2);
-            if (fechaSeleccionada > fechaMaxima) {
-                fechaInput.setCustomValidity("La reserva solo puede realizarse con un máximo de dos meses de anticipación.");
-            } else {
-                fechaInput.setCustomValidity("");
-            }
-        }
-    });
-
-    cantPersSelect.addEventListener("blur", function() {
-        if (cantPersSelect.value === "0") {
-            cantPersSelect.setCustomValidity("Debe seleccionar al menos una persona.");
-        } else {
-            cantPersSelect.setCustomValidity("");
-        }
-    });
 });
