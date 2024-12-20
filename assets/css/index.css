@@ -190,7 +190,7 @@ a:hover {
   }
 
 #crisal {
-  font-size: x-large;
+  font-size: 3rem;
 }
 
   .mapa {
@@ -284,9 +284,9 @@ a:hover {
   }
 
   #crisal {
-    font-size: x-large;
+    font-size: xx-large;
   }
-  
+
   .mapa {
     display: flex;
     align-items: center;
