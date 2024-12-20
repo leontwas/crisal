@@ -138,7 +138,7 @@ width: 100%;
   font-weight: bold;
   text-align: center;
   transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px #161616;
 }
 
 #texto-negro1 {
@@ -169,6 +169,7 @@ width: 100%;
   font-size: 16px;      /* Tamaño de la fuente */
   justify-content: center;  /* Centra el contenido horizontalmente */
   align-items: center;      /* Centra el contenido verticalmente */
+  box-shadow: 5px 5px 5px #161616;
 }
 
 

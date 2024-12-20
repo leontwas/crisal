@@ -23,6 +23,15 @@ body {
     text-align: center;
   }
 
+  #comprar {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #161616;
+  }
+
 h1 {
     text-align: center;
 }
@@ -34,6 +43,9 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #161616;
+    margin-left: 20px;
+    height: 51px;
 }
 
 button:hover {
