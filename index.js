@@ -20,8 +20,8 @@ const users = [
         password: bcrypt.hashSync("yo", 10), // Contraseña hasheada
     },
     {
-        username: "superadmin",
-        password: bcrypt.hashSync("miContrasenaSegura123", 10), // Contraseña hasheada para superadmin
+        username: "superAdmin",
+        password: bcrypt.hashSync("superAdmin123", 10), // Contraseña hasheada para superadmin
     },
 ];
 
