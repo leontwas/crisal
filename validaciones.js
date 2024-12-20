@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var emailInput = document.getElementById("email");
     var fechaInput = document.getElementById("fecha");
 
-    // Validación en tiempo real del nombre
-    nombreInput.addEventListener("input", function () {
+    // Validación al salir del campo de nombre
+    nombreInput.addEventListener("blur", function () {
         var nombre = nombreInput.value.trim();
         if (nombre === "") {
             alert("El nombre no puede estar vacío.");
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Validación en tiempo real del apellido
-    apellidoInput.addEventListener("input", function () {
+    // Validación al salir del campo de apellido
+    apellidoInput.addEventListener("blur", function () {
         var apellido = apellidoInput.value.trim();
         if (apellido === "") {
             alert("El apellido no puede estar vacío.");
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Validación en tiempo real del teléfono
-    telefonoInput.addEventListener("input", function () {
+    // Validación al salir del campo de teléfono
+    telefonoInput.addEventListener("blur", function () {
         var telefono = telefonoInput.value.trim();
         if (telefono === "") {
             alert("El teléfono no puede estar vacío.");
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Validación en tiempo real del correo electrónico
-    emailInput.addEventListener("input", function () {
+    // Validación al salir del campo de correo electrónico
+    emailInput.addEventListener("blur", function () {
         var email = emailInput.value.trim();
         var dominiosValidos = [
             "gmail.com", "yahoo.com", "hotmail.com", "outlook.com",
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Validación en tiempo real de la fecha
-    fechaInput.addEventListener("input", function () {
+    // Validación al salir del campo de fecha
+    fechaInput.addEventListener("blur", function () {
         var fechaSeleccionada = new Date(fechaInput.value);
         var fechaActual = new Date();
         var tresMesesAdelante = new Date();
@@ -80,15 +80,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Evitar el envío del formulario si hay errores
     formulario.addEventListener("submit", function (event) {
-        // Este bloque evita que el formulario se envíe si alguna validación falla.
         var errores = false;
 
-        // Validar nombre, apellido, teléfono, email y fecha nuevamente antes del envío
-        if (nombreInput.value.trim() === "" || 
-            apellidoInput.value.trim() === "" || 
-            telefonoInput.value.trim() === "" || 
-            emailInput.value.trim() === "" || 
-            fechaInput.value.trim() === "") {
+        // Validar campos antes del envío
+        if (
+            nombreInput.value.trim() === "" ||
+            apellidoInput.value.trim() === "" ||
+            telefonoInput.value.trim() === "" ||
+            emailInput.value.trim() === "" ||
+            fechaInput.value.trim() === ""
+        ) {
             errores = true;
         }
 
