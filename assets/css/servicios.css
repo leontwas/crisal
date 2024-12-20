@@ -125,6 +125,7 @@ article:hover img:last-child {
     }
     .descripcion {
         font-size: large;
+        height:350px;
     }
     footer {
         margin-top: 150px;
