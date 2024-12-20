@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar el carrito desde localStorage o como un arreglo vacío
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
   
-    // Definir los IDs para cada producto según su nombre
+
     const idsProductos = {
         'Chalecos Refractarios': 1,
         'Cascos de seguridad': 2,

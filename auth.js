@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const usernameInput = document.querySelector(".input-box input[type='text']");
     const passwordInput = document.querySelector(".input-box input[type='password']");
 
-    // URL del servidor backend donde validarás las credenciales
     const API_URL = "https://tu-servidor.com/api/login";
 
     submitBtn.addEventListener("click", async (e) => {
@@ -28,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 const data = await response.json();
-                // Guardar el token en localStorage o cookie segura
+         
                 localStorage.setItem("authToken", data.token);
                 alert("Login exitoso");
-                window.location.href = "/admin-dashboard.html"; // Redirigir al panel del administrador
+                window.location.href = "/admin-dashboard.html"; 
             } else {
                 const error = await response.json();
                 alert(`Error: ${error.message}`);

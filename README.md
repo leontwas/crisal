@@ -15,5 +15,6 @@ Este proyecto es una página web que ofrece servicios de **gestión**, **consult
 ## Tecnologías Utilizadas
 
 - HTML, CSS y JavaScript
-- Frameworks / Librerías (si corresponde, como React o Vue)
+- Tailwindcss
 - Servicios de despliegue en Netlify
+- FormsPree 

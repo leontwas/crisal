@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const loginData = { username, password };
 
     try {
-        // Cambia esta URL por la de tu servidor backend
+ 
         const response = await fetch('http://localhost:3000/api/login', {
             method: 'POST',
             headers: {
@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         });
 
         if (!response.ok) {
-            // Intenta obtener el mensaje de error del servidor
+
             let errorMessage = 'Error desconocido';
             try {
                 const errorData = await response.json();
