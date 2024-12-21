@@ -7,38 +7,50 @@ document.addEventListener("DOMContentLoaded", function () {
     var emailInput = document.getElementById("email");
     var fechaInput = document.getElementById("fecha");
 
-    // Validación al salir del campo de nombre
-    nombreInput.addEventListener("blur", function () {
+    // Función genérica para mostrar errores
+    function mostrarError(input, mensaje) {
+        input.setCustomValidity(mensaje);
+        input.reportValidity();
+    }
+
+    // Validación del nombre
+    function validarNombre() {
         var nombre = nombreInput.value.trim();
         if (nombre === "") {
-            alert("El nombre no puede estar vacío.");
+            mostrarError(nombreInput, "El nombre no puede estar vacío.");
         } else if (!/^[a-zA-Z\s]+$/.test(nombre)) {
-            alert("Solo se permiten letras y espacios en el nombre.");
+            mostrarError(nombreInput, "Solo se permiten letras y espacios en el nombre.");
+        } else {
+            nombreInput.setCustomValidity("");
         }
-    });
+    }
 
-    // Validación al salir del campo de apellido
-    apellidoInput.addEventListener("blur", function () {
+    // Validación del apellido
+    function validarApellido() {
         var apellido = apellidoInput.value.trim();
         if (apellido === "") {
-            alert("El apellido no puede estar vacío.");
+            mostrarError(apellidoInput, "El apellido no puede estar vacío.");
         } else if (!/^[a-zA-Z\s]+$/.test(apellido)) {
-            alert("Solo se permiten letras y espacios en el apellido.");
+            mostrarError(apellidoInput, "Solo se permiten letras y espacios en el apellido.");
+        } else {
+            apellidoInput.setCustomValidity("");
         }
-    });
+    }
 
-    // Validación al salir del campo de teléfono
-    telefonoInput.addEventListener("blur", function () {
+    // Validación del teléfono
+    function validarTelefono() {
         var telefono = telefonoInput.value.trim();
         if (telefono === "") {
-            alert("El teléfono no puede estar vacío.");
+            mostrarError(telefonoInput, "El teléfono no puede estar vacío.");
         } else if (!/^\d{10}$/.test(telefono)) {
-            alert("El teléfono debe contener 10 dígitos numéricos.");
+            mostrarError(telefonoInput, "El teléfono debe contener 10 dígitos numéricos.");
+        } else {
+            telefonoInput.setCustomValidity("");
         }
-    });
+    }
 
-    // Validación al salir del campo de correo electrónico
-    emailInput.addEventListener("blur", function () {
+    // Validación del correo electrónico
+    function validarEmail() {
         var email = emailInput.value.trim();
         var dominiosValidos = [
             "gmail.com", "yahoo.com", "hotmail.com", "outlook.com",
@@ -47,19 +59,21 @@ document.addEventListener("DOMContentLoaded", function () {
         var emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,}$/;
 
         if (email === "") {
-            alert("El correo electrónico no puede estar vacío.");
+            mostrarError(emailInput, "El correo electrónico no puede estar vacío.");
         } else if (!emailRegex.test(email)) {
-            alert("Por favor, introduce un correo electrónico válido.");
+            mostrarError(emailInput, "Por favor, introduce un correo electrónico válido.");
         } else {
             var dominio = email.split("@")[1];
             if (!dominiosValidos.includes(dominio)) {
-                alert(`El dominio ${dominio} no es válido. Usa uno de los más populares.`);
+                mostrarError(emailInput, `El dominio ${dominio} no es válido. Usa uno de los más populares.`);
+            } else {
+                emailInput.setCustomValidity("");
             }
         }
-    });
+    }
 
-    // Validación al salir del campo de fecha
-    fechaInput.addEventListener("blur", function () {
+    // Validación de la fecha
+    function validarFecha() {
         var fechaSeleccionada = new Date(fechaInput.value);
         var fechaActual = new Date();
         var tresMesesAdelante = new Date();
@@ -70,32 +84,44 @@ document.addEventListener("DOMContentLoaded", function () {
         tresMesesAdelante.setHours(0, 0, 0, 0);
 
         if (fechaSeleccionada < fechaActual) {
-            alert("La fecha no puede ser anterior a la fecha actual.");
+            mostrarError(fechaInput, "La fecha no puede ser anterior a la fecha actual.");
             fechaInput.value = ""; // Limpia el campo
         } else if (fechaSeleccionada > tresMesesAdelante) {
-            alert("La fecha no puede ser mayor a 3 meses desde hoy.");
+            mostrarError(fechaInput, "La fecha no puede ser mayor a 3 meses desde hoy.");
             fechaInput.value = ""; // Limpia el campo
+        } else {
+            fechaInput.setCustomValidity("");
         }
-    });
+    }
+
+    // Asociar validaciones en eventos de input y blur
+    nombreInput.addEventListener("input", validarNombre);
+    nombreInput.addEventListener("blur", validarNombre);
+
+    apellidoInput.addEventListener("input", validarApellido);
+    apellidoInput.addEventListener("blur", validarApellido);
+
+    telefonoInput.addEventListener("input", validarTelefono);
+    telefonoInput.addEventListener("blur", validarTelefono);
+
+    emailInput.addEventListener("input", validarEmail);
+    emailInput.addEventListener("blur", validarEmail);
+
+    fechaInput.addEventListener("input", validarFecha);
+    fechaInput.addEventListener("blur", validarFecha);
 
     // Evitar el envío del formulario si hay errores
     formulario.addEventListener("submit", function (event) {
-        var errores = false;
+        // Validar todos los campos antes de enviar
+        validarNombre();
+        validarApellido();
+        validarTelefono();
+        validarEmail();
+        validarFecha();
 
-        // Validar campos antes del envío
-        if (
-            nombreInput.value.trim() === "" ||
-            apellidoInput.value.trim() === "" ||
-            telefonoInput.value.trim() === "" ||
-            emailInput.value.trim() === "" ||
-            fechaInput.value.trim() === ""
-        ) {
-            errores = true;
-        }
-
-        if (errores) {
-            alert("Por favor, corrige los errores antes de enviar el formulario.");
+        if (!formulario.checkValidity()) {
             event.preventDefault();
+            alert("Por favor, corrige los errores antes de enviar el formulario.");
         }
     });
 });
