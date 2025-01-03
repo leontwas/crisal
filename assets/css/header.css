@@ -4,7 +4,6 @@
 .head {
     height: 100px;
     margin: 20px;
-    margin-top: 0px;
 }
 
 .head h1 {
@@ -31,6 +30,10 @@ header {
     height: 120px;
     box-sizing: border-box;
     background-color: white;
+}
+
+.main-nav {
+  margin-top: -30px !important;
 }
 
 nav .form-control-2 {  /* Buscador en la página de contacto.html*/
@@ -75,7 +78,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
   }
  
   .navbar.navbar-expand-lg.navbar-light.bg-light {
-   margin-top: 10px !important;
    width: 100%;
  }
  
