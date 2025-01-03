@@ -12,6 +12,9 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    padding-bottom: 30px;
+}
 
 .main-container {
     display: flex;
