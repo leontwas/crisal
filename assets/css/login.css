@@ -1,21 +1,30 @@
+/* Regla global para asegurar coherencia en la tipografía y otros estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Fuente uniforme */
 }
+
+/* Asegurar que todos los elementos de texto usen la misma fuente */
+h1, h2, h3, h4, h5, h6, p, span, label, input, button {
+    font-family: inherit;
+}
+
+/* Estilo del cuerpo */
 body {
     background-image: url('../images/nature.jpg');
     background-size: cover; /* Asegura que cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
-    margin: 0; /* Elimina márgenes por defecto */
-    height: 100vh; /* Hace que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0;
+    height: 100vh; /* Altura completa */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Contenedor del formulario */
 .form-container {
     backdrop-filter: blur(15px);
     background: rgba(24, 24, 24, 0.2);
@@ -23,26 +32,31 @@ body {
     background-repeat: no-repeat;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 0 15px  rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
     width: 320px;
     text-align: center;
 }
-h2 {
+
+/* Encabezados */
+h3 {
     color: #fff;
     margin-bottom: 20px;
 }
+
+/* Estilo para inputs */
 .input-box {
     position: relative;
     margin: 20px 0;
 }
-.input-box input{
-    width : 100%;
+.input-box input {
+    font-family: inherit; /* Hereda la tipografía definida */
+    width: 100%;
     padding: 12px 15px;
     background: none;
     border: none;
     outline: none;
     color: #fff;
-    font-size: 18px; 
+    font-size: 18px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     transition: 0.4s;
 }
@@ -61,13 +75,15 @@ h2 {
     transform: translateY(-50%);
 }
 .input-box input:focus + span, 
-.input-box input:not(:placeholder-shown)+span{
+.input-box input:not(:placeholder-shown) + span {
     top: 5px;
     font-size: 12px;
     color: #00ffff;
 }
+
+/* Botón de envío */
 .submit-btn {
-    background: linear-gradient(90deg, #00ffff, #00ff80);
+    background: linear-gradient(90deg, #f4d30a, #f8ea27, #ffee38);
     border: none;
     padding: 12px 30px;
     border-radius: 25px;
@@ -78,6 +94,20 @@ h2 {
     margin-top: 10px;
 }
 .submit-btn:hover {
-    background: linear-gradient(90deg, #00ff80, #00ffff);
-    box-shadow: 0 5px 15px #00ffff80;
+    background: linear-gradient(90deg, #ffa500, #ffdd00);
+    box-shadow: 0 5px 25px #ffdd0080;
+}
+
+/* Estilo adicional para elementos visibles */
+.box-visible {
+    color: white;
+}
+
+/* Espaciado adicional para login */
+#login {
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: inherit; /* Hereda la fuente definida globalmente */
 }
