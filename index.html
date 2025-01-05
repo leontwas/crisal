@@ -1,216 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="stylesheet" href="./assets/css/fuentes.css" />
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crisal</title>
-  </head>
-  <body>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/fuentes.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <!-- Header -->
     <header class="header">
-      
-      <a href="index.html">
-        <img alt="logo" src="./assets/images/logo_crisal.png" class="logo" />
-      </a>
-
-      <div class="titulos">
-        <h1 class="chicle-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
-        <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
-      </div>
-      <div class="menu-desplegable" onclick="toggleMenu()">&#9776;</div>
+        <a href="index.html">
+            <img alt="logo" src="./assets/images/logo_crisal.png" class="logo">
+        </a>
+        <div class="titulos">
+            <h1 class="chicle-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
+            <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
+        </div>
+        <div class="menu-desplegable" onclick="toggleMenu()">&#9776;</div>
     </header>
+
+    <!-- Navigation -->
     <nav>
-     <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="auditorias.html">Auditorías</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="insumos.html">Insumos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="login.html">Admin</a></li>
-      </ul>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="auditorias.html">Auditorías</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="insumos.html">Insumos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Admin</a></li>
+        </ul>
     </nav>
-    <!-- Main content -->
-    <div class="contenedor notas">
-      <div id="gestiones" class="aparecer w-1/3 p-3">
-        <a href="contacto.html" class="group relative block bg-black m-3 rounded-md">
-        <img alt="img6" src="./assets/images/img6.png" id="img6" class="imagen-estilizada"/>
-          <div class="caja">
-            <p class="texto-rosa"> Gestiones </p>
-            <p class="texto-blanco">
-              Ofrecemos servicios de asesoría (puesta en marcha y soporte) y 
-              verificación de sistemas de gestión de calidad, ambiente, seguridad y salud en 
-              el ámbito laboral.</p>
-            <div class="margen-vertical">
-              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              <ul class="text-2x1" id="texto-celeste">
-                <li>NUESTRAS GESTIONES:</li>
-              </ul>
-              <ul class="lista-estilo" id="texto-amarillo">
-                    <li>MIN. AMBIENTE  (Ex O.P.D.S.)</li>
-                    <li>RESIDUOS</li>
-                    <li>RIESGOS EN LOS PUESTOS DE TRABAJO</li>
-                    <li>ERGONOMÍA</li>
-                </ul>
-              </div>
+
+    <!-- Main Content -->
+    <main class="contenedor">
+        <div class="notas">
+            <!-- Gestión Section -->
+            <div id="gestiones" class="aparecer w-1/3 p-3">
+                <a href="contacto.html" class="group relative block bg-black m-3 rounded-md">
+                    <img alt="Gestiones" src="./assets/images/img6.png" class="imagen-estilizada">
+                    <div class="caja">
+                        <p class="texto-rosa">Gestiones</p>
+                        <p class="texto-blanco">Ofrecemos servicios de asesoría y soporte para sistemas de gestión en calidad, ambiente, seguridad y salud laboral.</p>
+                    </div>
+                </a>
             </div>
-          </div>
-        </a>
-      </div>
-      <div id="auditorias" class="aparecer w-1/3 p-3">
-        <a href="auditorias.html" class="group aparecer relative block bg-black m-3 rounded-md">
-          <img alt="img2" src="./assets/images/img2.jpg"class="imagen-estilizada"/>
-          <div class="caja">
-            <p class="texto-rosa"> Auditorías </p>
-            <p class="texto-blanco">
-              Revisamos su organización para que logre el Sello Nacional de Sustentabilidad Ecológica, 
-              certificado por la Sociedad Argentina de Especialistas Ambientales.</p>
-              <div class="margen-vertical">
-              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p class="text-xl" id="texto-amarillo">
-                  El SAA es un sello ambiental nacional de validez en toda Argentina que avala con
-                  extrema confiabilidad el compromiso ambiental que realiza su empresa.
-                </p>
-              </div>
+            <!-- Auditorías Section -->
+            <div id="auditorias" class="aparecer w-1/3 p-3">
+                <a href="auditorias.html" class="group relative block bg-black m-3 rounded-md">
+                    <img alt="Auditorías" src="./assets/images/img2.jpg" class="imagen-estilizada">
+                    <div class="caja">
+                        <p class="texto-rosa">Auditorías</p>
+                        <p class="texto-blanco">Revisamos su organización para lograr el Sello Nacional de Sustentabilidad Ecológica.</p>
+                    </div>
+                </a>
             </div>
-          </div>
-        </a>
-      </div>
-      <div id="servicios" class="aparecer w-1/3 p-3">
-        <a href="servicios.html"
-        class="group aparecer relative block bg-black m-3 rounded-md">
-          <img alt="img3IA" src="./assets/images/Img3IA.jpg" class="imagen-estilizada" id="img3"/>
-          <div class="caja">
-            <p class="texto-rosa">Servicios</p>
-            <p class="texto-blanco">
-              Llevamos a cabo Medición de Sonido, Iluminación, Ventilación, Descarga a Tierra, Cálculo de Carga 
-              de Fuego, Plan de Emergencia y Contingencia.</p>
-            <div class="margen-vertical">
-              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              <p class="text-xl" id="texto-amarillo">
-                Estos servicios son esenciales para garantizar condiciones adecuadas del medio ambinete de trabajo, 
-               como así también la prevención de incendios. Todo acorde a la Ley 19.587/72 y su Decreto 351/79.                </p>
-              </div>
+            <!-- Servicios Section -->
+            <div id="servicios" class="aparecer w-1/3 p-3">
+                <a href="servicios.html" class="group relative block bg-black m-3 rounded-md">
+                    <img alt="Servicios" src="./assets/images/Img3IA.jpg" class="imagen-estilizada">
+                    <div class="caja">
+                        <p class="texto-rosa">Servicios</p>
+                        <p class="texto-blanco">Ofrecemos mediciones de sonido, iluminación, ventilación y mucho más.</p>
+                    </div>
+                </a>
             </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- Video -->
-    <video autoplay controls id="video">
-      <source src="./assets/video/vid4.mp4" type="video/mp4">
-      Tu navegador no soporta el elemento de video.
-    </video>
+        </div>
 
-<h1 class="kalam-bold" id="crisal">Crisal</h1>
-<h1 class="kalam-bold" id="subtitulo">Servicios de Seguridad e Higiene en el Trabajo</h1>
-<div class="presentacion">
-<p> En Crisal, nos dedicamos a proporcionar soluciones integrales en seguridad e higiene laboral, 
-  comprometidos con la protección de la salud y el bienestar de los trabajadores, así como con el 
-  cumplimiento de las normativas vigentes en cada industria.</p>
+        <!-- Video Section -->
+        <video autoplay controls id="video">
+            <source src="./assets/video/vid4.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
 
-<h3 class="kalam-bold">¿Quiénes somos?</h3>
-<p>Somos una empresa especializada en asesoramiento, gestión y capacitación en seguridad e higiene en 
-  el trabajo. Contamos con un equipo de profesionales altamente capacitados y con amplia experiencia en 
-  la prevención de riesgos laborales. Nuestra misión es crear ambientes de trabajo seguros y saludables,
-   minimizando los riesgos para los empleados y optimizando el rendimiento de las empresas.</p>
+        <!-- About Section -->
+        <section class="presentacion">
+            <h1 class="kalam-bold" id="crisal">Crisal</h1>
+            <p>En Crisal, proporcionamos soluciones integrales en seguridad e higiene laboral, comprometidos con el bienestar de los trabajadores.</p>
+        </section>
 
-<h3 class="kalam-bold">Nuestros servicios</h3>
-<p>Auditorías de seguridad e higiene laboral: Realizamos auditorías exhaustivas para evaluar las 
-  condiciones de seguridad e higiene en el entorno laboral, identificando riesgos y proponiendo medidas 
-  correctivas.
+        <!-- Map Section -->
+        <div class="titulo_mapa">
+            <h2 id="direccion">Encuéntranos en esta dirección</h2>
+        </div>
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.606056156567!2d-58.396815925145965!3d-34.61412185804621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadd8615fb0f%3A0x28a44c74fe00f4c3!2sAv.%20Belgrano%201974%2C%20C1094AAO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728521694601!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
 
-Capacitación y formación: Ofrecemos programas de capacitación en seguridad laboral, manejo de equipos de
- protección personal (EPP), primeros auxilios y prevención de accidentes. Nuestros cursos están diseñados
-  para adaptarse a las necesidades específicas de cada sector.
-
-Consultoría y asesoramiento: Brindamos consultoría personalizada para la implementación de planes de 
-seguridad, gestión de emergencias y cumplimiento de la legislación en materia de higiene y seguridad 
-laboral.
-
-Elaboración de programas de prevención: Diseñamos programas de prevención de riesgos laborales a medida, 
-promoviendo prácticas de trabajo seguras y estrategias para evitar accidentes.
-
-Suministro de insumos y equipos de seguridad: Proveemos una amplia gama de insumos y equipos de seguridad
- para la protección de los empleados en su jornada laboral, como cascos, guantes, chalecos, y más.
-</p>
-<h3 class="kalam-bold">¿Por qué elegirnos?</h3>
-<p>Expertos en la industria: Con años de experiencia trabajando en diversas industrias como comercio, 
-  construcción, manufactura y más, entendemos las necesidades específicas de cada sector.
-
-Cumplimiento normativo: Aseguramos que todas nuestras soluciones y servicios cumplan con las normativas y
- leyes de seguridad e higiene laboral locales e internacionales.
-
-Enfoque personalizado: Cada empresa tiene necesidades diferentes, por eso trabajamos de cerca con nuestros
- clientes para ofrecer soluciones adaptadas a sus condiciones particulares.
-
-Compromiso con la salud y bienestar: Creemos firmemente que un entorno de trabajo seguro es fundamental 
-para el desarrollo de las empresas y el bienestar de sus empleados.
-</p>
-</div>
-
-    <div class="titulo_mapa"> 
-    <br>
-    <h2 id="direccion">Encuéntranos en esta dirección</h2>
-    <h2 id="manito">👇</h2>
-    </div>
-    <!-- Mapa -->
-     <div  class="mapa">
-    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.606056156567!2d-58.396815925145965!3d-34.61412185804621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadd8615fb0f%3A0x28a44c74fe00f4c3!2sAv.%20Belgrano%201974%2C%20C1094AAO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728521694601!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
     <!-- Footer -->
     <footer>
-      <div class="footlist">
-      <a
-          id="footer_brillo"
-          class="footlink fab fa-brands fa-youtube fa-2x"
-          href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H"
-          title="YouTube"
-          target="_blank"
-        ></a>
-        <a
-          id="footer_brillo"
-          class="footlink fa-brands fa-instagram fa-2x"
-          href="https://www.instagram.com/crisal.consultora/"
-          title="Instagram"
-          target="_blank"
-        ></a>
-        <a
-          id="footer_brillo"
-          class="footlink fa-brands fa-whatsapp fa-2x"
-          href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
-          title="Whatsapp"
-          target="_blank"
-        ></a>
-        <a
-          id="footer_brillo"
-          class="footlink fa-brands fa-linkedin fa-2x"
-          href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
-          title="LinkedIn"
-          target="_blank"
-        ></a>
-      </div>
-      <p>
-        <small
-          >&copy; 2024 Todos los derechos reservados</small>
-      </p>
+        <div class="footlist">
+            <a class="footlink fab fa-youtube" href="#"></a>
+            <a class="footlink fab fa-facebook" href="#"></a>
+        </div>
     </footer>
-    <script>
-      function toggleMenu() {
-          const menu = document.querySelector('.menu');
-          menu.classList.toggle('active');
-      }
-      </script>
-  </body>
+</body>
 </html>
