@@ -1,10 +1,9 @@
-/* General */
-header {
+header{
   margin-bottom: -10px;
 }
 
 ul {
-  height: 40px !important;
+ height: 40px !important;
 }
 
 .contenedor { 
@@ -113,10 +112,10 @@ a:hover {
   background: black;
   color: white;
   text-shadow:
-      0 0 20px #00ffff,
-      0 0 30px #0099cc,
-      0 0 40px #006699,
-      0 0 50px #00ffff;
+    0 0 20px #00ffff,
+    0 0 30px #0099cc,
+    0 0 40px #006699,
+    0 0 50px #00ffff;
 }
 
 .mapa {
@@ -141,221 +140,225 @@ a:hover {
   font-weight: bold;
 }
 
-/* Estilo para el contenedor del menú */
-.menu {
-  display: none; /* Menú oculto por defecto */
-  background-color: #333;
-  position: absolute;
-  top: 50px; /* Ajusta la distancia según tu header */
-  right: 0;
-  width: 200px; /* Ajusta el tamaño según sea necesario */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-/* Cuando el menú tiene la clase "active", se muestra */
-.menu.active {
-  display: block; /* Muestra el menú cuando se activa */
-}
-
-/* Estilos de los enlaces dentro del menú */
-.menu a {
-  display: block; /* Los enlaces ocupan toda la línea */
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.menu a:hover {
-  background-color: #555; /* Cambia el color de fondo cuando se pasa el ratón */
-}
-
-/* Para asegurarse de que el menú es visible en dispositivos móviles */
+/******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
   .contenedor {
-      grid-template-columns: 1fr;
-      text-align: left;
+    grid-template-columns: 1fr;
+    text-align: left;
   }
 
   .caja {
-      background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad del 30% */
-      padding: 2rem; /* Agrega espacio alrededor del texto */
-      border-radius: 8px; /* Redondea las esquinas (opcional) */
-  }
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad del 30% */
+    padding: 2rem; /* Agrega espacio alrededor del texto */
+    border-radius: 8px; /* Redondea las esquinas (opcional) */
+}
 
-  .texto-rosa {
-      color: rgb(253, 5, 142);
-      text-shadow:
-          0 0 20px #c300ff,
-          0 0 30px #e751e0,
-          0 0 40px #a90464,
-          0 0 50px #8d1a5f;
-  }
+.texto-rosa {
+  /*background: black;*/
+  color: rgb(253, 5, 142);
+  text-shadow:
+    0 0 20px #c300ff,
+    0 0 30px #e751e0,
+    0 0 40px #a90464,
+    0 0 50px #8d1a5f;
+}
 
   .texto-blanco {
-      font-size: 1.3rem;
-      text-align: left;
+    font-size: 1.3rem;
+    text-align: left;
   }
 
   #texto-celeste {
-      position: relative;
-      bottom: 80px;
-      margin-left: 10px;
-      margin-bottom: 40px;
-      font-weight: bold;
-      text-align: left;
-      align-items: end;
+    position: relative;
+    bottom: 80px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: left;
+    align-items: end;
   }
 
   .text-xl {
-      margin-top: 40px;
-      margin-bottom: 120px;
-      align-items: end;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    align-items: end;
   }
 
   #texto-amarillo {
-      margin-top: -100px;
-      align-items: end;
+    margin-top: -100px;
+    align-items: end;
   }
 
   #gestiones, #auditorias, #servicios {
-      width: 100%;
+    width: 100%;
   }
 
   .contenedor img {
-      max-width: 100%;
+    max-width: 100%;
   }
 
-  #crisal {
-      font-size: 3rem;
-  }
-
-  .mapa {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      width: cover; /* Reduce el ancho para ajustarse al móvil */
-      margin-left: -120px; /* Elimina el margen para centrar el mapa */
-  }
-
-  #direccion {
-      font-weight: bold;
-      margin-left: -150px;
-  }
-
-  #manito {
-      margin-left: -150px;
-  }
+#crisal {
+  font-size: 3rem;
 }
 
-/* Para tablets */
+  .mapa {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: cover; /* Reduce el ancho para ajustarse al móvil */
+    margin-left: -120px; /* Elimina el margen para centrar el mapa */
+     }
+  
+  #direccion {
+    font-weight: bold;
+    margin-left: -150px;
+}
+
+#manito {
+  margin-left: -150px;
+}
+}
+/************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
   .contenedor { 
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0; /* Elimina cualquier padding extra */
-      margin: 0;  /* Elimina cualquier margen extra */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0; /* Elimina cualquier padding extra */
+    margin: 0;  /* Elimina cualquier margen extra */
   }
 
-  #gestiones {
-      margin-top: -15px;
-      left: 0;
-      right: 0;
-      padding-left: 0;
-      padding-right: 0;
-      margin-right: 0;
-      margin-left: -23px;
-      width: 100%;
-      height: 700px;
-      margin-bottom: -100px;
+#gestiones {
+  margin-top: -15px;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: -23px;
+  width: 100%;
+  height: 700px;
+  margin-bottom: -100px;
   }
 
-  #auditorias {
-      left: 0;
-      right: 0;
-      padding-left: 0;
-      padding-right: 0;
-      margin-right: 0;
-      margin-left: -23px;
-      width: 100%;
-      height: 700px;
-      margin-bottom: -100px;
-  }
+ #auditorias {
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: -23px;
+  width: 100%;
+  height: 700px;
+  margin-bottom: -100px;
+ } 
 
-  #servicios {
-      left: 0;
-      right: 0;
-      padding-left: 0;
-      padding-right: 0;
-      margin-right: 0;
-      margin-left: -23px;
-      width: 100%;
-      height: 700px;
-      margin-bottom: -80px;
-  }
+#servicios {
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: -23px;
+  width: 100%;
+  height: 700px;
+  margin-bottom: -80px;
+}
 
   .group {
-      width: 100%;
-      overflow: hidden;
-      padding: 0; /* Asegura que no haya padding adicional */
-      margin: 0; /* Asegura que no haya margen adicional */
+    width: 100%;
+    overflow: hidden;
+    padding: 0; /* Asegura que no haya padding adicional */
+    margin: 0; /* Asegura que no haya margen adicional */
   }
 
   .group img {
-      max-width: 100%; /* Limita el tamaño para evitar que la imagen se expanda más allá del ancho de la pantalla */
-      height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Limita el tamaño para evitar que la imagen se expanda más allá del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 
   .margen-vertical {
-      margin-top:3rem; 
-      font-size: large;
+    margin-top:3rem; 
+    font-size: large;
   }
 
   .texto-blanco {
-      font-size: large;
+    font-size: large;
   }
 
   #texto-amarillo {
-      font-size: large;
+    font-size: large;
   }
 
   #crisal {
-      font-size: xx-large;
+    font-size: xx-large;
   }
 
   .mapa {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      margin-left: -70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: -70px;
+     }
+  
+    #direccion {
+    font-weight: bold;
+    margin-left: -140px;
+}
+
+#manito {
+  margin-left: -140px;
+}
+}
+/************************************************* Para Notebooks *******************************************/
+@media (min-width: 851px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+  
+  .margen-vertical {
+    margin-top: 16rem; 
   }
 
-  #direccion {
-      font-weight: bold;
-      margin-left: -140px;
-  }
-
-  #manito {
-      margin-left: -140px;
+  .texto-blanco {
+    font-size:large;
   }
 }
 
-/* Para Notebooks */
-@media (min-width: 851px) {
-  .contenedor {
-      grid-template-columns: 1fr;
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  .margen-vertical {
-      margin-top: 16rem; 
-  }
+.h2 {
+  font-weight: bold;
+  margin-left: -50px;
+}
+.kalam-bold{
+  font-size: 2rem;
+}
 
-  .mapa {
-      width: 85%;
-  }
+#crisal {
+  color: red;
+  text-shadow: 2px 2px 4px #171616, -1px -1px 2px #2b2424, 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 3rem;
+}
+
+#subtitulo {
+  text-align: center;
+}
+
+.presentacion {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
