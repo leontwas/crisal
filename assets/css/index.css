@@ -146,14 +146,45 @@ a:hover {
   height: auto;
  }
  
- .nav {
-  height: 40px;
- }
- 
+.logo {
+  top: 10px;
+}
+
+.burguer-container {
+  left: 0;
+  right: 0;
+  top: auto;
+  background-color: #50633C; /* Fondo del contenedor */
+  padding-bottom: 50px;
+  padding-left: 50px;
+  display: inline-block; /* Asegura que el contenedor se ajuste al tamaño del ícono */
+}
+
+/* Estilo para el ícono de hamburguesa */
+#hamburguesa {
+  left: 0;
+  right: 0;
+  top: auto;
+  width: auto;
+  height: auto;
+  background-color: #50633C; /* Fondo del ícono */
+  margin-bottom: 30px;
+  padding-left: 10px;
+  color: white;
+  font-size: 30px; /* Tamaño del ícono */
+  padding: 10px; /* Espaciado alrededor del ícono */
+  cursor: pointer; /* Hace que el ícono sea clickeable */
+}
+
+/* Efecto hover (opcional) */
+#hamburguesa:hover {
+  background-color: #4a5b3c; /* Cambia el color de fondo cuando se pasa el ratón */
+}
+
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 40px;
   }
   .caja {
     background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad del 30% */
