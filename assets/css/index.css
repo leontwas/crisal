@@ -142,11 +142,19 @@ a:hover {
 
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
+ header {
+  height: auto;
+ }
+ 
+ .nav {
+  height: 40px;
+ }
+ 
   .contenedor {
     grid-template-columns: 1fr;
     text-align: left;
+    margin-top: 10px;
   }
-
   .caja {
     background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad del 30% */
     padding: 2rem; /* Agrega espacio alrededor del texto */
