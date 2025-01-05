@@ -154,7 +154,6 @@ a:hover {
   left: 0;
   right: 0;
   top: auto;
-  background-color: #50633C; /* Fondo del contenedor */
   padding-bottom: 50px;
   padding-left: 50px;
   display: inline-block; /* Asegura que el contenedor se ajuste al tamaño del ícono */
@@ -174,11 +173,6 @@ a:hover {
   font-size: 30px; /* Tamaño del ícono */
   padding: 10px; /* Espaciado alrededor del ícono */
   cursor: pointer; /* Hace que el ícono sea clickeable */
-}
-
-/* Efecto hover (opcional) */
-#hamburguesa:hover {
-  background-color: #4a5b3c; /* Cambia el color de fondo cuando se pasa el ratón */
 }
 
   .contenedor {
