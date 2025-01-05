@@ -147,7 +147,7 @@ a:hover {
  }
  
 .logo {
-  top: 20px;
+  top: 15px;
 }
 
 .burguer-container {
@@ -167,6 +167,7 @@ a:hover {
   width: auto;
   height: auto;
   background-color: #50633C; /* Fondo del ícono */
+  border-bottom: 4px solid #cd7e35;
   margin-bottom: 30px;
   padding-left: 20px;
   color: white;
