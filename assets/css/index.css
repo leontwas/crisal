@@ -358,6 +358,10 @@ a:hover {
   }
 }
 
+.categoria {
+  margin-top: -10px;
+}
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100%);
