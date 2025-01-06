@@ -123,12 +123,12 @@ article:hover img:last-child {
         padding: 10px;
     }
     .container {
-        width: 100%;
+       max-width: 1800px;
         margin: 10px;
     }
     .descripcion {
         font-size: large;
-        height:350px;
+        height:360px;
     }
     footer {
         margin-top: 150px;
