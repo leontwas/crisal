@@ -21,11 +21,9 @@
 <body>
 
     <header class="header">
-        
         <a href="index.html">
             <img alt="logo" src="./assets/images/logo_crisal.png" class="logo" />
-          </a>
-
+        </a>
         <div class="titulos">
             <h1 class="chicle-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
             <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
@@ -39,24 +37,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./auditorias.html">Auditorías</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./insumos.html">Insumos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.html">Admin</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./auditorias.html">Auditorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
@@ -68,7 +54,10 @@
 
     <div class="container">
         <h1 id="texto-negro2">Carrito de Compras</h1>
-        <div id="carrito-container"></div>
+        <div id="carrito-container">
+            <button id="eliminarProducto">Eliminar Producto</button>
+            <button id="agregarProducto">Agregar Producto</button>
+        </div>
         <div id="total-container">
             <p><strong>Total a pagar: $<span id="total-pagar"></span></strong></p>
         </div>
@@ -78,15 +67,16 @@
 
     <footer>
         <div class="footlist">
-            <a id="footer_brillo" class="footlink fab fa-youtube fa-2x" href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="YouTube" aria-label="YouTube" target="_blank"></a>
-            <a id="footer_brillo" class="footlink fab fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/" title="Instagram" aria-label="Instagram" target="_blank"></a>
-            <a id="footer_brillo" class="footlink fab fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J" title="WhatsApp" aria-label="WhatsApp" target="_blank"></a>
-            <a id="footer_brillo" class="footlink fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn" aria-label="LinkedIn" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fab fa-brands fa-youtube fa-2x" href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="YouTube" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/" title="Instagram" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J" title="Whatsapp" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-linkedin fa-2x" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn" target="_blank"></a>
         </div>
-        <p><small>&copy; 2024 Todos los derechos reservados</small></p>
+        <p>
+            <small>&copy; 2024 Todos los derechos reservados</small>
+        </p>
     </footer>
 
     <script src="./assets/js/carrito.js"></script>
 </body>
 </html>
-

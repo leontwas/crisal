@@ -53,8 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function validarEmail() {
         var email = emailInput.value.trim();
         var dominiosValidos = [
-            "gmail.com", "yahoo.com", "hotmail.com", "outlook.com",
-            "icloud.com", "aol.com", "protonmail.com"
+         "gmail.com", "yahoo.com.ar", "hotmail.com", "hotmail.com.ar", "outlook.com.ar", "icloud.com.ar", "aol.com.ar", "protonmail.com.ar", 
+         "live.com.ar", "msn.com.ar", "zoho.com.ar", "mail.com.ar", "yandex.com.ar", "gmx.com.ar", "mail.ru.ar", "fastmail.com.ar", 
+         "tutanota.com.ar", "hushmail.com.ar", "inbox.com.ar", "webmail.com.ar", "mailchimp.com.ar", "mailbox.org.ar", "inbox.lv.ar",
+          "hushmail.ca.ar", "rediffmail.in.ar", "seznam.sk.ar"
+
         ];
         var emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,}$/;
 

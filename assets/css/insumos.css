@@ -125,11 +125,18 @@
   display: block; /* Elimina el espacio en línea generado por las imágenes */
 }
 
-/* Estilos para el botón de precio */
+/* Estilos para los botones */
+.botonera {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center;   /* Alinea los botones verticalmente */
+  gap: 20px;             /* Espaciado entre los botones */
+}
+
 .agregar {
   font-size: 1.05rem;
   padding: 10px 20px;
-  background-color:  #50633C ;
+  background-color: #50633C;
   color: white;
   border: none;
   border-radius: 10px;
@@ -139,6 +146,20 @@
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 5px 5px 5px #161616;
 }
+
+.ver {
+  padding: 10px 20px; /* Asegúrate de que el tamaño sea uniforme */
+  background-color: rgb(42, 172, 172);
+  color: white;
+  border: none;
+  border-radius: 10px; /* Igualar bordes redondeados */
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 5px 5px 5px #161616;
+}
+
 
 #texto-negro1 {
   font-size: 2rem;
@@ -161,16 +182,6 @@
   margin-top: 20px;
   font-weight: bold;
 }
-
-#verCarrito {
-  display: flex;
-  padding: 10px 20px;  /* Ajusta el tamaño del botón */
-  font-size: 16px;      /* Tamaño de la fuente */
-  justify-content: center;  /* Centra el contenido horizontalmente */
-  align-items: center;      /* Centra el contenido verticalmente */
-  box-shadow: 5px 5px 5px #161616;
-}
-
 
 /* Media queries para responsividad */
 @media (max-width: 650px) { /* Para tablets */
