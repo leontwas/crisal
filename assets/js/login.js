@@ -1,4 +1,5 @@
-document.getElementById('loginForm').addEventListener('submit', async (event) => {
+// Controlar el evento de enviar el formulario
+document.getElementById('loginForm').addEventListener('submit', async (event) => { 
     event.preventDefault();
 
     const username = document.getElementById('username').value;
@@ -28,3 +29,15 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         alert('Error de conexión al servidor.');
     }
 });
+
+// Agregar funcionalidad al checkbox "Mostrar Contraseña"
+document.getElementById('visible').addEventListener('change', (event) => {
+    const passwordInput = document.getElementById('password');
+    if (event.target.checked) {
+        passwordInput.type = 'text';
+    } else {
+        passwordInput.type = 'password';
+    }
+});
+
+
