@@ -23,17 +23,18 @@ body {
 
 @keyframes autorun {
     from {
-        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
     }
     to {
-        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
     }
 }
 
 .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
-    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
+    /* Se redujo el valor de translateZ de 550px a 400px */
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -47,6 +48,6 @@ body {
 
 .banner .slider .item img:hover {
     transform: scale(1.1); 
-    box-shadow: 5px 5px 3px #161616;; 
+    box-shadow: 5px 5px 3px #161616; 
     filter: brightness(1.1); 
 }
