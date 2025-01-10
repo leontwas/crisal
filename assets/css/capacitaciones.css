@@ -48,18 +48,18 @@
     filter: brightness(1.1); 
 }
 
+/* Contenedor del logo */
 .banner .static-center {
     position: absolute;
-    top: 45%; /* Ajusta este valor para moverlo más arriba */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3; /* Asegúrate de que sea mayor que los banners para que esté visible encima */
+    transform: translate(-50%, -60%);
+    z-index: 1; /* Menor z-index que los banners */
 }
 
 .banner .static-center img {
-    width: 400px; /* Ajusta el tamaño aquí según lo necesario */
+    width: 450px; /* Ajusta el tamaño aquí */
     height: auto;
     object-fit: contain;
     opacity: 0.9; /* Opcional: un poco de transparencia */
 }
-
