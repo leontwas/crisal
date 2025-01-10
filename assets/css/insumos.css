@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     width: 100%;
 }
@@ -162,6 +165,7 @@
 
 
 #texto-negro1 {
+  font-family: 'ICA Rubrik';
   font-size: 2rem;
   color: #000;
   text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
