@@ -2,7 +2,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 const users = [
-    { username: "yo", password: bcrypt.hashSync("yo", 10) },
+    { username: "Consultora.Crisal", password: bcrypt.hashSync("Matilda.2017", 10) },
     { username: "superAdmin", password: bcrypt.hashSync("superAdmin123", 10) },
 ];
 
