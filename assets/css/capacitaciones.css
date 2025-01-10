@@ -58,7 +58,7 @@
 }
 
 .banner .static-center img {
-    width: 600px; /* Ajusta el tamaño aquí */
+    width: 800px; /* Ajusta el tamaño aquí */
     height: auto;
     object-fit: contain;
     opacity: 0.9; /* Opcional: un poco de transparencia */
