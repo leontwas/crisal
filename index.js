@@ -15,8 +15,8 @@ const app = express();
 // Usuarios mockeados
 const users = [
     {
-        username: "yo",
-        password: bcrypt.hashSync("yo", 10),
+        username: "Consultora.Crisal",
+        password: bcrypt.hashSync("Matilda.2017", 10),
     },
     {
         username: "superAdmin",
