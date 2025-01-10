@@ -18,7 +18,8 @@ body {
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    animation: autorun 70s linear infinite;
+    animation: autorun 20s linear infinite;
+    z-index: 2;
 }
 
 @keyframes autorun {
@@ -37,6 +38,21 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.banner .content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
 .banner .slider .item img {
     border-radius: 5px;
     width: 50%;
@@ -49,4 +65,16 @@ body {
     transform: scale(1.1); 
     box-shadow: 5px 5px 3px #161616;; 
     filter: brightness(1.1); 
+}
+
+.banner .content .model {
+    background-image: href("/assets/images/logo_crisal_3D (2).png"); 
+    width: 100%;
+    height: 75vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
