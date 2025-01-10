@@ -53,7 +53,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     z-index: 1; /* Menor z-index que los banners */
 }
 
@@ -62,5 +62,4 @@
     height: auto;
     object-fit: contain;
     opacity: 0.9; /* Opcional: un poco de transparencia */
-    margin-top: -100px;
 }
