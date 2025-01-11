@@ -164,11 +164,13 @@ body {
         margin-top: -400px;
         width: 350px;
         height: 450px;
+        display: flex;
+        flex-direction: column;
     }
 
     .banner .static-center {
         position: absolute;
-        top: 10%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -60%);
         z-index: 1; /* Menor z-index que los banners */
