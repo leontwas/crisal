@@ -180,7 +180,7 @@ body {
 
     .banner .static-center {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -60%);
         z-index: 1; /* Menor z-index que los banners */
