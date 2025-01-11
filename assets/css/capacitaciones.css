@@ -182,6 +182,10 @@ body {
         opacity: 0.9; /* Opcional: un poco de transparencia */
     }
 
+    .banner .slider {
+        left: calc(50% - 50px);
+    }
+
 }
 
 @media (min-width: 751px) and (max-width: 850px) { /* Para tablets */
