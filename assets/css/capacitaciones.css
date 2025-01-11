@@ -161,10 +161,21 @@ body {
 
 @media (max-width: 750px) { /* Para celulares */
     .col {
-        margin-top: -300px;
-        width: 500px;
-        height: 570px;
-        margin-bottom: 50px;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        margin-top: 0; /* Elimina el margen negativo */
+        margin-bottom: 50px; /* Espaciado entre tarjetas */
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa todo el ancho */
+        height: auto; /* La altura se ajusta automáticamente */
+    }
+
+    .front, .back {
+        width: 100%; /* Asegura que el contenido interno se ajuste */
+        height: auto;
+        object-fit: cover; /* Ajusta la imagen al contenedor */
     }
 
     .banner .static-center {
@@ -176,17 +187,17 @@ body {
     }
     
     .banner .static-center img {
-        width: 450px; /* Ajusta el tamaño aquí */
+        width: 100%; /* Ajusta el tamaño a todo el ancho disponible */
         height: auto;
-        object-fit: contain;
+        object-fit: contain; /* Mantiene las proporciones de la imagen */
         opacity: 0.9; /* Opcional: un poco de transparencia */
     }
 
     .banner .slider {
-        left: calc(50% - 50px);
+        left: calc(50% - 50px); /* Centra el slider */
     }
-
 }
+
 
 @media (min-width: 751px) and (max-width: 850px) { /* Para tablets */
     .col {
