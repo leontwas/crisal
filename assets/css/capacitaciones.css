@@ -159,14 +159,31 @@ body {
     padding: 20px;
 }
 
-@media (max-width: 650px) { /* Para celulares */
+@media (max-width: 750px) { /* Para celulares */
     .col {
+        margin-top: -400px;
         width: 350px;
         height: 450px;
     }
+
+    .banner .static-center {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        z-index: 1; /* Menor z-index que los banners */
+    }
+    
+    .banner .static-center img {
+        width: 450px; /* Ajusta el tamaño aquí */
+        height: auto;
+        object-fit: contain;
+        opacity: 0.9; /* Opcional: un poco de transparencia */
+    }
+
 }
 
-@media (min-width: 651px) and (max-width: 850px) { /* Para tablets */
+@media (min-width: 751px) and (max-width: 850px) { /* Para tablets */
     .col {
         width: 400px;
         height: 500px;
