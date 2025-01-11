@@ -121,7 +121,7 @@ body {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 5px #161616;
 }
 
 .front {
@@ -129,6 +129,7 @@ body {
     background-position: center;
     opacity: 1; /* Aumentar opacidad */
     filter: brightness(1.3); /* Incrementar brillo */
+    box-shadow: 10px 10px 5px #161616;
 }
 
 .front:after {
@@ -154,7 +155,7 @@ body {
 
 .inner {
     text-align: center;
-    font-size: 18px;
+    font-size: 40px;
     padding: 20px;
 }
 
