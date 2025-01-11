@@ -159,23 +159,17 @@ body {
     padding: 20px;
 }
 
-@media screen and (max-width: 64rem) {
-    .col {
-        width: 400px;
-        height: 500px;
-    }
-}
-
-@media screen and (max-width: 48rem) {
+@media (max-width: 650px) { /* Para celulares */
     .col {
         width: 350px;
         height: 450px;
     }
 }
 
-@media screen and (max-width: 32rem) {
+@media (min-width: 651px) and (max-width: 850px) { /* Para tablets */
     .col {
-        width: 100%;
-        height: auto;
+        width: 400px;
+        height: 500px;
     }
 }
+
