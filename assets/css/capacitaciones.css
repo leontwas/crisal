@@ -162,10 +162,9 @@ body {
 @media (max-width: 750px) { /* Para celulares */
     .col {
         margin-top: -300px;
-        width: 350px;
-        height: 450px;
-        display: flexbox;
-        flex-direction: column;
+        width: 500px;
+        height: 570px;
+        margin-bottom: 50px;
     }
 
     .banner .static-center {
