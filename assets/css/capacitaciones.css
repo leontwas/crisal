@@ -161,16 +161,16 @@ body {
 
 @media (max-width: 750px) { /* Para celulares */
     .col {
-        margin-top: -400px;
+        margin-top: -300px;
         width: 350px;
         height: 450px;
-        display: flex;
+        display: flexbox;
         flex-direction: column;
     }
 
     .banner .static-center {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -60%);
         z-index: 1; /* Menor z-index que los banners */
