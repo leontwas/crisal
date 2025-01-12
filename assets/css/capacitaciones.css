@@ -159,38 +159,67 @@ body {
     padding: 20px;
 }
 
-/* Tarjetas giratorias: ajustes para celulares y tablets */
-@media (max-width: 750px) { /* Para celulares */
+/* Tarjetas giratorias: ajustes para celulares */
+@media (max-width: 750px) { 
     .cols {
-        gap: 20px; /* Reduce el espacio entre tarjetas */
+        gap: 15px; /* Reduce más el espacio entre tarjetas */
+        flex-direction: column; /* Asegura una disposición vertical */
     }
 
     .col {
-        width: 100%; /* Ocupa toda la columna */
-        height: auto; /* Ajusta la altura automáticamente */
+        width: 100%; /* Ocupa toda la pantalla */
+        height: auto; /* Ajusta la altura según el contenido */
+        margin-bottom: 20px; /* Reduce el espaciado entre filas */
     }
 
     .container {
-        width: 100%; /* El contenedor ocupa todo el ancho */
-        height: auto; /* La altura se ajusta automáticamente */
+        width: 100%; /* Ajusta el ancho al contenedor padre */
+        height: auto; /* Permite que la altura se ajuste */
     }
 
     .front, .back {
-        width: 100%; /* Asegura que el contenido interno se ajuste */
+        border-radius: 10px; /* Reduce ligeramente las esquinas */
+        box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
+    }
+
+    .banner .static-center img {
+        max-width: 60%; /* Limita el tamaño en móviles */
+    }
+
+    .banner .slider .item img {
+        object-fit: cover;
+        max-width: 100%;
         height: auto;
-        object-fit: cover; /* Ajusta la imagen al contenedor */
     }
 }
 
-@media (min-width: 751px) and (max-width: 850px) { /* Para tablets */
+
+@media (min-width: 751px) and (max-width: 850px) { 
     .cols {
-        gap: 30px; /* Reduce ligeramente el espacio entre tarjetas */
+        gap: 25px; /* Ajusta el espacio entre tarjetas */
     }
 
     .col {
-        width: 400px; /* Ajusta el ancho de las tarjetas */
+        width: 400px; /* Ajusta el tamaño de las tarjetas */
         height: 500px; /* Ajusta la altura de las tarjetas */
     }
-}
 
+    .container {
+        border-radius: 10px; /* Reduce ligeramente las esquinas */
+    }
+
+    .banner .static-center img {
+        width: 80%; /* Ajusta el tamaño del logo */
+    }
+
+    .banner .slider {
+        width: 150px; /* Reduce el tamaño del slider */
+        height: 200px;
+    }
+
+    .banner .slider .item img {
+        width: 80%; /* Ajusta las imágenes del slider */
+        height: auto;
+    }
+}
 
