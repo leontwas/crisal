@@ -164,6 +164,7 @@ body {
     .cols {
         gap: 15px; /* Reduce más el espacio entre tarjetas */
         flex-direction: column; /* Asegura una disposición vertical */
+        margin-top: -500px;
     }
 
     .col {
