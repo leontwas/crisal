@@ -213,6 +213,10 @@ body {
         border-radius: 10px; /* Reduce ligeramente las esquinas */
     }
 
+    .banner {
+        margin-top: 50px;
+    }
+
     .banner .slider .item {
         position: absolute;
         inset: 0 0 0 0;
@@ -221,7 +225,8 @@ body {
     }
 
     .banner .static-center img {
-        width: 80%; /* Ajusta el tamaño del logo */
+        width: 250px; /* Ajusta el tamaño del logo */
+        margin-top: -50px;
     }
 
     .banner .slider {
