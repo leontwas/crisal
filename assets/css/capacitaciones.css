@@ -212,8 +212,8 @@ body {
 
     /* Logo tamaño y ubicación */
     .banner .static-center img {
-        width: 250px;
-        margin-top: -250px;
+        width: 200px;
+        margin-top: -300px;
     }
 
     .banner .slider .item img {
