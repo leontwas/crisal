@@ -176,6 +176,8 @@ body {
     .container {
         width: 100%; /* Ajusta el ancho al contenedor padre */
         height: auto; /* Permite que la altura se ajuste */
+        display: flex;
+        grid-column: 1/-1;
     }
 
     .front, .back {
