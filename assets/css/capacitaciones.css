@@ -68,7 +68,7 @@
 
 #texto-negro1 {
     font-family: 'ICA Rubrik';
-    font-size: 2rem;
+    font-size: 4rem;
     color: #000;
     text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
@@ -172,6 +172,11 @@ body {
 
 /* Tarjetas giratorias: ajustes para celulares */
 @media (max-width: 650px) { 
+    #texto-negro1 {
+        font-family: 'ICA Rubrik';
+        font-size: 3rem;
+    }
+
     .cols {
         flex-direction: column; /* Asegura una disposición vertical */
         margin-top: -100px;
@@ -217,7 +222,12 @@ body {
 }
 
 
-@media (min-width: 651px) and (max-width: 850px) { 
+@media (min-width: 651px) and (max-width: 850px) {
+    #texto-negro1 {
+        font-family: 'ICA Rubrik';
+        font-size: 3rem;
+    }
+
     .cols {
         left: 0;
         gap: 50px; /* Ajusta el espacio entre tarjetas */
