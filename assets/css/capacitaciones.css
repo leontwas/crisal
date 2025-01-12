@@ -161,6 +161,13 @@ body {
 
 /* Tarjetas giratorias: ajustes para celulares */
 @media (max-width: 650px) { 
+    .tajetas-celulares1 {
+            background-image: url('../images/im1.jpg');
+            background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que se repita */
+    }
+    
     .cols {
         gap: 15px; /* Reduce más el espacio entre tarjetas */
         flex-direction: column; /* Asegura una disposición vertical */
