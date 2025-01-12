@@ -201,11 +201,12 @@ body {
 
 @media (min-width: 651px) and (max-width: 850px) { 
     .cols {
+        left: 0;
         gap: 50px; /* Ajusta el espacio entre tarjetas */
     }
 
     .col {
-        width: 430px; /* Ajusta el tamaño de las tarjetas */
+        width: 480px; /* Ajusta el tamaño de las tarjetas */
         height: 500px; /* Ajusta la altura de las tarjetas */
     }
 
