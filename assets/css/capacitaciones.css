@@ -225,6 +225,7 @@ body {
 
 @media (min-width: 651px) and (max-width: 850px) {
     #texto-negro1 {
+        margin-top: -400px;
         font-family: 'ICA Rubrik';
         font-size: 3rem;
     }
