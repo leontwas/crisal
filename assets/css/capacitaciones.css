@@ -201,7 +201,7 @@ body {
 
 @media (min-width: 651px) and (max-width: 850px) { 
     .cols {
-        gap: 10px; /* Ajusta el espacio entre tarjetas */
+        gap: 50px; /* Ajusta el espacio entre tarjetas */
     }
 
     .col {
