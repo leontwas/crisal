@@ -183,7 +183,7 @@ body {
     }
 
     .banner .static-center img {
-        max-width: 60%; /* Limita el tamaño en móviles */
+        width: 350px;
     }
 
     .banner .slider .item img {
