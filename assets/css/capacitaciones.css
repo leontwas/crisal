@@ -182,8 +182,11 @@ body {
         box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
     }
 
+
+    /* Logo tamaño y ubicación */
     .banner .static-center img {
         width: 350px;
+        margin-top: -200px;
     }
 
     .banner .slider .item img {
