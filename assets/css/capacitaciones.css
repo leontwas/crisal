@@ -160,7 +160,7 @@ body {
 }
 
 /* Tarjetas giratorias: ajustes para celulares */
-@media (max-width: 750px) { 
+@media (max-width: 650px) { 
     .cols {
         gap: 15px; /* Reduce más el espacio entre tarjetas */
         flex-direction: column; /* Asegura una disposición vertical */
@@ -194,7 +194,7 @@ body {
 }
 
 
-@media (min-width: 751px) and (max-width: 850px) { 
+@media (min-width: 651px) and (max-width: 850px) { 
     .cols {
         gap: 25px; /* Ajusta el espacio entre tarjetas */
     }
