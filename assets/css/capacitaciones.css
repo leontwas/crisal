@@ -162,9 +162,8 @@ body {
 /* Tarjetas giratorias: ajustes para celulares */
 @media (max-width: 650px) { 
     .cols {
-        gap: 15px; /* Reduce más el espacio entre tarjetas */
         flex-direction: column; /* Asegura una disposición vertical */
-        margin-top: -500px;
+        margin-top: -100px;
     }
 
     .col {
@@ -206,12 +205,19 @@ body {
     }
 
     .col {
-        width: 400px; /* Ajusta el tamaño de las tarjetas */
+        width: 410px; /* Ajusta el tamaño de las tarjetas */
         height: 500px; /* Ajusta la altura de las tarjetas */
     }
 
     .container {
         border-radius: 10px; /* Reduce ligeramente las esquinas */
+    }
+
+    .banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(200px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .banner .static-center img {
