@@ -195,6 +195,13 @@ body {
         box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
     }
 
+    .banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
 
     /* Logo tamaño y ubicación */
     .banner .static-center img {
