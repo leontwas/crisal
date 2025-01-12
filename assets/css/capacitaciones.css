@@ -216,7 +216,7 @@ body {
     .banner .slider .item {
         position: absolute;
         inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(200px);
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
