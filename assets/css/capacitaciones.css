@@ -226,7 +226,7 @@ body {
 
     .banner .static-center img {
         width: 200px; /* Ajusta el tamaño del logo */
-        margin-top: -50px;
+        margin-top: -10px;
     }
 
     .banner .slider {
