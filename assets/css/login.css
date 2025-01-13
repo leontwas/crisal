@@ -122,4 +122,8 @@ label {
         height: 30%;
         width: 30%;
     }
+    spam {
+        font-size: x-small;
+    }
+    
 }
