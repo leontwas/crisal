@@ -118,4 +118,8 @@ label {
         font-family: inherit;
         font-size: x-small;
     }
+    #login {
+        height: 50%;
+        width: 50%;
+    }
 }
