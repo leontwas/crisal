@@ -125,5 +125,9 @@ label {
     #pass {
         font-size: x-small;
     }
-    
+
+    .form-container {
+        padding: 20px;
+        width: 400px;
+    }
 }
