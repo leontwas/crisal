@@ -111,3 +111,11 @@ h3 {
 label {
     font-family: inherit; /* Hereda la fuente definida globalmente */
 }
+
+@media (min-width: 651px) and (max-width: 850px) {
+    
+    h1, h2, h3, h4, h5, h6, p, span, label, input, button {
+        font-family: inherit;
+        font-size: x-small;
+    }
+}
