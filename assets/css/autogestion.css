@@ -63,3 +63,7 @@ button.agregar {
 button.agregar:hover {
     background-color: darkgreen;
 }
+
+#products-container {
+    margin-bottom: 50px;
+}

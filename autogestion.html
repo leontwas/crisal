@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Productos</title>
-    <link rel="stylesheet" href="./assets/css/autogestion.css">
     <!-- Quill CSS -->
     <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/css/fuentes.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/autogestion.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
+<header class="header">
+    <a href="index.html">
+        <img alt="logo" src="./assets/images/logo_crisal.png" class="logo" />
+    </a>
+    <div class="titulos">
+        <h1 class="chicle-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
+        <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./auditorias.html">Auditorías</a></li>
+                <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
 <body>
     <h1>Gestión de Productos</h1>
 
@@ -35,7 +78,19 @@
             <!-- Los productos se generarán dinámicamente aquí -->
         </div>
     </div>
+    <footer>
+        <div class="footlist">
+            <a id="footer_brillo" class="footlink fab fa-brands fa-youtube fa-2x" href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="YouTube" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/" title="Instagram" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J" title="Whatsapp" target="_blank"></a>
+            <a id="footer_brillo" class="footlink fa-brands fa-linkedin fa-2x" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn" target="_blank"></a>
+        </div>
+        <p>
+            <small>&copy; 2024 Todos los derechos reservados</small>
+        </p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="./assets/js/autogestion.js"></script>
 </body>
 </html>
