@@ -121,17 +121,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const totalAPagar = carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
 
-        const productos = carrito.map(producto => ({
-            nombre: producto.nombre,
-            cantidad: producto.cantidad,
-            subtotal: producto.precio * producto.cantidad
-        }));
+        // Formatear los productos en un texto legible
+        const productos = carrito.map(producto => 
+            `Nombre: ${producto.nombre}, Cantidad: ${producto.cantidad}, Precio: $${producto.precio}, Subtotal: $${(producto.precio * producto.cantidad).toFixed(2)}`
+        ).join('\n');
 
+        // Crear un texto con el resumen de la compra
         const datos = {
-            productos: JSON.stringify(productos),
-            total: totalAPagar.toFixed(2)
+            productos: productos,
+            total: `Total a pagar: $${totalAPagar.toFixed(2)}`
         };
 
+        // Enviar los datos al servidor
         fetch('https://formspree.io/f/meoqebwy', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
