@@ -138,6 +138,11 @@ img {
 h3 {
     font-size: medium;
 }
+
+.product-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /* Media Queries */
 @media (max-width: 768px) {
     .product-card {
