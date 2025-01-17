@@ -1,0 +1,19 @@
+#texto-negro1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#cancelar {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #161616;
+}
+
+main {
+    border-bottom: 4px solid #cd7e35;
+}
