@@ -17,3 +17,7 @@
 main {
     border-bottom: 4px solid #cd7e35;
 }
+
+#formulario {
+    width: 400px;
+}

@@ -1,6 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
+main {
+  border-bottom: 4px solid #cd7e35;
+}
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     width: 100%;
 }
