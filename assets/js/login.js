@@ -1,3 +1,4 @@
+// Controlar el evento de enviar el formulario
 document.getElementById('loginForm').addEventListener('submit', async (event) => { 
     event.preventDefault();
 
@@ -22,12 +23,9 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         }
 
         const result = await response.json();
-
-        // Evitar usar localStorage en producción; idealmente usar cookies con httpOnly
         localStorage.setItem('authToken', result.token);
         window.location.href = './administrador.html';
     } catch (error) {
-        console.error('Error de conexión al servidor', error); // Log en consola para debugging
         alert('Error de conexión al servidor.');
     }
 });
@@ -35,5 +33,11 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 // Agregar funcionalidad al checkbox "Mostrar Contraseña"
 document.getElementById('visible').addEventListener('change', (event) => {
     const passwordInput = document.getElementById('password');
-    passwordInput.type = event.target.checked ? 'text' : 'password';
+    if (event.target.checked) {
+        passwordInput.type = 'text';
+    } else {
+        passwordInput.type = 'password';
+    }
 });
+
+
