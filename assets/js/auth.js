@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const usernameInput = document.querySelector(".input-box input[type='text']");
     const passwordInput = document.querySelector(".input-box input[type='password']");
 
-    const API_URL = "https://tu-servidor.com/api/login";
+    const API_URL = "https://tu-servidor.com/api/login"; // Asegúrate de que esta URL sea la correcta
 
     submitBtn.addEventListener("click", async (e) => {
         e.preventDefault();
@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
+            submitBtn.disabled = true; // Desactiva el botón mientras la solicitud está en proceso
+
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
@@ -25,9 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify({ username, password }),
             });
 
+            submitBtn.disabled = false; // Reactiva el botón cuando la respuesta esté lista
+
             if (response.ok) {
                 const data = await response.json();
-         
+                // Usar cookies httpOnly para almacenar el token sería más seguro
                 localStorage.setItem("authToken", data.token);
                 alert("Login exitoso");
                 window.location.href = "/admin-dashboard.html"; 

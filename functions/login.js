@@ -1,9 +1,12 @@
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import { config } from 'dotenv';
+
+config(); // Cargar variables del archivo .env
 
 const users = [
-    { username: "Consultora.Crisal", password: bcrypt.hashSync("Matilda.2017", 10) },
-    { username: "superAdmin", password: bcrypt.hashSync("superAdmin123", 10) },
+    { username: process.env.USER_CONSULTORA, password: process.env.HASHED_PASSWORD_CONSULTORA },
+    { username: process.env.USER_SUPERADMIN, password: process.env.HASHED_PASSWORD_SUPERADMIN },
 ];
 
 export async function handler(event) {
@@ -15,22 +18,22 @@ export async function handler(event) {
         if (!user) {
             return {
                 statusCode: 401,
-                body: JSON.stringify({ message: "Usuario no encontrado" }),
+                body: JSON.stringify({ message: "Credenciales incorrectas" }),
             };
         }
 
         // Verifica la contraseña
-        const isPasswordValid = bcrypt.compareSync(password, user.password);
+        const isPasswordValid = await bcrypt.compare(password, user.password); // Usar compare async
         if (!isPasswordValid) {
             return {
                 statusCode: 401,
-                body: JSON.stringify({ message: "Contraseña incorrecta" }),
+                body: JSON.stringify({ message: "Credenciales incorrectas" }),
             };
         }
 
-        // Genera el token JWT
-        const token = jwt.sign({ username: user.username }, "secreto-super-seguro", {
-            expiresIn: "1h",
+        // Genera el token JWT con un tiempo de expiración
+        const token = jwt.sign({ username: user.username }, process.env.JWT_SECRET, {
+            expiresIn: "1h", // El token expira en 1 hora
         });
 
         return {
@@ -38,6 +41,7 @@ export async function handler(event) {
             body: JSON.stringify({ token }),
         };
     } catch (error) {
+        console.error("Error al procesar la solicitud:", error); // Registra el error
         return {
             statusCode: 500,
             body: JSON.stringify({ message: "Error interno del servidor" }),

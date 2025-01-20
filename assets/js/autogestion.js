@@ -75,3 +75,23 @@ function editarProducto(index) {
 document.addEventListener("DOMContentLoaded", () => {
     renderizarProductos();
 });
+
+
+// Octokit permite interactuar con la API de GitHub
+import { config } from "dotenv";
+import { Octokit } from "@octokit/core";
+
+// Cargar las variables del archivo .env
+config();
+
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
+async function getRepo() {
+  const response = await octokit.request('GET /repos/{owner}/{repo}', {
+    owner: 'leontwas',
+    repo: 'crisal'
+  });
+  console.log(response.data);
+}
+
+getRepo();
