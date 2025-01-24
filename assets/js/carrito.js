@@ -17,14 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Borcegos con punta de acero': 8,
     };
 
-    /**
-     * Agregar un producto al carrito
-     * Si el producto ya existe, aumenta su cantidad. Si no, lo agrega con cantidad inicial de 1.
-     * @param {string} nombre - Nombre del producto.
-     * @param {number} precio - Precio del producto.
-     */
+    // Agregar un producto al carrito
     function agregarAlCarrito(nombre, precio) {
-        const id = idsProductos[nombre]; // Obtener el ID del producto basado en su nombre
+        const id = idsProductos[nombre];
 
         if (id !== undefined) {
             const productoExistente = carrito.find(producto => producto.id === id);
@@ -43,15 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    /**
-     * Renderizar el contenido del carrito en la página
-     * Actualiza la lista de productos y el total a pagar.
-     */
+    // Renderizar el contenido del carrito
     function renderCarrito() {
         const carritoContainer = document.getElementById('carrito-container');
         const totalContainer = document.getElementById('total-pagar');
 
-        carritoContainer.innerHTML = ''; // Limpiar el contenedor
+        carritoContainer.innerHTML = '';
         let totalAPagar = 0;
 
         carrito.forEach(producto => {
@@ -75,11 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         totalContainer.textContent = `Total a pagar: $${totalAPagar}`;
     }
 
-    /**
-     * Eliminar una unidad de un producto del carrito
-     * Si la cantidad del producto llega a 0, se elimina completamente del carrito.
-     * @param {number} id - ID del producto.
-     */
+    // Eliminar una unidad de un producto del carrito
     function eliminarProducto(id) {
         const producto = carrito.find(producto => producto.id === id);
 
@@ -95,10 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    /**
-     * Agregar una unidad más de un producto al carrito
-     * @param {number} id - ID del producto.
-     */
+    // Agregar una unidad más de un producto al carrito
     function agregarMasProducto(id) {
         const producto = carrito.find(producto => producto.id === id);
 
@@ -109,48 +94,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    /**
-     * Finalizar la compra
-     * Calcula el total a pagar, envía los datos a un servidor y limpia el carrito.
-     */
-    function finalizarCompra() {
-        if (carrito.length === 0) {
-            alert('Su carrito está vacío');
-            return;
-        }
+// Finalizar la compra
+function finalizarCompra() {
+    // Obtener el carrito desde localStorage
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-        const totalAPagar = carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
-
-        // Formatear los productos en un texto legible
-        const productos = carrito.map(producto => 
-            `Nombre: ${producto.nombre}, Cantidad: ${producto.cantidad}, Precio: $${producto.precio}, Subtotal: $${(producto.precio * producto.cantidad).toFixed(2)}`
-        ).join('\n');
-
-        // Crear un texto con el resumen de la compra
-        const datos = {
-            productos: productos,
-            total: `Total a pagar: $${totalAPagar.toFixed(2)}`
-        };
-
-        // Enviar los datos al servidor
-        fetch('https://formspree.io/f/meoqebwy', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(datos)
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Compra finalizada con éxito.');
-            carrito = [];
-            localStorage.setItem('carrito', JSON.stringify(carrito));
-            renderCarrito();
-        })
-        .catch(error => {
-            alert('Hubo un error al finalizar la compra. Intenta nuevamente.');
-        });
+    // Validar si el carrito está vacío
+    if (carrito.length === 0) {
+        alert('Su carrito está vacío. Por favor, agregue productos antes de proceder.');
+        return;
     }
 
-    // Asignar eventos a botones
+    // Calcular el total a pagar
+    const totalAPagar = carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
+
+    // Crear la lista de productos en el carrito
+    const productos = carrito.map(producto => 
+        `Nombre: ${producto.nombre}, Cantidad: ${producto.cantidad}, Precio: $${producto.precio}, Subtotal: $${(producto.precio * producto.cantidad).toFixed(2)}`
+    ).join('\n');
+
+    // Guardar los datos del carrito y el total en localStorage
+    localStorage.setItem('productos', productos); // Guardar la lista de productos como una cadena
+    localStorage.setItem('total', totalAPagar.toFixed(2)); // Guardar el total con dos decimales
+
+    // Mensaje de confirmación
+    alert(`El total de su compra es: $${totalAPagar.toFixed(2)}.\n\nProductos:\n${productos}\n\nPor favor, complete sus datos en el formulario.`);
+
+    // Redirigir al formulario de compra
+    window.location.href = '../comprar.html';
+}
+
+
     botonesAgregar.forEach((boton) => {
         boton.addEventListener('click', () => {
             const nombre = boton.getAttribute('data-nombre');
@@ -176,8 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    document.getElementById('finalizar-btn').addEventListener('click', finalizarCompra);
+    document.getElementById('finalizar-btn').addEventListener('click', () => {
+        // Invocar la función finalizarCompra
+        finalizarCompra();
+    });
 
-    // Renderizar el carrito al cargar la página
     renderCarrito();
 });
