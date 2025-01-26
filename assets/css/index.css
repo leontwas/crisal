@@ -64,6 +64,7 @@ a:hover {
   color: white;
   text-align: justify;
   animation: slide-in-left 1.5s ease-in-out;
+  margin-bottom: 270px;
 }
 
 .margen-vertical {
@@ -74,11 +75,10 @@ a:hover {
   color:#0099cc;
   font-weight: bold;
   margin-top: 80px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
-#texto-amarillo {
+.texto-amarillo {
   color: yellow;
   font-weight: bold;
   text-align: justify;
@@ -210,23 +210,13 @@ a:hover {
     align-items: end;
   }
 
-  .text-xl {
-    margin-top: 40px;
+  .texto-amarillo {
+    margin-top: 60px;
     margin-bottom: 120px;
     align-items: end;
   }
 
-  #texto-amarillo {
-    margin-top: -100px;
-    align-items: end;
-  }
-
-  #texto-amarillo-1 {
-    margin-top: -100px;
-    align-items: end;
-  }
-
-  #gestiones, #auditorias, #servicios {
+   #gestiones, #auditorias, #servicios {
     width: 100%;
   }
 
@@ -324,7 +314,7 @@ a:hover {
     font-size: large;
   }
 
-  #texto-amarillo {
+  .texto-amarillo {
     font-size: large;
   }
 
