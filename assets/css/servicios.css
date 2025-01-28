@@ -98,6 +98,18 @@ article:hover img:last-child {
     transform: translateY(10%);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
 .container {
     box-shadow: 10px 10px 5px #161616;
 }
