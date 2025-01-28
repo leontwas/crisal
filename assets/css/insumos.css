@@ -177,7 +177,7 @@ main {
   text-align: center;
 }
 
-#texto-negro2 {
+.texto-negro2 {
   font-size: 1.7rem;
   color: #000;
   text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
