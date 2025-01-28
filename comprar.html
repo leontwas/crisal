@@ -85,20 +85,21 @@
         </div>
         <div class="contenedor">
             <section class="bg-black bg-opacity-75 text-black p-5">
+              <h2 class="sr-only">Formulario de datos del cliente</h2>
 
                 <!-- Cambia la acción por el endpoint de Formspree -->
                 <form id="formulario" action="https://formspree.io/f/meoqebwy" method="POST">
                     <div class="form-floating mb-3">
-                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required />
+                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="form-floating mb-3">
-                        <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Apellido" required />
+                        <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Apellido" required>
                     </div>
                     <div class="form-floating mb-3">
-                        <input name="telefono" type="tel" class="form-control" id="telefono" placeholder="Teléfono" required />
+                        <input name="telefono" type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
                     </div>
                     <div class="form-floating mb-3">
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico" required />
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
                     </div>
                     <!-- Input oculto para el carrito -->
                     <input type="hidden" name="carrito" id="carrito">
@@ -113,7 +114,8 @@
             </section>
 
             <section class="image-section">
-                <img src="./assets/images/shopping-cart.jpg" alt="entrevista.png" class="entrevista" />
+              <h2 class="sr-only">imagen de un carrito de compras</h2>
+                <img src="./assets/images/shopping-cart.jpg" alt="entrevista.png" class="entrevista">
             </section>
         </div>
     </main>

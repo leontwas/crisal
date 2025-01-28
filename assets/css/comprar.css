@@ -21,3 +21,7 @@ main {
 #formulario {
     width: 400px;
 }
+
+.sr-only {
+    visibility: hidden;
+}
