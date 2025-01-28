@@ -122,7 +122,7 @@ label {
         height: 15%;
         width: 15%;
     }
-    #pass {
+    .pass {
         font-size: x-small;
     }
 
