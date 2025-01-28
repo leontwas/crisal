@@ -161,7 +161,7 @@ a:hover {
 
 /* Estilo para el ícono de hamburguesa */
 #hamburguesa {
-  left: 0px;
+  left: 0;
   right: 0;
   top: auto;
   width: auto;
