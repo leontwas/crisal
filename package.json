@@ -13,6 +13,7 @@
   "license": "MIT",
   "description": "Web de servicios en Seguridad e Higiene",
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.3",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
@@ -25,6 +26,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.17"
   }
 }
