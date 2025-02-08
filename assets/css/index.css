@@ -398,7 +398,7 @@ p {
 @media screen and (max-width: 650px) {
     .carousel .list .item .content{
         margin: 0;
-        margin-left: 50%;
+        margin-left: 25%;
         padding: 0;
         width: 100%;
         height: fit-content;
