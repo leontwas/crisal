@@ -339,10 +339,6 @@ body{
         4px 4px 4px rgba(0, 0, 0, 0.5); /* Sombra 3D para efecto de profundidad */
 }
 
-.name {
-    
-}
-
 .informacion {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #2c3e50, #34495e);

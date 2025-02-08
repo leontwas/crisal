@@ -248,7 +248,7 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
 
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
-    .chicle-regular {
+  .birthstone-regular {
         padding-left: 95px;
         padding-right: 30px;
         font-size: 2rem;
