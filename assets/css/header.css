@@ -248,10 +248,12 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
 
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
-  .birthstone-regular {
+  .libre-baskerville-regular {
         padding-left: 95px;
         padding-right: 30px;
-        font-size: 1.5rem;      }
+        font-size: 1.5rem;      
+      }
+
     h3 {
         font-size: 0.8rem;
         font-weight: bold;
