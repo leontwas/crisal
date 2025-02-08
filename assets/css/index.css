@@ -371,23 +371,6 @@ p {
     text-align: justify;
 }
 
-/* Diseño responsivo */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .presentacion {
-        padding: 15px;
-    }
-}
-
-
 @keyframes contentOut{
     to{
         transform: translateY(-150px);
@@ -395,6 +378,7 @@ p {
         opacity: 0;
     }
 }
+
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media screen and (max-width: 650px) {
     .carousel .list .item .content{
@@ -422,4 +406,20 @@ p {
         width: 650px;
         height: 220px;
      }
+}
+
+/*********************************************** Media Queries para Tablets ***********************************************/
+@media (min-width: 651px) and (max-width: 850px) { 
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .presentacion {
+        padding: 15px;
+    }
 }
