@@ -1,4 +1,3 @@
-// index.js
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -6,28 +5,32 @@ import bodyParser from 'body-parser';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+// Cargar variables de entorno
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express(); 
+const app = express();
 
-// Usuarios mockeados
+// Usuarios mockeados usando variables de entorno
 const users = [
     {
-        username: "Consultora.Crisal",
-        password: bcrypt.hashSync("Matilda.2017", 10),
+        username: process.env.ADMIN_USERNAME_1,
+        password: bcrypt.hashSync(process.env.ADMIN_PASSWORD_1, 10),
     },
     {
-        username: "superAdmin",
-        password: bcrypt.hashSync("superAdmin123", 10), 
+        username: process.env.ADMIN_USERNAME_2,
+        password: bcrypt.hashSync(process.env.ADMIN_PASSWORD_2, 10),
     },
 ];
 
 // Middleware
-app.use(cors()); 
-app.use(bodyParser.json()); 
-app.use(express.static(path.join(__dirname, './'))); 
+app.use(cors());
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, './')));
 
 // Endpoint para login
 app.post('/api/login', (req, res) => {
@@ -46,12 +49,12 @@ app.post('/api/login', (req, res) => {
     }
 
     // Generar token
-    const token = jwt.sign({ username: user.username }, "secreto-super-seguro", {
-        expiresIn: "1h", 
+    const token = jwt.sign({ username: user.username }, process.env.JWT_SECRET, {
+        expiresIn: "1h",
     });
 
     // Respuesta con el token
-    res.json({ token }); 
+    res.json({ token });
 });
 
 // Ruta principal

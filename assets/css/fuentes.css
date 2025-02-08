@@ -1,3 +1,29 @@
+.libre-baskerville-regular {
+  margin-top: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f30f0f; /* Ajusta según tu diseño */
+  text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 .kalam-regular {
     font-family: "Kalam", cursive;

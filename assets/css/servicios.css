@@ -1,7 +1,3 @@
-main {
-    border-bottom: 4px solid #cd7e35;
-  }
-
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -16,9 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    padding-bottom: 30px;
-}
 
 .main-container {
     display: flex;
@@ -123,6 +116,12 @@ article:hover img:last-child {
 .link {
     color: gold;
 }
+
+#video {
+    width: 100%; 
+    height: auto;
+  }
+  
 
 /******************************** Media queries para tabletas *******************************/
 @media (min-width: 651px) and (max-width: 850px) { 

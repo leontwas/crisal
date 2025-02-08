@@ -13,7 +13,11 @@ main {
 }
 
 body {
-    background: rgb(248, 217, 105);
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #888a8a, #d5d8da);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "Raleway", sans-serif;
     font-optical-sizing:auto;
     font-style: normal;

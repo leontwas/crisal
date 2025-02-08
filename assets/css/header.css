@@ -1,20 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 .head {
     height: 100px;
     margin: 20px;
-}
-
-.head h1 {
-    text-align: center;
-    font-size: 4em;
-    font-family: "chicle", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    cursor: default;
-    user-select: none;
 }
 
 ul { 
@@ -31,10 +22,10 @@ header {
     box-sizing: border-box;
     background-color: white;
 }
-
+/*
 .main-nav {
   margin-top: -30px !important;
-}
+}*/
 
 nav .form-control-2 {  /* Buscador en la página de contacto.html*/
     background-color: initial;
@@ -51,7 +42,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
 }
 
 .header-container {
-    margin-top: -20px;
     display: flex;
     align-items: center;
     justify-content: start; /* Alinea los elementos al principio */
@@ -61,7 +51,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
   
 /* Ajustar la barra de navegación para ocupar todo el ancho */
 .navbar {
-    margin-top: -10px !important; /* Mantiene tu margen */
     background-color: #50633C !important;
     color: white !important;
     width: 100vw; /* Hace que ocupe todo el ancho de la pantalla */
@@ -82,7 +71,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
  }
  
  .navbar {
-   margin-top: -10px !important;
    background-color: #50633C !important;
    color: white !important;
  }
@@ -151,6 +139,10 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
    padding-top: 2px;
    border-bottom: #cd7e35 solid 4px;
  }
+
+ .nav-item.dropdown {
+  font-size: 16px; /* Ajusta el tamaño según lo necesites */
+}
  
  .btn-outline-success {
    color: white; /* Texto en blanco */
@@ -174,31 +166,12 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
   /* Contenedor de los títulos */
   .titulos {
     text-align: center;
-    margin-top: 0px; /* Espaciado opcional desde el logo */
   }
   
-  .chicle-regular {
-    font-size: 3rem;
-    color: red;
-    -webkit-text-stroke: 2px black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    margin: 0;
-  }
-  
-  /* Estilo del h3 */
-  h3 {
+   .categoria {
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
-    margin-top: 5px;
-  }
-
-  .categoria {
-    font-size: 1.2rem;
-    color: black;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 10px;
     margin-left: 10px;
   }
 
@@ -276,7 +249,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
 /************************************* Estilos para dispositivos móviles **********************************************/
 @media (max-width: 650px) {
     .chicle-regular {
-        margin-top: 10px;
         padding-left: 95px;
         padding-right: 30px;
         font-size: 2rem;
@@ -396,9 +368,6 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
 }
 
 @media (min-width: 851px){
-    .chicle-regular {
-        margin-top: 10px;
-       }
        .logo{
         margin-top: -10px;
        }

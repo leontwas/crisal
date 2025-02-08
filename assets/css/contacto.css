@@ -1,9 +1,3 @@
-/* Estilo principal */
-main {
-  background: rgb(248, 217, 105);
-  border-bottom: 4px solid #cd7e35;
-}
-
 /* Contenedor principal */
 .contenedor {
   display: flex;
