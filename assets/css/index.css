@@ -298,10 +298,6 @@ body{
     height: 100vh; /* Ajusta según sea necesario */
   }
 
-  .logo {
-    margin-top: -30px;
-  }
-
 #direccion{
     text-align: center;
     color: black;
