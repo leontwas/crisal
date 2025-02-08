@@ -395,11 +395,16 @@ p {
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 650px) {
     .carousel .list .item .content{
         padding-right: 0;
-    }
+        width: 100%;
+        height: fit-content;
+        }
     .carousel .list .item .content .title{
         font-size: 30px;
+    }
+    .topic {
+        font-size: 2rem;
     }
 }
