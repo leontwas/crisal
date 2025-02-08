@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             totalAPagar += subtotal;
         });
 
-        totalContainer.textContent = `Total a pagar: $${totalAPagar}`;
+        totalContainer.textContent = `${totalAPagar}`;
     }
 
     // Eliminar una unidad de un producto del carrito
