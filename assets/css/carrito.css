@@ -13,8 +13,6 @@ body {
     padding: 0;
 }
 
-
-
  .navbar-nav {
     margin: 0 auto;
     display: flex;
@@ -165,4 +163,22 @@ button:hover {
 
 .eliminar:hover {
     background-color: darkred;
+}
+
+@media (max-width: 650px) {
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #161616;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#texto-negro2{
+  font-size: 1.8rem;
+}
 }
