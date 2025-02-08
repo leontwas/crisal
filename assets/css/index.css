@@ -400,9 +400,8 @@ p {
     .carousel .list .item .content{
         margin: 0;
         margin-left: 20px;
-        padding: 20px;
-        width: 900px;
-        height: 550px;
+        padding: 25px;
+        height: 545px;
         }
 
     .carousel .list .item .content .title .topic {
@@ -418,4 +417,9 @@ p {
     #direccion{
         margin-bottom: -100px;
     }
+
+    .carousel.next .list .item:nth-child(1) img {
+        width: 650px;
+        height: 220px;
+     }
 }
