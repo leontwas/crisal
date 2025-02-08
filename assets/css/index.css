@@ -399,9 +399,9 @@ p {
 @media screen and (max-width: 650px) {
     .carousel .list .item .content{
         margin: 0;
-        margin-left: 40px;
+        margin-left: 20px;
         padding: 20px;
-        width: 800px;
+        width: 900px;
         height: 550px;
         }
 
