@@ -347,11 +347,11 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
         font-size: 1.2rem;
      }
 
-    .chicle-regular {
-        font-size: 2.3rem;
-        margin-left: 20px;
-        margin-top: 10px;
-       }
+     .libre-baskerville-regular {
+      padding-left: 95px;
+      padding-right: 30px;
+      font-size: 1.5rem;      
+    }
 
     .logo {
         width: 110px; /* Ajusta el tamaño del logo */

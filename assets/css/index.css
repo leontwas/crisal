@@ -432,10 +432,19 @@ p {
 /*********************************************** Media Queries para Tablets ***********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
 
-    .carousel .name, .carousel .title, .carousel .topic {
-        font-size: 5px;
+    .carousel .list .item .name {
+        font-size: 15px;
       }
-    
+      
+      .carousel .list .item .title {
+        font-size: 20px;
+    }
+
+    .carousel .list .item .topic {
+        color: #f1683a;
+        font-size: 22px;
+    }
+
       .carousel .des {
         font-size: 4px;
       }
