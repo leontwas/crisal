@@ -457,9 +457,9 @@ p {
     .carousel .list .item .content{
         position: absolute;
         width: 600px;
-        height: 600px;
+        height: 550px;
         max-width: 50%;
-        margin-left: 72px;
+        margin-left: 20px;
         margin-top: -20px;
     }
 
