@@ -372,10 +372,12 @@ h1 {
 }
 
 .presentacion {
-    margin: auto;
-    align-self: center;
-    align-items: center;
-    align-content: center;
+    width: fit-content; /* Ajusta el ancho al contenido */
+    max-width: 90%; /* Evita que se expanda demasiado */
+    margin: auto; /* Centra horizontalmente */
+    display: flex; /* Permite centrar el contenido interno */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
