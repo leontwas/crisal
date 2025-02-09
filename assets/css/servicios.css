@@ -162,3 +162,7 @@ article:hover img:last-child {
         margin: 5px;
     }
 }
+
+#mediciones{
+    width: fit-content
+}
