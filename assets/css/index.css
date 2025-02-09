@@ -382,7 +382,7 @@ p {
 @media screen and (max-width: 650px) {
     .carousel .list .item .content{
         margin: 0;
-        margin-left: 20px;
+        margin-left: 50px;
         padding: 25px;
         height: 545px;
         max-width: 100%;
@@ -409,16 +409,18 @@ p {
             width: 100%;
             margin: 5px 0;
           }
+        }
+
+    #direccion{
+            margin-bottom: -100px;
+        }
 
     #map {
         border-radius: 2%;
         height: 450px; 
         width: 90%; 
         box-shadow: 5px 5px 2.5px #161616;
-    }
-    #direccion{
         margin-bottom: -100px;
-    }
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
