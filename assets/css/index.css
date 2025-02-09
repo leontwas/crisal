@@ -421,11 +421,11 @@ p {
 @media (min-width: 651px) and (max-width: 850px) { 
 
     .carousel .name, .carousel .title, .carousel .topic {
-        font-size: 20px;
+        font-size: 5px;
       }
     
       .carousel .des {
-        font-size: 14px;
+        font-size: 4px;
       }
     
       .carousel .buttons button {
