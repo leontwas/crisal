@@ -382,15 +382,19 @@ p {
 @media screen and (max-width: 650px) {
     .carousel .list .item .content{
         margin: 0;
-        margin-top: 104px;
-        margin-left: 100px;
+        margin-top: 100px;
+        margin-left: 102px;
         padding: 25px;
         height: 400px;
         max-width: 100%;
         }
 
+
+    .carousel .list .item .name {
+        font-size: 14px;
+        }
     .carousel .list .item .title {
-        font-size: 22px;
+        font-size: 20px;
     }
     .carousel .list .item .topic{
             color: #f1683a;
