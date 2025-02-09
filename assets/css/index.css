@@ -65,7 +65,7 @@ main {
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
-    font-size: 5em;
+    font-size: 25px;
     font-weight: bold;
     line-height: 1.3em;
 }
@@ -359,13 +359,11 @@ main {
 }
 
 h1 {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .t2 {
-    font-size: 1rem;
     margin-top: 20px;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
