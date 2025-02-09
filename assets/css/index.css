@@ -468,6 +468,7 @@ p {
       }
       
       .carousel .list .item .title {
+        top: -10px;
         font-size: 34px;
     }
 
@@ -490,7 +491,7 @@ p {
       }
 
       .thumbnail{
-        bottom: 90px;
+        bottom: 0;
         left: 55%;
         gap: 10px;
     }
