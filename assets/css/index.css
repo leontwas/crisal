@@ -388,9 +388,23 @@ p {
         height: 545px;
         }
 
-    .carousel .list .item .content .title .topic {
-        font-size: 0.2rem;
-    }
+        .carousel .name, .carousel .title, .carousel .topic {
+            font-size: 18px;
+          }
+        
+          .carousel .des {
+            font-size: 12px;
+          }
+        
+          .carousel .buttons {
+            flex-direction: column;
+            align-items: center;
+          }
+        
+          .carousel .buttons button {
+            width: 100%;
+            margin: 5px 0;
+          }
 
     #map {
         border-radius: 2%;
@@ -401,25 +415,23 @@ p {
     #direccion{
         margin-bottom: -100px;
     }
-
-    .carousel.next .list .item:nth-child(1) img {
-        width: 650px;
-        height: 220px;
-     }
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
-    h1 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .presentacion {
-        padding: 15px;
-    }
+
+    .carousel .name, .carousel .title, .carousel .topic {
+        font-size: 20px;
+      }
+    
+      .carousel .des {
+        font-size: 14px;
+      }
+    
+      .carousel .buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+
+
 }
