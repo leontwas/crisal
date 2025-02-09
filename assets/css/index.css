@@ -459,7 +459,7 @@ p {
         width: 600px;
         height: 600px;
         max-width: 90%;
-        left: 20px;
+        margin-left: 102px;
     }
 
     .carousel .list .item .name {
@@ -485,7 +485,7 @@ p {
       }
 
     #direccion {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     
     #map {
