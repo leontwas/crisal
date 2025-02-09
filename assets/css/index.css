@@ -8,6 +8,7 @@ body{
     background: linear-gradient(to bottom, #888a8a, #d5d8da);
     height: 1500px;
     font-family: Poppins;
+    width: 100%;
 }
 
 main {
