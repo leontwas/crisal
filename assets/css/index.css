@@ -65,7 +65,7 @@ main {
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 1.3em;
 }
