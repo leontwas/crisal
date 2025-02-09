@@ -353,7 +353,9 @@ main {
     background: linear-gradient(to right, #2c3e50, #34495e);
     color: #ecf0f1;
     padding: 20px;
-    width: 100%;
+    display: block;
+    width: 100vw; /* Ocupa todo el viewport */
+    position: relative; /* Asegura que respete el flujo del documento */
 }
 
 h1 {
