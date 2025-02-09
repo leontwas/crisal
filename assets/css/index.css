@@ -8,7 +8,6 @@ body{
     background: linear-gradient(to bottom, #888a8a, #d5d8da);
     height: 1500px;
     font-family: Poppins;
-    font-size: 12px;
 }
 
 /* carousel */
@@ -388,10 +387,11 @@ p {
         height: 545px;
         }
 
-        .carousel .name, .carousel .title, .carousel .topic {
+        .carousel .list .item .topic{
+            color: #f1683a;
             font-size: 18px;
-          }
-        
+        }
+
           .carousel .des {
             font-size: 12px;
           }
