@@ -348,9 +348,12 @@ nav .form-control-2 {  /* Buscador en la página de contacto.html*/
      }
 
      .libre-baskerville-regular {
+      margin-top: 20px;
       padding-left: 95px;
       padding-right: 30px;
-      font-size: 1.5rem;      
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 1.5rem;
     }
 
     .logo {
