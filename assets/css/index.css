@@ -372,8 +372,10 @@ h1 {
 }
 
 .presentacion {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    align-self: center;
+    align-items: center;
+    align-content: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
