@@ -385,9 +385,13 @@ p {
         margin-left: 20px;
         padding: 25px;
         height: 545px;
+        max-width: 100%;
         }
 
-        .carousel .list .item .topic{
+    .carousel .list .item .title {
+        font-size: 22px;
+    }
+    .carousel .list .item .topic{
             color: #f1683a;
             font-size: 18px;
         }
