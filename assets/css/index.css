@@ -317,6 +317,40 @@ main {
     font-size: 16px;
   }
 
+  .birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-size: 5rem;
+    font-style: normal;
+    color: rgb(216, 25, 25);
+    /* Color principal del texto */
+    text-shadow:
+        2px 2px 0 black,
+        /* Borde blanco (sombra 1) */
+        /* -2px -2px 0 black, /* Borde blanco (sombra 2) */
+        /*  2px -2px 0 black, /* Borde blanco (sombra 3) */
+        -2px 2px 0 black,
+        /* Borde blanco (sombra 4) */
+        4px 4px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra 3D para efecto de profundidad */
+}
+
+.informacion {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: #ecf0f1;
+    padding: 20px;
+    display: block;
+    width: 100vw;
+    /* Ocupa todo el viewport */
+    position: relative;
+    /* Asegura que respete el flujo del documento */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media screen and (max-width: 650px) {
     .carousel .list .item .content {
@@ -359,7 +393,19 @@ main {
 }
 
 #direccion {
-    margin-bottom: -250px;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #map {
@@ -452,7 +498,6 @@ main {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        /* Ajusta según sea necesario */
         margin-bottom: -30px;
     }
 
@@ -467,40 +512,6 @@ main {
     #subtitulo {
         font-size: 2rem;
         text-align: center;
-    }
-
-    .birthstone-regular {
-        font-family: "Birthstone", serif;
-        font-size: 5rem;
-        font-style: normal;
-        color: rgb(216, 25, 25);
-        /* Color principal del texto */
-        text-shadow:
-            2px 2px 0 black,
-            /* Borde blanco (sombra 1) */
-            /* -2px -2px 0 black, /* Borde blanco (sombra 2) */
-            /*  2px -2px 0 black, /* Borde blanco (sombra 3) */
-            -2px 2px 0 black,
-            /* Borde blanco (sombra 4) */
-            4px 4px 4px rgba(0, 0, 0, 0.5);
-        /* Sombra 3D para efecto de profundidad */
-    }
-
-    .informacion {
-        font-family: 'Poppins', sans-serif;
-        background: linear-gradient(to right, #2c3e50, #34495e);
-        color: #ecf0f1;
-        padding: 20px;
-        display: block;
-        width: 100vw;
-        /* Ocupa todo el viewport */
-        position: relative;
-        /* Asegura que respete el flujo del documento */
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 10px;
     }
 
     .t2 {
