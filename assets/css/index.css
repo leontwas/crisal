@@ -420,7 +420,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: -330px;
+    margin-bottom: -390px;
 }
 
 .mapa {
@@ -436,7 +436,7 @@ h1 {
     height: 300px;
     width: 90%;
     box-shadow: 5px 5px 2.5px #161616;
-    margin-bottom: -345px;
+    margin-bottom: -455px;
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
