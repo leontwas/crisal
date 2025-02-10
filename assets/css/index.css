@@ -445,7 +445,7 @@ p {
 }
 
 #direccion {
-    margin-bottom: -200px;
+    margin-bottom: -260px;
 }
 
 #map {
@@ -454,7 +454,7 @@ p {
     height: 450px;
     width: 90%;
     box-shadow: 5px 5px 2.5px #161616;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
@@ -473,6 +473,17 @@ p {
         margin-left: 5px;
         margin-top: 0;
     }
+
+    #subtitulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .t2 {
+        font-size: 1.3rem;
+    }
+
+
 
     .carousel .list .item .name {
         font-size: 15px;
@@ -499,7 +510,7 @@ p {
 
       .arrows{
         margin-top: 20px;
-        margin-left: 100px;
+        left: 100px;
       }
 
       .thumbnail{
@@ -509,14 +520,11 @@ p {
     }
 
     #direccion {
-        margin-bottom: 20px;
+        margin-bottom: -100px;
     }
     
     #map {
-        border-radius: 2%;
-        height: 450px;
-        width: 90%;
-        box-shadow: 5px 5px 2.5px #161616;
+        margin-bottom: 50px;
     }
 
 }
