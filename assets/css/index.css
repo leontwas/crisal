@@ -402,9 +402,15 @@ h1 {
         font-size: 14px;
     }
 }
+/* Título Servicios de Seguridad e Higiene en el Trabajo */
+#subtitulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
+/* Subtítulos */
 .t2 {
-    font-size: 14px;
+    font-size: 18px;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
 }
