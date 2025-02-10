@@ -442,12 +442,6 @@ h1 {
 
 /*********************************************** Media Queries para Tablets ***********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
-    body{
-        background: linear-gradient(to bottom, #888a8a, #d5d8da);
-        height: 1800px;
-        font-family: Poppins;
-    }
-
     .carousel .list .item .content{
         position: absolute;
         width: 600px;
@@ -481,7 +475,7 @@ h1 {
       }
 
       .arrows{
-        margin-top: 40px;
+        margin-top: 20px;
       }
 
       .thumbnail{
@@ -490,10 +484,32 @@ h1 {
         gap: 10px;
     }
 
+/* Título Servicios de Seguridad e Higiene en el Trabajo */
+#subtitulo {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Subtítulos */
+.t2 {
+    margin-left: -20px;
+    font-size: 22px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+}
+
     #direccion {
-        margin-bottom: 20px;
+        margin-bottom:-60px;
     }
     
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 120px;
+    }
+
     #map {
         border-radius: 2%;
         height: 450px;
