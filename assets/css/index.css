@@ -445,10 +445,11 @@ p {
 }
 
 #direccion {
-    margin-bottom: -140px;
+    margin-bottom: -170px;
 }
 
 #map {
+    align-items: center;
     border-radius: 2%;
     height: 450px;
     width: 90%;
