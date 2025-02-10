@@ -492,14 +492,14 @@ h1 {
 
 /* Subtítulos */
 .t2 {
-    margin-left: -20px;
+    margin-left: -10px;
     font-size: 22px;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
 }
 
     #direccion {
-        margin-bottom:-60px;
+        margin-bottom:-70px;
     }
     
     .mapa {
@@ -507,7 +507,7 @@ h1 {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin-bottom: 120px;
+        margin-bottom: 140px;
     }
 
     #map {
