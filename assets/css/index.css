@@ -436,7 +436,7 @@ h1 {
     height: 300px;
     width: 90%;
     box-shadow: 5px 5px 2.5px #161616;
-    margin-bottom: -275px;
+    margin-bottom: -245px;
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
@@ -506,7 +506,7 @@ h1 {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin-bottom: 170px;
+        margin-bottom: 200px;
     }
 
     #map {
@@ -537,7 +537,6 @@ h1 {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin-bottom: -30px;
     }
 
     #map {
