@@ -509,26 +509,21 @@ p {
         font-family: 'Poppins', sans-serif;
         font-size: 2.0rem;
         font-weight: bold;
-        margin-top: 160px;
+        margin-bottom: 160px;
     }
     
     #manito {
         text-align: center;
     }
 
-    .mapa {
+    #map {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 0 5%;
-    }
-    
-    #map {
-        width: 100%;
+        margin-top: 100px;
         max-width: 800px;
         height: 300px;
-        margin: 0 auto;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
