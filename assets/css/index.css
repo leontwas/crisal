@@ -509,7 +509,7 @@ p {
       }
 
       .arrows{
-        margin-top: 20px;
+        margin-top: 30px;
         left: 100px;
       }
 
@@ -524,7 +524,7 @@ p {
     }
     
     #map {
-        margin-bottom: 290px;
+        margin-bottom: 260px;
     }
 
 }
