@@ -435,8 +435,17 @@ p {
     }
 }
 
+#subtitulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.t2 {
+    font-size: 1rem;
+}
+
 #direccion {
-    margin-bottom: -115px;
+    margin-bottom: -140px;
 }
 
 #map {
