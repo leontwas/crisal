@@ -304,6 +304,37 @@ main {
     margin-top: 42px;
 }
 
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta según sea necesario */
+  }
+
+#direccion{
+    text-align: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+#manito {
+    text-align: center;
+}
+
+#map {
+    border-radius: 2%;
+    height: 450px; 
+    width: 600px; 
+    box-shadow: 5px 5px 2.5px #161616;
+    margin-top: 100px;
+}
+
+#subtitulo {
+    font-size: 2rem;
+    text-align: center;
+}
 .birthstone-regular {
     font-family: "Birthstone", serif;
     font-size: 5rem;
@@ -404,26 +435,15 @@ p {
     }
 }
 
-#subtitulo {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.t2 {
-    font-size: 1rem;
-}
-
 #direccion {
-    margin-bottom: -280px;
+    margin-bottom: -115px;
 }
 
 #map {
-    align-items: center;
     border-radius: 2%;
     height: 450px;
     width: 90%;
     box-shadow: 5px 5px 2.5px #161616;
-    margin-bottom: -170px;
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
@@ -443,19 +463,8 @@ p {
         margin-top: 0;
     }
 
-    #subtitulo {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .t2 {
-        font-size: 1.3rem;
-        text-align: left;
-    }
-
     .carousel .list .item .name {
         font-size: 15px;
-        margin-top: -20px;
       }
       
       .carousel .list .item .title {
@@ -469,7 +478,7 @@ p {
     }
 
       .carousel .des {
-        font-size: 8px;
+        font-size: 6px;
       }
     
       .carousel .buttons button {
@@ -478,8 +487,7 @@ p {
       }
 
       .arrows{
-        margin-top: 30px;
-        left: 100px;
+        margin-top: 40px;
       }
 
       .thumbnail{
@@ -489,42 +497,14 @@ p {
     }
 
     #direccion {
-        margin-bottom: 150px;
+        margin-bottom: 20px;
     }
     
     #map {
-        margin-bottom: 260px;
-    }
-}
-
-@media (min-width:851) {
-    #subtitulo {
-        font-size: 2rem;
-        text-align: center;
+        border-radius: 2%;
+        height: 450px;
+        width: 90%;
+        box-shadow: 5px 5px 2.5px #161616;
     }
 
-    #direccion{
-        text-align: center;
-        color: black;
-        font-family: 'Poppins', sans-serif;
-        font-size: 2.0rem;
-        font-weight: bold;
-        margin-bottom: 160px;
-    }
-    
-    #manito {
-        text-align: center;
-    }
-
-    #map {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 100px;
-        max-width: 800px;
-        height: 300px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
 }
