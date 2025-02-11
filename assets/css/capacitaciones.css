@@ -121,9 +121,10 @@ body {
     transition: transform 0.5s ease; /* Suaviza la transición */
    
 }
+
 /*****************************************************************/
 .wrapper {
-gap: 20px !important; /* Espaciado entre tarjetas */
+    gap: 20px !important; /* Espaciado entre tarjetas */
 }
 /*****************************************************************/
 
