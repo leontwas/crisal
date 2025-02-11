@@ -122,11 +122,12 @@ article:hover img:last-child {
     height: auto;
   }
   
-/******************************** Media queries para celulares **********************************/
+/******************************** Media queries para Celulares **********************************/
 @media (max-width: 650px) {
     .main-container {
-        padding-top: 80px;
-        margin: 0;
+        padding-top: 50px;
+        margin-left: 0;
+        display: flex;
         flex-direction: column; 
         align-items: center;
     }
@@ -146,7 +147,7 @@ article:hover img:last-child {
     width: max-content;
 }
 
-/******************************** Media queries para tabletas *******************************/
+/******************************** Media queries para Tablets *******************************/
 @media (min-width: 651px) and (max-width: 850px) { 
     .main-container {
         flex-direction: column; 
