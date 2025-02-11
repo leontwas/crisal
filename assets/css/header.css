@@ -418,11 +418,15 @@ nav .form-control-2 {
 
   #titulo-insumos{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   #titulo-capacitaciones{
     margin-top: 10px;
     margin-bottom: 8px;
+  }
+
+  #titulo-contacto{
+    margin-bottom: 2px;  
   }
 }
