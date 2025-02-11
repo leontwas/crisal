@@ -102,7 +102,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px !important; /* Espaciado entre tarjetas */
     margin-top: 50px;
 }
 
@@ -111,6 +110,7 @@ body {
     height: 570px; /* Fija la altura del contenedor externo */
     cursor: pointer;
     perspective: 800px; /* Profundidad para el efecto 3D */
+    gap: 20px !important; /* Espaciado entre tarjetas */
 }
 
 .container {
