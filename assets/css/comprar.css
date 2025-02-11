@@ -27,8 +27,18 @@ body {
     visibility: hidden;
 }
 
+/******************************* Media Queries para Celulares ********************************************/
+
 @media (max-width: 650px) {
     .contenedor {
         margin-left: -70px;
     }
 }
+
+/******************************* Media Queries para Tablets ********************************************/
+@media (min-width: 651px) and (max-width: 850px) {
+ #texto-negro1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+ }
+    }
