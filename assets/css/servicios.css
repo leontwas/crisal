@@ -136,7 +136,7 @@ article:hover img:last-child {
     }
 
     .container {
-        max-width: 100%;
+       width: fit-content;
         margin: 5px;
     }
 }
