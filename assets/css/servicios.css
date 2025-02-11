@@ -124,16 +124,11 @@ article:hover img:last-child {
   
 /******************************** Media queries para Celulares **********************************/
 @media (max-width: 650px) {
-
-   main {
+    .main-container {
         margin: 0;
         padding: 0;
-        width: 100%; 
-        height: 100vh; 
-    }
-
-    .main-container {
         width: 100%;
+        height: 100vh; /********* agregado ******** */
         padding-top: 50px;
         display: flex;
         flex-direction: column; 
