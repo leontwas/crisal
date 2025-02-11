@@ -119,8 +119,13 @@ body {
     border-radius: 15px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease; /* Suaviza la transición */
-    gap: 20px !important; /* Espaciado entre tarjetas */
+   
 }
+/*****************************************************************/
+.wrapper {
+gap: 20px !important; /* Espaciado entre tarjetas */
+}
+/*****************************************************************/
 
 .container:hover {
     transform: rotateY(180deg) translateX(-20px); /* Animaciones combinadas */
