@@ -126,7 +126,6 @@ article:hover img:last-child {
 @media (max-width: 650px) {
     .main-container {
         padding-top: 80px;
-        gap: 5px;
     }
     
     .descripcion {
@@ -137,7 +136,6 @@ article:hover img:last-child {
 
     .container {
        width: fit-content;
-        margin: 5px;
     }
 }
 
