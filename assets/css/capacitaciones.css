@@ -102,7 +102,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* Espaciado entre tarjetas */
+    gap: 20px !important; /* Espaciado entre tarjetas */
     margin-top: 50px;
 }
 
@@ -233,7 +233,7 @@ body {
 
     .cols {
         left: 0;
-        gap: 20px !important; /* Ajusta el espacio entre tarjetas */
+        gap: 50px; /* Ajusta el espacio entre tarjetas */
     }
 
     .col {
