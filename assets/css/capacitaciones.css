@@ -171,7 +171,7 @@ body {
     padding: 20px;
 }
 
-/* Tarjetas giratorias: ajustes para celulares */
+/******************************* Tarjetas giratorias: ajustes para celulares ********************************************/
 @media (max-width: 650px) { 
     #texto-negro1 {
         margin-top: -400px;
@@ -213,7 +213,7 @@ body {
     /* Logo tamaño y ubicación */
     .banner .static-center img {
         width: 200px;
-        margin-top: -470px;
+        margin-top: -370px;
     }
 
     .banner .slider .item img {
@@ -223,7 +223,7 @@ body {
     }
 }
 
-
+/*********************************** Media queries para tabletas *****************************************************/
 @media (min-width: 651px) and (max-width: 850px) {
     #texto-negro1 {
         font-family: 'ICA Rubrik';
