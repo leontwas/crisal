@@ -152,6 +152,7 @@ article:hover img:last-child {
     }
     .container {
        width: fit-content;
+       height: fit-content;
     }
     .descripcion {
         font-size: x-large;
