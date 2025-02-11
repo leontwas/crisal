@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -22,59 +22,211 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
 
+    <!-- jQuery (actualizado) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <!-- Bootstrap JS (incluye Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <title>Servicios</title>
 </head>
+
 <body>
-    <!-- Header -->
+    <!-- header -->
     <header class="header">
+        <!-- imagen logo -->
         <a href="index.html">
-            <img alt="logo Crisal" src="./assets/images/logo_crisal.webp" class="logo">
+          <img alt="logo Crisal" src="./assets/images/logo_crisal.webp" class="logo">
         </a>
+        <!-- Títulos centrados -->
         <div class="titulos">
-            <h1 class="libre-baskerville-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
-            <h3 id="titulo-auditoria" class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
+          <h1 class="libre-baskerville-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
+          <h3 id="titulo-auditoria" class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
         </div>
     </header>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./auditorias.html">Auditorías</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./capacitaciones.html">Capacitaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./auditorias.html" id="auditorias">
+                      Auditorías
+                    </a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./servicios.html">
+                      Servicios
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./capacitaciones.html">
+                      Capacitaciones
+                    </a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./insumos.html" id="insumos">
+                      Insumos
+                    </a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="contacto.html">
+                      Contacto
+                    </a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="./login.html" id="admin">Admin</a>
+                  </li>
+      
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
+              </div>
             </div>
+          </nav>
+
+<main>
+
+    <!-- Video -->
+    <video autoplay controls id="video">
+      <source src="./assets/video/vid4.webm" type="video/webm">
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Contenedor principal para centrar las tarjetas -->
+    <div class="main-container">
+        <!-- Tarjeta 1 -->
+        <div class="container">
+            <article id="mediciones">
+                <h2 class="sr-only">Mediciones ruido iluminación puesta a tierra evaluaciones ASP</h2>
+                <img id="img1" src="./assets/images/carru.webp" alt="imagen referida a mediciones de ruido, iluminación ergonomía" onclick="window.location.href='contacto.html';" style="cursor: pointer;">
+                <img src="./assets/images/mediciones.webp" alt="imagen de un decibelímetro" onclick="window.location.href='contacto.html';" style="cursor: pointer;">
+            </article>
+            <section class="descripcion">
+              <h2 class="sr-only">mediciones de ruido, iluminación, puesta a tierra, evaluaciones ASP</h2>
+              <p>Las mediciones de ruido en los puestos de trabajo aseguran que se cumplan las normativas 
+                para proteger la audición de los trabajadores. Por su parte, las mediciones de iluminación 
+                previnienen la fatiga visual y evitan efectos estroboscópicos. La puesta a tierra y la continuidad 
+                de las masas garantizan la seguridad eléctrica, mientras que las evaluaciones ASP controlan los 
+                riesgos físicos asociados a equipos eléctricos sometidos a presión.</p>
+            </section>
         </div>
-    </nav>
 
-    <main>
-        <video autoplay controls id="video">
-            <source src="./assets/video/vid4.webm" type="video/webm">
-            Tu navegador no soporta el elemento de video.
-        </video>
-    </main>
+        <!-- Tarjeta 2 -->
+        <div class="container">
+            <article id="ambiente">
+                <h2 class="sr-only">Superintendencia de riesgos de trabajo leyes y reglamentos</h2>
+                <img id="img2" src="./assets/images/carru1.webp" alt="imagen referida a mediciones ambientales" onclick="window.location.href='contacto.html';" style="cursor: pointer;">
+                <img src="./assets/images/ambiente.webp" alt="imagen de un árbol" onclick="window.location.href='contacto.html';" style="cursor: pointer;">
+            </article>
+            <section class="descripcion">
+              <h2 class="sr-only">Superintendencia de Riesgos del Trabajo</h2>
+              <p>
+                Conocé más acerca de la medición de ruido en: 
+                <a class="link" href="https://www.argentina.gob.ar/srt/prevencion/publicaciones/protocolos/medicion-del-nivel-de-ruido-en-el-ambiente-laboral" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Superintendencia de Riesgos del Trabajo - Mediciones de ruido
+                </a>
+            </p>
+            <p>
+                Conocé más acerca de la medición de la iluminación en: 
+                <a class="link" href="https://www.argentina.gob.ar/srt/prevencion/publicaciones/protocolos/iluminacion" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Superintendencia de Riesgos del Trabajo - Mediciones de iluminación
+                </a>
+            </p>
+            <p>
+                Conocé más acerca de la medición de puesta a tierra (PAT) en: 
+                <a class="link" href="https://www.argentina.gob.ar/srt/prevencion/publicaciones/protocolos/iluminacion" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Superintendencia de Riesgos del Trabajo - Mediciones de puesta a tierra
+                </a>
+            </p>
+            </section>
+        </div>
 
+        <!-- Tarjeta 3 -->
+        <div class="container">
+            <article id="seguridad">
+              <h2 class="sr-only">Insumos antiparras cascos guantes borcegos arnés protectores visuales y auditivos chalecos refractarios</h2>
+                <img id="img3" src="./assets/images/carru4.webp" alt="imagen referida a la venta de insumos de seguridad" onclick="window.location.href='insumos.html';" style="cursor: pointer;">
+                <img src="./assets/images/casco.webp" alt="imagen de un casco sobre unos guantes" onclick="window.location.href='Insumos.html';" style="cursor: pointer;">
+            </article>
+            <section class="descripcion">
+              <h2 class="sr-only">productos de higiene y seguridad laboral, protección, insumos</h2>
+                <p>En Crisal entendemos que la protección es clave para cada 
+                    trabajador. Por eso, te ofrecemos los mejores productos en 
+                    seguridad e higiene laboral. Desde antiparras, hasta cascos 
+                    resistentes. También ofrecemos
+                    chalecos refractarios, protectores auditivos, botas y borcegos, 
+                    arneses que garantizan tu seguridad a las alturas.
+                   </p>
+                   <p>
+                    Conocé más acerca de nuestros productos en: 
+                    <a class="link" href="insumos.html"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                       Insumos
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+    
+  </main>
+  
     <footer>
         <div class="footlist">
-            <a class="footlink fab fa-youtube fa-2x" href="#"></a>
-            <a class="footlink fab fa-facebook fa-2x" href="#"></a>
+        <a
+            class="footlink fab fa-brands fa-youtube fa-2x"
+            href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H"
+            title="YouTube"
+            target="_blank"
+          ></a>
+          <a
+            class="footlink fa-brands fa-instagram fa-2x"
+            href="https://www.instagram.com/crisal.consultora/"
+            title="Instagram"
+            target="_blank"
+          ></a>
+          <a
+            class="footlink fa-brands fa-whatsapp fa-2x"
+            href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
+            title="Whatsapp"
+            target="_blank"
+          ></a>
+          <a
+            class="footlink fa-brands fa-linkedin fa-2x"
+            href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
+            title="LinkedIn"
+            target="_blank"
+          ></a>
         </div>
-    </footer>
+        <p>
+          <small
+            >&copy; 2024 Todos los derechos reservados</small>
+        </p>
+      </footer>
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+    </script>
 </body>
 </html>
