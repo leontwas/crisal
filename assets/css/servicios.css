@@ -151,12 +151,12 @@ article:hover img:last-child {
         padding: 10px;
     }
     .container {
-       width: fit-content;
-       height: fit-content;
+        width: 100%;
+        min-width: fit-content;
     }
     .descripcion {
         font-size: x-large;
-        height:360px;
+        height:100%;
         padding-top: 30px;
     }
     footer {
