@@ -125,7 +125,7 @@ article:hover img:last-child {
 /******************************** Media queries para Celulares **********************************/
 @media (max-width: 650px) {
 
-    body {
+   main {
         margin: 0;
         padding: 0;
         width: 100%; 
