@@ -178,7 +178,7 @@ article:hover img:last-child {
     }
 }
 
-/******************************** Media queries para Tablets *******************************/
+/******************************** Media queries para Notebooks *******************************/
 @media (min-width: 851px) { 
 .categoria {
     margin-top: 10px;

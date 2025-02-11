@@ -250,9 +250,7 @@
   padding-top: 20px;
 }
 
-/* Media Queries */
-
-/*********************************************** Celulares *******************************************/
+/******************************** Media queries para Celulares *******************************/
 @media (max-width: 650px) {
   .carousel-inner {
     height: 400px; /* Reduce la altura del carrusel */
@@ -292,7 +290,7 @@
   width: 100%;
 }
 
-/******************************************* Tablets ************************************************/
+/******************************** Media queries para Tablets *******************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .carousel-inner {
     height: 600px; /* Ajusta la altura del carrusel */
@@ -315,7 +313,7 @@ margin-top: -215px;
 }
 }
 
-/***************************************** Notebooks **********************************************/
+/******************************** Media queries para Notebooks *******************************/
 @media (min-width: 851px) and (max-width: 1200px) {
   .carousel-inner {
    /* height: 500px !important; /* Altura intermedia para el carrusel */
@@ -324,4 +322,8 @@ margin-top: -215px;
   .custom-img {
     object-position: center; /* Centra las imágenes completamente */
   }
+  .categoria {
+    margin-top: 10px;
 }
+}
+
