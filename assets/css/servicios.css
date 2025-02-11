@@ -164,7 +164,7 @@ article:hover img:last-child {
     }
 
     #img1, #img2, #img3 {
-        width: max-content;
+        width: 100%;
     }
 
     footer {
