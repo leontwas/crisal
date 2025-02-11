@@ -238,7 +238,7 @@ body {
 
     .col {
         width: 480px; /* Ajusta el tamaño de las tarjetas */
-        height: fit-content; /* Ajusta la altura de las tarjetas */
+        height: 520px; /* Ajusta la altura de las tarjetas */
     }
 
     .container {
