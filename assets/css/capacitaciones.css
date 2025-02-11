@@ -233,7 +233,7 @@ body {
 
     .cols {
         left: 0;
-        gap: 50px; /* Ajusta el espacio entre tarjetas */
+        gap: 20px !important; /* Ajusta el espacio entre tarjetas */
     }
 
     .col {
