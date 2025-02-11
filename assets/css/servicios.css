@@ -178,3 +178,10 @@ article:hover img:last-child {
     }
 }
 
+/******************************** Media queries para Tablets *******************************/
+@media (min-width: 851px) { 
+.categoria {
+    margin-top: 10px;
+}
+}
+
