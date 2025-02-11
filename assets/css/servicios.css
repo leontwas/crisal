@@ -122,28 +122,6 @@ article:hover img:last-child {
     height: auto;
   }
   
-
-/******************************** Media queries para tabletas *******************************/
-@media (min-width: 651px) and (max-width: 850px) { 
-    .main-container {
-        flex-direction: column; 
-        align-items: center;
-        padding: 10px;
-    }
-    .container {
-       max-width: 1700px;
-       margin: 10px;
-    }
-    .descripcion {
-        font-size: x-large;
-        height:360px;
-        padding-top: 30px;
-    }
-    footer {
-        margin-top: 150px;
-    }
-}
-
 /******************************** Media queries para celulares **********************************/
 @media (max-width: 650px) {
     .main-container {
@@ -166,3 +144,25 @@ article:hover img:last-child {
 #mediciones{
     width: fit-content
 }
+
+/******************************** Media queries para tabletas *******************************/
+@media (min-width: 651px) and (max-width: 850px) { 
+    .main-container {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+    .container {
+       max-width: 1700px;
+       margin: 10px;
+    }
+    .descripcion {
+        font-size: x-large;
+        height:360px;
+        padding-top: 30px;
+    }
+    footer {
+        margin-top: 150px;
+    }
+}
+
