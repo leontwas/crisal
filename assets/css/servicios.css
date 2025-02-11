@@ -162,6 +162,11 @@ article:hover img:last-child {
         height:100%;
         padding-top: 30px;
     }
+
+    #img1, #img2, #img3 {
+        width: max-content;
+    }
+    
     footer {
         margin-top: 150px;
     }
