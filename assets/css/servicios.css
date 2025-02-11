@@ -178,10 +178,3 @@ article:hover img:last-child {
     }
 }
 
-/******************************** Media queries para Notebooks *******************************/
-@media (min-width: 851px) { 
-    .titulos h1 {
-        margin-top: 10px !important;
-    }
-}
-

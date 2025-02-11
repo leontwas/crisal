@@ -411,4 +411,8 @@ nav .form-control-2 {
   .logo {
     margin-top: -10px;
   }
+
+  #titulo-auditoria{
+    margin-top: 10px;
+  }
 }
