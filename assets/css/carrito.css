@@ -178,8 +178,9 @@ button:hover {
     margin-left: 20px;
 }
 
-btn .btn-outline-success {
-margin-top: -30px;
+.btn-outline-success {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
 }
 
 #texto-negro2{
