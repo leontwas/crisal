@@ -429,4 +429,8 @@ nav .form-control-2 {
   #titulo-contacto{
     margin-bottom: 10px;  
   }
+
+  #titulo-carrito{
+   margin-bottom: 2px; 
+  }
 }
