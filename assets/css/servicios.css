@@ -151,8 +151,7 @@ article:hover img:last-child {
         padding: 10px;
     }
     .container {
-       max-width: 1700px;
-       margin: 10px;
+       width: fit-content;
     }
     .descripcion {
         font-size: x-large;
