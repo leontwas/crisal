@@ -110,7 +110,6 @@ body {
     height: 570px; /* Fija la altura del contenedor externo */
     cursor: pointer;
     perspective: 800px; /* Profundidad para el efecto 3D */
-    gap: 20px !important; /* Espaciado entre tarjetas */
 }
 
 .container {
@@ -120,6 +119,7 @@ body {
     border-radius: 15px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease; /* Suaviza la transición */
+    gap: 20px !important; /* Espaciado entre tarjetas */
 }
 
 .container:hover {
