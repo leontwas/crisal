@@ -126,7 +126,7 @@ article:hover img:last-child {
 @media (max-width: 650px) {
     .main-container {
         padding-top: 80px;
-        margin: auto;
+        margin: 0;
         flex-direction: column; 
         align-items: center;
     }
@@ -142,8 +142,8 @@ article:hover img:last-child {
     }
 }
 
-#mediciones{
-    width: fit-content
+#img1, #img2, #img3 {
+    width: max-content;
 }
 
 /******************************** Media queries para tabletas *******************************/
@@ -166,7 +166,7 @@ article:hover img:last-child {
     #img1, #img2, #img3 {
         width: max-content;
     }
-    
+
     footer {
         margin-top: 150px;
     }
