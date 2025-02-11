@@ -322,8 +322,8 @@ margin-top: -215px;
   .custom-img {
     object-position: center; /* Centra las imágenes completamente */
   }
-  .libre-baskerville-regular {
-    padding-bottom: 10px !important;
+  .titulos .libre-baskerville-regular {
+    margin-bottom: 10px !important;
 }
 }
 
