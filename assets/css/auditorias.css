@@ -322,7 +322,7 @@ margin-top: -215px;
   .custom-img {
     object-position: center; /* Centra las imágenes completamente */
   }
-  h3 .categoria {
+  h3 {
     margin-top: 10px;
 }
 }
