@@ -185,7 +185,7 @@ body {
     }
 
     .col {
-        width: 100%; /* Ocupa toda la pantalla */
+        width: 200px; /* Ancho de la tarjeta*/
         height: auto; /* Ajusta la altura según el contenido */
         margin-bottom: 20px; /* Reduce el espaciado entre filas */
     }
