@@ -417,6 +417,7 @@ nav .form-control-2 {
   }
 
   #titulo-insumos{
-    margin-top: -20px;
+    margin-top: -10px;
+    margin-bottom: -20px;
   }
 }
