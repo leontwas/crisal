@@ -228,6 +228,7 @@ body {
     #texto-negro1 {
         font-family: 'ICA Rubrik';
         font-size: 3rem;
+        margin-top: 80px;
     }
 
     .cols {
@@ -236,7 +237,7 @@ body {
     }
 
     .col {
-        width: 100%; /* Ajusta el tamaño de las tarjetas */
+        width: 480px; /* Ajusta el tamaño de las tarjetas */
         height: fit-content; /* Ajusta la altura de las tarjetas */
     }
 
