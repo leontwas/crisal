@@ -140,6 +140,7 @@ article:hover img:last-child {
 
     .container {
        width: fit-content;
+       margin: -10px;
     }
 }
 
