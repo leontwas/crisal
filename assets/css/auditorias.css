@@ -271,16 +271,7 @@
   .custom-img {
     object-position: center center; /* Centra las imágenes */
   }
-
-    .categoria {
-    font-size: small !important;
-  }
-
-    .categoria {
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-    }
-  }
+ }
 
 .footer {
   margin: 0;
