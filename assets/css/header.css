@@ -19,15 +19,9 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  /*height: 120px;*/
   box-sizing: border-box;
   background-color: white;
 }
-
-/*
-.main-nav {
-  margin-top: -30px !important;
-}*/
 
 nav .form-control-2 {
   /* Buscador en la página de contacto.html*/
@@ -202,7 +196,7 @@ nav .form-control-2 {
   font-size: 1.2rem;
   color: black;
   font-weight: bold;
-  margin-left: 10px;
+  text-align: center;
   margin-top: 9px;
   margin-bottom: 9px;
 }
@@ -294,7 +288,6 @@ nav .form-control-2 {
 
   .categoria {
     font-size: 1rem;
-    font-weight: bold
   }
 
   /* Icono hamburguesa */
@@ -374,7 +367,6 @@ nav .form-control-2 {
 @media (min-width: 651px) and (max-width: 850px) {
   .categoria {
     font-size: 1rem;
-    margin-left: 20px;
   }
 
   .libre-baskerville-regular {
