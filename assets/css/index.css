@@ -350,8 +350,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-#subtitulo {
-    font-size: 2rem;
+#titulo {
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -407,8 +407,8 @@ h1 {
     }
 }
 /* Título Servicios de Seguridad e Higiene en el Trabajo */
-#subtitulo {
-    font-size: 1.5rem;
+#titulo {
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -489,7 +489,7 @@ h1 {
     }
 
 /* Título Servicios de Seguridad e Higiene en el Trabajo */
-#subtitulo {
+#titulo {
     font-size: 1.8rem;
     text-align: center;
 }

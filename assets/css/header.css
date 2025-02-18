@@ -203,6 +203,8 @@ nav .form-control-2 {
   color: black;
   font-weight: bold;
   margin-left: 10px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* Estilo del menú desplegable */
@@ -285,11 +287,6 @@ nav .form-control-2 {
     font-size: 1.5rem;
   }
 
-  h3 {
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-
   .logo {
     margin-left: -15px;
     margin-top: -15px
@@ -297,6 +294,7 @@ nav .form-control-2 {
 
   .categoria {
     font-size: 0.8rem;
+    font-weight: bold
   }
 
   /* Icono hamburguesa */
@@ -374,12 +372,9 @@ nav .form-control-2 {
 
 /************************************* Estilos para dispositivos tablets **********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
-  h3 {
-    margin-left: 20px;
-  }
-
   .categoria {
     font-size: 1.2rem;
+    margin-left: 20px;
   }
 
   .libre-baskerville-regular {

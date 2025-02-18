@@ -90,6 +90,10 @@
   box-shadow: 5px 5px 5px #161616;
 }
 
+#insumos {
+  font-size: 1.4rem;
+  margin-bottom: 9px;
+}
 
 #texto-negro1 {
   font-family: 'ICA Rubrik';
