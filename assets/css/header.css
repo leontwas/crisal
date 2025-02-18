@@ -368,6 +368,10 @@ nav .form-control-2 {
     align-items: center;
   }
 
+  #auditorias {
+    font-size: 2rem;
+  }
+
 }
 
 /************************************* Estilos para dispositivos tablets **********************************************/
