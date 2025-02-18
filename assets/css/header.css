@@ -290,10 +290,6 @@ nav .form-control-2 {
     font-size: 1rem;
   }
 
-  .container-fluid {
-  height: 50px;
-  }
-
   /* Icono hamburguesa */
   .menu-desplegable {
     display: block;
@@ -301,7 +297,7 @@ nav .form-control-2 {
     cursor: pointer;
     position: absolute;
     right: 10px;
-    top: 55px;
+    top: 45px;
   }
 
   .menu {
