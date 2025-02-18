@@ -281,6 +281,10 @@ nav .form-control-2 {
     font-size: 1.5rem;
   }
 
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+  height: fit-content;
+}
+
   .logo {
     margin-left: -15px;
     margin-top: -15px
