@@ -297,7 +297,7 @@ nav .form-control-2 {
     cursor: pointer;
     position: absolute;
     right: 10px;
-    top: 45px;
+    top: 25px;
   }
 
   .menu {
@@ -335,7 +335,7 @@ nav .form-control-2 {
   .menu.active {
     display: flex;
     margin-top: 30px;
-    height: auto !important;
+    height: fit-content !important;
   }
 
   nav .form-control-2 {
