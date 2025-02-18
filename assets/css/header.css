@@ -373,7 +373,7 @@ nav .form-control-2 {
 /************************************* Estilos para dispositivos tablets **********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .categoria {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 20px;
   }
 
