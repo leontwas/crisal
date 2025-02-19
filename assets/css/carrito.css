@@ -186,4 +186,8 @@ button:hover {
 #texto-negro2{
   font-size: 1.8rem;
 }
+
+.d-flex {
+  height: 30px;
+}
 }
