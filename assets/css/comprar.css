@@ -1,105 +1,23 @@
-/* Estilos generales */
-body {
-    font-family: 'Kalam', cursive;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+#texto-negro1{
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.titulo h1 {
     text-align: center;
-    color: #333;
-    font-size: 1.8rem;
-}
-
-/* Imagen del carrito de compras */
-.image-section {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.entrevista {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Botones */
-.botonera {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-button {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-#borrar {
-    background-color: #007bff;
-}
-
-#borrar:hover {
-    background-color: #0056b3;
 }
 
 #cancelar {
-    background-color: #dc3545;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #161616;
 }
 
-#cancelar:hover {
-    background-color: #a71d2a;
+#formulario {
+    width: 400px;
 }
 
-#enviar {
-    background-color: #28a745;
-}
-
-#enviar:hover {
-    background-color: #1e7e34;
-}
-
-button:active {
-    transform: scale(0.95);
-    filter: brightness(0.85);
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .contenedor {
-        width: 90%;
-    }
-
-    .botonera {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .entrevista {
-        margin: 0 auto;
-        width: 90%;
-    }
+.sr-only {
+    visibility: hidden;
 }
