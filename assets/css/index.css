@@ -387,6 +387,12 @@ h1 {
     margin-bottom: -475px;
 }
 
+.li {
+padding-top: 10px;
+padding-bottom: 10px;
+} 
+
+
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media screen and (max-width: 650px) {
     .carousel .list .item .content {
