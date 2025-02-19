@@ -98,4 +98,8 @@ button:active {
         flex-direction: column;
         gap: 10px;
     }
+    .entrevista {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
