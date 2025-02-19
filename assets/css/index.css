@@ -8,8 +8,9 @@ html, body {
     width: 100%;
 }
 
-
 body{
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to bottom, #888a8a, #d5d8da);
     font-family: Poppins;
 }
@@ -94,7 +95,7 @@ main {
 .thumbnail{
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: 51%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -318,19 +319,15 @@ main {
 
   .birthstone-regular {
     font-family: "Birthstone", serif;
-    font-size: 5rem;
+    font-size: 4rem !important;
     font-style: normal;
+    text-align: center;
     color: rgb(216, 25, 25);
     /* Color principal del texto */
     text-shadow:
         2px 2px 0 black,
-        /* Borde blanco (sombra 1) */
-        /* -2px -2px 0 black, /* Borde blanco (sombra 2) */
-        /*  2px -2px 0 black, /* Borde blanco (sombra 3) */
         -2px 2px 0 black,
-        /* Borde blanco (sombra 4) */
         4px 4px 4px rgba(0, 0, 0, 0.5);
-    /* Sombra 3D para efecto de profundidad */
 }
 
 .informacion {
@@ -340,9 +337,10 @@ main {
     padding: 20px;
     display: block;
     width: 100vw;
-    /* Ocupa todo el viewport */
-    position: relative;
-    /* Asegura que respete el flujo del documento */
+  }
+
+.presentacion {
+    margin-left: 15px ;
 }
 
 h1 {
@@ -350,21 +348,44 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+/* Título Servicios de Seguridad e Higiene en el Trabajo */
 #titulo {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-
-.birthstone-regular {
-    text-align: center;
-    font-size: 3rem !important;
-}
+/* Subtítulos */
 .t2 {
+    font-size: 20px;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
 }
 
+#direccion {
+    text-align: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: -460px;
+}
+
+.mapa {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#map {
+    border-radius: 2%;
+    height: 300px;
+    width: 90%;
+    box-shadow: 5px 5px 2.5px #161616;
+    margin-bottom: -475px;
+}
 
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media screen and (max-width: 650px) {
@@ -405,43 +426,6 @@ h1 {
         margin: 5px 0;
         font-size: 14px;
     }
-}
-/* Título Servicios de Seguridad e Higiene en el Trabajo */
-#titulo {
-    font-size: 2rem;
-    text-align: center;
-}
-
-/* Subtítulos */
-.t2 {
-    font-size: 18px;
-    border-bottom: 2px solid #f39c12;
-    padding-bottom: 5px;
-}
-
-#direccion {
-    text-align: center;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: -460px;
-}
-
-.mapa {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-#map {
-    border-radius: 2%;
-    height: 300px;
-    width: 90%;
-    box-shadow: 5px 5px 2.5px #161616;
-    margin-bottom: -475px;
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
@@ -567,7 +551,7 @@ h1 {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.6;
         text-align: justify;
     }

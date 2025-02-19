@@ -18,7 +18,7 @@ ul {
 header {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   background-color: white;
 }
@@ -52,7 +52,7 @@ nav .form-control-2 {
 .navbar {
   background-color: #50633C !important;
   color: white !important;
-  width: 100vw;
+  width: 100vw !important;
   /* Hace que ocupe todo el ancho de la pantalla */
   padding: 0;
   /* Elimina cualquier padding adicional */
@@ -67,15 +67,6 @@ nav .form-control-2 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.navbar.navbar-expand-lg.navbar-light.bg-light {
-  width: 100%;
-}
-
-.navbar {
-  background-color: #50633C !important;
-  color: white !important;
 }
 
 .navbar-nav {

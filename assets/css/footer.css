@@ -4,7 +4,7 @@ footer {
   background-color: #333;
   color: #fff;
   padding-top:30px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   position: relative; /* Mantiene su posición relativa en pantallas grandes */
   margin-top: auto; /* Empuja el footer al final del contenedor principal */
