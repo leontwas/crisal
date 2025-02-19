@@ -175,7 +175,7 @@ footer {
 
 @media (max-width: 650px) {
     .contenedor {
-        margin-left: -70px;
+        width: 90%;
     }
 }
 
