@@ -95,7 +95,7 @@ main {
 .thumbnail{
     position: absolute;
     bottom: 50px;
-    left: 51%;
+    left: 50%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -340,7 +340,7 @@ main {
   }
 
 .presentacion {
-    margin-left: 15px ;
+    margin-left: -10px ;
 }
 
 h1 {
