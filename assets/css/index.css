@@ -387,10 +387,9 @@ h1 {
     margin-bottom: -475px;
 }
 
-.li {
-padding-top: 10px;
-padding-bottom: 10px;
-} 
+ul li {
+    margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+}
 
 
 /*********************************************** Media Queries para Celulares ***********************************************/
