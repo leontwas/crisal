@@ -436,6 +436,11 @@ ul li {
         line-height: 1.6;
         text-align: justify;
     }
+
+    ul li {
+        margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+    }
+    
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
@@ -519,6 +524,11 @@ ul li {
         line-height: 1.6;
         text-align: justify;
     }
+
+    ul li {
+        margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+    }
+    
 }
 
 /*********************************************** Media Queries para Notebooks ***********************************************/
