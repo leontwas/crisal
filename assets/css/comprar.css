@@ -1,6 +1,150 @@
 body {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.titulos {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/* Navegación */
+.main-nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Formulario */
+#formulario {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Imagen */
+.image-section {
+    max-width: 500px;
+    width: 100%;
+}
+
+.entrevista {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footlist {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulos {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formulario, 
+    .image-section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    .footlist {
+        flex-wrap: wrap;
+    }
+}
+
+/* Asegurando que los inputs del formulario estén centrados */
+.form-floating {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 #texto-negro1{
