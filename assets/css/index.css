@@ -247,7 +247,7 @@ main {
 }
 
 .carousel.next .time,
-.carousel.prev .time{
+.carousel.prev .time {
     animation: runningTime 3s linear 1 forwards;
 }
 @keyframes runningTime{
@@ -389,6 +389,7 @@ h1 {
 
 ul li {
     margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+    text-align: justify;
 }
 
 
@@ -440,6 +441,7 @@ ul li {
 
     ul li {
         margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+        text-align: justify;
     }
     
 }
@@ -528,6 +530,7 @@ ul li {
 
     ul li {
         margin-bottom: 15px; /* Ajusta el espacio entre elementos */
+        text-align: justify;
     }
     
 }
