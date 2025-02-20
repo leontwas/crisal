@@ -22,14 +22,29 @@
 .sr-only {
     visibility: hidden;
 } 
-
 @media (max-width: 650px) {
-    main {
-        width: 50%;
-        margin: 0 auto;
-}    
-    
+    footer {
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 100vh;;
+    }
+
+    body {
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 100vh;
+    }
+
     #formulario {
         width: 300px;
     }
-} 
+}
