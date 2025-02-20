@@ -1,83 +1,27 @@
-#texto-negro1 {
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-    width: 100% !important;
+body {
+    width: 100vw;
+}
+
+#texto-negro1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 #cancelar {
-    background-color: red !important;
-    color: white !important;
-    padding: 5px 10px !important;
-    border: none !important;
-    cursor: pointer !important;
-    border-radius: 10% !important;
-    box-shadow: 10px 10px 5px #161616 !important;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #161616;
 }
 
 #formulario {
-    width: 100% !important;
-    max-width: 400px !important;
-    margin: 0 auto !important; /* Centra horizontalmente */
+    width: 400px;
 }
 
 .sr-only {
-    visibility: hidden !important;
-}
-
-/* Para notebooks */
-@media screen and (min-width: 851px) {
-    body {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        height: 100vh !important;
-        width: 100% !important;
-        margin: 0 !important;
-        overflow-x: hidden !important;
-    }
-}
-
-/* Para tablets */
-@media screen and (min-width: 398px) and (max-width: 850px) {
-    body {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-        height: 100vh !important;
-        margin: 0 !important;
-        overflow-x: hidden !important;
-    }
-
-    #formulario {
-        width: 90% !important; /* Ocupar casi todo el ancho de la pantalla */
-        max-width: 100% !important;
-    }
-}
-
-/* Para celulares */
-@media screen and (max-width: 397px) {
-    body {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-        height: 100vh !important;
-        margin: 0 !important;
-        overflow-x: hidden !important;
-    }
-
-    .contenedor {
-        width: 90% !important; /* Ocupar casi todo el ancho de la pantalla */
-        margin: 0 auto !important; /* Centra correctamente */
-    }
-
-    img {
-        max-width: 100% !important; /* Asegura que la imagen no se desborde */
-        height: auto !important;
-        display: block !important;
-    }
-}
+    visibility: hidden;
+} 
