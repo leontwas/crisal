@@ -69,6 +69,7 @@ body, html {
 @media (max-width: 650px) {
   .main-container {
     margin-top: -60px;
+
     flex: 1; /* Asegura que el contenedor principal ocupe el espacio necesario */
     display: flex;
     flex-direction: column;
@@ -76,7 +77,8 @@ body, html {
     align-items: center;
   }
   footer {
-    margin-top:50; /* Empuja el footer al final del contenedor principal */
+    margin-left: -30px;
+    margin-top: 50px; /* Empuja el footer al final del contenedor principal */
   }
 
   .footlist {
