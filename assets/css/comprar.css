@@ -25,7 +25,7 @@
 }
 
 /* Para notebooks */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 851px) {
     body {
         display: flex;
         justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 /* Para tablets y celulares */
-@media screen and (max-width: 1023px) {
+@media screen and (min-width:651) and (max-width: 850px) {
     body {
         display: flex;
         flex-direction: column;
