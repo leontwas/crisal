@@ -24,6 +24,11 @@
 } 
 
 @media (max-width: 650px) {
+    main {
+        width: 50%;
+        margin: 0 auto;
+}    
+    
     #formulario {
         width: 300px;
     }
