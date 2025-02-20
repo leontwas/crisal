@@ -166,6 +166,15 @@ button:hover {
 }
 
 @media (max-width: 650px) {
+body {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 100vh;
+  }
+
   button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -176,18 +185,18 @@ button:hover {
     box-shadow: 5px 5px 5px #161616;
     margin-top: 20px;
     margin-left: 20px;
-}
+  }
 
-.btn-outline-success {
-  margin-left: 0 !important;
-  margin-top: 0 !important;
-}
+  .btn-outline-success {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
 
-#texto-negro2{
-  font-size: 1.8rem;
-}
+  #texto-negro2 {
+    font-size: 1.8rem;
+  }
 
-.d-flex {
-  height: 30px;
-}
+  .d-flex {
+    height: 30px;
+  }
 }
