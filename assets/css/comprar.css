@@ -35,8 +35,8 @@
     }
 }
 
-/* Para tablets*/
-@media screen and (min-width:398) and (max-width: 850px) {
+/* Para tablets */
+@media screen and (min-width: 398px) and (max-width: 850px) {
     body {
         display: flex;
         flex-direction: column;
@@ -45,6 +45,7 @@
         width: 100%;
         height: 100vh;
         margin: 0;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
     }
 
     #formulario {
@@ -53,8 +54,8 @@
     }
 }
 
-/* Para tablets*/
-@media screen and (max-width:398) {
+/* Para celulares */
+@media screen and (max-width: 397px) {
     body {
         display: flex;
         flex-direction: column;
@@ -62,11 +63,18 @@
         align-items: center;
         width: 100%;
         height: 100vh;
-
+        margin: 0;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
     }
 
-     .contenedor {
+    .contenedor {
         width: 90%; /* Ocupar casi todo el ancho de la pantalla */
-        margin-left: -30px;
+        margin: 0 auto; /* Centra correctamente */
+    }
+
+    img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+        height: auto;
+        display: block;
     }
 }
