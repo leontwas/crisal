@@ -77,6 +77,10 @@
   box-shadow: 5px 5px 5px #161616;
 }
 
+.agregar:hover {
+  background-color: #293b15;
+}
+
 .ver {
   padding: 10px 20px; /* Asegúrate de que el tamaño sea uniforme */
   background-color: rgb(42, 172, 172);
@@ -88,6 +92,10 @@
   text-align: center;
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 5px 5px 5px #161616;
+}
+
+.ver:hover {
+  background-color: #0056b3;
 }
 
 #insumos {

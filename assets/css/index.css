@@ -387,7 +387,8 @@ h1 {
     margin-bottom: -475px;
 }
 
-ul li {
+
+.servicios-lista {
     margin-bottom: 15px; /* Ajusta el espacio entre elementos */
     text-align: justify;
 }
@@ -439,7 +440,8 @@ ul li {
         text-align: justify;
     }
 
-    ul li {
+
+    .servicios-lista {
         margin-bottom: 15px; /* Ajusta el espacio entre elementos */
         text-align: justify;
     }
@@ -528,7 +530,7 @@ ul li {
         text-align: justify;
     }
 
-    ul li {
+    .servicios-lista {
         margin-bottom: 15px; /* Ajusta el espacio entre elementos */
         text-align: justify;
     }

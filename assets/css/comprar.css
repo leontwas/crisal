@@ -4,8 +4,19 @@
     text-align: center;
 }
 
+.btn-primary:hover {
+    background-color: #004085; /* Azul oscuro */
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a; /* Rojo oscuro */
+}
+
+.btn-success:hover {
+    background-color: #1e7e34; /* Verde oscuro */
+}
+
 #cancelar {
-    background-color: red;
     color: white;
     padding: 5px 10px;
     border: none;

@@ -1,164 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/contacto.css">
-    <link rel="stylesheet" href="./assets/css/carrito.css">
+    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="stylesheet" href="./assets/css/fuentes.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/carrito.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <title>Carrito</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header class="header">
-
-      <a href="index.html">
-        <img alt="logo Crisal" src="./assets/images/logo_crisal.webp" class="logo">
-      </a>
-
+        <a href="index.html">
+            <img alt="logo Crisal" src="./assets/images/logo_crisal.webp" class="logo">
+        </a>
         <div class="titulos">
-          <h1 class="libre-baskerville-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
-          <h2 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h2>
+            <h1 class="libre-baskerville-regular">Consultora de Seguridad e Higiene en el Trabajo</h1>
+            <h3 class="categoria">Comercio - Industria - Construcción - Medio Ambiente</h3>
         </div>
-      </header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./auditorias.html" id="auditorias">
-                  Auditorías
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./servicios.html">
-                  Servicios
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./capacitaciones.html">
-                  Capacitaciones
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./insumos.html" id="insumos">
-                  Insumos
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="contacto.html">
-                  Contacto
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="./login.html" id="admin">Admin</a>
-              </li>
-  
-            </ul>
-            <form class="d-flex">
-              <input class="form-control-2 me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <main>
-        <div class="titulo">
-            <h1 class="kalam-bold" id="texto-negro1">Completa este formulario para finalizar tu compra...</h1>
-        </div>
-        <div class="contenedor">
-            <section class="bg-black bg-opacity-75 text-black p-5">
-              <h2 class="sr-only">Formulario de datos del cliente</h2>
-
-                <!-- Cambia la acción por el endpoint de Formspree -->
-                <form id="formulario" action="https://formspree.io/f/meoqebwy" method="POST">
-                    <div class="form-floating mb-3">
-                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input name="telefono" type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <!-- Input oculto para el carrito -->
-                    <input type="hidden" name="carrito" id="carrito">
-                    <br>
-                    <div class="botonera">
-                        <button type="reset" class="btn btn-primary" id="borrar">Borrar</button>
-                        <button type="submit" id="cancelar">Cancelar</button>
-                        <button type="submit" class="btn btn-success" id="enviar">Enviar</button>
-                  
-                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./auditorias.html">Auditorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./capacitaciones.html">Capacitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-            </section>
-
-            <section class="image-section">
-              <h2 class="sr-only">imagen de un carrito de compras</h2>
-                <img src="./assets/images/shopping-cart.webp" alt="imagen de un carrito de supermercado" class="entrevista">
-            </section>
+            </div>
         </div>
-    </main>
+    </nav>
+
+    <main>
+    <div class="container">
+        <h1 id="texto-negro2">Carrito de Compras</h1>
+        <div id="carrito-container">
+            <button id="eliminarProducto">Eliminar Producto</button>
+            <button id="agregarProducto">Agregar Producto</button>
+        </div>
+        <div id="total-container">
+            <p><strong>Total a pagar: $<span id="total-pagar"></span></strong></p>
+        </div>
+        <button id="finalizar-btn" class="btn btn-success">Finalizar compra</button>
+        <button onclick="window.location.href='./insumos.html';">Volver al catálogo</button>
+    </div>
+</main>
+
     <footer>
         <div class="footlist">
-        <a
-            class="footlink fab fa-brands fa-youtube fa-2x"
-            href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H"
-            title="YouTube"
-            target="_blank"
-          ></a>
-          <a
-            class="footlink fa-brands fa-instagram fa-2x"
-            href="https://www.instagram.com/crisal.consultora/"
-            title="Instagram"
-            target="_blank"
-          ></a>
-          <a
-            class="footlink fa-brands fa-whatsapp fa-2x"
-            href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
-            title="Whatsapp"
-            target="_blank"
-          ></a>
-          <a
-            class="footlink fa-brands fa-linkedin fa-2x"
-            href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
-            title="LinkedIn"
-            target="_blank"
-          ></a>
+            <a class="footlink fab fa-brands fa-youtube fa-2x" href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="YouTube" target="_blank"></a>
+            <a class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/" title="Instagram" target="_blank"></a>
+            <a class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J" title="Whatsapp" target="_blank"></a>
+            <a class="footlink fa-brands fa-linkedin fa-2x" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn" target="_blank"></a>
         </div>
         <p>
-          <small
-            >&copy; 2024 Todos los derechos reservados</small>
+            <small>&copy; 2024 Todos los derechos reservados</small>
         </p>
-      </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.classList.toggle('active');
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./assets/js/validaciones2.js"></script>
-    </body>
+    </footer>
+
+    <script src="./assets/js/carrito.js"></script>
+</body>
 </html>
