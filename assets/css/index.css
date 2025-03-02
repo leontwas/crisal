@@ -445,7 +445,13 @@ h1 {
         margin-bottom: 15px; /* Ajusta el espacio entre elementos */
         text-align: justify;
     }
-    
+
+    .titulo-mapa {
+        margin-bottom: 10px;
+    }
+    .mapa {
+        margin-bottom: 30px;
+    }
 }
 
 /*********************************************** Media Queries para Tablets ***********************************************/
