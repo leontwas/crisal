@@ -69,20 +69,10 @@ body, html {
 @media (max-width: 650px) {
   .main-container {
     margin-top: -60px;
-
     flex: 1; /* Asegura que el contenedor principal ocupe el espacio necesario */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  footer {
-    margin-top: auto; /* Se asegura de que el footer siempre se posicione al final */
-    width: 100%; /* Asegura que el ancho sea siempre del 100% */
-  }
-
-  .footlist {
-    flex-direction: row;
-    justify-content: center;
   }
 }
