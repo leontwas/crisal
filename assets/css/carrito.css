@@ -16,31 +16,11 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-header, main, footer {
-  width: 100%;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
 main {
   flex: 1; /* Ocupa todo el espacio disponible */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  border-top: 4px solid #cd7e35;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
 }
 
 .navbar-nav {
@@ -134,13 +114,5 @@ button:hover {
   .container {
     max-width: 95%;
     padding: 15px;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  footer {
-    padding: 10px;
   }
 }
