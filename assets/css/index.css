@@ -395,7 +395,7 @@ h1 {
 
 
 /*********************************************** Media Queries para Celulares ***********************************************/
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
     .carousel .list .item .content {
         position: absolute;
         width: 400px;
