@@ -460,12 +460,19 @@ h1 {
         position: absolute;
         width: 840px !important;
         height: 600px;
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 5px;
-        margin-left: 80px;
+        margin-left: 80px !important;
         margin-bottom: 60px;
         }
         
+        .carousel{
+            height: 500px;
+            width: 100vw;
+            overflow: hidden;
+            position: relative;
+        }
+
         .thumbnail {
             margin-top: 150px;
         }
