@@ -400,8 +400,7 @@ h1 {
         position: absolute;
         width: 380px;
         height: 600px;
-       /* max-width: 60%;*/
-        left: 25%;
+        max-width: 60%;
     }
 
     .carousel .list .item .name {
