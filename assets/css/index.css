@@ -462,9 +462,14 @@ h1 {
         height: 600px;
         max-width: 80%;
         margin-top: 5px;
-        margin-left: 65px;
-        margin-bottom: 50px;
-    }
+        margin-left: 80px;
+        margin-bottom: 60px;
+        }
+        
+        .thumbnail {
+            margin-top: 150px;
+        }
+
 
     .carousel .list .item .name {
         font-size: 15px;
