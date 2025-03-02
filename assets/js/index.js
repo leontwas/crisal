@@ -9,8 +9,8 @@ let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 
-let timeRunning = 8000; // Tiempo de transición entre slides
-let timeAutoNext = 10000; // Tiempo de espera antes de la siguiente transición automática
+let timeRunning = 12000; // Tiempo de transición entre slides
+let timeAutoNext = 12000; // Tiempo de espera antes de la siguiente transición automática
 
 let runTimeOut;
 let runNextAuto;
