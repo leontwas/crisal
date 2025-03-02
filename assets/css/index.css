@@ -456,13 +456,14 @@ h1 {
 
 /*********************************************** Media Queries para Tablets ***********************************************/
 @media (min-width: 651px) and (max-width: 850px) { 
-    .carousel .list .item .content{
+    .carousel .list .item .content {
         position: absolute;
-        width: 600px;
-        height: 400px;
-        max-width: 55%;
-        margin-left: 5px;
-        margin-top: 0;
+        width: 840px !important;
+        height: 600px;
+        max-width: 80%;
+        margin-top: 5px;
+        margin-left: 65px;
+        margin-bottom: 50px;
     }
 
     .carousel .list .item .name {
