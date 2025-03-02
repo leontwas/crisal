@@ -358,12 +358,14 @@ nav .form-control-2 {
 @media (min-width: 651px) and (max-width: 850px) {
   .categoria {
     font-size: 1rem;
+    padding-left: 20px;
   }
 
   .libre-baskerville-regular {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
     font-size: 1.5rem;
   }
 
@@ -371,7 +373,6 @@ nav .form-control-2 {
     width: 110px;
     /* Ajusta el tamaño del logo */
     margin-top: -10px;
-    margin-right: 20px;
   }
 
   nav .form-control-2 {
