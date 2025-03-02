@@ -398,9 +398,10 @@ h1 {
 @media (max-width: 650px) {
     .carousel .list .item .content {
         position: absolute;
-        width: 380px;
+        width: 380px !important;
         height: 600px;
-        max-width: 60%;
+        max-width: 80%;
+        margin-left: 50px;
     }
 
     .carousel .list .item .name {
