@@ -77,8 +77,8 @@ body, html {
     align-items: center;
   }
   footer {
-    margin-left: -30px;
-    margin-top: 50px; /* Empuja el footer al final del contenedor principal */
+    margin-top: auto; /* Se asegura de que el footer siempre se posicione al final */
+    width: 100%; /* Asegura que el ancho sea siempre del 100% */
   }
 
   .footlist {
