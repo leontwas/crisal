@@ -434,6 +434,10 @@ h1 {
         font-size: 14px;
     }
 
+    .content {
+        margin-top: -15px;
+    }
+
     p {
         font-size: 1rem;
         line-height: 1.7;
