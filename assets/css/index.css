@@ -399,7 +399,7 @@ h1 {
     .carousel .list .item .content {
         position: absolute;
         width: 380px !important;
-        height: 600px;
+        height: 510px;
         max-width: 80%;
         margin-left: 50px;
     }
