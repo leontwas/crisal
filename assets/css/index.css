@@ -397,11 +397,11 @@ h1 {
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media (max-width: 650px) {
     .carousel .list .item .content {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
-      align-self: center;
+        position: absolute;
+        width: 380px;
+        height: 600px;
+       /* max-width: 60%;*/
+        left: 25%;
     }
 
     .carousel .list .item .name {
