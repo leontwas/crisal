@@ -35,7 +35,14 @@
 
 @media (max-width: 650px) {
     #formulario {
-        width: 400px;
-        margin: 0 !important;
+        margin-left: -50px !important;
+    }
+
+    .botonera {
+        margin-left: -50px !important;
+    }
+
+    .entrevista {
+        margin-left: -50px !important;
     }
 }
