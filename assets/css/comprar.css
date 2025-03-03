@@ -32,3 +32,10 @@
 .sr-only {
     visibility: hidden;
 }
+
+@media (max-width: 650px) {
+    #formulario {
+        width: 400px;
+        margin: 0 !important;
+    }
+}
