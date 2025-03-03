@@ -36,6 +36,7 @@
 @media (max-width: 650px) {
     #formulario {
         margin-left: -70px !important;
+        width: 350px;
     }
 
     .botonera {
