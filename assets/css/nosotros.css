@@ -105,13 +105,13 @@ html, body{
 
 @media (max-width: 650px) {
     .container {
-        margin-top: 83px;
+        margin-top: 85px;
         width: 100%;
         gap: 60px;
         display: flex;
         flex-direction: column; 
         align-items: center;
-        margin-bottom: 83px;
+        margin-bottom: 85px;
     }
 }
 
