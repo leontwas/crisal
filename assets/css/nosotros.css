@@ -103,6 +103,10 @@ html, body{
     font-size: small ;
 }
 
+.acerca {
+    color: white;
+}
+
 @media (max-width: 650px) {
     .container {
         margin-top: 85px;
