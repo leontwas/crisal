@@ -117,12 +117,12 @@ html, body{
 
 @media (min-width: 651px) and (max-width: 850px) {
     .container {
-        margin-top: 290px;
+        margin-top: 295px;
         flex-direction: column; 
         align-items: center;
         gap: 60px;
         width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
         min-width: 100%; /* Evita restricciones de ancho mínimo */
-        margin-bottom: 290px;
+        margin-bottom: 295px;
     }
 }
