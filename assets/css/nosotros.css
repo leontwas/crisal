@@ -108,6 +108,16 @@ html, body{
     color: white;
 }
 
+.historia {
+    color:burlywood;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: rgb(46, 45, 45);
+    border-radius: 20px;
+}
+
 @media (max-width: 650px) {
     .container {
         margin-top: 85px;
@@ -118,6 +128,17 @@ html, body{
         align-items: center;
         margin-bottom: 85px;
     }
+
+    .historia {
+        color:burlywood !important;
+        padding: 20px !important;
+        }
+
+    .contenedor {
+        background-color: rgb(46, 45, 45);
+        border-radius: 20px;
+    }
+    
 }
 
 @media (min-width: 651px) and (max-width: 850px) {
