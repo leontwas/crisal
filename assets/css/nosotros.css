@@ -102,3 +102,25 @@ html, body{
 .especializacion {
     font-size: small ;
 }
+
+@media (max-width: 650px) {
+    .container {
+        margin-top: 70px;
+        width: 100%;
+        gap: 50px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 850px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
