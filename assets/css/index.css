@@ -393,6 +393,10 @@ h1 {
     text-align: justify;
 }
 
+.highlight {
+    background-color: yellow;
+    color: red;
+}
 
 /*********************************************** Media Queries para Celulares ***********************************************/
 @media (max-width: 650px) {

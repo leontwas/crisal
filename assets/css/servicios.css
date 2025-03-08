@@ -121,6 +121,11 @@ article:hover img:last-child {
     width: 100%; 
     height: auto;
   }
+
+  .highlight {
+    background-color: yellow;
+    color: red;
+}
   
 /******************************** Media queries para Celulares **********************************/
 @media (max-width: 650px) {

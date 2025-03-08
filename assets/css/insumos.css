@@ -125,6 +125,11 @@
   font-weight: bold;
 }
 
+.highlight {
+  background-color: yellow;
+  color: red;
+}
+
 /* Media queries para responsividad */
 @media (max-width: 650px) { /* Para tablets */
     .article img {

@@ -33,6 +33,11 @@
     visibility: hidden;
 }
 
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
 @media (max-width: 650px) {
     #formulario {
         margin-left: -50px !important;

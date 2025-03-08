@@ -177,6 +177,11 @@ body {
     padding: 20px;
 }
 
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
 /******************************* Tarjetas giratorias: ajustes para celulares ********************************************/
 @media (max-width: 650px) { 
     #texto-negro1 {

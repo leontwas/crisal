@@ -66,6 +66,11 @@
   visibility: hidden;
 }
 
+.highlight {
+  background-color: yellow;
+  color: red;
+}
+
 /******************** Ajustes para pantallas pequeñas (celulares) ****************/
 @media (max-width: 650px) {
   .contenedor {
