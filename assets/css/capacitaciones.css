@@ -190,6 +190,10 @@ body {
         font-size: 3rem;
     }
 
+    .wrapper {
+        width: 80%;
+    }
+
     .front, .back {
         border-radius: 10px; /* Reduce ligeramente las esquinas */
         box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
