@@ -191,11 +191,11 @@ body {
     }
 
     .header {
-        width: 100vw;
+        width: 100vw !important;
     }
 
     .footer {
-        width: 100vw;
+        width: 100vw !important;
     }
         .wrapper {
             display: flex;
