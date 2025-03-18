@@ -190,84 +190,98 @@ body {
         font-size: 3rem;
     }
 
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: 80vh; /* Ocupar toda la pantalla */
-        gap: 50px; /* Espaciado entre tarjetas */
+    .header {
+        width: 100vw;
     }
 
+    .footer {
+        width: 100vw;
+    }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            gap: 50px;
+        }
+    
         .banner .slider .item {
             position: absolute;
             inset: 0 0 0 0;
             transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    /* Logo tamaño y ubicación */
-    .banner .static-center img {
-        width: 200px;
-        margin-top: -370px;
-    }
-
-    .banner .slider .item img {
-        object-fit: cover;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/*********************************** Media queries para tabletas *****************************************************/
-@media (min-width: 651px) and (max-width: 850px) {
-    #texto-negro1 {
-        font-family: 'ICA Rubrik';
-        font-size: 3rem;
-        margin-top: 80px;
-    }
-
-    .cols {
-        left: 0;
-        gap: 50px; /* Ajusta el espacio entre tarjetas */
-    }
-
-    .col {
-        width: 480px; /* Ajusta el tamaño de las tarjetas */
-        height: 540px; /* Ajusta la altura de las tarjetas */
-    }
-
-    .container {
-        border-radius: 10px; /* Reduce ligeramente las esquinas */
-    }
-
-    .banner {
-        margin-top: 50px;
-    }
-
-    .banner .slider .item {
-        position: absolute;
-        inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .banner .static-center img {
-        width: 200px; /* Ajusta el tamaño del logo */
-        margin-top: -10px;
-    }
-
-    .banner .slider {
-        width: 150px; /* Reduce el tamaño del slider */
-        height: 200px;
-    }
-
-    .banner .slider .item img {
-        width: 80%; /* Ajusta las imágenes del slider */
-        height: auto;
-    }
-
-    .static-center {
-        margin-top: 30px;
-    }
-}
-
+    
+        /* Logo tamaño y ubicación */
+        .banner .static-center img {
+            width: 200px;
+            margin-top: -370px;
+        }
+    
+        .banner .slider .item img {
+            object-fit: cover;
+            max-width: 100%;
+            height: auto;
+        }
+        }
+    
+        /*********************************** Media queries para tabletas *****************************************************/
+        @media (min-width: 651px) and (max-width: 850px) {
+            #texto-negro1 {
+                font-family: 'ICA Rubrik';
+                font-size: 3rem;
+                margin-top: 80px;
+            }
+    
+            .cols {
+                left: 0;
+                gap: 50px;
+                /* Ajusta el espacio entre tarjetas */
+            }
+    
+            .col {
+                width: 480px;
+                /* Ajusta el tamaño de las tarjetas */
+                height: 540px;
+                /* Ajusta la altura de las tarjetas */
+            }
+    
+            .container {
+                border-radius: 10px;
+                /* Reduce ligeramente las esquinas */
+            }
+    
+            .banner {
+                margin-top: 50px;
+            }
+    
+            .banner .slider .item {
+                position: absolute;
+                inset: 0 0 0 0;
+                transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .banner .static-center img {
+                width: 200px;
+                /* Ajusta el tamaño del logo */
+                margin-top: -10px;
+            }
+    
+            .banner .slider {
+                width: 150px;
+                /* Reduce el tamaño del slider */
+                height: 200px;
+            }
+    
+            .banner .slider .item img {
+                width: 80%;
+                /* Ajusta las imágenes del slider */
+                height: auto;
+            }
+    
+            .static-center {
+                margin-top: 30px;
+            }
+        }
