@@ -195,40 +195,9 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* Ocupar toda la pantalla */
+        height: 80vh; /* Ocupar toda la pantalla */
         gap: 50px; /* Espaciado entre tarjetas */
     }
-    
-    .col {
-        margin-bottom: 50px;
-    }
-
-        .front, .back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            box-shadow: 5px 5px 3px #161616;
-            backface-visibility: hidden;
-            /* Oculta la cara trasera */
-        }
-    
-        .front {
-            background-size: contain;  /* Evita distorsión */
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        /* Parte trasera */
-        .back {
-            background: white;
-            transform: rotateY(180deg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-        }
 
         .banner .slider .item {
             position: absolute;
