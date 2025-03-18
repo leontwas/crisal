@@ -191,8 +191,8 @@ body {
     }
 
     .wrapper {
-        width: 50%;
-        margin: 0 auto 0 50px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
+        width: 40%;
+        margin: 0 auto 0 60px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
         display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Centra el contenido dentro de la tarjeta */
