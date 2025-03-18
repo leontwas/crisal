@@ -225,7 +225,7 @@ body {
     .col {
         width: 300px;
         /* Fija el ancho del contenedor externo */
-        height: 270px;
+        height: 370px;
         /* Fija la altura del contenedor externo */
         cursor: pointer;
         perspective: 600px;
