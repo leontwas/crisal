@@ -193,7 +193,7 @@ body {
     .front, .back {
         width: 80%;
         max-width: 70rem;
-        margin: 0 auto; /* Centra horizontalmente */
+        margin: 0 auto 0 30px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
         display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Centra el contenido dentro de la tarjeta */
