@@ -193,7 +193,7 @@ body {
     .cols {
         display: flex !important;
         flex-direction: column !important; /* Asegura una disposición vertical */
-        margin-top: -600px;
+        margin-top: -1800px;
     }
 
     .col {
