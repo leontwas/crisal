@@ -191,15 +191,13 @@ body {
     }
 
     .front {
-        margin-left: 30px;
-        margin-right: 0;
-        padding-right: 0;
         width: 80%;
-        margin: 0 auto;
         max-width: 70rem;
+        margin: 0 auto; /* Centra horizontalmente */
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: center; /* Centra el contenido dentro de la tarjeta */
+        align-items: center; /* Centra verticalmente si es necesario */
         padding-bottom: 50px; /* Espaciado con el footer */
     }
 
