@@ -193,6 +193,7 @@ body {
     .wrapper {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto 0 30px;
         justify-content: center; /* Centra el contenido dentro de la tarjeta */
         align-items: center; /* Centra verticalmente si es necesario */
         object-fit: cover;
