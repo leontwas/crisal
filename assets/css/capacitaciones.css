@@ -200,7 +200,7 @@ body {
     }
 
     .front, .back {
-        width: 40% !important;
+        width: 60% !important;
         border-radius: 10px; /* Reduce ligeramente las esquinas */
         box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
     }
