@@ -191,21 +191,22 @@ body {
     }
 
     .cols {
-        flex-direction: column; /* Asegura una disposición vertical */
+        display: flex !important;
+        flex-direction: column !important; /* Asegura una disposición vertical */
         margin-top: -100px;
     }
 
     .col {
-        width: 200px; /* Ancho de la tarjeta*/
-        height: auto; /* Ajusta la altura según el contenido */
-        margin-bottom: 20px; /* Reduce el espaciado entre filas */
+        width: 200px !important; /* Ancho de la tarjeta*/
+        height: auto !important; /* Ajusta la altura según el contenido */
+        margin-bottom: 20px !important; /* Reduce el espaciado entre filas */
     }
 
     .container {
-        width: 100%; /* Ajusta el ancho al contenedor padre */
-        height: auto; /* Permite que la altura se ajuste */
-        display: flex;
-        grid-column: 1/-1;
+        width: 100% !important; /* Ajusta el ancho al contenedor padre */
+        height: auto !important; /* Permite que la altura se ajuste */
+        display: flex !important;
+        grid-column: 1/-1 !important;
     }
 
     .front, .back {
@@ -219,7 +220,6 @@ body {
         transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
 
     /* Logo tamaño y ubicación */
     .banner .static-center img {
