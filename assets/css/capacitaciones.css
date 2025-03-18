@@ -17,13 +17,15 @@
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autorun 70s linear infinite;
-    z-index: 2; /* Los banners tienen un z-index mayor */
+    z-index: 2;
+    /* Los banners tienen un z-index mayor */
 }
 
 @keyframes autorun {
     from {
         transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
     }
+
     to {
         transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
     }
@@ -45,9 +47,9 @@
 }
 
 .banner .slider .item img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     box-shadow: 5px 5px 3px #161616;
-    filter: brightness(1.1); 
+    filter: brightness(1.1);
 }
 
 /* Contenedor del logo */
@@ -56,14 +58,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
-    z-index: 1; /* Menor z-index que los banners */
+    z-index: 1;
+    /* Menor z-index que los banners */
 }
 
 .banner .static-center img {
-    width: 450px; /* Ajusta el tamaño aquí */
+    width: 450px;
+    /* Ajusta el tamaño aquí */
     height: auto;
     object-fit: contain;
-    opacity: 0.9; /* Opcional: un poco de transparencia */
+    opacity: 0.9;
+    /* Opcional: un poco de transparencia */
 }
 
 #texto-negro1 {
@@ -74,7 +79,7 @@
     text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
     text-align: center;
-  }
+}
 
 /********************************************* Tarjetas giratorias ***************************************************/
 * {
@@ -95,7 +100,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 50px; /* Espaciado con el footer */
+    padding-bottom: 50px;
+    /* Espaciado con el footer */
+    gap: 20px !important;
+    /* Espaciado entre tarjetas */
 }
 
 .cols {
@@ -106,34 +114,37 @@ body {
 }
 
 .col {
-    width: 500px; /* Fija el ancho del contenedor externo */
-    height: 570px; /* Fija la altura del contenedor externo */
+    width: 500px;
+    /* Fija el ancho del contenedor externo */
+    height: 570px;
+    /* Fija la altura del contenedor externo */
     cursor: pointer;
-    perspective: 800px; /* Profundidad para el efecto 3D */
+    perspective: 800px;
+    /* Profundidad para el efecto 3D */
 }
 
 .container {
     position: relative;
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor externo */
-    height: 100%; /* Asegura que ocupe toda la altura del contenedor externo */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho del contenedor externo */
+    height: 100%;
+    /* Asegura que ocupe toda la altura del contenedor externo */
     border-radius: 15px;
     transform-style: preserve-3d;
-    transition: transform 0.5s ease; /* Suaviza la transición */
-   
-}
+    transition: transform 0.5s ease;
+    /* Suaviza la transición */
 
-/*****************************************************************/
-.wrapper {
-    gap: 20px !important; /* Espaciado entre tarjetas */
 }
-/*****************************************************************/
 
 .container:hover {
-    transform: rotateY(180deg) translateX(-20px); /* Animaciones combinadas */
-    transition: transform 0.5s ease; /* Suavizado de la transición */
+    transform: rotateY(180deg) translateX(-20px);
+    /* Animaciones combinadas */
+    transition: transform 0.5s ease;
+    /* Suavizado de la transición */
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -145,8 +156,10 @@ body {
 .front {
     background-size: cover;
     background-position: center;
-    opacity: 1; /* Aumentar opacidad */
-    filter: brightness(1.3); /* Incrementar brillo */
+    opacity: 1;
+    /* Aumentar opacidad */
+    filter: brightness(1.3);
+    /* Incrementar brillo */
     box-shadow: 10px 10px 5px #161616;
 }
 
@@ -157,7 +170,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Reducción de oscuridad */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Reducción de oscuridad */
     border-radius: 15px;
 }
 
@@ -183,105 +197,124 @@ body {
 }
 
 /******************************* Tarjetas giratorias: ajustes para celulares ********************************************/
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
     #texto-negro1 {
         margin-top: -400px;
         font-family: 'ICA Rubrik';
         font-size: 3rem;
     }
 
-    .header {
-        width: 100vw !important;
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 80rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 50px;
+        gap: 20px !important;
     }
 
-    .footer {
-        width: 100vw !important;
+    .cols {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
     }
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            gap: 50px;
-        }
-    
-        .banner .slider .item {
-            position: absolute;
-            inset: 0 0 0 0;
-            transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-    
-        /* Logo tamaño y ubicación */
-        .banner .static-center img {
-            width: 200px;
-            margin-top: -370px;
-        }
-    
-        .banner .slider .item img {
-            object-fit: cover;
-            max-width: 100%;
-            height: auto;
-        }
-        }
-    
-        /*********************************** Media queries para tabletas *****************************************************/
-        @media (min-width: 651px) and (max-width: 850px) {
-            #texto-negro1 {
-                font-family: 'ICA Rubrik';
-                font-size: 3rem;
-                margin-top: 80px;
-            }
-    
-            .cols {
-                left: 0;
-                gap: 50px;
-                /* Ajusta el espacio entre tarjetas */
-            }
-    
-            .col {
-                width: 480px;
-                /* Ajusta el tamaño de las tarjetas */
-                height: 540px;
-                /* Ajusta la altura de las tarjetas */
-            }
-    
-            .container {
-                border-radius: 10px;
-                /* Reduce ligeramente las esquinas */
-            }
-    
-            .banner {
-                margin-top: 50px;
-            }
-    
-            .banner .slider .item {
-                position: absolute;
-                inset: 0 0 0 0;
-                transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-    
-            .banner .static-center img {
-                width: 200px;
-                /* Ajusta el tamaño del logo */
-                margin-top: -10px;
-            }
-    
-            .banner .slider {
-                width: 150px;
-                /* Reduce el tamaño del slider */
-                height: 200px;
-            }
-    
-            .banner .slider .item img {
-                width: 80%;
-                /* Ajusta las imágenes del slider */
-                height: auto;
-            }
-    
-            .static-center {
-                margin-top: 30px;
-            }
-        }
+
+    .col {
+        width: 300px;
+        /* Fija el ancho del contenedor externo */
+        height: 270px;
+        /* Fija la altura del contenedor externo */
+        cursor: pointer;
+        perspective: 600px;
+        /* Profundidad para el efecto 3D */
+    }
+
+    .container:hover {
+        transform: rotateY(180deg) translateX(-20px);
+        /* Animaciones combinadas */
+        transition: transform 0.5s ease;
+        /* Suavizado de la transición */
+    }
+
+    .banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Logo tamaño y ubicación */
+    .banner .static-center img {
+        width: 200px;
+        margin-top: -370px;
+    }
+
+    .banner .slider .item img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*********************************** Media queries para tabletas *****************************************************/
+@media (min-width: 651px) and (max-width: 850px) {
+    #texto-negro1 {
+        font-family: 'ICA Rubrik';
+        font-size: 3rem;
+        margin-top: 80px;
+    }
+
+    .cols {
+        left: 0;
+        gap: 50px;
+        /* Ajusta el espacio entre tarjetas */
+    }
+
+    .col {
+        width: 480px;
+        /* Ajusta el tamaño de las tarjetas */
+        height: 540px;
+        /* Ajusta la altura de las tarjetas */
+    }
+
+    .container {
+        border-radius: 10px;
+        /* Reduce ligeramente las esquinas */
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .banner .static-center img {
+        width: 200px;
+        /* Ajusta el tamaño del logo */
+        margin-top: -10px;
+    }
+
+    .banner .slider {
+        width: 150px;
+        /* Reduce el tamaño del slider */
+        height: 200px;
+    }
+
+    .banner .slider .item img {
+        width: 80%;
+        /* Ajusta las imágenes del slider */
+        height: auto;
+    }
+
+    .static-center {
+        margin-top: 30px;
+    }
+}
