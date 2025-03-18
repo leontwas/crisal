@@ -2,12 +2,12 @@
 let productos = [
     { nombre: "Chalecos Refractarios", precio: 5000, imagen: "./assets/images/chaleco.webp" },
     { nombre: "Cascos de seguridad", precio: 10000, imagen: "./assets/images/cascos.webp" },
-    { nombre: "Libro del Lic. Altamirano", precio: 30000, imagen: "./assets/images/libro3D.webp" },
+    { nombre: "Libro del Lic. Altamirano", precio: 55000, imagen: "./assets/images/libro3D.webp" },
     { nombre: "Arnés de seguridad", precio: 100000, imagen: "./assets/images/arnes.webp" },
     { nombre: "Protectores Auditivos", precio: 16000, imagen: "./assets/images/auriculares.webp" },
     { nombre: "Protectores Visuales", precio: 3000, imagen: "./assets/images/lentes.webp" },
     { nombre: "Guantes de seguridad", precio: 4000, imagen: "./assets/images/guantes.webp" },
-    { nombre: "Borcegos con punta de acero", precio: 50000, imagen: "./assets/images/borcegos.webp" }
+    { nombre: "Borcegos con punta de acero", precio: 70000, imagen: "./assets/images/borcegos.webp" }
 ];
 
 // Función para renderizar los productos en la página
