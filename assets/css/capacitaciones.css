@@ -193,7 +193,7 @@ body {
     .cols {
         display: flex !important;
         flex-direction: column !important; /* Asegura una disposición vertical */
-        margin-top: -100px;
+        margin-top: 500px;
     }
 
     .col {
@@ -224,7 +224,7 @@ body {
     /* Logo tamaño y ubicación */
     .banner .static-center img {
         width: 200px;
-        margin-top: -600px;
+        margin-top: -370px;
     }
 
     .banner .slider .item img {
