@@ -192,7 +192,7 @@ body {
 
     .wrapper {
         width: 50%;
-        max-width: 70rem;
+        max-width: 50rem;
         margin: 0 auto 0 30px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
         display: flex;
         flex-wrap: wrap;
