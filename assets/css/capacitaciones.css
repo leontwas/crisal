@@ -240,6 +240,12 @@ body {
         /* Suavizado de la transición */
     }
 
+    .inner {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+
     .banner .slider .item {
         position: absolute;
         inset: 0 0 0 0;
