@@ -201,6 +201,13 @@ body {
         padding-bottom: 50px; /* Espaciado con el footer */
     }
 
+    .wrapper img {
+        width: 100%;  /* La imagen ocupará el 100% del ancho del contenedor */
+        height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+        object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
+        display: block; /* Elimina posibles espacios en blanco alrededor de la imagen */
+    }
+
     .front, .back {
         border-radius: 10px; /* Reduce ligeramente las esquinas */
         box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
