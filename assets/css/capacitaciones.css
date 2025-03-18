@@ -190,33 +190,30 @@ body {
         font-size: 3rem;
     }
 
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto 0 30px;
-        justify-content: center; /* Centra el contenido dentro de la tarjeta */
-        align-items: center; /* Centra verticalmente si es necesario */
-        object-fit: cover;
-        padding-bottom: 50px; /* Espaciado con el footer */
-    }
-    .back {
-        margin-left: -50px;
-    }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Ocupa toda la altura de la pantalla */
+        }
     
-    .front, .back {
-        align-items: center;
-        width: 80% !important;
-        border-radius: 10px; /* Reduce ligeramente las esquinas */
-        box-shadow: 5px 5px 3px #161616; /* Mantén el efecto visual */
-    }
-
-    .banner .slider .item {
-        position: absolute;
-        inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px #161616;
+            backface-visibility: hidden;
+            /* Oculta la cara trasera */
+        }
+    
+        .banner .slider .item {
+            position: absolute;
+            inset: 0 0 0 0;
+            transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
     /* Logo tamaño y ubicación */
     .banner .static-center img {
         width: 200px;
