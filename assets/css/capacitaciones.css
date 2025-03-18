@@ -199,7 +199,10 @@ body {
         object-fit: cover;
         padding-bottom: 50px; /* Espaciado con el footer */
     }
-
+    .back {
+        margin-left: -50px;
+    }
+    
     .front, .back {
         align-items: center;
         width: 80% !important;
