@@ -192,20 +192,13 @@ body {
 
     .wrapper {
         width: 50%;
-        max-width: 50rem;
-        margin: 0 auto 0 30px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
+        margin: 0 auto 0 50px; /* Margen superior 0, auto en los lados derecho e izquierdo, y 30px a la izquierda */
         display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Centra el contenido dentro de la tarjeta */
         align-items: center; /* Centra verticalmente si es necesario */
+        object-fit: cover;
         padding-bottom: 50px; /* Espaciado con el footer */
-    }
-
-    .wrapper img {
-        width: 100%;  /* La imagen ocupará el 100% del ancho del contenedor */
-        height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
-        object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
-        display: block; /* Elimina posibles espacios en blanco alrededor de la imagen */
     }
 
     .front, .back {
