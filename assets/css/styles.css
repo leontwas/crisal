@@ -1,5 +1,5 @@
 @import "footer.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Las fuentes ahora se importan desde fuentes.css */
 
 :root {
     h2 {
@@ -18,7 +18,7 @@ body {
     background: linear-gradient(to bottom, #888a8a, #d5d8da);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-principal);
     font-optical-sizing:auto;
     font-style: normal;
 }

@@ -1,2 +1,19 @@
-/* /index.html 200
+# Netlify Redirects para Crisal - SEO y Rendimiento
+# https://docs.netlify.com/routing/redirects/
 
+# Forzar HTTPS
+http://crisal-seguridad.netlify.app/*  https://crisal-seguridad.netlify.app/:splat  301!
+
+# URLs limpias (sin .html) - Mejora SEO
+/servicios  /servicios.html  200
+/auditorias  /auditorias.html  200
+/capacitaciones  /capacitaciones.html  200
+/insumos  /insumos.html  200
+/nosotros  /nosotros.html  200
+/contacto  /contacto.html  200
+/comprar  /comprar.html  200
+/carrito  /carrito.html  200
+/login  /login.html  200
+
+# SPA fallback (mantener al final)
+/* /index.html 200

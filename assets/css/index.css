@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@300;400;600&display=swap');
+/* Las fuentes ahora se importan desde fuentes.css */
 
 html, body {
     margin: 0;
@@ -12,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #888a8a, #d5d8da);
-    font-family: Poppins;
+    font-family: var(--font-principal);
 }
 
 main {
@@ -83,7 +81,7 @@ main {
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
-    font-family: Poppins;
+    font-family: var(--font-principal);
     font-weight: 500;
 }
 .carousel .list .item .buttons button:nth-child(2){
@@ -145,7 +143,7 @@ main {
     background-color: #eee4;
     border: none;
     color: #fff;
-    font-family: monospace;
+    font-family: var(--font-principal);
     font-weight: bold;
     transition: .5s;
 }
@@ -318,9 +316,10 @@ main {
   }
 
   .birthstone-regular {
-    font-family: "Birthstone", serif;
+    font-family: var(--font-titulos);
     font-size: 4rem !important;
-    font-style: normal;
+    font-weight: var(--font-bold);
+    font-style: italic;
     text-align: center;
     color: rgb(216, 25, 25);
     /* Color principal del texto */
@@ -331,7 +330,7 @@ main {
 }
 
 .informacion {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-principal);
     background: linear-gradient(to right, #2c3e50, #34495e);
     color: #ecf0f1;
     padding: 20px;
@@ -365,7 +364,7 @@ h1 {
 #direccion {
     text-align: center;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-titulos);
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: -460px;
@@ -565,7 +564,7 @@ h1 {
     #direccion {
         text-align: center;
         color: black;
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-titulos);
         font-size: 2.0rem;
         font-weight: bold;
         margin-bottom: -250px;

@@ -1,0 +1,38 @@
+# robots.txt para Crisal - Consultora de Seguridad e Higiene
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear acceso a áreas administrativas
+Disallow: /administrador.html
+Disallow: /autogestion.html
+Disallow: /login.html
+
+# Bloquear acceso a archivos y directorios del sistema
+Disallow: /assets/js/
+Disallow: *.json
+Disallow: *.xml$
+
+# Permitir específicamente archivos importantes
+Allow: /sitemap.xml
+Allow: /assets/css/
+Allow: /assets/images/
+
+# Dirección del sitemap
+Sitemap: https://crisal-seguridad.netlify.app/sitemap.xml
+
+# Configuración específica para Google
+User-agent: Googlebot
+Allow: /
+
+# Configuración específica para Bing
+User-agent: Bingbot
+Allow: /
+
+# Configuración específica para motores de búsqueda móviles
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Crawl-delay para evitar sobrecarga del servidor
+Crawl-delay: 1

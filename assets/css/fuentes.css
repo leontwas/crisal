@@ -1,56 +1,108 @@
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  color: #f30f0f; /* Ajusta según tu diseño */
-  text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
+/* ========================================
+   SISTEMA DE TIPOGRAFÍA MODERNA - CRISAL
+   ========================================
+
+   Este archivo centraliza todas las fuentes del proyecto.
+   Solo se importan 2 tipografías modernas para optimizar rendimiento:
+
+   1. Inter - Tipografía principal para UI, cuerpo de texto y títulos
+   2. Playfair Display - Tipografía secundaria para títulos destacados
+
+   ======================================== */
+
+/* Importar Inter desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Importar Playfair Display desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
+
+/* ========================================
+   VARIABLES CSS PARA TIPOGRAFÍAS
+   ======================================== */
+
+:root {
+  /* Familia de fuentes */
+  --font-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-titulos: 'Playfair Display', Georgia, serif;
+
+  /* Pesos de fuente */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
 }
 
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
+/* ========================================
+   CLASES UTILITARIAS DE TIPOGRAFÍA
+   ======================================== */
+
+/* Tipografía principal (Inter) */
+.font-principal {
+  font-family: var(--font-principal);
 }
 
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
+/* Tipografía para títulos (Playfair Display) */
+.font-titulos {
+  font-family: var(--font-titulos);
 }
 
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+/* Pesos de fuente */
+.font-light {
+  font-weight: var(--font-light);
+}
+
+.font-regular {
+  font-weight: var(--font-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-extrabold);
+}
+
+.font-black {
+  font-weight: var(--font-black);
+}
+
+/* ========================================
+   ESTILOS BASE DEL DOCUMENTO
+   ======================================== */
+
+body {
+  font-family: var(--font-principal);
+  font-weight: var(--font-regular);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+}
+
+/* Títulos con estilo especial (para reemplazar fuentes decorativas) */
+.titulo-decorativo {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* Para textos que necesiten énfasis elegante */
+.texto-elegante {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-regular);
   font-style: italic;
 }
-
-.kalam-regular {
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .kalam-bold {
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }  
-  
-  .chicle-regular {
-      font-family: "Chicle", serif;
-      font-weight: 400;
-      font-style: oblique;
-  }
-
-  .bungee-regularspice- {
-    margin-bottom: 5px;
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style:normal;
-  }  
-
-  .sedgwick-ave-display-regular {
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-    position: relative;
-    color:gold;
-  }

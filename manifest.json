@@ -1,0 +1,96 @@
+{
+  "name": "Crisal - Consultora de Seguridad e Higiene en el Trabajo",
+  "short_name": "Crisal",
+  "description": "Consultora líder en seguridad e higiene laboral en Argentina. Auditorías, capacitaciones, gestión de riesgos y venta de EPP.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#50633C",
+  "orientation": "portrait-primary",
+  "lang": "es-AR",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "./favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/logo_crisal.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Servicios",
+      "short_name": "Servicios",
+      "description": "Ver todos nuestros servicios",
+      "url": "/servicios.html",
+      "icons": [
+        {
+          "src": "./favicon/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Contactar con Crisal",
+      "url": "/contacto.html",
+      "icons": [
+        {
+          "src": "./favicon/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Insumos",
+      "short_name": "Tienda",
+      "description": "Comprar EPP e insumos",
+      "url": "/insumos.html",
+      "icons": [
+        {
+          "src": "./favicon/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

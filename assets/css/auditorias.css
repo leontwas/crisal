@@ -231,7 +231,7 @@
   background: linear-gradient(to right, #2c3e50, #34495e);
 }
 .text-dark-blue {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-principal);
   background: linear-gradient(to right, #2c3e50, #34495e);
   color: #99e7fa;
   margin: 0;
