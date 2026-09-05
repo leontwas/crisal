@@ -1,3 +1,4 @@
 {
-    "console-ninja.predictiveLoggingEnabled": false
+    "console-ninja.predictiveLoggingEnabled": false,
+    "liveServer.settings.port": 5502
 }

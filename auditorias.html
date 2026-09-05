@@ -31,7 +31,8 @@
     <meta name="twitter:title" content="Auditorías de Seguridad e Higiene | Certificación SAA">
     <meta name="twitter:description" content="Certificación del Sello Argentino de Sustentabilidad Ambiental (SAA). Auditorías profesionales para empresas. Avalado por SAPA.">
     <meta name="twitter:image" content="https://crisal-seguridad.netlify.app/assets/images/logo_crisal.webp">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -43,10 +44,7 @@
     <link rel="stylesheet" href="./assets/css/auditorias.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Auditorías de Seguridad e Higiene | Certificación Ambiental SAA | Crisal</title>
   </head>
   <body>
@@ -66,150 +64,139 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./auditorias.html">Auditorías</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./servicios.html">Servicios</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./capacitaciones.html">Capacitaciones</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./insumos.html">Insumos</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./contacto.html">Contacto</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./nosotros.html">Nosotros</a></li>
-            <li class="nav-item dropdown"><a class="nav-link" href="./login.html">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./auditorias.html">Auditorías</a></li>
+            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./capacitaciones.html">Capacitaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar en el sitio">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn search-btn" type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
       </div>
     </nav>
     <main>
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="./assets/images/cliente1.webp" data-slide-to="0" class="active"></li>
-          <li data-target="./assets/images/cliente3.webp" data-slide-to="1"></li>
-          <li data-target="./assets/images/cliente4.webp" data-slide-to="2"></li>
-          <li data-target="./assets/images/cliente6.webp" data-slide-to="3"></li>
-        </ul>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active"><img src="./assets/images/cliente1.webp" alt="Cliente satisfecho con certificación ambiental SAA" class="carrusel-imagen"></div>
           <div class="carousel-item"><img src="./assets/images/cliente3.webp" alt="Empresa certificada con sello verde SAA" class="carrusel-imagen"></div>
           <div class="carousel-item"><img src="./assets/images/cliente4.webp" alt="Instalaciones auditadas bajo normas de seguridad" class="carrusel-imagen"></div>
           <div class="carousel-item"><img src="./assets/images/cliente6.webp" alt="Proceso de auditoría ambiental en empresa" class="carrusel-imagen"></div>
         </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-        <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <div class="card-group">
-        <div class="card">
-          <img src="./assets/images/Auditor.gif" class="card-img-top" id="card-top" alt="Profesional realizando auditoría ambiental">
-      
-         <div class="card-body">
-            <h5 class="card-title text-dark-blue fw-bold">¿Qué son los etiquetados ambientales o sellos verdes?</h5>
-            <p class="card-text fw-bold text-justify">Los sellos verdes son conocidos en todo el mundo como etiquetados de productos que se destacan
-              por su compromiso ambiental. Actualmente demostrar ese compromiso es una exigencia creciente del
-              mercado, una necesidad actual de marketing y por la propia convicción empresarial ya que una buena
-              gestión ambiental es estratégica para mejorar la calidad e innovación en la producción.</p>
+      <section class="auditorias-section">
+        <div class="card-group">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/Auditor.gif" class="card-img-top" id="card-top" alt="Profesional realizando auditoría ambiental">
+            </div>
+        
+            <div class="card-body">
+              <h3 class="card-title">¿Qué son los etiquetados ambientales o sellos verdes?</h3>
+              <p class="text-dark-blue">Los sellos verdes son conocidos en todo el mundo como etiquetados de productos que se destacan
+                por su compromiso ambiental. Actualmente demostrar ese compromiso es una exigencia creciente del
+                mercado, una necesidad actual de marketing y por la propia convicción empresarial ya que una buena
+                gestión ambiental es estratégica para mejorar la calidad e innovación en la producción.</p>
               <br>
-              <h5 class="card-title text-dark-blue fw-bold">¿Es suficiente para mi firma realizar publicidad del
-                compromiso ambiental de la empresa?</h5>
-                <p class="card-text fw-bold text-justify">No. Los consumidores
-                  no creen atribuciones que una empresa se hace así misma y mucho menos
-                  en términos de cuidado ambiental. Siempre es necesario que se avale
-                  sólidamente que existe este real compromiso ambiental y por ello existen los
-                  sellos ambientales.</p>
-                  <br>
-                  <h5 class="card-title text-dark-blue fw-bold">¿Qué beneficio le trae a mi empresa tener un sello verde?</h5>
-                  <p class="card-text fw-bold text-justify">Tener una certificación ambiental confiable destaca tu producto de la competencia. Tener un etiquetado
-                  ambiental mejora considerablemente la imagen empresarial frente a consumidores, mercado y las propias
-                  autoridades de aplicación ambiental. Accederá a nuevos clientes, nuevos mercados y nuevos horizontes
-                  comerciales optimizando el crecimiento de su empresa. Podrá gestionar o alcanzar mayor éxito en acuerdos
-                  comerciales, procesos licitatorios o pedidos de financiamientos donde se exige en forma creciente demostrar
-                  una eficiente gestión ambiental. Además, su producto podrá venderse a un mayor valor de mercado, porque
-                  al demostrar que su empresa es amigable con el ambiente le otorga calidad extra al producto y sus
-                  consumidores estarán dispuestos a pagar por ello. Es un hecho que el 70% de los consumidores están
-                  actualmente preocupados por la huella ambiental del producto o bien que utilizan.</p>
-                </div>
-       </div>
-        <div class="card">
-          <img src="./assets/images/crisal.gif" class="card-img-top" id="card-med" alt="Logo animado de Crisal Consultora">
-          <div class="card-body">
-            <h5 class="card-title text-dark-blue fw-bold">¿Qué sellos verdes existen en Argentina?</h5>
-            <p class="card-text fw-bold text-justify">Existen sellos internacionales que se utilizan dentro del país y sellos verdes locales promovidos por rubros
-            específicos a través de algunas cámaras empresariales o algunos sellos verdes regionales promovidos por el
-            Estado local.</p>
-            <br>
-            <h5 class="card-title text-dark-blue fw-bold">¿Qué es el Sello Argentino de Sustentabilidad Ambiental - SAA?</h5>
-              <p class="card-text fw-bold text-justify">Es un sello ambiental nacional de validez en toda Argentina que avala con
+              <h3 class="card-title">¿Es suficiente para mi firma realizar publicidad del compromiso ambiental de la empresa?</h3>
+              <p class="text-dark-blue">No. Los consumidores
+                no creen atribuciones que una empresa se hace así misma y mucho menos
+                en términos de cuidado ambiental. Siempre es necesario que se avale
+                sólidamente que existe este real compromiso ambiental y por ello existen los
+                sellos ambientales.</p>
+              <br>
+              <h3 class="card-title">¿Qué beneficio le trae a mi empresa tener un sello verde?</h3>
+              <p class="text-dark-blue">Tener una certificación ambiental confiable destaca tu producto de la competencia. Tener un etiquetado
+                ambiental mejora considerablemente la imagen empresarial frente a consumidores, mercado y las propias
+                autoridades de aplicación ambiental. Accederá a nuevos clientes, nuevos mercados y nuevos horizontes
+                comerciales optimizando el crecimiento de su empresa.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/crisal.gif" class="card-img-top" id="card-med" alt="Logo animado de Crisal Consultora">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">¿Qué sellos verdes existen en Argentina?</h3>
+              <p class="text-dark-blue">Existen sellos internacionales que se utilizan dentro del país y sellos verdes locales promovidos por rubros
+                específicos a través de algunas cámaras empresariales o algunos sellos verdes regionales promovidos por el
+                Estado local.</p>
+              <br>
+              <h3 class="card-title">¿Qué es el Sello Argentino de Sustentabilidad Ambiental - SAA?</h3>
+              <p class="text-dark-blue">Es un sello ambiental nacional de validez en toda Argentina que avala con
                 extrema confiabilidad el compromiso ambiental que realiza su empresa. Ahora
                 se encuentra disponible un sello ambiental argentino (SAA) con muchas
-                características distintivas al resto de los sellos que le pasaremos a detallar</p>
-                <br>
-                <h5 class="card-title text-dark-blue fw-bold">¿Es compatible el Sello Argentino de Sustentabilidad Ambiental- SAA
-con otros sellos?</h5>
-<p class="card-text fw-bold text-justify">Sí. Su empresa puede tener todas las certificaciones ambientales que desee. Pero tenga en cuenta que los
-  sellos que a título gratuito que puede obtener de un programa de gobierno son una certificación ambiental que
-  sólo tiene el alcance local y no en todo el país. También tenga en cuenta que los sellos verdes que otorgan
-  algunas cámaras empresariales si bien son meritorios obtenerlos (al igual que los que otorgan los gobiernos
-  provinciales/municipales) pero son sellos otorgados por entidades no exclusivamente ambientales, de un rubro
-  específico y entre pares empresariales. Tome en consideración además que otras certificaciones ambientales
-  pueden solicitarles datos privados financieros (algo que nosotros no le solicitaremos). Y debe saber también que
-  los sellos internacionales, si bien tienen un fuerte peso en el comercio exterior, en el mercado local se sabe que
-  se puede obtenerlos sectorizados (por ejemplo: sólo la logística o un sector del servicio) dejando a sus clientes
-  y autoridades de aplicación ambiental a veces con sabor a poco.</p>
+                características distintivas al resto de los sellos.</p>
+              <br>
+              <h3 class="card-title">¿Es compatible el SAA con otros sellos?</h3>
+              <p class="text-dark-blue">Sí. Su empresa puede tener todas las certificaciones ambientales que desee. El SAA ofrece un marco integral de validación nacional con evaluación técnica rigurosa.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/Lampara.gif" class="card-img-top" id="card-bottom" alt="Lámpara animada sobre soluciones empresariales">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">¿Quién avala este etiquetado ambiental nacional?</h3>
+              <p class="text-dark-blue">El Sello Argentino de Sustentabilidad Ambiental - SAA es avalado por
+                la Sociedad Argentina de Profesionales Ambientales, una institución a nivel nacional
+                que nuclea a los profesionales y expertos ambientales de todo el país.</p>
+              <br>
+              <h3 class="card-title">¿En qué se diferencia el SAA con el resto de los sellos?</h3>
+              <p class="text-dark-blue">Las diferencias con el resto de las certificaciones son muchas, a modo de resumen se pueden destacar:</p>
+              <ul id="items">
+                <li>Tiene alcance nacional en toda Argentina.</li>
+                <li>Procesos ágiles sin burocracia innecesaria.</li>
+                <li>La postulación de su empresa es gratuita e inmediata.</li>
+                <li>Todo el proceso es estrictamente confidencial.</li>
+                <li>Costos sumamente accesibles para PyMEs y grandes empresas.</li>
+                <li>Informe confidencial con estrategias de ahorro y reducción de riesgos.</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <img src="./assets/images/Lampara.gif" class="card-img-top" id="card-bottom" alt="Icono de innovación en certificación ambiental">
-          <div class="card-body">
-            <h5 class="card-title text-dark-blue fw-bold">¿Quién avala este etiquetado ambiental nacional?</h5>
-            <p class="card-text fw-bold text-justify">El Sello Argentino de Sustentabilidad Ambiental- SAA es avalado por
-              la Sociedad Argentina de Profesionales Ambientales una institución a nivel nacional
-              que nuclea a los profesionales y expertos ambientales de todo el país. La entidad
-              no persigue fines políticos ni económicos lo cual le otorga neutralidad al proceso y
-              permite un doble aval obteniendo un sello con mayor exclusividad y credibilidad. Es
-              el único sello avalado por una Sociedad Profesional exclusiva de la temática
-              ambiental cuyo único objetivo es el desarrollo sustentable de Argentina lo cual le
-              otorga a esta certificación un mayor grado de confiablidad ante terceros.</p>
-              <br>
-              <h5 class="card-title text-dark-blue fw-bold">¿En qué se diferencia el SAA con el resto de los
-                sellos?</h5>
-                <p class="card-text text-justify">Las diferencias con el resto de las certificaciones son muchas, a modo de resumen se pueden destacar:</p>
-                <ul class="card-text" id="items">
-                  <li>• Tiene alcance nacional.</li>
-                  <li>• Usted no tendrá que pasar por procesos largos y costosos de preparación previa para certificar.</li>
-                  <li>• La postulación de su empresa es gratuita e inmediata.</li>
-                  <li>• Todo el proceso es confidencial.</li>
-                  <li>• Las etapas de visita y certificación tienen un costo sumamente accesible.</li>
-                  <li>• Ofrece un horizonte de certificación concreto con procedimientos a bajo costo para las empresas, pues la inversión monetaria y de tiempo están claras desde el principio sin gastos extras adicionales ni procesos que se alarguen en el tiempo.</li>
-                  <li>• Precisamente por lo anterior pueden acceder a certificar todo tipo de empresas desde grandes firmas a pequeños emprendimientos.</li>
-                  <li>• Somos el único sello que le brindará un documento confidencial (elaborado por expertos) con estrategias de mejora para optimizar ahorros y ganancias, así como reducir riesgos mejorando su gestión interna.</li>
-                </ul>
-          </div>
-          </div>
-      </div>
+      </section>
     </main>
     <footer>
-        <div class="footlist">
-            <a class="footlink fab fa-brands fa-youtube fa-2x"
-                href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H"
-                title="Canal de YouTube de Crisal" target="_blank"></a>
-            <a class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/"
-                title="Instagram de Crisal" target="_blank"></a>
-            <a class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
-                title="Canal de WhatsApp de Crisal" target="_blank"></a>
-            <a class="footlink fa-brands fa-linkedin fa-2x"
-                href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
-                title="LinkedIn de Cristian Altamirano" target="_blank"></a>
-        </div>
-        <p id="copy">
-            <small>&copy; 2024 Todos los derechos reservados</small>
-        </p>
+      <div class="footlist">
+        <a class="footlink footlink-youtube"
+          href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="Canal de YouTube de Crisal"
+          target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a class="footlink footlink-instagram" href="https://www.instagram.com/crisal.consultora/"
+          title="Instagram de Crisal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="footlink footlink-whatsapp" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
+          title="Canal de WhatsApp de Crisal" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="footlink footlink-linkedin"
+          href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn de Cristian Altamirano"
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p id="copy">
+        <small>&copy; 2024 Todos los derechos reservados</small>
+      </p>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/busqueda.js"></script>
 
     <!-- Schema.org structured data para Auditorías -->
@@ -237,28 +224,6 @@ con otros sellos?</h5>
           "name": "Certificación SAA"
         }
       }
-    }
-    </script>
-
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://crisal-seguridad.netlify.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Auditorías",
-          "item": "https://crisal-seguridad.netlify.app/auditorias.html"
-        }
-      ]
     }
     </script>
     </body>

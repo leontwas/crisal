@@ -1,132 +1,130 @@
-/* Regla global para asegurar coherencia en la tipografía y otros estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-principal);
-}
+/* ========================================
+   LOGIN PAGE — CRISAL
+   ======================================== */
 
-/* Asegurar que todos los elementos de texto usen la misma fuente */
-h1, h2, h3, h4, h5, h6, p, span, label, input, button {
-    font-family: inherit;
-}
-
-/* Estilo del cuerpo */
 body {
-    background-image: url('../images/nature.webp');
-    background-size: cover; /* Asegura que cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    margin: 0;
-    height: 100vh; /* Altura completa */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: url('../images/nature.webp') center/cover no-repeat;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: var(--font-principal);
 }
 
-/* Contenedor del formulario */
+/* ── Glassmorphism Form Container ── */
 .form-container {
-    backdrop-filter: blur(15px);
-    background: rgba(24, 24, 24, 0.2);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-    width: 320px;
-    text-align: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(27, 32, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl), 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-/* Encabezados */
-h3 {
-    color: #fff;
-    margin-bottom: 20px;
+.form-container h3 {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-size: var(--text-2xl);
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
 }
 
-/* Estilo para inputs */
+/* ── Input Box con Label Flotante ── */
 .input-box {
-    position: relative;
-    margin: 20px 0;
+  position: relative;
+  margin: 1.75rem 0;
+  text-align: left;
 }
+
 .input-box input {
-    font-family: inherit; /* Hereda la tipografía definida */
-    width: 100%;
-    padding: 12px 15px;
-    background: none;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 18px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    transition: 0.4s;
+  width: 100%;
+  padding: 0.9rem 1rem 0.6rem 0.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: var(--font-principal);
+  font-size: var(--text-base);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
 }
+
 .input-box input:focus {
-    border-color: #00ffff;
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+  border-color: var(--color-primary);
 }
+
 .input-box span {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
-    pointer-events: none;
-    transition: 0.4s;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-base);
+  pointer-events: none;
+  transition: all var(--transition-base);
+  transform: translateY(-50%);
 }
-.input-box input:focus + span, 
+
+.input-box input:focus + span,
 .input-box input:not(:placeholder-shown) + span {
-    top: 5px;
-    font-size: 12px;
-    color: #00ffff;
+  top: -6px;
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  font-weight: var(--font-semibold);
 }
 
-/* Botón de envío */
+/* ── Botón de Envío ── */
 .submit-btn {
-    background: linear-gradient(90deg, #f4d30a, #f8ea27, #ffee38);
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s;
-    margin-top: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-md);
+  color: var(--color-bg-dark);
+  font-family: var(--font-principal);
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+  margin-top: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 255, 178, 0.3);
 }
+
 .submit-btn:hover {
-    background: linear-gradient(90deg, #ffa500, #ffdd00);
-    box-shadow: 0 5px 25px #ffdd0080;
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 20px rgba(0, 255, 178, 0.5);
 }
 
-/* Estilo adicional para elementos visibles */
 .box-visible {
-    color: white;
+  color: var(--color-text-light);
+  margin-top: 1.5rem;
+  font-size: var(--text-sm);
 }
 
-/* Espaciado adicional para login */
+.box-visible a {
+  color: var(--color-accent-light);
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+}
+
+.box-visible a:hover {
+  text-decoration: underline;
+}
+
 #login {
-    margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
-label {
-    font-family: inherit; /* Hereda la fuente definida globalmente */
-}
-
-@media (min-width: 651px) and (max-width: 850px) {
-    
-    h1, h2, h3, h4, h5, h6, p, span, label, input, button {
-        font-family: inherit;
-        font-size: x-small;
-    }
-    #login {
-        height: 15%;
-        width: 15%;
-    }
-    .pass {
-        font-size: x-small;
-    }
-
-    .form-container {
-        padding: 20px;
-    }
+/* ── Responsividad ── */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 2rem 1.25rem;
+  }
 }

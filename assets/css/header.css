@@ -1,69 +1,89 @@
-/* Las fuentes ahora se importan desde fuentes.css */
+/* ========================================
+   HEADER & NAVBAR — CRISAL
+   ======================================== */
 
-.head {
-  height: 100px;
-  margin: 20px;
-}
-
+/* ── Reset ── */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/********************* Header ***********************/
+/* ── Header ── */
 header {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
+  background-color: var(--color-surface);
   box-sizing: border-box;
-  background-color: white;
 }
 
-nav .form-control-2 {
-  /* Buscador en la página de contacto.html*/
-  background-color: initial;
-  border: initial;
-  padding: initial;
-  background-color: white;
-  color: #555;
-  margin-right: 10px;
-  margin-left: 10px;
-  /* Añadir separación del borde izquierdo */
-  border-radius: 5px;
-  align-items: center;
-  text-align: left;
-  padding-left: 5px;
-}
-
-.header-container {
+.header {
   display: flex;
   align-items: center;
-  justify-content: start;
-  /* Alinea los elementos al principio */
-  padding: 10px;
-  background-color: white;
-}
-
-/* Ajustar la barra de navegación para ocupar todo el ancho */
-.navbar {
-  background-color: #50633C !important;
-  color: white !important;
-  width: 100vw !important;
-  /* Hace que ocupe todo el ancho de la pantalla */
-  padding: 0;
-  /* Elimina cualquier padding adicional */
-  margin-left: 0;
-  /* Asegura que no haya márgenes laterales */
-  margin-right: 0;
-  box-sizing: border-box;
-  /* Incluye bordes y padding dentro del ancho total */
-}
-
-.navbar-nav {
-  margin: 0 auto;
-  display: flex;
   justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-surface);
+  position: relative;
+  min-height: 95px;
+  box-sizing: border-box;
+}
+
+/* ── Logo ── */
+.logo {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 80px;
+  max-width: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  z-index: 10;
+  transition: transform var(--transition-base);
+}
+
+.logo:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* ── Títulos ── */
+.titulos {
+  text-align: center;
+  width: 100%;
+  padding: 0 110px;
+}
+
+.titulos h1 {
+  font-family: var(--font-titulos);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.categoria {
+  font-family: var(--font-principal);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Navbar (Bootstrap override) ── */
+.navbar {
+  background-color: var(--color-bg-dark) !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .navbar-nav {
@@ -74,230 +94,212 @@ nav .form-control-2 {
 }
 
 .navbar-nav .nav-link {
-  color: black;
-  /* Color inicial del texto */
-  border-bottom: 4px solid transparent;
-  /* Sin borde por defecto */
-  transition: all 0.1s ease-in-out;
-  /* Transición suave */
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-family: var(--font-principal);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  letter-spacing: 0.03em;
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
   line-height: 1.2;
-  /* Ajusta la altura de línea para acercar el texto al subrayado */
-  padding-bottom: 2px;
-  /* Reduce el espacio debajo del texto */
+  padding: var(--space-sm) var(--space-md) !important;
 }
 
-.navbar-nav .nav-link:hover {
-  color: black;
-  /* Color del texto al hacer hover */
-  border-bottom: 4px solid #cd7e35;
-  /* Borde inferior al hacer hover */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #fff !important;
+  border-bottom: 3px solid var(--color-accent);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-link.active {
+  color: #fff !important;
+  font-weight: var(--font-semibold);
 }
 
 .nav-link.dropdown-toggle::after {
   content: none;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  /* Cambia el color del texto del menú */
+/* ── Toggler (hamburger) ── */
+.navbar-light .navbar-toggler,
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+  padding: 4px 8px;
 }
 
-.navbar-light .navbar-brand {
-  color: white;
-  /* Cambia el color del texto del logo */
-}
-
-.navbar-light .navbar-toggler {
-  border-color: white;
-  /* Cambia el color del borde del botón toggle */
-}
-
-.navbar-light .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon,
+.navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  /* Cambia el color de las barras del icono toggle */
 }
 
-.navbar-light .dropdown-menu {
-  background-color: #333;
-  /* Cambia el fondo del menú desplegable */
+/* ── Search bar in navbar ── */
+.navbar .d-flex .form-control,
+nav .form-control-2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
 }
 
-.navbar-light .dropdown-item {
-  color: white;
-  /* Cambia el color del texto de los items en el dropdown */
+.navbar .d-flex .form-control::placeholder,
+nav .form-control-2::placeholder {
+  color: rgba(255, 255, 255, 0.55);
 }
 
-.navbar-light .dropdown-item:hover {
-  background-color: #555;
-  /* Cambia el fondo al pasar el cursor */
+.navbar .d-flex .form-control:focus,
+nav .form-control-2:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb), 0.25);
+  outline: none;
 }
 
-.nav-link.active {
-  color: white !important;
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.nav-link.active:hover {
-  color: black !important;
+.search-input {
+  padding-right: 40px !important; /* space for the icon button */
+  border-radius: var(--radius-xl) !important;
 }
 
-.navbar-light {
-  color: black;
-  padding-top: 2px;
-  border-bottom: #cd7e35 solid 4px;
-}
-
-.nav-item.dropdown {
-  font-size: 16px;
-  /* Ajusta el tamaño según lo necesites */
-}
-
-.btn-outline-success {
-  color: white;
-  /* Texto en blanco */
-  border-color: white !important;
-  /* Borde blanco */
-}
-
-.btn-outline-success:hover {
-  color: black;
-  /* Texto en negro al hacer hover */
-  background-color: white;
-  /* Fondo blanco al hacer hover */
-  border-color: black;
-  /* Borde negro al hacer hover */
-}
-
-/* Logo alineado a la izquierda */
-.logo {
+.search-btn {
   position: absolute;
-  left: 10px;
-  max-width: 120px;
-  height: auto;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: var(--color-accent);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), color var(--transition-fast);
 }
 
-/* Contenedor de los títulos */
-.titulos {
-  text-align: center;
+.search-btn:hover {
+  color: var(--color-accent-light);
+  transform: scale(1.1);
 }
 
-.categoria {
-  font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 9px;
-  margin-bottom: 9px;
+.search-btn:active {
+  transform: scale(0.9);
 }
 
-/* Estilo del menú desplegable */
+/* ── Dropdown overrides ── */
+.navbar .dropdown-menu {
+  background-color: var(--color-bg-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.navbar .dropdown-item {
+  color: var(--color-text-light);
+  transition: background-color var(--transition-fast);
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-accent-light);
+}
+
+/* ── Old custom menu (keep for backwards compat) ── */
+.menu {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.menu li { text-align: center; }
+
+.menu li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-principal);
+  font-weight: var(--font-medium);
+  padding: var(--space-sm) var(--space-md);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  color: #fff;
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.menu .selected a {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Menu desplegable icon ── */
 .menu-desplegable {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 2rem;
   cursor: pointer;
+  color: var(--color-text);
 }
 
-/********************* Fin Header *******************************/
-.menu {
-  margin: 0;
-  padding: 0;
-  background-color: #50633C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 70px;
-  cursor: pointer;
-  list-style: none;
-  border-bottom: #cd7e35 solid 4px;
-}
-
-.menu li {
-  text-align: center;
-}
-
-.menu .selected a {
-  background-color: #50633C;
-  padding: 8px 10px;
-  border-radius: 5px;
-}
-
-.menu li a {
-  text-decoration: none;
-}
-
-.menu li:hover {
-  height: 85px;
-}
-
-.menu>li:hover>a {
-  color: black;
-  border-bottom: #cd7e35 solid 4px;
-  transition: all 0.1s ease-in-out;
-}
-
-.menu>li a {
-  color: white;
-  background-color: #50633C;
-  position: relative;
-  height: 100%;
-}
-
-.menu>li>a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 3px;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  scale: 0 0;
-  visibility: hidden;
-}
-
-.menu>li:hover>a::before {
-  visibility: visible;
-  scale: 1 1;
-}
-
-/************************************* Estilos para dispositivos móviles **********************************************/
-@media (max-width: 650px) {
-  .libre-baskerville-regular {
-    padding-left: 95px;
-    padding-right: 30px;
-    font-size: 1.5rem;
+/* ========================================
+   RESPONSIVE — MOBILE (< 576px)
+   ======================================== */
+@media (max-width: 575.98px) {
+  .header {
+    min-height: 80px;
+    padding: var(--space-xs) var(--space-sm);
   }
 
   .logo {
-    margin-left: -15px;
-    margin-top: -15px
+    max-height: 60px;
+    max-width: 65px;
+    left: var(--space-sm);
+  }
+
+  .titulos {
+    padding: 0 10px 0 75px;
+  }
+
+  .titulos h1 {
+    font-size: var(--text-lg);
   }
 
   .categoria {
-    font-size: 1rem;
+    font-size: var(--text-xs);
   }
 
-  /* Icono hamburguesa */
   .menu-desplegable {
     display: block;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 25px;
+    font-size: 28px;
+    right: 8px;
+    top: 20px;
   }
 
   .menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 95px;
+    top: 70px;
     left: 0;
     width: 100%;
-    height: 50vh;
-    background-color: #50633C;
-    /* Fondo verde del menú desplegable */
+    height: auto;
+    background-color: var(--color-primary);
     gap: 0;
     z-index: 999;
     overflow-y: auto;
@@ -305,40 +307,90 @@ nav .form-control-2 {
 
   .menu li {
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .menu li a {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
-    background-color: #50633C;
-    /* Fondo verde para enlaces en menú desplegable */
-    color: white;
-    /* Texto negro */
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .menu.active {
     display: flex;
-    margin-top: 30px;
-    height: fit-content !important;
+    height: fit-content;
   }
 
   nav .form-control-2 {
-    width: 300px;
-    margin-right: -15px;
-    margin-left: -5px;
+    width: 100%;
+    margin: 0;
   }
 
-  #buscar {
-    margin-left: -10px;
+  /* Navbar collapse — center content */
+  .navbar-collapse {
+    text-align: center;
+    padding: var(--space-sm) 0;
+  }
+
+  .navbar-collapse .d-flex {
+    justify-content: center;
+    margin-top: var(--space-sm);
+    padding: 0 var(--space-md);
   }
 }
 
-/* Ocultar el ícono del menú hamburguesa en tablets y notebooks */
-@media (min-width: 651px) {
+/* ========================================
+   RESPONSIVE — TABLET (576px – 991px)
+   ======================================== */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .header {
+    min-height: 85px;
+  }
+
+  .logo {
+    max-height: 70px;
+    max-width: 80px;
+    left: 1rem;
+  }
+
+  .titulos {
+    padding: 0 95px;
+  }
+
+  .titulos h1 {
+    font-size: var(--text-xl);
+  }
+
+  .categoria {
+    font-size: var(--text-xs);
+  }
+
+  .menu-desplegable {
+    display: none !important;
+  }
+
+  /* Navbar collapse — center content on tablets */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-collapse .d-flex {
+    justify-content: center;
+    margin-top: var(--space-sm);
+  }
+
+  nav .form-control-2 {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — DESKTOP (≥ 992px)
+   ======================================== */
+@media (min-width: 992px) {
   .menu-desplegable {
     display: none !important;
   }
@@ -349,64 +401,29 @@ nav .form-control-2 {
     align-items: center;
   }
 
-}
-
-/************************************* Estilos para dispositivos tablets **********************************************/
-@media (min-width: 651px) and (max-width: 850px) {
-  .categoria {
-    font-size: 1rem;
-    padding-left: 40px;
-  }
-
-  .libre-baskerville-regular {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    font-size: 1.5rem;
-  }
-
   .logo {
-    width: 110px;
-    /* Ajusta el tamaño del logo */
-    margin-top: -10px;
+    max-height: 80px;
+    max-width: 90px;
+    left: 1.5rem;
   }
 
-  nav .form-control-2 {
-    width: 710px;
-    margin-right: -15px;
+  .titulos {
+    padding: 0 120px;
   }
 
-  #buscar {
-    margin-left: -15px;
-  }
-}
-
-/************************************* Estilos para dispositivos notebooks **********************************************/
-@media (min-width: 851px) {
-  .logo {
-    margin-top: -10px;
+  .titulos h1 {
+    font-size: var(--text-2xl);
   }
 
-  #titulo-auditoria{
-    margin-top: 10px;
+  #titulo-auditoria,
+  #titulo-insumos,
+  #titulo-capacitaciones {
+    margin-top: 8px;
+    margin-bottom: 6px;
   }
 
-  #titulo-insumos{
-    margin-top: 10px;
+  #titulo-contacto,
+  #titulo-carrito {
     margin-bottom: 8px;
-  }
-
-  #titulo-capacitaciones{
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
-
-  #titulo-contacto{
-    margin-bottom: 10px;  
-  }
-
-  #titulo-carrito{
-   margin-bottom: 10px; 
   }
 }

@@ -1,330 +1,253 @@
-/* Las fuentes ahora se importan desde fuentes.css */
+/* ========================================
+   CAPACITACIONES PAGE — CRISAL
+   ======================================== */
 
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── 3D Rotating Banner ── */
 .banner {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  min-height: 70vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .banner .slider {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autorun 70s linear infinite;
-    z-index: 2;
-    /* Los banners tienen un z-index mayor */
+  position: absolute;
+  width: 180px;
+  height: 220px;
+  top: 15%;
+  left: calc(50% - 90px);
+  transform-style: preserve-3d;
+  animation: autorun 70s linear infinite;
 }
 
 @keyframes autorun {
-    from {
-        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    }
-
-    to {
-        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-    }
+  from {
+    transform: rotateX(-12deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(-12deg) rotateY(360deg);
+  }
 }
 
 .banner .slider .item {
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(450px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(380px);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  animation: fade-back 70s linear infinite;
+  animation-delay: calc((var(--position) - 1) * (70s / var(--quantity)) * -1);
+}
+
+@keyframes fade-back {
+  0%, 15%, 85%, 100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  35%, 65% {
+    opacity: 0.4;
+    filter: brightness(0.5);
+  }
 }
 
 .banner .slider .item img {
-    border-radius: 5px;
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--radius-md);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(212, 146, 11, 0.4);
+  transition: transform var(--transition-base), filter var(--transition-base);
 }
 
 .banner .slider .item img:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 3px #161616;
-    filter: brightness(1.1);
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  border-color: var(--color-accent-light);
 }
 
-/* Contenedor del logo */
+/* Logo estático en el centro de la escena 3D */
 .banner .static-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    z-index: 1;
-    /* Menor z-index que los banners */
+  position: absolute;
+  top: 15%;
+  margin-top: 110px; /* Centrado vertical con el .slider (top + half height) */
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 .banner .static-center img {
-    width: 450px;
-    /* Ajusta el tamaño aquí */
-    height: auto;
-    object-fit: contain;
-    opacity: 0.9;
-    /* Opcional: un poco de transparencia */
+  width: 280px;
+  max-width: 80vw;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
 }
 
 #texto-negro1 {
-    margin-top: -150px;
-    font-family: var(--font-titulos);
-    font-weight: var(--font-extrabold);
-    font-size: 4rem;
-    color: #000;
-    text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
+  font-family: var(--font-titulos);
+  font-weight: var(--font-extrabold);
+  font-size: var(--text-3xl);
+  color: var(--color-text-light);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
-/********************************************* Tarjetas giratorias ***************************************************/
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #000;
-}
-
+/* ── Tarjetas Giratorias 3D (Flip Cards) ── */
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 80rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-    /* Espaciado con el footer */
-    gap: 20px !important;
-    /* Espaciado entre tarjetas */
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
 }
 
 .cols {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+  margin-top: 1rem;
 }
 
 .col {
-    width: 500px;
-    /* Fija el ancho del contenedor externo */
-    height: 570px;
-    /* Fija la altura del contenedor externo */
-    cursor: pointer;
-    perspective: 800px;
-    /* Profundidad para el efecto 3D */
+  width: 100%;
+  max-width: 380px;
+  height: 480px;
+  cursor: pointer;
+  perspective: 1000px;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    /* Asegura que ocupe todo el ancho del contenedor externo */
-    height: 100%;
-    /* Asegura que ocupe toda la altura del contenedor externo */
-    border-radius: 15px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-    /* Suaviza la transición */
-
+.col .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  padding: 0;
+  margin: 0;
 }
 
-.container:hover {
-    transform: rotateY(180deg) translateX(-20px);
-    /* Animaciones combinadas */
-    transition: transform 0.5s ease;
-    /* Suavizado de la transición */
+.col:hover .container {
+  transform: rotateY(180deg);
 }
 
 .front,
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px #161616;
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
 }
 
 .front {
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    /* Aumentar opacidad */
-    filter: brightness(1.3);
-    /* Incrementar brillo */
-    box-shadow: 10px 10px 5px #161616;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--color-accent); /* Vibrant violet border */
 }
 
-.front:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Reducción de oscuridad */
-    border-radius: 15px;
+.front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* Less opaque overlay */
+  border-radius: var(--radius-lg);
 }
 
 .back {
-    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 1.5rem;
+  background: var(--color-bg-dark-lighter); /* Dark, neutral background */
+  border: 2px solid var(--color-accent); /* Vibrant violet border */
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-light);
+  padding: 2rem;
 }
 
 .inner {
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
+  text-align: center;
+}
+
+.inner p {
+  font-family: var(--font-titulos);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--color-accent-light);
+  margin-bottom: 1rem;
+}
+
+.inner span {
+  font-family: var(--font-principal);
+  font-size: var(--text-base);
+  color: #e2e8f0;
+  line-height: 1.6;
+  display: block;
 }
 
 .highlight {
-    background-color: yellow;
-    color: red;
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
 }
 
-/******************************* Tarjetas giratorias: ajustes para celulares ********************************************/
-@media (max-width: 650px) {
-    #texto-negro1 {
-        margin-top: -400px;
-        font-family: var(--font-titulos);
-        font-weight: var(--font-extrabold);
-        font-size: 3rem;
-    }
+/* ── Responsividad ── */
+@media (max-width: 768px) {
+  .banner {
+    min-height: 50vh;
+    padding: 1.5rem 0;
+  }
 
-    .wrapper {
-        margin-left: 0 !important;
-        width: 90%;
-        margin: 0 auto;
-        max-width: 80rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 50px;
-        gap: 20px !important;
-    }
+  .banner .slider {
+    width: 120px;
+    height: 160px;
+    left: calc(50% - 60px);
+  }
 
-    .cols {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 50px;
-    }
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(220px);
+  }
 
-    .col {
-        width: 300px;
-        /* Fija el ancho del contenedor externo */
-        height: 370px;
-        /* Fija la altura del contenedor externo */
-        cursor: pointer;
-        perspective: 600px;
-        /* Profundidad para el efecto 3D */
-    }
+  .banner .static-center img {
+    width: 160px;
+  }
 
-    .container:hover {
-        transform: rotateY(180deg) translateX(-20px);
-        /* Animaciones combinadas */
-        transition: transform 0.5s ease;
-        /* Suavizado de la transición */
-    }
+  .cols {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-    .inner {
-        text-align: center;
-        font-size: 30px;
-        padding: 20px;
-    }
+  .col {
+    max-width: 320px;
+    height: 400px;
+  }
 
-    .banner .slider .item {
-        position: absolute;
-        inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Logo tamaño y ubicación */
-    .banner .static-center img {
-        width: 200px;
-        margin-top: -370px;
-    }
-
-    .banner .slider .item img {
-        object-fit: cover;
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/*********************************** Media queries para tabletas *****************************************************/
-@media (min-width: 651px) and (max-width: 850px) {
-    #texto-negro1 {
-        font-family: var(--font-titulos);
-        font-weight: var(--font-extrabold);
-        font-size: 3rem;
-        margin-top: 20px;
-    }
-
-    .cols {
-        left: 0;
-        gap: 50px;
-        /* Ajusta el espacio entre tarjetas */
-    }
-
-    .col {
-        width: 480px;
-        /* Ajusta el tamaño de las tarjetas */
-        height: 540px;
-        /* Ajusta la altura de las tarjetas */
-    }
-
-    .container {
-        border-radius: 10px;
-        /* Reduce ligeramente las esquinas */
-    }
-
-    .banner {
-        margin-top: 50px;
-    }
-
-    .banner .slider .item {
-        position: absolute;
-        inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .banner .static-center img {
-        width: 200px;
-        /* Ajusta el tamaño del logo */
-        margin-top: -10px;
-    }
-
-    .banner .slider {
-        width: 150px;
-        /* Reduce el tamaño del slider */
-        height: 200px;
-    }
-
-    .banner .slider .item img {
-        width: 80%;
-        /* Ajusta las imágenes del slider */
-        height: auto;
-    }
-
-    .static-center {
-        margin-top: 30px;
-    }
+  .back {
+    padding: 1.25rem;
+  }
 }

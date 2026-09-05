@@ -32,21 +32,14 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#50633C">
-  <link rel="stylesheet" href="./assets/css/fuentes.css">
-  <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="stylesheet" href="./assets/css/nosotros.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Auditorías de Seguridad e Higiene | Certificación Ambiental SAA | Crisal</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./assets/css/fuentes.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nosotros.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
     <header class="header">
       <a href="index.html">
         <img alt="Logo de Crisal Consultora de Seguridad e Higiene" src="./assets/images/logo_crisal.webp" class="logo">
@@ -63,111 +56,144 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./auditorias.html">Auditorías</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./servicios.html">Servicios</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./capacitaciones.html">Capacitaciones</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./insumos.html">Insumos</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./contacto.html">Contacto</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./nosotros.html">Nosotros</a></li>
-            <li class="nav-item dropdown"><a class="nav-link" href="./login.html">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./auditorias.html">Auditorías</a></li>
+            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./capacitaciones.html">Capacitaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./insumos.html">Insumos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Admin</a></li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar en el sitio">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <button class="btn search-btn" type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
       </div>
     </nav>
 
-    <h1 class="acerca">Acerca de Nosotros...</h1>
-    <div class="contenedor">
-      <p class="birthstone-regular">Crisal</p>
-      <p class="historia">Crisal Consultora de Seguridad e Higiene fue fundada en octubre de 2010 con el propósito de
-        brindar
-        asesoramiento y asistencia técnica de manera clara, concisa y efectiva. Entendemos que en cualquier
-        entorno laboral existen peligros y riesgos que pueden derivar en lesiones o enfermedades para los
-        trabajadores. Por esta razón, nos enfocamos en la prevención y en la capacitación continua, con el
-        objetivo de minimizar estos riesgos al máximo.
+    <main>
+      <!-- ── Hero Intro ── -->
+      <section class="about-hero">
+        <div class="about-hero-badge">Desde 2010</div>
+        <h1 class="about-hero-title">Acerca de Nosotros</h1>
+        <p class="about-hero-subtitle">Más de una década protegiendo vidas en el trabajo</p>
+      </section>
+
+      <!-- ── Historia ── -->
+      <section class="about-story">
+        <div class="story-accent"></div>
+        <div class="story-content">
+          <h2 class="story-heading"><i class="fa-solid fa-shield-halved"></i> Nuestra Historia</h2>
+          <p class="historia">Crisal Consultora de Seguridad e Higiene fue fundada en octubre de 2010 con el propósito de
+            brindar asesoramiento y asistencia técnica de manera clara, concisa y efectiva. Entendemos que en cualquier
+            entorno laboral existen peligros y riesgos que pueden derivar en lesiones o enfermedades para los
+            trabajadores. Por esta razón, nos enfocamos en la prevención y en la capacitación continua, con el
+            objetivo de minimizar estos riesgos al máximo.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Stats ── -->
+      <section class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">+15</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">+500</span>
+          <span class="stat-label">Auditorías realizadas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">+200</span>
+          <span class="stat-label">Empresas asesoradas</span>
+        </div>
+      </section>
+
+      <!-- ── Misión ── -->
+      <section class="about-mission">
+        <i class="fa-solid fa-bullseye mission-icon"></i>
+        <div>
+          <h3 class="mission-title">Nuestra Misión</h3>
+          <p class="mission-text">Promover entornos laborales seguros y saludables a través del asesoramiento técnico, la capacitación continua y la implementación de normativas vigentes en seguridad e higiene.</p>
+        </div>
+      </section>
+
+      <!-- ── Equipo ── -->
+      <section class="team-section">
+        <h2 class="team-heading">Nuestro Equipo</h2>
+        <p class="team-subheading">Profesionales comprometidos con tu seguridad</p>
+        <div class="team-container">
+          <div class="card">
+              <div class="top">
+                  <img src="./assets/images/Cristian.jpg" alt="Lic. Cristian Omar Altamirano" class="card-image card-image-cristian">
+              </div>
+              <div class="bottom">
+                  <span class="role-badge">Lic. en Seguridad e Higiene</span>
+                  <h6><strong>Cristian Omar Altamirano</strong></h6>
+                  <ul class="especializacion">
+                    <li>Auditor del Sello de Sustentabilidad Ambiental</li>
+                    <li>Gestor ante la SRT</li>
+                    <li>Auditor Ley Nacional 19.587</li>
+                    <li>15 Años de experiencia</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="top">
+                  <img src="./assets/images/ingenieroCrisal.png" alt="Ing. Ruben Argenis Castellanos Lara" class="card-image card-image-ruben">
+              </div>
+              <div class="bottom">
+                  <span class="role-badge">Ingeniero Industrial</span>
+                  <h6><strong>Ruben A. Castellanos Lara</strong></h6>
+                  <ul class="especializacion">
+                    <li>Auditor ISO-9000 Calidad</li>
+                    <li>Auditor Líder Fondonorma/IRCA</li>
+                    <li>Auditor ISO 17025 para OAA</li>
+                    <li>40 Años de Experiencia</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="top">
+                  <img src="./assets/images/leo.png" alt="Dev Leonardo Daniel Lipiejko" class="card-image card-image-leo">
+              </div>
+              <div class="bottom">
+                  <span class="role-badge">Desarrollador Front-End</span>
+                  <h6><strong>Leonardo Daniel Lipiejko</strong></h6>
+                  <ul class="especializacion">
+                    <li>Tecnicatura en Desarrollo de Software</li>
+                    <li>Desarrollador Web JavaScript / Node JS</li>
+                    <li>Programador Java Junior</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footlist">
+        <a class="footlink footlink-youtube"
+          href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="Canal de YouTube de Crisal"
+          target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a class="footlink footlink-instagram" href="https://www.instagram.com/crisal.consultora/"
+          title="Instagram de Crisal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="footlink footlink-whatsapp" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
+          title="Canal de WhatsApp de Crisal" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="footlink footlink-linkedin" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
+          title="LinkedIn de Cristian Altamirano" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p id="copy">
+        <small>&copy; 2024 Todos los derechos reservados</small>
       </p>
-    </div>
+    </footer>
 
- <!-- cards -->
- <div class="container">
-  <div class="card">
-      <div class="top">
-          <img src="./assets/images/Cristian.jpg" alt="Lic. Cristian Omar Altamirano" class="card-image">
-      </div>
-      <div class="bottom">
-          <h5 class="heading">Lic. en Seguridad e Higiene</h5>
-          <h6> <strong>Cristian Omar Altamirano</strong></h6>
-          <p>
-            <ul class="especializacion">
-              <li>• Auditor del Sello de Sustentabilidad Ambiental</li>
-              <li>• Gestor ante la Superintendencia de Riesgo en el Trabajo</li>
-              <li>• Auditor de normativa de la Ley Nacional 19.587</li>
-              <li>• 15 Años de experiencia</li>
-          </p>
-      </div>
-  </div>
-  <div class="card">
-      <div class="top">
-          <img src="./assets/images/ingenieroCrisal.png" alt="Ing. Ruben Argenis Castellanos Lara" class="card-image">
-      </div>
-      <div class="bottom">
-          <h2 class="heading">Ingeniero Industrial</h2>
-          <h6> <strong>Ruben Argenis Castellanos Lara</strong></h6>
-          <p>
-            <ul class="especializacion">
-            <li>• Auditor ISO-9000 (Sistemas de la Calidad)</li>
-            <li>• Auditor Líder certificado por Fondonorma/IRCA</li>
-            <li>• Auditor ISO 17025-17024-17020 para el ORGANISMO Argentino de Acreditación (OAA)</li>
-            <li>•	40 Años de Experiencia Profesional</li> 
-          </p>
-      </div>
-  </div>
-  <div class="card">
-      <div class="top">
-          <img src="./assets/images/leo.png" alt="Dev Leonardo Daniel Lipiejko" class="card-image">
-      </div>
-      <div class="bottom">
-          <h2 class="heading">Desarrollador Front-End</h2>
-          <h6> <strong>Leonardo Daniel Lipiejko</strong></h6>
-          <p>
-            <ul class="especializacion">
-              <li>• Estudiante de Tecnicatura Superior en Desarrollo de Software</li>
-              <li>• Desarrollador Web JavaScript / Node JS</li>
-              <li>• Programador JAVA Junior</li>
-          </p>
-      </div>
-  </div>
-</div>
-<!-- Fin cards -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/busqueda.js"></script>
 </body>
-
-<footer>
-  <div class="footlist">
-    <a class="footlink fab fa-brands fa-youtube fa-2x"
-      href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="Canal de YouTube de Crisal"
-      target="_blank"></a>
-    <a class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/"
-      title="Instagram de Crisal" target="_blank"></a>
-    <a class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
-      title="Canal de WhatsApp de Crisal" target="_blank"></a>
-      <a
-      class="footlink fa-brands fa-linkedin fa-2x" href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/"
-      title="LinkedIn" target="_blank"></a>
-  </div>
-  <p id="copy">
-    <small>&copy; 2024 Todos los derechos reservados</small>
-  </p>
-</footer>
-<script>
-  function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
-  }
-</script>
-<script src="./assets/js/busqueda.js"></script>
-
 </html>

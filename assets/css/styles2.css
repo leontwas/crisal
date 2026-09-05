@@ -1,20 +1,61 @@
-@import "footer.css";
-/* Las fuentes ahora se importan desde fuentes.css */
+/* ========================================
+   ESTILOS BASE GLOBALES (ALT) — CRISAL
+   Variante para páginas que usan styles2
+   Referencia las mismas variables de fuentes.css
+   ======================================== */
 
-:root {
-    h2 {
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
-}
-
-main {
-    padding: 20px;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-    background: linear-gradient(to bottom, #888a8a, #d5d8da);
-    font-family: var(--font-principal);
-    font-optical-sizing:auto;
-    font-style: normal;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  background-attachment: fixed;
+  font-family: var(--font-principal);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color-text);
+}
+
+main {
+  flex: 1;
+  padding: var(--space-xl) var(--space-md);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+}
+
+::selection {
+  background: rgba(var(--color-primary-rgb), 0.2);
+  color: var(--color-primary-dark);
+}
+
+.highlight {
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

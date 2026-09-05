@@ -1,78 +1,199 @@
-/* Estilos para el footer, se asegura que esté al final de la página */
+/* ========================================
+   FOOTER — CRISAL
+   ======================================== */
+
 footer {
-  border-top: 4px solid #cd7e35;
-  background-color: #333;
-  color: #fff;
-  padding-top:30px;
-  width: 100vw;
+  border-top: 3px solid var(--color-accent);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: var(--space-xl) var(--space-md) var(--space-md);
+  width: 100%;
   text-align: center;
-  position: relative; /* Mantiene su posición relativa en pantallas grandes */
-  margin-top: auto; /* Empuja el footer al final del contenedor principal */
+  position: relative;
+  margin-top: auto;
   box-sizing: border-box;
 }
 
-/* Para enlaces y texto en el footer */
 footer a,
 footer p {
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
+/* ── Social Icons List ── */
 .footlist {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
-  transition-duration: .4s;
-  font-size: 1.2rem;
-}
-
-#copy {
-  text-align: center;
+  gap: 1.25rem;
+  margin-bottom: var(--space-md);
 }
 
 .footlink {
-  color: white !important;
-  text-decoration: none;
-  transition-duration: .4s;
-}
-
-.footlink:hover {
-  transform: scale(1.4);
-  transition-duration: .4s;
-  text-decoration: none;
-}
-
-/* Estructura general para mantener el footer al final */
-body, html {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none !important;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              color 0.25s ease;
+  line-height: 1;
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-.main-container {
-  flex: 1; /* Asegura que el contenedor principal ocupe el espacio necesario */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.footlink i,
+.footlink svg {
+  font-size: 1.35rem;
+  line-height: 1;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: 0 !important;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
-/* Ajustes para pantallas de tablets */
-@media (max-width: 900px) {
+.footlink i::before {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: 0;
+}
+
+/* YouTube */
+.footlink-youtube {
+  color: #ff4d4d !important;
+}
+
+.footlink-youtube i,
+.footlink-youtube svg {
+  color: #ff4d4d !important;
+}
+
+.footlink-youtube:hover {
+  background: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5) !important;
+  transform: translateY(-4px) scale(1.15) !important;
+}
+
+.footlink-youtube:hover i,
+.footlink-youtube:hover svg {
+  color: #ffffff !important;
+}
+
+/* Instagram */
+.footlink-instagram {
+  color: #f06595 !important;
+}
+
+.footlink-instagram i,
+.footlink-instagram svg {
+  color: #f06595 !important;
+}
+
+.footlink-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  border-color: #cc2366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.5) !important;
+  transform: translateY(-4px) scale(1.15) !important;
+}
+
+.footlink-instagram:hover i,
+.footlink-instagram:hover svg {
+  color: #ffffff !important;
+}
+
+/* WhatsApp */
+.footlink-whatsapp {
+  color: #25d366 !important;
+}
+
+.footlink-whatsapp i,
+.footlink-whatsapp svg {
+  color: #25d366 !important;
+}
+
+.footlink-whatsapp:hover {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5) !important;
+  transform: translateY(-4px) scale(1.15) !important;
+}
+
+.footlink-whatsapp:hover i,
+.footlink-whatsapp:hover svg {
+  color: #ffffff !important;
+}
+
+/* LinkedIn */
+.footlink-linkedin {
+  color: #0077b5 !important;
+}
+
+.footlink-linkedin i,
+.footlink-linkedin svg {
+  color: #0077b5 !important;
+}
+
+.footlink-linkedin:hover {
+  background: #0a66c2 !important;
+  border-color: #0a66c2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(10, 102, 194, 0.5) !important;
+  transform: translateY(-4px) scale(1.15) !important;
+}
+
+.footlink-linkedin:hover i,
+.footlink-linkedin:hover svg {
+  color: #ffffff !important;
+}
+
+/* ── Copyright ── */
+#copy {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-xs);
+  margin-top: var(--space-sm);
+}
+
+#copy small {
+  letter-spacing: 0.03em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 575.98px) {
+  footer {
+    padding: var(--space-lg) var(--space-sm) var(--space-sm);
+  }
+
   .footlist {
-    justify-content: center;
+    gap: 0.85rem;
+  }
+
+  .footlink {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footlink i,
+  .footlink svg {
+    font-size: 1.2rem;
   }
 }
 
-/* Ajustes para pantallas pequeñas (celulares) */
-@media (max-width: 650px) {
-  .main-container {
-    margin-top: -60px;
-    flex: 1; /* Asegura que el contenedor principal ocupe el espacio necesario */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}

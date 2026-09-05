@@ -1,144 +1,183 @@
-/* Las fuentes ahora se importan desde fuentes.css */
+/* ========================================
+   INSUMOS PAGE — CRISAL
+   ======================================== */
 
-  .btn-outline-success {
-    color: white; /* Texto en blanco */
-    border-color: white; /* Borde blanco */
-  }
-  
-  .btn-outline-success:hover {
-    color: black; /* Texto en negro al hacer hover */
-    background-color: white; /* Fondo blanco al hacer hover */
-    border-color: black; /* Borde negro al hacer hover */
-  }
-
-  /* Estilos de la sección de productos */
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 20px auto;
-}
-.products .article img {
-  width: 100%; /* Ajusta el ancho al contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Asegura que la imagen no se recorte ni deforme */
-  max-width: 300px; /* Tamaño máximo para las imágenes (opcional) */
-  margin: 0 auto; /* Centra la imagen horizontalmente si es necesario */
-  display: block; /* Elimina los espacios en línea alrededor de la imagen */
-}
-.article {
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 250px;
-  padding: 15px;
-  background-color: #cd7e35;
-  border-radius: 15px;
-  box-shadow: 10px 10px 5px #161616;
 }
 
-.article h5 {
-  font-weight: 350;
-  letter-spacing: 1.4px;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.article img {
-  width: 100%; /* Ajusta el ancho al tamaño del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Asegura que la imagen no se recorte ni deforme */
-  max-width: 400px; /* Tamaño máximo de la imagen (opcional) */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  display: block; /* Elimina el espacio en línea generado por las imágenes */
-}
-
-/* Estilos para los botones */
-.botonera {
-  display: flex;
-  justify-content: center; /* Centra los botones horizontalmente */
-  align-items: center;   /* Alinea los botones verticalmente */
-  gap: 20px;             /* Espaciado entre los botones */
-}
-
-.agregar {
-  font-size: 1.05rem;
-  padding: 10px 20px;
-  background-color: #50633C;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 5px 5px 5px #161616;
-}
-
-.agregar:hover {
-  background-color: #293b15;
-}
-
-.ver {
-  padding: 10px 20px; /* Asegúrate de que el tamaño sea uniforme */
-  background-color: rgb(42, 172, 172);
-  color: white;
-  border: none;
-  border-radius: 10px; /* Igualar bordes redondeados */
-  cursor: pointer;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 5px 5px 5px #161616;
-}
-
-.ver:hover {
-  background-color: #0056b3;
-}
-
-#insumos {
-  font-size: 1.4rem;
-  margin-bottom: 9px;
+main {
+  flex: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
 }
 
 #texto-negro1 {
   font-family: var(--font-titulos);
   font-weight: var(--font-extrabold);
-  font-size: 2rem;
-  color: #000;
-  text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
+  font-size: var(--text-3xl);
+  color: var(--color-primary-dark);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .texto-negro2 {
-  color: #000;
-  text-shadow: 2px 2px 4px #555, -1px -1px 2px #fff, 1px 1px 1px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-size: var(--text-2xl);
+  color: var(--color-primary-dark);
   text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* ── Grid de Productos ── */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.article {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  width: 100%;
+}
+
+.article:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.article img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-base);
+}
+
+.article:hover img {
+  transform: scale(1.04);
+}
+
+.article h5 {
+  font-family: var(--font-principal);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+#insumos {
+  font-family: var(--font-principal);
+  font-weight: var(--font-bold);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
 }
 
 .description {
-  color:black;
-  margin-top: 20px;
-  font-weight: bold;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ── Botonera ── */
+.botonera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.agregar {
+  flex: 1;
+  font-family: var(--font-principal);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.agregar:hover {
+  background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px -2px rgba(var(--color-accent-rgb), 0.4);
+}
+
+.ver {
+  flex: 1;
+  font-family: var(--font-principal);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.ver:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .highlight {
-  background-color: yellow;
-  color: red;
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
 }
 
-/* Media queries para responsividad */
-@media (max-width: 650px) { /* Para tablets */
-    .article img {
-        max-width: 100%; /* Asegura que ocupe todo el contenedor */
-    }
-}
+/* ── Responsividad ── */
+@media (max-width: 576px) {
+  .products {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 
-@media (min-width: 651px) and (max-width: 850px) { /* Para celulares */
-    .article img {
-        max-width: 100%; /* Mantiene responsividad en pantallas pequeñas */
-    }
+  .botonera {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .agregar,
+  .ver {
+    width: 100%;
+  }
 }

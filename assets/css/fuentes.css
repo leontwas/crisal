@@ -1,12 +1,12 @@
 /* ========================================
-   SISTEMA DE TIPOGRAFÍA MODERNA - CRISAL
+   SISTEMA DE DISEÑO — CRISAL
    ========================================
 
-   Este archivo centraliza todas las fuentes del proyecto.
-   Solo se importan 2 tipografías modernas para optimizar rendimiento:
+   Centraliza tipografías, colores y variables.
+   Solo 2 familias para optimizar rendimiento:
 
-   1. Inter - Tipografía principal para UI, cuerpo de texto y títulos
-   2. Playfair Display - Tipografía secundaria para títulos destacados
+   1. Inter — UI, cuerpo de texto
+   2. Playfair Display — Títulos destacados
 
    ======================================== */
 
@@ -17,15 +17,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
 
 /* ========================================
-   VARIABLES CSS PARA TIPOGRAFÍAS
+   VARIABLES CSS — COLORES Y TIPOGRAFÍA
    ======================================== */
 
 :root {
-  /* Familia de fuentes */
+  /* ── Familia de fuentes ── */
   --font-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-titulos: 'Playfair Display', Georgia, serif;
 
-  /* Pesos de fuente */
+  /* ── Pesos de fuente ── */
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
@@ -33,6 +33,124 @@
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
+
+  /* ── Escala tipográfica fluida (clamp) ── */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.9rem);
+  --text-base: clamp(0.9rem, 0.85rem + 0.3vw, 1rem);
+  --text-lg: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  --text-xl: clamp(1.15rem, 1rem + 0.7vw, 1.35rem);
+  --text-2xl: clamp(1.4rem, 1.1rem + 1.2vw, 1.75rem);
+  --text-3xl: clamp(1.7rem, 1.3rem + 1.6vw, 2.25rem);
+  --text-4xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-5xl: clamp(2.5rem, 1.8rem + 2.8vw, 3.75rem);
+
+  /* ── Colores Principales — Paleta Dark Vibrant ── */
+  --color-primary: #00FFB2;
+  --color-primary-light: #66FFD1;
+  --color-primary-dark: #00CC8E;
+  --color-primary-rgb: 0, 255, 178;
+
+  /* ── Acentos (Electric Violet & Neon Magenta) ── */
+  --color-accent: #B026FF;
+  --color-accent-light: #CC66FF;
+  --color-accent-dark: #8C19CC;
+  --color-accent-rgb: 176, 38, 255;
+
+  /* ── Secundarios (Vibrant Cyan) ── */
+  --color-secondary: #00E5FF;
+  --color-secondary-light: #66EEFF;
+
+  /* ── Neutros & Superficies — Sistema Dark Mode ── */
+  --color-bg: #09090B;
+  --color-bg-alt: #18181B;
+  --color-bg-dark: #000000;
+  --color-bg-dark-lighter: #27272A;
+  --color-surface: #18181B;
+  --color-text: #FAFAFA;
+  --color-text-muted: #A1A1AA;
+  --color-text-light: #FFFFFF;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-light: rgba(255, 255, 255, 0.2);
+
+  /* ── Feedback ── */
+  --color-success: #10B981;
+  --color-danger: #F43F5E;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+
+  /* ── Micro-elevaciones / Sombras Emil Kowalski ── */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 14px -2px rgba(0,0,0,0.6);
+  --shadow-lg: 0 10px 30px -4px rgba(0,0,0,0.7), 0 4px 15px rgba(176, 38, 255, 0.15);
+  --shadow-xl: 0 20px 40px -8px rgba(0,0,0,0.8), 0 10px 25px rgba(0, 255, 178, 0.2);
+
+  /* ── Bordes ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 50%;
+
+  /* ── Transiciones Emil Kowalski (Spring physics mimic) ── */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── Spacing ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+}
+
+/* ========================================
+   ESTILOS BASE DEL DOCUMENTO
+   ======================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-principal);
+  font-weight: var(--font-regular);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+h5 { font-size: var(--text-lg); }
+h6 { font-size: var(--text-base); }
+
+p {
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+a {
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ========================================
@@ -50,49 +168,15 @@
 }
 
 /* Pesos de fuente */
-.font-light {
-  font-weight: var(--font-light);
-}
+.font-light { font-weight: var(--font-light); }
+.font-regular { font-weight: var(--font-regular); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); }
+.font-extrabold { font-weight: var(--font-extrabold); }
+.font-black { font-weight: var(--font-black); }
 
-.font-regular {
-  font-weight: var(--font-regular);
-}
-
-.font-medium {
-  font-weight: var(--font-medium);
-}
-
-.font-semibold {
-  font-weight: var(--font-semibold);
-}
-
-.font-bold {
-  font-weight: var(--font-bold);
-}
-
-.font-extrabold {
-  font-weight: var(--font-extrabold);
-}
-
-.font-black {
-  font-weight: var(--font-black);
-}
-
-/* ========================================
-   ESTILOS BASE DEL DOCUMENTO
-   ======================================== */
-
-body {
-  font-family: var(--font-principal);
-  font-weight: var(--font-regular);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-titulos);
-  font-weight: var(--font-bold);
-}
-
-/* Títulos con estilo especial (para reemplazar fuentes decorativas) */
+/* Títulos con estilo especial */
 .titulo-decorativo {
   font-family: var(--font-titulos);
   font-weight: var(--font-bold);
@@ -105,4 +189,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-titulos);
   font-weight: var(--font-regular);
   font-style: italic;
+}
+
+/* ========================================
+   CLASES DE COMPATIBILIDAD
+   (mapean nombres viejos a las nuevas fuentes)
+   ======================================== */
+
+.libre-baskerville-regular {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-size: var(--text-2xl);
+}
+
+.birthstone-regular {
+  font-family: var(--font-titulos);
+  font-size: var(--text-5xl);
+  font-weight: var(--font-bold);
+  font-style: italic;
+}
+
+.kalam-bold {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
 }

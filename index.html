@@ -52,14 +52,13 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Crisal">
   <link rel="stylesheet" href="./assets/css/fuentes.css">
-  <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <title>Crisal - Consultora de Seguridad e Higiene Laboral | Auditorías, Capacitaciones y EPP en Argentina</title>
@@ -130,9 +129,9 @@
           </li>
 
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <form class="d-flex search-form">
+          <input class="form-control me-2 search-input" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn search-btn" type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>
@@ -257,81 +256,133 @@
       <!-- time running -->
       <div class="time"></div>
     </div>
-    <div class="informacion">
-      <h1 id="subtitulo">Servicios de Seguridad e Higiene en el Trabajo</h1>
-      <h2 class="birthstone-regular" id="crisal">Crisal</h2>
-     
-      <div class="presentacion">
-        <p>En Crisal, nos dedicamos a proporcionar soluciones integrales en seguridad e higiene laboral,
-          comprometidos con la protección de la salud y el bienestar de los trabajadores, así como con el
-          cumplimiento de las normativas vigentes en cada industria.</p>
+    <div class="informacion bento-presentacion">
+      <div class="presentacion-header">
+        <div class="section-badge"><i class="fa-solid fa-shield-halved"></i> Soluciones Integrales</div>
+        <h2 class="section-title">Servicios de Seguridad e Higiene en el Trabajo</h2>
+        <p class="section-subtitle">Compromiso, prevención y asesoramiento profesional para empresas</p>
+      </div>
+      
+      <div class="bento-grid-presentacion">
+        <!-- Card 1: Intro & Quiénes somos -->
+        <div class="bento-card glass-content">
+          <h3 class="bento-card-title"><i class="fa-solid fa-building-user text-primary"></i> ¿Quiénes somos?</h3>
+          <p class="glass-text">En Crisal, nos dedicamos a proporcionar soluciones integrales en seguridad e higiene laboral, comprometidos con la protección de la salud y el bienestar de los trabajadores, así como con el cumplimiento de las normativas vigentes en cada industria.</p>
+          <p class="glass-text">Somos una empresa especializada en asesoramiento, gestión y capacitación en seguridad e higiene en el trabajo. Contamos con un equipo de profesionales altamente capacitados y con amplia experiencia en la prevención de riesgos laborales. Nuestra misión es crear ambientes de trabajo seguros y saludables, minimizando los riesgos para los empleados y optimizando el rendimiento de las empresas.</p>
+        </div>
 
-        <h3 class="t2">¿Quiénes somos?</h3>
-        <p>Somos una empresa especializada en asesoramiento, gestión y capacitación en seguridad e higiene en
-          el trabajo. Contamos con un equipo de profesionales altamente capacitados y con amplia experiencia en
-          la prevención de riesgos laborales. Nuestra misión es crear ambientes de trabajo seguros y saludables,
-          minimizando los riesgos para los empleados y optimizando el rendimiento de las empresas.</p>
+        <!-- Card 2: Servicios -->
+        <div class="bento-card glass-content">
+          <h3 class="bento-card-title"><i class="fa-solid fa-list-check text-primary"></i> Nuestros servicios</h3>
+          <ul class="servicios-lista modern-list">
+            <li><i class="fa-solid fa-check text-accent"></i> <strong>Auditorías:</strong> Evaluamos condiciones de seguridad, identificando riesgos y proponiendo medidas correctivas.</li>
+            <li><i class="fa-solid fa-check text-accent"></i> <strong>Capacitación:</strong> Programas en seguridad laboral, EPP, primeros auxilios y prevención de accidentes.</li>
+            <li><i class="fa-solid fa-check text-accent"></i> <strong>Consultoría:</strong> Implementación de planes de seguridad, gestión de emergencias y cumplimiento legal.</li>
+            <li><i class="fa-solid fa-check text-accent"></i> <strong>Prevención:</strong> Programas a medida promoviendo prácticas de trabajo seguras.</li>
+            <li><i class="fa-solid fa-check text-accent"></i> <strong>Insumos:</strong> Suministro de equipos de seguridad para la protección de los empleados.</li>
+          </ul>
+        </div>
 
-          <h3 class="t2">Nuestros servicios</h3>
-          <p><ul class="servicios-lista">
-            <li><strong>Auditorías de seguridad e higiene laboral:</strong> Realizamos auditorías exhaustivas para evaluar las condiciones de seguridad e higiene en el entorno laboral, identificando riesgos y proponiendo medidas correctivas.</li>
-            <br>
-            <li><strong>Capacitación y formación:</strong> Ofrecemos programas de capacitación en seguridad laboral, manejo de equipos de protección personal (EPP), primeros auxilios y prevención de accidentes. Nuestros cursos están diseñados para adaptarse a las necesidades específicas de cada sector.</li>
-            <br>
-            <li><strong>Consultoría y asesoramiento:</strong> Brindamos consultoría personalizada para la implementación de planes de seguridad, gestión de emergencias y cumplimiento de la legislación en materia de higiene y seguridad laboral.</li>
-            <br>
-            <li><strong>Elaboración de programas de prevención:</strong> Diseñamos programas de prevención de riesgos laborales a medida, promoviendo prácticas de trabajo seguras y estrategias para evitar accidentes.</li>
-            <br>
-            <li><strong>Suministro de insumos y equipos de seguridad:</strong> Proveemos una amplia gama de insumos y equipos de seguridad para la protección de los empleados en su jornada laboral, como cascos, guantes, chalecos, y más.</li>
-        </ul>
-          </p>
-          <h3 class="t2">¿Por qué elegirnos?</h3>
-          <p>Expertos en la industria: Con años de experiencia trabajando en diversas industrias como comercio,
-            construcción, manufactura y más, entendemos las necesidades específicas de cada sector.
-  
-            Cumplimiento normativo: Aseguramos que todas nuestras soluciones y servicios cumplan con las normativas y
-            leyes de seguridad e higiene laboral locales e internacionales.
-  
-            Enfoque personalizado: Cada empresa tiene necesidades diferentes, por eso trabajamos de cerca con nuestros
-            clientes para ofrecer soluciones adaptadas a sus condiciones particulares.
-  
-            Compromiso con la salud y bienestar: Creemos firmemente que un entorno de trabajo seguro es fundamental
-            para el desarrollo de las empresas y el bienestar de sus empleados.
-          </p>
+        <!-- Card 3: Por qué elegirnos -->
+        <div class="bento-card glass-content highlight-card">
+          <h3 class="bento-card-title"><i class="fa-solid fa-award text-primary"></i> ¿Por qué elegirnos?</h3>
+          <div class="features-grid">
+            <div class="feature">
+              <i class="fa-solid fa-industry feature-icon"></i>
+              <h4>Expertos</h4>
+              <p>Experiencia en comercio, construcción, manufactura y más.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-file-contract feature-icon"></i>
+              <h4>Normativas</h4>
+              <p>Cumplimiento estricto con leyes locales e internacionales.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-users feature-icon"></i>
+              <h4>A medida</h4>
+              <p>Soluciones adaptadas a las condiciones particulares de tu empresa.</p>
+            </div>
+            <div class="feature">
+              <i class="fa-solid fa-heart-pulse feature-icon"></i>
+              <h4>Bienestar</h4>
+              <p>Compromiso con la salud para el desarrollo de las empresas.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="titulo_mapa">
-        <br>
-        <h2 id="direccion">Encuéntranos en esta dirección 👇</h2>
+    </div>
+
+    <!-- GLASSMORPHISM SECTIONS (NEW) -->
+    <div class="glass-section">
+      <img src="./assets/images/auditorias.webp" alt="Auditoría Avanzada" class="glass-img">
+      <div class="glass-content">
+        <div class="section-badge-sm">Auditorías 4.0</div>
+        <h3 class="glass-section-title">Innovación en Auditorías</h3>
+        <p class="glass-text">
+          Llevamos el control ambiental y laboral al siguiente nivel. Mediante el uso de tecnologías avanzadas y un marco riguroso, transformamos la prevención de riesgos en una ventaja estratégica inigualable para tu negocio.
+        </p>
       </div>
-  
-      <!-- Mapa -->
-      <div class="mapa">
+    </div>
+
+    <div class="glass-section reverse">
+      <img src="./assets/images/servicios.webp" alt="Gestión Dinámica" class="glass-img">
+      <div class="glass-content">
+        <div class="section-badge-sm">Prevención Activa</div>
+        <h3 class="glass-section-title">Gestión Dinámica</h3>
+        <p class="glass-text">
+          Nos adaptamos al ritmo acelerado de las industrias modernas. Con monitoreo continuo y planes de contingencia predictivos, garantizamos que tu empresa esté siempre un paso adelante en materia de seguridad.
+        </p>
+      </div>
+    </div>
+
+    <section class="location-bento">
+      <div class="location-info glass-content">
+        <div class="section-badge-sm"><i class="fa-solid fa-location-dot"></i> Ubicación</div>
+        <h2 class="section-title text-start">Encontranos aquí</h2>
+        <p class="location-text">Visitanos en nuestra oficina central o contactanos por nuestros canales oficiales.</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Av. Belgrano 1974, CABA, Argentina</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>1133272164</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>consultas@crisal.com.ar</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="location-map">
         <div id="map"></div>
         <script>
-          var map = L.map('map').setView([-34.6141, -58.3968], 15);
+          var map = L.map('map', { zoomControl: false }).setView([-34.6141, -58.3968], 15);
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
           }).addTo(map);
           L.marker([-34.6141, -58.3968]).addTo(map)
-            .bindPopup('Av. Belgrano 1974, CABA')
+            .bindPopup('<b>Crisal Consultora</b><br>Av. Belgrano 1974, CABA')
             .openPopup();
         </script>
       </div>
+    </section>
     </main>
-    <!-- Footer -->
     <footer>
       <div class="footlist">
-        <a class="footlink fab fa-brands fa-youtube fa-2x"
+        <a class="footlink footlink-youtube"
           href="https://youtube.com/@lic.cristianomaraltamirano9577?si=C3uQ8m5ATioGGX-H" title="Canal de YouTube de Crisal"
-          target="_blank"></a>
-        <a class="footlink fa-brands fa-instagram fa-2x" href="https://www.instagram.com/crisal.consultora/"
-          title="Instagram de Crisal" target="_blank"></a>
-        <a class="footlink fa-brands fa-whatsapp fa-2x" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
-          title="Canal de WhatsApp de Crisal" target="_blank"></a>
-        <a class="footlink fa-brands fa-linkedin fa-2x"
+          target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a class="footlink footlink-instagram" href="https://www.instagram.com/crisal.consultora/"
+          title="Instagram de Crisal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="footlink footlink-whatsapp" href="https://whatsapp.com/channel/0029VafgdxD4IBhIJGaoKf1J"
+          title="Canal de WhatsApp de Crisal" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="footlink footlink-linkedin"
           href="https://www.linkedin.com/in/cristian-omar-altamirano-3a539564/" title="LinkedIn de Cristian Altamirano"
-          target="_blank"></a>
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
       <p id="copy">
         <small>&copy; 2024 Todos los derechos reservados</small>

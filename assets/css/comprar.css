@@ -1,54 +1,91 @@
-#texto-negro1{
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* ========================================
+   COMPRAR PAGE — CRISAL
+   ======================================== */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.btn-primary:hover {
-    background-color: #004085; /* Azul oscuro */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
 }
 
-.btn-danger:hover {
-    background-color: #a71d2a; /* Rojo oscuro */
-}
-
-.btn-success:hover {
-    background-color: #1e7e34; /* Verde oscuro */
-}
-
-#cancelar {
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10%;
-    box-shadow: 10px 10px 5px #161616;
+#texto-negro1 {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-size: var(--text-3xl);
+  color: var(--color-primary-dark);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #formulario {
-    width: 400px;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border: none;
+  font-weight: var(--font-semibold);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+#cancelar {
+  background-color: var(--color-danger);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+#cancelar:hover {
+  background-color: #bb2d3b;
+  transform: translateY(-2px);
 }
 
 .sr-only {
-    visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .highlight {
-    background-color: yellow;
-    color: red;
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
 }
 
-@media (max-width: 650px) {
-    #formulario {
-        margin-left: -50px !important;
-        width: 350px;
-    }
-
-    .botonera {
-        margin-left: -30px !important;
-    }
-
-    .entrevista {
-        margin-left: -30px !important;
-    }
+/* ── Responsividad ── */
+@media (max-width: 576px) {
+  #formulario {
+    padding: 1.5rem;
+  }
 }

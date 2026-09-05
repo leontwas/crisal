@@ -1,25 +1,89 @@
-@import "footer.css";
-/* Las fuentes ahora se importan desde fuentes.css */
+/* ========================================
+   ESTILOS BASE GLOBALES — CRISAL
+   ======================================== */
 
-:root {
-    h2 {
-        font-size: 1.4rem;
-        font-weight: 400;
-    }
-}
-
-main {
-    padding: 20px;
+/* Reset base */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, #888a8a, #d5d8da);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: var(--font-principal);
-    font-optical-sizing:auto;
-    font-style: normal;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  background-attachment: fixed;
+  font-family: var(--font-principal);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color-text);
 }
 
+/* Main content grows to push footer down */
+main {
+  flex: 1;
+  padding: var(--space-xl) var(--space-md);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Consistent heading size for subpages */
+h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(var(--color-primary-rgb), 0.2);
+  color: var(--color-primary-dark);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Smooth image rendering */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links base */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}
+
+/* Highlight class for search */
+.highlight {
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
+
+/* SR Only - accessible hidden */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

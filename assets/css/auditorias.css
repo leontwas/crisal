@@ -1,325 +1,192 @@
- body, main, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
+/* ========================================
+   AUDITORIAS PAGE — CRISAL
+   ======================================== */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* ── Carousel ── */
+#demo {
+  max-width: 1200px;
+  margin: var(--space-2xl) auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.carousel-inner {
+  max-height: 480px;
+  overflow: hidden;
 }
 
 .custom-img {
-  width: 100%; /* Asegura que las imágenes llenen el ancho del carrusel */
-  height: 100%; /* Ajusta las imágenes al alto del carrusel */
-  object-fit:contain; /* Evita deformaciones */
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carrusel-imagen {
-  display: block; /* Centra la imagen horizontalmente */
-  margin: 0 auto; /* Centrado horizontal */
-  max-width: 100%; /* Ajusta el tamaño máximo al contenedor */
-  max-height: 100%; /* Ajusta la altura máxima al contenedor */
-  width: 100%; /* Mantiene las proporciones del ancho */
-  height: auto; /* Mantiene las proporciones del alto */
-  object-fit: contain; /* Asegura que la imagen no se deforme */
-}
-
-
-.owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.owl-carousel .owl-animated-in {
-  z-index: 0;
-}
-.owl-carousel .owl-animated-out {
-  z-index: 1;
-}
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-
-.owl-height {
-  -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out;
-}
-
-
-.owl-carousel {
-  display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  z-index: 1;
-}
-.owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y;
-  touch-action: pan-Y;
-}
-.owl-carousel .owl-stage:after {
-  content: ".";
   display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-.owl-carousel .owl-stage-outer {
-  position: relative;
+
+/* ── Cards Section ── */
+.auditorias-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  background: rgba(24, 24, 27, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
 }
 
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-dot {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.card:hover {
+  transform: translateY(-5px) translateZ(0);
+  box-shadow: var(--shadow-lg);
 }
 
-.owl-carousel.owl-loaded {
-  display: block;
-}
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block;
-}
-.owl-carousel.owl-hidden {
-  opacity: 0;
-}
-.owl-carousel .owl-refresh .owl-item {
-  display: none;
-}
-.owl-carousel .owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.owl-carousel .owl-item img {
-  display: block;
+.img-wrapper {
   width: 100%;
-  -webkit-transform-style: preserve-3d;
-  transform-style:preserve-3d;
-}
-.owl-carousel.owl-text-select-on .owl-item {
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-}
-.owl-carousel .owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-.owl-carousel.owl-rtl {
-  direction: rtl;
-}
-.owl-carousel.owl-rtl .owl-item {
-  float: right;
+  height: 250px;
+  overflow: hidden;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  background-color: transparent;
 }
 
-.no-js .owl-carousel {
-  display: block;
-}
-
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
-}
-.owl-carousel .owl-item img {
-  transform-style: preserve-3d;
-}
-
-.owl-carousel .owl-video-wrapper {
-  position: relative;
+.card-img-top {
+  width: 100%;
   height: 100%;
-  background: #000;
+  object-fit: cover;
 }
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  backface-visibility:hidden;
-  -webkit-transition: scale 100ms ease;
-  -moz-transition: scale 100ms ease;
-  -ms-transition: scale 100ms ease;
-  -o-transition: scale 100ms ease;
-  transition: scale 100ms ease;
+
+#card-top {
+  object-fit: contain;
+  background-color: #000;
+  transform: scale(1.25);
 }
-.owl-carousel .owl-video-play-icon:hover {
-  -webkit-transition: scale(1.3, 1.3);
-  -moz-transition: scale(1.3, 1.3);
-  -ms-transition: scale(1.3, 1.3);
-  -o-transition: scale(1.3, 1.3);
-  transition: scale(1.3, 1.3);
-}
-.owl-carousel .owl-video-playing .owl-video-tn,
-.owl-carousel .owl-video-playing .owl-video-play-icon {
-  display: none;
-}
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
-}
-.owl-carousel .owl-video-frame {
-  position: relative;
-  z-index: 1;
-} 
+
 .card-body {
-  background: linear-gradient(to right, #2c3e50, #34495e);
+  background: transparent;
+  color: var(--color-text-light);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+.card-title {
+  font-family: var(--font-titulos);
+  font-weight: var(--font-bold);
+  font-size: var(--text-xl);
+  color: var(--color-accent-light);
+  margin-bottom: 1rem;
+}
+
 .text-dark-blue {
   font-family: var(--font-principal);
-  background: linear-gradient(to right, #2c3e50, #34495e);
-  color: #99e7fa;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
-  text-align: justify;
+  text-align: left;
+  line-height: 1.7;
+  font-size: var(--text-base);
 }
+
 .text-justify {
-  text-align: justify;
-  color: white;
-  padding-top: 20px;
+  text-align: left;
+  color: var(--color-text-light);
+  padding-top: 0.5rem;
+  line-height: 1.7;
 }
 
 #items {
-  text-align: justify;
-  text-align: justify;
-  color: white;
-  padding-top: 20px;
+  text-align: left;
+  color: var(--color-text-light);
+  padding-top: 0.5rem;
+  line-height: 1.8;
 }
 
+#items li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+#items li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-light);
+  font-weight: bold;
+}
+
+/* ── Highlight search ── */
 .highlight {
-  background-color: yellow;
-  color: red;
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
 }
 
-/******************************** Media queries para Celulares *******************************/
-@media (max-width: 650px) {
-  .carousel-inner {
-    height: 400px; /* Reduce la altura del carrusel */
-  }
-
-  .carousel-control-prev-icon {
-    margin-top: -200px;
-  }
-
-  .carousel-control-next-icon {
-    margin-top: -200px;
-  }
-
-  #card-top {
-    margin-top: -200px;
-  }
-
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .carousel-inner,
   .custom-img {
-    object-position: center center; /* Centra las imágenes */
+    max-height: 280px;
+    height: 280px;
   }
- }
 
-.footer {
-  margin: 0;
-  padding: 0;
-  left:0;
-  right:0;
-  width: 100%;
+  .card-group {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
 }
 
-/******************************** Media queries para Tablets *******************************/
-@media (min-width: 651px) and (max-width: 850px) {
-  .carousel-inner {
-    height: 600px; /* Ajusta la altura del carrusel */
-  }
-
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-inner,
   .custom-img {
-    object-position: center top; /* Foco en la parte superior */
+    max-height: 380px;
+    height: 380px;
   }
-
-.card-group{
-margin-top: -215px;
 }
 
-.carousel-control-prev-icon {
-  margin-top:-200px;
-}
-
-.carousel-control-next-icon {
-  margin-top:-200px;
-}
-}
-
-/******************************** Media queries para Notebooks *******************************/
-@media (min-width: 851px) and (max-width: 1200px) {
-  .carousel-inner {
-   /* height: 500px !important; /* Altura intermedia para el carrusel */
-    width: 100%;
+@media (min-width: 992px) {
+  .auditorias-section {
+    padding: 0;
   }
-  .custom-img {
-    object-position: center; /* Centra las imágenes completamente */
+  
+  #demo {
+    padding: 0;
   }
-  .titulos .libre-baskerville-regular {
-    margin-bottom: 10px !important;
 }
-}
-

@@ -1,185 +1,197 @@
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
+/* ========================================
+   SERVICIOS PAGE — CRISAL
+   ======================================== */
 
 body {
-    background: rgb(248, 217, 105);
-    margin: 0;
-    padding: 0;
-    width: 100%; 
-    height: 100vh; 
-    box-sizing: border-box;
+  background: var(--color-bg);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
 
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+  align-items: stretch;
 }
 
+/* ── Service Card Container ── */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width:380px;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #50633C;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ── Interactive 3D Article Card ── */
 article {
-    position: relative;
-    width: 100%;
-    transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition-base);
 }
 
-article img:first-child { 
-    box-shadow: 20px 20px 30px -20px black;
-    border-radius: 10px;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+article img:first-child {
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  display: block;
+  box-shadow: var(--shadow-sm);
 }
 
 article img:last-child {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    width: 80%;
-    margin: auto;
-    transform: translateY(25%);
-    transition: 0.3s ease;
-    opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  margin: auto;
+  transform: translateY(20%);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+  opacity: 0;
+  pointer-events: none;
 }
 
 article:hover {
-    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+  transform: perspective(400px) rotateX(6deg) translateY(-2%);
 }
 
 article::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(
-        to bottom,
-        transparent 10%,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0) 95%
-    );
-    opacity: 0;
-    transition: all 0.3s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    rgba(27, 32, 40, 0.4) 60%,
+    rgba(27, 32, 40, 0.85) 100%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  border-radius: var(--radius-md);
 }
 
 article:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 article:hover img:last-child {
-    opacity: 1;
-    transform: translateY(10%);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.sr-only {
-    visibility: hidden;
-}
-
-
-.container {
-    box-shadow: 10px 10px 5px #161616;
-}
+/* ── Description Box ── */
 .descripcion {
-    width: 100%;
-    height:300px;
-    text-align: justify;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: #cd7e35;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 5px; 
+  flex-grow: 1;
+  width: 100%;
+  min-height: 200px;
+  text-align: left;
+  font-size: var(--text-base);
+  font-weight: var(--font-regular);
+  color: var(--color-text-light);
+  background: var(--color-bg-dark-lighter);
+  border: 1px solid var(--color-border-light);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .link {
-    color: gold;
+  color: var(--color-accent-light);
+  font-weight: var(--font-semibold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 #video {
-    width: 100%; 
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.highlight {
+  background-color: var(--color-accent-light);
+  color: var(--color-text);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Responsividad ── */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem 0.5rem;
   }
 
-  .highlight {
-    background-color: yellow;
-    color: red;
-}
-  
-/******************************** Media queries para Celulares **********************************/
-@media (max-width: 650px) {
-    .main-container {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        padding-top: 50px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .descripcion {
-        font-size: 20px;
-        width: 100%;
-        height: 100%;
-    }
+  .main-container {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
 
-    .container {
-       width: fit-content;
-       margin: -10px;
-       margin-top: 20px;
-       margin-bottom: 10px;
-    }
+  .container {
+    max-width: 100%;
+  }
+
+  .descripcion {
+    min-height: auto;
+    font-size: var(--text-sm);
+  }
 }
 
-#img1, #img2, #img3 {
-    width: max-content;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    gap: 1.5rem;
+  }
+
+  .container {
+    max-width: 45%;
+  }
 }
-
-/******************************** Media queries para Tablets *******************************/
-@media (min-width: 651px) and (max-width: 850px) { 
-    .main-container {
-        flex-direction: column; 
-        align-items: center;
-        padding: 10px;
-    }
-    .container {
-        width: 100%;
-        min-width: fit-content;
-    }
-    .descripcion {
-        font-size: x-large;
-        height:100%;
-        padding-top: 30px;
-    }
-
-    #img1, #img2, #img3 {
-        width: 100%;
-    }
-
-    footer {
-        margin-top: 150px;
-    }
-}
-

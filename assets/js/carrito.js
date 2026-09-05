@@ -5,29 +5,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar el carrito desde localStorage o como un arreglo vacío
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-    // Definir los IDs para cada producto según su nombre
-    const idsProductos = {
-        'Chalecos Refractarios': 1,
-        'Cascos de seguridad': 2,
-        'Libro del Lic. Altamirano': 3,
-        'Arnés de seguridad': 4,
-        'Protectores Auditivos': 5,
-        'Protectores Visuales': 6,
-        'Guantes de seguridad': 7,
-        'Borcegos con punta de acero': 8,
+    // Definir los IDs y las imágenes para cada producto según su nombre
+    const datosProductos = {
+        'Chalecos Refractarios': { id: 1, imagen: './assets/images/chaleco.webp' },
+        'Cascos de seguridad':   { id: 2, imagen: './assets/images/cascos.webp' },
+        'Libro del Lic. Altamirano': { id: 3, imagen: './assets/images/libro3D.webp' },
+        'Arnés de seguridad':    { id: 4, imagen: './assets/images/arnes.webp' },
+        'Protectores Auditivos': { id: 5, imagen: './assets/images/auriculares.webp' },
+        'Protectores Visuales':  { id: 6, imagen: './assets/images/lentes.webp' },
+        'Guantes de seguridad':  { id: 7, imagen: './assets/images/guantes.webp' },
+        'Borcegos con punta de acero': { id: 8, imagen: './assets/images/borcegos.webp' },
     };
 
     // Agregar un producto al carrito
     function agregarAlCarrito(nombre, precio) {
-        const id = idsProductos[nombre];
+        const datos = datosProductos[nombre];
 
-        if (id !== undefined) {
-            const productoExistente = carrito.find(producto => producto.id === id);
+        if (datos !== undefined) {
+            const productoExistente = carrito.find(producto => producto.id === datos.id);
 
             if (productoExistente) {
                 productoExistente.cantidad++;
             } else {
-                const producto = { id, nombre, precio, cantidad: 1 };
+                const producto = {
+                    id: datos.id,
+                    nombre,
+                    precio,
+                    cantidad: 1,
+                    imagen: datos.imagen
+                };
                 carrito.push(producto);
             }
 
@@ -46,29 +52,44 @@ document.addEventListener('DOMContentLoaded', () => {
         carritoContainer.innerHTML = '';
         let totalAPagar = 0;
 
+        if (carrito.length === 0) {
+            carritoContainer.innerHTML = '<div class="carrito-vacio"><i class="fa-solid fa-cart-shopping" style="font-size: 2rem; margin-bottom: 1rem; display: block; opacity: 0.4;"></i>Tu carrito está vacío</div>';
+            totalContainer.textContent = '0';
+            return;
+        }
+
         carrito.forEach(producto => {
             const subtotal = producto.precio * producto.cantidad;
+            const imagenSrc = producto.imagen || '';
 
             const productoElemento = document.createElement('div');
             productoElemento.classList.add('producto');
             productoElemento.innerHTML = `
-                <h5>${producto.nombre}</h5>
-                <p>Precio: $${producto.precio}</p>
-                <p>Cantidad: ${producto.cantidad}</p>
-                <p>Subtotal: $${subtotal}</p>
-                <button class="eliminar" data-id="${producto.id}">Eliminar</button>
-                <button class="agregar-mas" data-id="${producto.id}">Agregar Más</button>
+                ${imagenSrc ? `<img src="${imagenSrc}" alt="${producto.nombre}" class="producto-thumb">` : ''}
+                <div class="producto-info">
+                    <h5>${producto.nombre}</h5>
+                    <p>Precio: $${producto.precio.toLocaleString('es-AR')}</p>
+                    <p class="subtotal-text">Subtotal: $${subtotal.toLocaleString('es-AR')}</p>
+                </div>
+                <div class="producto-acciones">
+                    <div class="cantidad-control">
+                        <button class="btn-qty quitar-uno" data-id="${producto.id}" aria-label="Quitar uno">−</button>
+                        <span class="cantidad-display">${producto.cantidad}</span>
+                        <button class="btn-qty agregar-mas" data-id="${producto.id}" aria-label="Agregar uno">+</button>
+                    </div>
+                    <button class="eliminar" data-id="${producto.id}" title="Quitar del carrito"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
             `;
 
             carritoContainer.appendChild(productoElemento);
             totalAPagar += subtotal;
         });
 
-        totalContainer.textContent = `${totalAPagar}`;
+        totalContainer.textContent = totalAPagar.toLocaleString('es-AR');
     }
 
-    // Eliminar una unidad de un producto del carrito
-    function eliminarProducto(id) {
+    // Quitar una unidad de un producto del carrito
+    function quitarUnoProducto(id) {
         const producto = carrito.find(producto => producto.id === id);
 
         if (producto) {
@@ -81,6 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('carrito', JSON.stringify(carrito));
             renderCarrito();
         }
+    }
+
+    // Eliminar un producto completo del carrito
+    function eliminarProducto(id) {
+        carrito = carrito.filter(producto => producto.id !== id);
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        renderCarrito();
     }
 
     // Agregar una unidad más de un producto al carrito
@@ -139,13 +167,17 @@ function finalizarCompra() {
     });
 
     document.getElementById('carrito-container').addEventListener('click', (event) => {
-        if (event.target.classList.contains('eliminar')) {
-            const id = parseInt(event.target.getAttribute('data-id'));
-            eliminarProducto(id);
-        }
+        const btn = event.target.closest('button');
+        if (!btn) return;
 
-        if (event.target.classList.contains('agregar-mas')) {
-            const id = parseInt(event.target.getAttribute('data-id'));
+        const id = parseInt(btn.getAttribute('data-id'));
+        if (isNaN(id)) return;
+
+        if (btn.classList.contains('eliminar')) {
+            eliminarProducto(id);
+        } else if (btn.classList.contains('quitar-uno')) {
+            quitarUnoProducto(id);
+        } else if (btn.classList.contains('agregar-mas')) {
             agregarMasProducto(id);
         }
     });
