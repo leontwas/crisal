@@ -14,12 +14,12 @@
 /assets/images/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache para CSS y JS
+# Cache para CSS y JS (sin caché persistente para recibir cambios inmediatos)
 /assets/css/*
-  Cache-Control: public, max-age=2592000, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/js/*
-  Cache-Control: public, max-age=2592000, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate
 
 # Cache para fuentes
 /assets/fonts/*
